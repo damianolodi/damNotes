@@ -1,11 +1,90 @@
 {{ define "main" }}
 
-<div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card text-center bg-light border-primary">
+                <img src="img/logos/c.svg" class="card-img-top card-img-custom"
+                    alt="...">
+                <div class="card-body">
+                    <h3 class="h4 card-title">Blog</h3>
+                    <a href="#" class="card-link">Read</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h3 class="h4 card-title">Hugo</h3>
+                    <a href="#" class="card-link">Read</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h3 class="h4 card-title">Python</h3>
+                    <a href="#" class="card-link">Read</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card text-center">
+                <img src="img/logos/python.svg"
+                    class="card-img-top card-img-custom" alt="...">
+                <div class="card-body">
+                    <h3 class="h4 card-title">C</h3>
+                    <a href="#" class="card-link">Read</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="h4 card-title">Blog</h3>
+                    <a href="#" class="card-link">Read</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="h4 card-title">Hugo</h3>
+                    <a href="#" class="card-link">Read</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="h4 card-title">Python</h3>
+                    <a href="#" class="card-link">Read</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--
+<div class="container">
     {{ with $.Site.Params.sections }}
     {{ range . }}
-    <p class="font-125"> {{ . }}</p>
+
+    <div class="card">
+        <div class="card-body">
+            <h3 class="h4 card-title">{{ . }}</h3>
+            <a href="/{{ . | urlize }}" class="card-link">Read</a>
+        </div>
+    </div>
+
     {{ end }}
     {{ end }}
 </div>
+ -->
 
 {{ end }}

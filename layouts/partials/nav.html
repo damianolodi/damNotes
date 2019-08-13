@@ -1,7 +1,9 @@
 <div id="nav-border" class="container">
     <div class="row">
         <header id="header" class="col justify-content-start">
-            <h1 class="h2">{{ .Site.Title }}</h1>
+            <a class="nav-link" href="{{ .Site.BaseURL }}">
+                <h1 class="h2">{{ .Site.Title }}</h1>
+            </a>
         </header>
         <nav id="nav" class="col nav justify-content-end">
             {{ range .Site.Menus.main }}

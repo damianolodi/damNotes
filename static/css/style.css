@@ -46,3 +46,7 @@ img {
     margin-top: 6px;
     color: inherit;
 }
+
+.card-img-custom {
+    max-height: 120px;
+}
