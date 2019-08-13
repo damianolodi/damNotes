@@ -14,15 +14,10 @@ title = "DamNotes"
         url = "/"
         weight = 1
     [[menu.main]]
-        name = "Blog"
-        pre = "edit"
-        url = "/blog/"
+        name = "About"
+        pre = "user"
+        url = "/about/"
         weight = 2
-    [[menu.main]]
-        name = "Tags"
-        pre = "tag"
-        url = "/tags/"
-        weight = 3
 
 [params]
     dateFormat = "Jan 2, 2006"
