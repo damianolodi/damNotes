@@ -18,6 +18,16 @@ title = "DamNotes"
         pre = "user"
         url = "/about/"
         weight = 2
+    [[menu.social]]
+        name = "GitHub"
+        pre = "github"
+        url = "https://github.com/damianolodi"
+        weight = 1
+    [[menu.social]]
+        name = "LinkedIn"
+        pre = "linkedin"
+        url = "https://www.linkedin.com/in/damiano-lodi/"
+        weight = 2
 
 [params]
     dateFormat = "Jan 2, 2006"

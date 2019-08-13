@@ -1,0 +1,9 @@
+<footer id="footer-border" class="container">
+    <div id="nav" class="nav justify-content-center">
+        {{ range .Site.Menus.social }}
+        {{ $icon := printf "<i data-feather=\"%s\"></i>" .Pre }}
+        {{ $text := print $icon " " .Name | safeHTML }}
+        <a class="nav-link" href="{{ .URL }}">{{ $text }}</a>
+        {{ end }}
+    </div>
+</footer>
