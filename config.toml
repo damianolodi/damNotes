@@ -9,15 +9,10 @@ title = "DamNotes"
 # The value of pre is the icon name
 [menu]
     [[menu.main]]
-        name = "Home"
-        pre = "home"
-        url = "/"
-        weight = 1
-    [[menu.main]]
         name = "About"
         pre = "user"
         url = "/about/"
-        weight = 2
+        weight = 1
     [[menu.social]]
         name = "GitHub"
         pre = "github"
@@ -30,6 +25,7 @@ title = "DamNotes"
         weight = 2
 
 [params]
+    sections = [ "Blog", "Hugo"]
     dateFormat = "Jan 2, 2006"
     homeText = "You just made a Hugo blog from scratch."
 
