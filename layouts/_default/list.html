@@ -1,12 +1,23 @@
 {{ define "main" }}
 
-<h1>{{ .Title }}</h1>
-{{ range .Pages.ByPublishDate.Reverse }}
-<p>
-    <a class="font-125" href="{{ .RelPermalink }}">{{ .Title }}</a>
-    <br>
-    {{ partial "date-and-tags.html" . }}
-</p>
-{{ end }}
+<h2 class="m-3">{{ .Title }}</h2>
+<div
+    class="d-flex flex-row flex-wrap justify-content-around align-items-center">
+
+    {{ range .Pages.ByPublishDate.Reverse }}
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+        <div
+            class="card m-1 mb-2 argument-card text-center bg-light border border-dark roudned-lg">
+            <div class="card-body">
+                <h3 class="card-title h4">{{ .Title }}</h3>
+                <h4 class="card-subtitle mb-2 text-muted h6">Card subtitle
+                </h4>
+                <a href="{{ .RelPermalink }}" class="card-link">Read</a>
+            </div>
+        </div>
+    </div>
+    {{ end }}
+
+</div>
 
 {{ end }}

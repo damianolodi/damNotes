@@ -36,3 +36,7 @@ Cards sizing
 .card-width {
     min-width: 200px;
 }
+
+.argument-card {
+    width: 13rem;
+}
