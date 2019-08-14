@@ -1,4 +1,4 @@
-<div id="nav-border" class="container">
+<!-- <div id="nav-border" class="container">
     <div class="row">
         <header id="header" class="col justify-content-start">
             <a class="nav-link" href="{{ .Site.BaseURL }}">
@@ -13,4 +13,26 @@
             {{ end }}
         </nav>
     </div>
+</div>-->
+<div class="container border-bottom border-dark">
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="{{ .Site.BaseURL }}">DamNotes</a>
+        <!-- Toggle if want to place the brand logo
+        <a class="navbar-brand" href="{{ .Site.BaseURL }}">
+            <img src="#" width="30" height="30" class="d-inline-block align-top"
+                alt="">
+            DamNotes
+        </a>
+    -->
+        <ul class="navbar-nav" style="margin-right:1rem;">
+            {{ range .Site.Menus.main }}
+            {{ $icon := printf "<i data-feather=\"%s\"></i>" .Pre }}
+            {{ $text := print $icon " " .Name | safeHTML }}
+            <li class=" nav-item active">
+                <a class="nav-link" href="{{ .URL }}">{{ $text }}<span
+                        class="sr-only">(current)</span></a>
+            </li>
+            {{ end }}
+        </ul>
+    </nav>
 </div>
