@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bash on DamNotes</title>
+    <link>https://damnotes.netlify.com/bash/</link>
+    <description>Recent content in Bash on DamNotes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://damnotes.netlify.com/bash/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bash Scripts</title>
+      <link>https://damnotes.netlify.com/bash/01-bash-scripts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/bash/01-bash-scripts/</guid>
+      <description>Making Custom Commands  Access the .bashrc file with
+nano ~/.bashrc  Open with nano and not with open, otherwise problems may occur when applying the following steps.
+ Inside the file, write the following
+alias command_name=&amp;#34;command1 &amp;amp;&amp;amp; command2 &amp;amp;&amp;amp; ...&amp;#34;  The &amp;amp;&amp;amp; apply the following command only if the current one is succesfull. On the other hand, use ; to run all the commands one after the other.</description>
+    </item>
+    
+  </channel>
+</rss>

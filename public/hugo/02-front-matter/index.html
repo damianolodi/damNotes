@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     
     
-    <title>Tags | DamNotes</title>
+    <title>Front Matter | DamNotes</title>
 </head>
 
 <body>
@@ -35,19 +35,35 @@
         <main id="main">
             
 
-<h1>Tags</h1>
+<h2 class="m-1 mb-3 mt-3">Front Matter</h2>
 
 
 
+<p>Informations between the two <code>---</code> is called <strong>front matter</strong>.</p>
 
+<hr />
 
+<ul>
+<li><p><code>draft: true</code> → mark post as draft</p></li>
 
-<p>
-    <a class="btn btn-outline-dark font-125" href="https://damnotes.netlify.com/tags/hugo/">
-        <span class="badge badge-dark">7</span> hugo
-    </a>
-</p>
+<li><p><code>image: &quot;static/path-to-image.jpeg&quot;</code> → set the <strong>default post image</strong> (usuallly placed in the <code>static</code> directory)</p></li>
 
+<li><p><code>tags: ['tag1', 'tag2']</code> → post tags</p></li>
+
+<li><p><code>categories: ['category1', ...]</code> → post categories</p></li>
+
+<li><p><code>publishdate:</code> → set a publishing date for the post (if the build date is previous the one indicated, the post will not be published)</p></li>
+
+<li><p><code>expirydate</code> → if the build date is previous the one indicated, the post will not be compiled</p></li>
+</ul>
+
+<hr />
+
+<h2 id="resources">Resources</h2>
+
+<ol>
+<li><a href="https://gohugo.io/content-management/front-matter/">Documentation</a></li>
+</ol>
 
 
 

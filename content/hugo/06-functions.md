@@ -18,6 +18,6 @@ All functions are reported in the [documentation](https://gohugo.io/functions/).
 
 * * *
 
-## String Manipulation
+### String Manipulation
 
 -   `{{ print SOMETHING }}` → print the argument using the Golang [print](https://gohugo.io/functions/print/#readout) function. See `printf` to apply string [format](https://gohugo.io/functions/printf/#readout)

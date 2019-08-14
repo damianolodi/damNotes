@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     
     
-    <title>Tags | DamNotes</title>
+    <title>Themes | DamNotes</title>
 </head>
 
 <body>
@@ -35,19 +35,23 @@
         <main id="main">
             
 
-<h1>Tags</h1>
+<h2 class="m-1 mb-3 mt-3">Themes</h2>
 
 
 
+<ul>
+<li>Add a theme as a submodule using <code>git submodule add github-link themes/theme-name</code> in the website root</li>
+<li>Hugo applies the decided theme first and then applies anything that is in the local directory.</li>
+<li>To <strong>set a theme</strong>, add <code>theme= theme_name</code> to the <code>config.toml</code> file.</li>
+</ul>
 
+<hr />
 
+<h3 id="create-a-theme">Create a Theme</h3>
 
-<p>
-    <a class="btn btn-outline-dark font-125" href="https://damnotes.netlify.com/tags/hugo/">
-        <span class="badge badge-dark">7</span> hugo
-    </a>
-</p>
-
+<ul>
+<li>To create a new theme use <code>hugo new theme theme-name</code></li>
+</ul>
 
 
 

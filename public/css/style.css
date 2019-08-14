@@ -8,22 +8,9 @@
     ;
 }
 
-#nav a {
-    font-weight: bold;
-    color: inherit;
-}
-
-#nav-border {
-    border-bottom: 1px solid #212529;
-}
-
 #main {
     margin-top: 1em;
     margin-bottom: 4em;
-}
-
-#home-jumbotron {
-    background-color: inherit;
 }
 
 .font-125 {
@@ -36,4 +23,20 @@
 
 img {
     max-width: 100%;
+}
+
+.card-img-custom {
+    height: 120px;
+    width: auto;
+}
+
+/*
+Cards sizing
+*/
+.card-width {
+    min-width: 200px;
+}
+
+.argument-card {
+    width: 13rem;
 }

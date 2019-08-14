@@ -2,6 +2,12 @@ baseURL = "https://damnotes.netlify.com/"
 languageCode = "en-us"
 title = "DamNotes"
 
+# acitvate syntax highlight using fences instead of shortcodes
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+# set syntax highlight style
+pygmentsStyle = "github"
+
 [permalinks]
     blog = "/:filename/"
 
