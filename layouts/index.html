@@ -1,71 +1,21 @@
 {{ define "main" }}
 
-<div class="container">
-    <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card text-center bg-light border-primary">
-                <img src="img/logos/c.svg" class="card-img-top card-img-custom"
-                    alt="...">
-                <div class="card-body">
-                    <h3 class="h4 card-title">Blog</h3>
-                    <a href="#" class="card-link">Read</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card text-center">
-                <div class="card-body">
-                    <h3 class="h4 card-title">Hugo</h3>
-                    <a href="#" class="card-link">Read</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card text-center">
-                <div class="card-body">
-                    <h3 class="h4 card-title">Python</h3>
-                    <a href="#" class="card-link">Read</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card text-center">
-                <img src="img/logos/python.svg"
-                    class="card-img-top card-img-custom" alt="...">
-                <div class="card-body">
-                    <h3 class="h4 card-title">C</h3>
-                    <a href="#" class="card-link">Read</a>
-                </div>
-            </div>
-        </div>
-    </div>
+<div
+    class="d-flex flex-row flex-wrap justify-content-around align-items-stretch">
 
-    <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card">
-                <div class="card-body">
-                    <h3 class="h4 card-title">Blog</h3>
-                    <a href="#" class="card-link">Read</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card">
-                <div class="card-body">
-                    <h3 class="h4 card-title">Hugo</h3>
-                    <a href="#" class="card-link">Read</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-3">
-            <div class="card">
-                <div class="card-body">
-                    <h3 class="h4 card-title">Python</h3>
-                    <a href="#" class="card-link">Read</a>
-                </div>
-            </div>
+    {{ with $.Site.Params.sections }}
+    {{ range . }}
+    <div class="card text-center bg-light border-dark card-width p-3 mb-3">
+        <img src="img/logos/{{ . }}.svg" class="card-img-top card-img-custom"
+            alt="...">
+        <div class="card-body">
+            <h3 class="h4 card-title">{{ . }}</h3>
+            <a href="/{{ . | urlize }}" class="card-link">Read</a>
         </div>
     </div>
+    {{ end }}
+    {{ end }}
+
 </div>
 
 
