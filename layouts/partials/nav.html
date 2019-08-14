@@ -24,7 +24,7 @@
             DamNotes
         </a>
     -->
-        <ul class="navbar-nav" style="margin-right:1rem;">
+        <ul class="navbar-nav">
             {{ range .Site.Menus.main }}
             {{ $icon := printf "<i data-feather=\"%s\"></i>" .Pre }}
             {{ $text := print $icon " " .Name | safeHTML }}
