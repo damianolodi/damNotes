@@ -2,39 +2,18 @@
 
 <div
     class="d-flex flex-row flex-wrap justify-content-around align-items-stretch">
-
     {{ with $.Site.Params.sections }}
     {{ range . }}
     <div class="card text-center bg-light border-dark card-width p-3 mb-3">
-        <img src="img/logos/{{ . }}.svg" class="card-img-top card-img-custom"
-            alt="...">
+        <a href="/{{ . | urlize }}">
+            <img src="img/logos/{{ . }}.svg"
+                class="card-img-top card-img-custom" alt="...">
+        </a>
         <div class="card-body">
             <h3 class="h4 card-title">{{ . }}</h3>
-            <a href="/{{ . | urlize }}" class="card-link">Read</a>
         </div>
     </div>
     {{ end }}
     {{ end }}
-
 </div>
-
-
-
-<!--
-<div class="container">
-    {{ with $.Site.Params.sections }}
-    {{ range . }}
-
-    <div class="card">
-        <div class="card-body">
-            <h3 class="h4 card-title">{{ . }}</h3>
-            <a href="/{{ . | urlize }}" class="card-link">Read</a>
-        </div>
-    </div>
-
-    {{ end }}
-    {{ end }}
-</div>
- -->
-
 {{ end }}

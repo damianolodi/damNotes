@@ -25,7 +25,8 @@ title = "DamNotes"
         weight = 2
 
 [params]
-    sections = ["Blog", "C", "CSS", "HTML", "Hugo", "Python"]
+    sections = ["C", "HTML", "CSS", "Hugo", "Python",
+                "Git", "AI", "RPi", "Arduino", "Linux", "Bash", "Electronics"]
     dateFormat = "Jan 2, 2006"
     homeText = "You just made a Hugo blog from scratch."
 

@@ -26,7 +26,8 @@ img {
 }
 
 .card-img-custom {
-    max-height: 120px;
+    height: 120px;
+    width: auto;
 }
 
 /*
