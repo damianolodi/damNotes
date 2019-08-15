@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="generator" content="Hugo 0.56.3" />
+    
+    
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/style.css">
+    
+    
+    <title>Probability | DamNotes</title>
+</head>
+
+<body>
+    
+<div class="container border-bottom border-dark">
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="https://damnotes.netlify.com/">DamNotes</a>
+        
+        <ul class="navbar-nav">
+            
+            
+            
+            <li class=" nav-item active">
+                <a class="nav-link" href="/about/"><i data-feather="user"></i> About<span
+                        class="sr-only">(current)</span></a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+    <div class="container">
+        <main id="main">
+            
+
+<h2 class="m-1 mb-3 mt-3">Probability</h2>
+
+
+
+<h3 id="importance">Importance</h3>
+
+<p>Ability to deal with uncertainty is crucial. This fact is given from the presence of noise in the data returned from every kind of sensor.</p>
+
+<ul>
+<li><strong>Probability allows to quantify uncertainty</strong> using numbers, and after that numbers can be compared.</li>
+<li>It is usually <strong>not possible to draw conclusions</strong> about whether a particular number was right or wrong <strong>based on a single observation.</strong></li>
+</ul>
+
+<p>One way to express probability is by using <strong>odds</strong> (the <em>ratio of the probabilities of an event happening to that of it not happening</em>)</p>
+
+<ul>
+<li>This make it particularly easy to update beliefs when more information becomes available (see below)</li>
+</ul>
+
+<hr />
+
+<h3 id="bayes-rule">Bayes Rule</h3>
+
+<ul>
+<li><em>The purpose of the formula is to update the prior odds when new information becomes available, to obtain the posterior odds, or the odds after obtaining the information.</em> [2]</li>
+</ul>
+
+<p><strong>Likelihood ratio</strong> → probability of the observation in case the event of interest (in the above, rain), <strong>divided by</strong> the probability of the observation in case of no event (in the above, no rain).</p>
+
+<p><img src="/img/content/ai/likelihood-ratio.png" class="img-fluid figure-img img-custom"></p>
+
+<p>Usually the likelihood ration comes from an observation of a new set of events, not considered in the previous odds. [2]</p>
+
+<ul>
+<li><p>In the end, <em>prior odds</em> and <em>likelihood ratios</em> are the same thing, just on two different data sets.</p></li>
+
+<li><p>The bayes rule says that <strong>posterior odds</strong> = <strong>likelihood ratio</strong> × <strong>prior odds</strong></p></li>
+</ul>
+
+<hr />
+
+<h3 id="bayes-classifier">Bayes Classifier</h3>
+
+<ul>
+<li><p>The Bayes classifier is a <strong>machine learning technique</strong> that can be used to <strong>classify objects</strong> such as text documents into two or more classes. The classifier is <strong>trained by analysing a set of training data,</strong> for which the correct classes are given.</p>
+
+<ul>
+<li><em>The naive Bayes classifier can be used to determine the probabilities of the classes given a number of different observations.</em> → Used in [3] as a naive model to make a spam filter.</li>
+</ul></li>
+
+<li><p><strong>Assumption</strong> → the feature variables are conditionally independent given the class.</p></li>
+</ul>
+
+<hr />
+
+<h3 id="resources">Resources</h3>
+
+<ol>
+<li><a href="https://course.elementsofai.com/3/1">Elements of AI</a> — Chapter 3.1</li>
+<li><a href="https://course.elementsofai.com/3/2">Elements of AI</a> — Chapter 3.2</li>
+<li><a href="https://course.elementsofai.com/3/3">Elements of AI</a> — Chapter 3.3</li>
+</ol>
+
+
+
+        </main>
+    </div>
+    <div class="container border-top border-dark">
+    <nav class="navbar navbar-light justify-content-center">
+        <div class="navbar-nav d-flex flex-row justify-content-center">
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://github.com/damianolodi"
+                style="margin:10px;"><i data-feather="github"></i> GitHub</a>
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://www.linkedin.com/in/damiano-lodi/"
+                style="margin:10px;"><i data-feather="linkedin"></i> LinkedIn</a>
+            
+        </div>
+    </nav>
+</div>
+    
+
+<script src="https://damnotes.netlify.com/js/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+</body>
+
+</html>

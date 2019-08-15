@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="generator" content="Hugo 0.56.3" />
+    
+    
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/style.css">
+    
+    
+    <title> | DamNotes</title>
+</head>
+
+<body>
+    
+<div class="container border-bottom border-dark">
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="https://damnotes.netlify.com/">DamNotes</a>
+        
+        <ul class="navbar-nav">
+            
+            
+            
+            <li class=" nav-item active">
+                <a class="nav-link" href="/about/"><i data-feather="user"></i> About<span
+                        class="sr-only">(current)</span></a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+    <div class="container">
+        <main id="main">
+            
+
+<h2 class="m-1 mb-3 mt-3"></h2>
+
+
+
+<h1 id="files-i-o">Files I/O</h1>
+
+<p>Use</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">csv</span></code></pre></div>
+<p>in your program.</p>
+
+<h2 id="simple-read-csv-file">SIMPLE READ .CSV FILE</h2>
+
+<p>Use <code>with</code> to automatically close the file at the end</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">with</span> <span style="color:#008000">open</span>(<span style="color:#ba2121">&#39;data.csv&#39;</span>,<span style="color:#ba2121">&#39;r&#39;</span>) <span style="color:#008000;font-weight:bold">as</span> csv_file:
+    csv_reader <span style="color:#666">=</span> csv<span style="color:#666">.</span>reader(csv_file, delimiter<span style="color:#666">=</span><span style="color:#ba2121">&#39; &#39;</span>)
+
+    <span style="color:#408080;font-style:italic"># to skip over the header line</span>
+    <span style="color:#008000">next</span>(csv_reader)
+
+    <span style="color:#008000;font-weight:bold">for</span> line <span style="color:#a2f;font-weight:bold">in</span> csv_reader:
+        <span style="color:#008000;font-weight:bold">print</span>(line)</code></pre></div>
+<h2 id="simple-write-on-a-new-csv-file">SIMPLE WRITE ON A NEW .CSV FILE</h2>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">with</span> <span style="color:#008000">open</span>(<span style="color:#ba2121">&#39;data.csv&#39;</span>,<span style="color:#ba2121">&#39;r&#39;</span>) <span style="color:#008000;font-weight:bold">as</span> csv_file:
+    csv_reader <span style="color:#666">=</span> csv<span style="color:#666">.</span>reader(csv_file, delimiter<span style="color:#666">=</span><span style="color:#ba2121">&#39; &#39;</span>)
+    <span style="color:#408080;font-style:italic"># open a new file</span>
+    <span style="color:#008000;font-weight:bold">with</span> <span style="color:#008000">open</span>(<span style="color:#ba2121">&#39;new_file.csv&#39;</span>,<span style="color:#ba2121">&#39;w&#39;</span>) <span style="color:#008000;font-weight:bold">as</span> new_file:
+        csv_writer <span style="color:#666">=</span> csv<span style="color:#666">.</span>writer(new_file, delimiter<span style="color:#666">=</span><span style="color:#ba2121">&#39;</span><span style="color:#b62;font-weight:bold">\t</span><span style="color:#ba2121">&#39;</span>)
+
+        <span style="color:#008000;font-weight:bold">for</span> line <span style="color:#a2f;font-weight:bold">in</span> csv_reader:
+            csv_writer<span style="color:#666">.</span>writerow(line)</code></pre></div>
+<h2 id="reading-with-dictionary-reader">READING WITH DICTIONARY READER</h2>
+
+<p>Use dictionary reader if you want more &ldquo;human readable&rdquo; files</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">with</span> <span style="color:#008000">open</span>(<span style="color:#ba2121">&#39;data.csv&#39;</span>,<span style="color:#ba2121">&#39;r&#39;</span>) <span style="color:#008000;font-weight:bold">as</span> csv_file:
+    csv_reader <span style="color:#666">=</span> csv<span style="color:#666">.</span>DictReader(csv_file,delimiter<span style="color:#666">=</span><span style="color:#ba2121">&#39; &#39;</span>)
+
+    <span style="color:#008000;font-weight:bold">for</span> line <span style="color:#a2f;font-weight:bold">in</span> csv_reader:
+        <span style="color:#008000;font-weight:bold">print</span>(line)
+        <span style="color:#408080;font-style:italic">#print only the time</span>
+        <span style="color:#408080;font-style:italic">#print(line[&#39;ora&#39;])</span></code></pre></div>
+<h2 id="writing-with-dictionary-writer">WRITING WITH DICTIONARY WRITER</h2>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">with</span> <span style="color:#008000">open</span>(<span style="color:#ba2121">&#39;data.csv&#39;</span>,<span style="color:#ba2121">&#39;r&#39;</span>) <span style="color:#008000;font-weight:bold">as</span> csv_file:
+    csv_reader <span style="color:#666">=</span> csv<span style="color:#666">.</span>DictReader(csv_file,delimiter<span style="color:#666">=</span><span style="color:#ba2121">&#39; &#39;</span>)
+    <span style="color:#408080;font-style:italic"># open a new file</span>
+    <span style="color:#008000;font-weight:bold">with</span> <span style="color:#008000">open</span>(<span style="color:#ba2121">&#39;new_file.csv&#39;</span>,<span style="color:#ba2121">&#39;w&#39;</span>) <span style="color:#008000;font-weight:bold">as</span> new_file:
+        <span style="color:#408080;font-style:italic"># create the list of filednames</span>
+        fieldnames <span style="color:#666">=</span> [<span style="color:#ba2121">&#39;data&#39;</span>,<span style="color:#ba2121">&#39;ora&#39;</span>,<span style="color:#ba2121">&#39;bo1&#39;</span>,<span style="color:#ba2121">&#39;bo2&#39;</span>,<span style="color:#ba2121">&#39;bo3&#39;</span>,<span style="color:#ba2121">&#39;bo4&#39;</span>,<span style="color:#ba2121">&#39;bo5&#39;</span>,<span style="color:#ba2121">&#39;bo6&#39;</span>,<span style="color:#ba2121">&#39;bo7&#39;</span>,<span style="color:#ba2121">&#39;bo8&#39;</span>]
+        csv_writer <span style="color:#666">=</span> csv<span style="color:#666">.</span>DictWriter(new_file, fieldnames<span style="color:#666">=</span>fieldnames, delimiter<span style="color:#666">=</span><span style="color:#ba2121">&#39;</span><span style="color:#b62;font-weight:bold">\t</span><span style="color:#ba2121">&#39;</span>)
+        <span style="color:#408080;font-style:italic">#write the header in the new file</span>
+        csv_writer<span style="color:#666">.</span>writeheader()
+
+        <span style="color:#008000;font-weight:bold">for</span> line <span style="color:#a2f;font-weight:bold">in</span> csv_reader:
+            <span style="color:#408080;font-style:italic"># skip writing the &#39;bo1&#39; column</span>
+            <span style="color:#408080;font-style:italic"># del line[&#39;bo1&#39;] #delete the &#39;bo1&#39; in &#39;fieldnames&#39;</span>
+            csv_writer<span style="color:#666">.</span>writerow(line)</code></pre></div>
+<hr />
+
+<p>#code/python/tips</p>
+
+
+
+        </main>
+    </div>
+    <div class="container border-top border-dark">
+    <nav class="navbar navbar-light justify-content-center">
+        <div class="navbar-nav d-flex flex-row justify-content-center">
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://github.com/damianolodi"
+                style="margin:10px;"><i data-feather="github"></i> GitHub</a>
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://www.linkedin.com/in/damiano-lodi/"
+                style="margin:10px;"><i data-feather="linkedin"></i> LinkedIn</a>
+            
+        </div>
+    </nav>
+</div>
+    
+
+<script src="https://damnotes.netlify.com/js/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Artificial Intelligence on DamNotes</title>
+    <link>https://damnotes.netlify.com/ai/</link>
+    <description>Recent content in Artificial Intelligence on DamNotes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://damnotes.netlify.com/ai/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Core Concepts</title>
+      <link>https://damnotes.netlify.com/ai/00-core-concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/ai/00-core-concepts/</guid>
+      <description>Definitions  Autonomy → The ability to perform tasks in complex environments without constant guidance by a user. Adaptivity → The ability to improve performance by learning from experience. Machine Learning → Systems that improve their performance in a given task with more and more experience or data. It can be somewhat considered a subfield of AI. Data Science → It is a recent umbrella term (term that covers several sub disciplines) that includes machine learning and statistics, certain aspects of computer science including algorithms, data storage, and web application development.</description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>https://damnotes.netlify.com/ai/01-machine-learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/ai/01-machine-learning/</guid>
+      <description>Tips  Split the data set into two parts  training data → train the algorithm with this set test data → then test the algorithm here  Due to overfitting, neural networks can require massive amounts of data before they produce reliable prediction when compared to models obtained by linear regression. ~Learning to avoid overfitting and choose a model that is not too restricted, nor too flexible, is one of the most essential skills of a data scientist.</description>
+    </item>
+    
+    <item>
+      <title>Probability</title>
+      <link>https://damnotes.netlify.com/ai/02-probability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/ai/02-probability/</guid>
+      <description>Importance Ability to deal with uncertainty is crucial. This fact is given from the presence of noise in the data returned from every kind of sensor.
+ Probability allows to quantify uncertainty using numbers, and after that numbers can be compared. It is usually not possible to draw conclusions about whether a particular number was right or wrong based on a single observation.  One way to express probability is by using odds (the ratio of the probabilities of an event happening to that of it not happening)</description>
+    </item>
+    
+    <item>
+      <title>Problem Solving</title>
+      <link>https://damnotes.netlify.com/ai/03-problem-solving/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/ai/03-problem-solving/</guid>
+      <description>Search and Planning Problems First stage of the problem solving process → defining the choices and their consequences. One also need to define what the goal is or, in other words, when one can consider the problem solved.
+ The state space → the set of possible situations. Transitions → possible moves between one state and another. One only counts direct transitions that can be accomplished with a single action.</description>
+    </item>
+    
+  </channel>
+</rss>

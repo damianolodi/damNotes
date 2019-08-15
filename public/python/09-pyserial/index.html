@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="generator" content="Hugo 0.56.3" />
+    
+    
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/style.css">
+    
+    
+    <title>PySerial | DamNotes</title>
+</head>
+
+<body>
+    
+<div class="container border-bottom border-dark">
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="https://damnotes.netlify.com/">DamNotes</a>
+        
+        <ul class="navbar-nav">
+            
+            
+            
+            <li class=" nav-item active">
+                <a class="nav-link" href="/about/"><i data-feather="user"></i> About<span
+                        class="sr-only">(current)</span></a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+    <div class="container">
+        <main id="main">
+            
+
+<h2 class="m-1 mb-3 mt-3">PySerial</h2>
+
+
+
+<p><a href="https://pyserial.readthedocs.io/en/latest/shortintro.html">Documentation</a></p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">serial</span></code></pre></div>
+<ul>
+<li><code>python -m serial.tools.list_ports</code> prints a list of available ports.</li>
+</ul>
+
+<hr />
+
+<h2 id="port-opening">Port Opening</h2>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">ser <span style="color:#666">=</span> serial<span style="color:#666">.</span>Serial(	port<span style="color:#666">=</span><span style="color:#ba2121">&#39;/dev/tty.SLAB_USBtoUART&#39;</span>,
+                    	baudrate<span style="color:#666">=</span><span style="color:#666">9600</span>,
+                    	bytesize<span style="color:#666">=</span>serial<span style="color:#666">.</span>EIGHTBITS,
+                    	parity<span style="color:#666">=</span>serial<span style="color:#666">.</span>PARITY_NONE,
+                    	stopbits<span style="color:#666">=</span>serial<span style="color:#666">.</span>STOPBITS_ONE,
+					   	timeout<span style="color:#666">=</span><span style="color:#666">3</span> <span style="color:#408080;font-style:italic">#s</span>
+                    )</code></pre></div>
+<ul>
+<li><code>Serial</code> open the port and create an object.
+        * <code>timeout</code> set the time after which the reading process is stopped (in seconds)</li>
+<li></li>
+</ul>
+
+<hr />
+
+<p>#code/python/modules</p>
+
+
+
+        </main>
+    </div>
+    <div class="container border-top border-dark">
+    <nav class="navbar navbar-light justify-content-center">
+        <div class="navbar-nav d-flex flex-row justify-content-center">
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://github.com/damianolodi"
+                style="margin:10px;"><i data-feather="github"></i> GitHub</a>
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://www.linkedin.com/in/damiano-lodi/"
+                style="margin:10px;"><i data-feather="linkedin"></i> LinkedIn</a>
+            
+        </div>
+    </nav>
+</div>
+    
+
+<script src="https://damnotes.netlify.com/js/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+</body>
+
+</html>

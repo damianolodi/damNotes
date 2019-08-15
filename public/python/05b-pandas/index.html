@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="generator" content="Hugo 0.56.3" />
+    
+    
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/style.css">
+    
+    
+    <title>Pandas | DamNotes</title>
+</head>
+
+<body>
+    
+<div class="container border-bottom border-dark">
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="https://damnotes.netlify.com/">DamNotes</a>
+        
+        <ul class="navbar-nav">
+            
+            
+            
+            <li class=" nav-item active">
+                <a class="nav-link" href="/about/"><i data-feather="user"></i> About<span
+                        class="sr-only">(current)</span></a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+    <div class="container">
+        <main id="main">
+            
+
+<h2 class="m-1 mb-3 mt-3">Pandas</h2>
+
+
+
+<p><strong>See</strong> <a href="https://bitbucket.org/hrojas/learn-pandas">here</a> <strong>for some Jupyter notebook lessons on pandas</strong></p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">pandas</span> <span style="color:#008000;font-weight:bold">as</span> <span style="color:#00f;font-weight:bold">pd</span></code></pre></div>
+<ul>
+<li><code>pd.__version__</code> check version of the pandas API</li>
+</ul>
+
+<hr />
+
+<h3 id="file-i-o">File I/O</h3>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">df <span style="color:#666">=</span> pd<span style="color:#666">.</span>read_csv(r<span style="">’</span>relative_path<span style="">’</span>,
+					sep<span style="color:#666">=</span><span style="color:#ba2121">&#39; &#39;</span>,
+					names<span style="color:#666">=</span>[<span style="color:#ba2121">&#39;column1&#39;</span>,<span style="color:#ba2121">&#39;column2&#39;</span>,<span style="color:#666">...</span>],
+					header<span style="color:#666">=</span>None,
+					skiprows<span style="color:#666">=</span><span style="color:#666">1</span>,
+					skipfooter<span style="color:#666">=</span><span style="color:#666">3</span>,
+					index_col<span style="color:#666">=</span>False,
+					skipinitialspace<span style="color:#666">=</span>True,
+					parse_dates<span style="color:#666">=</span>[<span style="color:#666">0</span>],
+					infer_datetime_format<span style="color:#666">=</span>True
+					)</code></pre></div>
+<p>Import the cvs file in a DataFrame object.
+    _ the path can also be a web address
+    _ <code>header=None</code> is the line of the header, if present.
+    _ <code>nrows=5</code> number of rows to read, from the top of the file
+    _ <code>skiprows=5</code>  and <code>skipfooter=3</code>, number of rows to skip from the start or the end of the file. If a list is provided, it will skip those rows
+    _ <code>usecols=[0,2,3]</code>Return a subset of the columns. If list like, must be numbers or column name
+    _ <code>index_col=False</code> force to not using a column as the index of the rows
+    _ <code>skipinitialspace=True</code> skip initial spaces after delimiter
+    _ <code>parse_dates=[0]</code> list of ints or names of columns containing date time format
+    * <code>infer_datetime_format=True</code> if possible, infer time format and switch to faster loading</p>
+
+<hr />
+
+<ul>
+<li><code>df.to_csv('path/fileName.txt',index=False,header=False, encoding='utf8')</code> <strong>export dataframe to a text file</strong>. Setting these parameters to False will prevent the index and header names from being exported.
+
+<ul>
+<li><code>df.to_excel(“output_excel_file.xlsx&quot;, sheet_name=&quot;Sheet 1&quot;, index=False)</code> use to export to Excel. This may need the <code>xlsxwriter</code> package.</li>
+</ul></li>
+<li><code>df.dtypes</code> print the <strong>type of each column</strong> of the dataframe</li>
+<li><code>df['columnName'] = df['columnName'].astype(type)</code> <strong>change the type</strong> of the column to <code>type</code>. Possible values:
+
+<ul>
+<li><code>str</code> string (printed as object)</li>
+<li><code>int64</code></li>
+<li><code>float64</code></li>
+</ul></li>
+<li><code>df.info()</code> return informations about the dataframe</li>
+<li><code>df.shape()</code> return a tuples with rows and columns of the dataframe</li>
+<li><code>df.head(n)</code> and <code>df.tail(n)</code> prints the first or last n values of the dataframe</li>
+
+<li><p><code>df.describe()</code> return statistics on the data fame</p></li>
+
+<li><p><code>df.values</code> return the values in the dataframe as an <strong>ndarray</strong></p></li>
+</ul>
+
+<h3 id="dataframe-creation">Dataframe creation</h3>
+
+<ul>
+<li><code>pd.DataFrame(data=[list], index=None, columns=None, dtype=None, copy=False)</code></li>
+<li><code>pd.Series([list])</code> create a Series object</li>
+</ul>
+
+<hr />
+
+<h3 id="data-analysis">Data Analysis</h3>
+
+<ul>
+<li><code>df.sort_values(['columnName'], ascending=False)</code> <strong>sort</strong> values of <code>df</code></li>
+<li><code>df[‘columnName’].unique()</code> print the <strong>unique values</strong> of the column inserted</li>
+<li><code>name = df.groupby('columnName')</code> create a groupby object. We can then apply methods to this objects, like <code>name.sum()</code></li>
+<li><code>df.[‘columnName’].describe()</code> ::<strong>return basic statistics value</strong>:: for the selected column, depending if numeric or string type.</li>
+</ul>
+
+<hr />
+
+<h3 id="operations-on-columns">Operations on columns</h3>
+
+<ul>
+<li><code>df.columnName</code> or <code>df['columnName']</code> or <code>df.iloc[:,&lt;columnNumber&gt;]</code> provide data selection. This returns a <code>pandas.Series</code> datatype, a 1D set of data.</li>
+<li><code>df['columnName'].sum()</code></li>
+<li><code>df['columnName'].mean()</code></li>
+<li><code>df['columnName'].count()</code></li>
+<li><code>df['columnName'].median()</code></li>
+<li><code>df.fillna(new_value)</code> replace missing values</li>
+<li><code>df.min()</code> and <code>df.max()</code></li>
+<li><code>df= df.drop('columnName',axis=1)</code> <strong>delete</strong> a column
+
+<ul>
+<li>alternatively use <code>df.drop(columns='columnName', inplace=True)</code></li>
+</ul></li>
+<li><code>df.insert(location,columnName,values)</code> insert a new column in location (insert an <code>int</code>)</li>
+
+<li><p><strong>Rename Columns</strong></p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">df<span style="color:#666">.</span>rename(columns<span style="color:#666">=</span>{	<span style="">‘</span>pop<span style="">’</span>:<span style="">’</span>population<span style="">’</span>,
+						<span style="">’</span>lifeExp<span style="">’</span>:<span style="">’</span>life_exp<span style="">’</span>,
+						<span style="">‘</span>gdpPercap<span style="">’</span>:<span style="">’</span>gdp_per_cap<span style="">’</span>},
+			 inplace<span style="color:#666">=</span>True)</code></pre></div></li>
+
+<li><p><code>df.apply(lambda_function)</code> -&gt; apply a lambda function to the DataFrame</p></li>
+</ul>
+
+<hr />
+
+<h3 id="operations-on-rows">Operations on rows</h3>
+
+<ul>
+<li><code>df.iloc[0:10,:]</code> select the first 10 rows and all the columns</li>
+<li><code>df.loc[44,:]</code> select the line 44. Only usable if there is an index in the dataframe</li>
+<li><code>df[df[&quot;Area&quot;] == &quot;Ireland”]</code> select rows where Area is Ireland</li>
+<li><code>df = df.drop(indexNumber,axis=0)</code> <strong>delete</strong> rows</li>
+<li><code>df.index</code> access the indexes</li>
+<li><code>df.reindex([list])</code> -&gt; reassign indexes of the DataFrame manually</li>
+<li><code>df.dropna()</code> -&gt; remove rows with NaN</li>
+</ul>
+
+<hr />
+
+<h3 id="plotting-in-pandas">Plotting in pandas</h3>
+
+<p>Need the <code>matplotlib.pyplot</code> to make pretty figures and the <code>%matplotlib inline</code> in the Jupyter notebook to plot inline.
+<a href="https://pandas.pydata.org/pandas-docs/stable/visualization.html">Documentation</a> on plotting and data visualisation.
+Use <a href="bear://x-callback-url/open-note?id=B3615AA5-90D0-4F7B-A551-07F0BD80BA19-1982-000011D7C3A66189">Seaborn</a>  for exploiting data in pandas.</p>
+
+<ul>
+<li><code>df.hist('columnName)</code> -&gt; generate a quick histogram on the selected column</li>
+</ul>
+
+<hr />
+
+<h3 id="merging-and-joining-dataframes">Merging and Joining dataframes</h3>
+
+<p>Merge <a href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.merge.html">docs</a>, <a href="https://www.shanelynn.ie/merge-join-dataframes-python-pandas-index-1/">tutorial</a></p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">new_df <span style="color:#666">=</span> pd<span style="color:#666">.</span>merge( df_1,
+                   df_2[[<span style="color:#ba2121">&#39;use_id&#39;</span>, <span style="color:#ba2121">&#39;column2&#39;</span>, <span style="color:#ba2121">&#39;column3&#39;</span>]],
+                   on<span style="color:#666">=</span><span style="color:#ba2121">&#39;use_id&#39;</span>,
+					  indicator<span style="color:#666">=</span>True)</code></pre></div>
+<ul>
+<li>the <code>on='common_column'</code> set the common column we want to merge on. They don’t need to be called the same</li>
+<li>the <code>how='inner'</code> parameter specify the merge type</li>
+
+<li><p><code>indicator=True</code> apply a new column that explain if the row was present in both dataframe or just one of them</p>
+
+<h3 id="merge-types">Merge types</h3></li>
+
+<li><p><strong>Inner merge</strong> (default): keeps only the common values in both the left and right dataframes for the result</p></li>
+
+<li><p><strong>Left merge</strong> or <strong>Right merge</strong>: keep every row in the left or right dataframe. Where there are missing values of the <code>on</code> variable in the right dataframe, add empty / NaN values in the result.</p></li>
+
+<li><p><strong>Outer merge</strong>: returns all the rows from the left dataframe, all the rows from the right dataframe, and matches up rows where possible, with NaNs elsewhere.
+::<strong>WARNING:</strong> merging on <em>float</em> can be painful. Merge on <em>int</em> or <em>string</em>::</p></li>
+</ul>
+
+<hr />
+
+<h3 id="other-functions">Other Functions</h3>
+
+<ul>
+<li><code>pd.to_datetime(data, )</code> convert to datetime format <a href="https://pandas.pydata.org/pandas-docs/stable/generated/pandas.to_datetime.html">doc</a></li>
+<li><code>df['columnName'].rolling(int).mean()</code> return a Series with the moving average of the data, where <code>int</code> is the window size.
+
+<ul>
+<li><code>mean()</code> can be replaced by whichever method you need</li>
+</ul></li>
+</ul>
+
+
+
+        </main>
+    </div>
+    <div class="container border-top border-dark">
+    <nav class="navbar navbar-light justify-content-center">
+        <div class="navbar-nav d-flex flex-row justify-content-center">
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://github.com/damianolodi"
+                style="margin:10px;"><i data-feather="github"></i> GitHub</a>
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://www.linkedin.com/in/damiano-lodi/"
+                style="margin:10px;"><i data-feather="linkedin"></i> LinkedIn</a>
+            
+        </div>
+    </nav>
+</div>
+    
+
+<script src="https://damnotes.netlify.com/js/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+</body>
+
+</html>

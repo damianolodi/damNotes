@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="generator" content="Hugo 0.56.3" />
+    
+    
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/style.css">
+    
+    
+    <title>Matplotlib 2 | DamNotes</title>
+</head>
+
+<body>
+    
+<div class="container border-bottom border-dark">
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="https://damnotes.netlify.com/">DamNotes</a>
+        
+        <ul class="navbar-nav">
+            
+            
+            
+            <li class=" nav-item active">
+                <a class="nav-link" href="/about/"><i data-feather="user"></i> About<span
+                        class="sr-only">(current)</span></a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+    <div class="container">
+        <main id="main">
+            
+
+<h2 class="m-1 mb-3 mt-3">Matplotlib 2</h2>
+
+
+
+<p><strong>See</strong> <a href="http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb">here</a> <strong>for a Jupyter notebook tutorial on matplotlib</strong>
+<a href="https://matplotlib.org/">Official documentation</a></p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">matplotlib.pyplot</span> <span style="color:#008000;font-weight:bold">as</span> <span style="color:#00f;font-weight:bold">plt</span></code></pre></div>
+<p>Use <code>%matplotlib inline</code> in Jupyter to display figures inside the notebooks</p>
+
+<h3 id="basic-figure-script">Basic figure script</h3>
+
+<p>This script create a small figure on top of another one</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#408080;font-style:italic">#request text elements rendering with Latex</span>
+matplotlib<span style="color:#666">.</span>rcParams<span style="color:#666">.</span>update({<span style="color:#ba2121">&#39;font.size&#39;</span>: <span style="color:#666">18</span>, <span style="color:#ba2121">&#39;text.usetex&#39;</span>: True})
+
+<span style="color:#408080;font-style:italic"># create the figure object</span>
+fig <span style="color:#666">=</span> plt<span style="color:#666">.</span>figure(figsize<span style="color:#666">=</span>(<span style="color:#666">8</span>,<span style="color:#666">4</span>), dpi<span style="color:#666">=</span><span style="color:#666">100</span>)
+<span style="color:#408080;font-style:italic"># create an axes object inside the figure</span>
+	<span style="color:#408080;font-style:italic"># left, bottom, width, height (range 0 to 1)</span>
+axes1 <span style="color:#666">=</span> fig<span style="color:#666">.</span>add_axes([<span style="color:#666">0.1</span>, <span style="color:#666">0.1</span>, <span style="color:#666">0.8</span>, <span style="color:#666">0.8</span>])
+	<span style="color:#408080;font-style:italic"># inset axes</span>
+axes2 <span style="color:#666">=</span> fig<span style="color:#666">.</span>add_axes([<span style="color:#666">0.2</span>, <span style="color:#666">0.5</span>, <span style="color:#666">0.4</span>, <span style="color:#666">0.3</span>])
+
+<span style="color:#408080;font-style:italic"># main figure</span>
+axes1<span style="color:#666">.</span>plot(x, y, <span style="color:#ba2121">&#39;r&#39;</span>,label<span style="color:#666">=</span><span style="color:#ba2121">r</span><span style="color:#ba2121">&#39;curve1 \alpha&#39;</span>)
+axes1<span style="color:#666">.</span>plot(x, y, <span style="color:#ba2121">&#39;r&#39;</span>,label<span style="color:#666">=</span><span style="color:#ba2121">r</span><span style="color:#ba2121">&#39;curve2&#39;</span>)
+axes1<span style="color:#666">.</span>set_xlabel(<span style="color:#ba2121">r</span><span style="color:#ba2121">&#39;x&#39;</span>)
+axes1<span style="color:#666">.</span>set_xlim([<span style="color:#008000">min</span>,<span style="color:#008000">max</span>])
+axes1<span style="color:#666">.</span>set_ylabel(<span style="color:#ba2121">r</span><span style="color:#ba2121">&#39;y&#39;</span>)
+axes1<span style="color:#666">.</span>set_ylim([<span style="color:#008000">min</span>,<span style="color:#008000">max</span>])
+axes1<span style="color:#666">.</span>set_title(<span style="color:#ba2121">r</span><span style="color:#ba2121">&#39;title&#39;</span>)
+axes1<span style="color:#666">.</span>legend(loc<span style="color:#666">=</span><span style="color:#666">0</span>)
+
+<span style="color:#408080;font-style:italic"># insert</span>
+axes2<span style="color:#666">.</span>plot(y, x, <span style="color:#ba2121">&#39;g&#39;</span>)
+axes2<span style="color:#666">.</span>set_xlabel(<span style="color:#ba2121">r</span><span style="color:#ba2121">&#39;y&#39;</span>)
+axes2<span style="color:#666">.</span>set_ylabel(<span style="color:#ba2121">r</span><span style="color:#ba2121">&#39;x&#39;</span>)
+axes2<span style="color:#666">.</span>set_title(<span style="color:#ba2121">r</span><span style="color:#ba2121">&#39;insert title&#39;</span>);
+axes2<span style="color:#666">.</span>axis(<span style="color:#ba2121">&#39;log&#39;</span>)
+
+<span style="color:#408080;font-style:italic"># save the figure</span>
+fig<span style="color:#666">.</span>savefig(<span style="color:#ba2121">&#39;file-name.png&#39;</span>, dpi<span style="color:#666">=</span><span style="color:#666">200</span>)</code></pre></div>
+<h3 id="specs">Specs</h3>
+
+<ul>
+<li>use raw input in strings to avoid conflicts with LaTex</li>
+<li>can also print <code>pandas</code> dataframes with <code>ax.plot('column1','column2','r--',obj=df)</code></li>
+<li><code>figsize</code> is a tuple of the width and height of the figure, in inch</li>
+<li><code>dpi</code> resolution</li>
+<li><code>axes1.legend()</code> add the legend for that axes. <code>loc</code> specify where to place the legend (more details <a href="https://matplotlib.org/users/legend_guide.html#legend-location">here</a>)</li>
+<li><code>axes1.set_xlim([min,max])</code> set axis limits
+        * set only an extreme using <code>left</code> - <code>right</code> or <code>top</code> - <code>bottom</code></li>
+<li><code>axes2.axis('log')</code> set logarithmic scale</li>
+</ul>
+
+<h4 id="arguments">Arguments</h4>
+
+<ul>
+<li><code>color=#FFFFFF, alpha= 0.5</code> use in <code>plot()</code> to request special colours</li>
+<li><code>lw=3</code> change the line width</li>
+<li><code>ls='-'</code> change the line style ( use <code>-</code>, <code>--</code>, <code>-.</code>, <code>:</code>, <code>steps</code>)</li>
+<li><code>marker='+'</code> change the marker (use <code>+</code>, <code>o</code>, <code>*</code>, <code>s</code>, <code>,</code>, <code>.</code>, <code>1</code>, <code>2</code>, <code>3</code>,…)</li>
+<li><code>markersize=3</code> change the marker size</li>
+<li><code>linewidth=0.7</code> change line width</li>
+</ul>
+
+<hr />
+
+<h3 id="other-functions">Other functions</h3>
+
+<ul>
+<li><code>fig, axes = plt.subplots(nrows=1, ncols=2,figsize=(8,4), dpi=100)</code> use instead of <code>plt.figure</code> to create multiple axes in a single figure.
+        _ <code>sharex=True</code> and <code>sharey</code> use to share axis in subplots
+            _ <code>plt.subplots_adjust(wspace=0,hspace=0)</code> adjust space between subplots in a figure
+        * Apply <code>fig.tight_layout()</code> at the end so there is no overlapping content.</li>
+<li><a href="https://matplotlib.org/gallery.html">Plots gallery</a></li>
+</ul>
+
+<hr />
+
+<h3 id="annotating-and-drawing-on-plots">Annotating and Drawing on Plots</h3>
+
+<ul>
+<li><code>ax.text(x, y, 'Hello world!', family='monospace', fontsize=10)</code> write text on the axis
+        _ <code>x</code> and <code>y</code> are the coordinates
+        _ <code>rotation=90</code> rotates text</li>
+
+<li><p><code>ax.axvline(x=value, color='r', linewidth=1)</code> create a vertical line in the plot</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">ax<span style="color:#666">.</span>annotate( label,
+				xy<span style="color:#666">=</span>(x, y), <span style="color:#408080;font-style:italic">#posizione della punta</span>
+         xytext<span style="color:#666">=</span>(x, y), <span style="color:#408080;font-style:italic">#posizione del testo</span>
+         arrowprops<span style="color:#666">=</span><span style="color:#008000">dict</span>(facecolor<span style="color:#666">=</span><span style="color:#ba2121">&#39;black&#39;</span>,
+								 headwidth<span style="color:#666">=</span><span style="color:#666">4</span>,
+								 width<span style="color:#666">=</span><span style="color:#666">1</span>,
+                         headlength<span style="color:#666">=</span><span style="color:#666">4</span>),
+         horizontalalignment<span style="color:#666">=</span><span style="color:#ba2121">&#39;left&#39;</span>,
+				verticalalignment<span style="color:#666">=</span><span style="color:#ba2121">&#39;top&#39;</span>)</code></pre></div></li>
+</ul>
+
+<p>Can annotate text and arrow</p>
+
+<hr />
+
+<h3 id="plot-animations">Plot Animations</h3>
+
+<ol>
+<li>Install <code>ffmpeg</code> on the system using <code>condo install -c conda-forge ffmpeg</code></li>
+<li>Import the animation package with <code>import matplotlib.animation as animation</code></li>
+<li>Declare <code>%matplotlib notebook</code> in the jupyter notebook to allow dynamic plots in it</li>
+<li>Create figure as usual</li>
+
+<li><p>Create a writer with the following code</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">Writer <span style="color:#666">=</span> animation<span style="color:#666">.</span>writers[<span style="color:#ba2121">&#39;ffmpeg&#39;</span>]
+writer <span style="color:#666">=</span> Writer(fps<span style="color:#666">=</span><span style="color:#666">20</span>, metadata<span style="color:#666">=</span><span style="color:#008000">dict</span>(artist<span style="color:#666">=</span><span style="color:#ba2121">&#39;Damiano&#39;</span>), bitrate<span style="color:#666">=</span><span style="color:#666">1800</span>)</code></pre></div>
+<ul>
+<li><code>fps</code> is the number of frames per second that will be used when saving the movie in a file</li>
+</ul></li>
+
+<li><p>Create a function that will be used to animate the plot, like:</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">animate</span>(i):
+data <span style="color:#666">=</span> data_prova<span style="color:#666">.</span>iloc[:<span style="color:#008000">int</span>(i<span style="color:#666">+</span><span style="color:#666">1</span>)]
+plot_ax<span style="color:#666">.</span>plot(data[<span style="color:#ba2121">&#39;Tempo Trascorso [s]&#39;</span>], data[<span style="color:#ba2121">&#39;P_tot &#39;</span>], <span style="color:#ba2121">&#39;b-&#39;</span>, lw<span style="color:#666">=</span><span style="color:#666">1</span>, ms<span style="color:#666">=</span><span style="color:#666">3</span>)
+	  <span style="color:#408080;font-style:italic"># plot a text on the figure and update it in each frame</span>
+<span style="color:#408080;font-style:italic">## the probability_text variable needs to be initialized outside the function</span>
+<span style="color:#008000;font-weight:bold">if</span> data[<span style="color:#ba2121">&#39;P_tot &#39;</span>]<span style="color:#666">.</span>iloc[<span style="color:#008000">int</span>(i)]<span style="color:#666">&gt;=</span><span style="color:#666">0.75</span>:
+    probability_text2<span style="color:#666">.</span>set_text(<span style="color:#ba2121">&#39;</span><span style="color:#b68;font-weight:bold">%.2f</span><span style="color:#ba2121">&#39;</span> <span style="color:#666">%</span> data[<span style="color:#ba2121">&#39;P_tot &#39;</span>]<span style="color:#666">.</span>iloc[<span style="color:#008000">int</span>(i)])
+<span style="color:#008000;font-weight:bold">else</span>:
+    probability_text<span style="color:#666">.</span>set_text(<span style="color:#ba2121">&#39;</span><span style="color:#b68;font-weight:bold">%.2f</span><span style="color:#ba2121">&#39;</span> <span style="color:#666">%</span> data[<span style="color:#ba2121">&#39;P_tot &#39;</span>]<span style="color:#666">.</span>iloc[<span style="color:#008000">int</span>(i)])</code></pre></div></li>
+
+<li><p>Create the animation object (? controlla) using</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">ani <span style="color:#666">=</span> matplotlib<span style="color:#666">.</span>animation<span style="color:#666">.</span>FuncAnimation(plot_fig, animate, interval<span style="color:#666">=</span><span style="color:#008000">int</span>(frame_delay) ,frames<span style="color:#666">=</span><span style="color:#008000">len</span>(data_prova[<span style="color:#ba2121">&#39;Tempo Trascorso [s]&#39;</span>]), repeat<span style="color:#666">=</span>False)</code></pre></div>
+<ul>
+<li><code>animate</code> is the name of the animation function. it can have more variables, but the <code>i</code> is incremented automatically</li>
+<li><code>interval</code> is the interval (in ms) between two frames in the animation</li>
+<li><code>frames</code> is the number of frames that are generated in that way</li>
+</ul></li>
+
+<li><p>Save using</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">ani<span style="color:#666">.</span>save(save_path<span style="color:#666">+</span><span style="color:#ba2121">&#39;/name.mp4&#39;</span>, writer<span style="color:#666">=</span>writer)</code></pre></div></li>
+</ol>
+
+
+
+        </main>
+    </div>
+    <div class="container border-top border-dark">
+    <nav class="navbar navbar-light justify-content-center">
+        <div class="navbar-nav d-flex flex-row justify-content-center">
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://github.com/damianolodi"
+                style="margin:10px;"><i data-feather="github"></i> GitHub</a>
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://www.linkedin.com/in/damiano-lodi/"
+                style="margin:10px;"><i data-feather="linkedin"></i> LinkedIn</a>
+            
+        </div>
+    </nav>
+</div>
+    
+
+<script src="https://damnotes.netlify.com/js/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+</body>
+
+</html>

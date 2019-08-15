@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="generator" content="Hugo 0.56.3" />
+    
+    
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/style.css">
+    
+    
+    <title> | DamNotes</title>
+</head>
+
+<body>
+    
+<div class="container border-bottom border-dark">
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="https://damnotes.netlify.com/">DamNotes</a>
+        
+        <ul class="navbar-nav">
+            
+            
+            
+            <li class=" nav-item active">
+                <a class="nav-link" href="/about/"><i data-feather="user"></i> About<span
+                        class="sr-only">(current)</span></a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+    <div class="container">
+        <main id="main">
+            
+
+<h2 class="m-1 mb-3 mt-3"></h2>
+
+
+
+<h1 id="pytorch">PyTorch</h1>
+
+<ul>
+<li>Import using <code>import torch</code></li>
+<li><code>torch.manual_seed(n)</code> set seeds for <strong>random number generation</strong></li>
+<li><code>torch.randn((n1, n2, n3, ...))</code> return a <strong>random tensor</strong> with dimensions n1, n2,…, mean 0 and variance 1 <a href="https://pytorch.org/docs/stable/torch.html#torch.randn">doc</a></li>
+<li><code>torch.randn_like(input)</code> return a random tensor normal distributed with the size of tensor in<code>input</code>  <a href="https://pytorch.org/docs/stable/torch.html#torch.randn_like">doc</a></li>
+
+<li><p><code>torch.mm(tensor1, tensor2)</code> -&gt; matrix multiplication of two tensors</p>
+
+<hr />
+
+<h2 id="torch-and-numpy">Torch and Numpy</h2></li>
+
+<li><p><code>torch.from_numpy(tensor)</code> -&gt; <strong>transform an array into a tensor</strong> for Torch</p></li>
+
+<li><p><code>tensor.numpy()</code> -&gt; transform a tensor into an array
+Memory of the 2 data structures is shared: if one changes the values <em>in-place</em> (with a <code>_</code> operation) of one object, the other will change as well.</p>
+
+<hr />
+
+<h2 id="tensor-manipulation">Tensor Manipulation</h2></li>
+
+<li><p><code>tensor.shape</code> -&gt; return the <strong>shape of the tensor</strong> in a tuple</p></li>
+
+<li><p><code>tensor.reshape(a, b)</code> -&gt; <strong>reshape</strong> the tensor. <em>Sometimes it clone the data in another part of the memory and return that. This could result in some inefficiencies.</em></p></li>
+
+<li><p><code>tensor.resize_(a, b)</code> -&gt; <strong>reshape</strong> the tensor without cloning the data. But if the new sizes contain a total number of elements that is less than the previous one, some data are lost. The <code>_</code> means that the operation is of type “<a href="https://discuss.pytorch.org/t/what-is-in-place-operation/16244"><code>in-place</code></a>”.</p></li>
+
+<li><p><code>tensor.view(a,b)</code> -&gt; <strong>reshape</strong> the tensor (<strong>suggested</strong>) without messing with memory <a href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor.view">doc</a></p>
+
+<ol>
+<li><code>tensor.view(a,-1)</code> -&gt; the <code>-1</code> <em>flatten</em> (multiply) all the remaining dimensions
+- - - -</li>
+</ol></li>
+</ul>
+
+<hr />
+
+<p>#code/python/modules</p>
+
+
+
+        </main>
+    </div>
+    <div class="container border-top border-dark">
+    <nav class="navbar navbar-light justify-content-center">
+        <div class="navbar-nav d-flex flex-row justify-content-center">
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://github.com/damianolodi"
+                style="margin:10px;"><i data-feather="github"></i> GitHub</a>
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://www.linkedin.com/in/damiano-lodi/"
+                style="margin:10px;"><i data-feather="linkedin"></i> LinkedIn</a>
+            
+        </div>
+    </nav>
+</div>
+    
+
+<script src="https://damnotes.netlify.com/js/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+</body>
+
+</html>

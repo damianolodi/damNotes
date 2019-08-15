@@ -61,6 +61,71 @@
   </url>
   
   <url>
+    <loc>https://damnotes.netlify.com/linux/00-shortcuts/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/linux/01-installation-and-setup/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/11-pytorch/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/12-scypy/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/13-sympy/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/14-jupiter-notebooks/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/15-data-structures/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/16-files-io/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/17-functions/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/17-lambda-functions/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/18-loops/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/19-python-in-atom/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/20-virtual-environments/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://damnotes.netlify.com/about/</loc>
   </url>
   
@@ -70,6 +135,10 @@
   
   <url>
     <loc>https://damnotes.netlify.com/arduino/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/ai/</loc>
   </url>
   
   <url>
@@ -117,11 +186,31 @@
   </url>
   
   <url>
+    <loc>https://damnotes.netlify.com/ai/00-core-concepts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/html/01-document-structure/</loc>
+  </url>
+  
+  <url>
     <loc>https://damnotes.netlify.com/electronics/</loc>
   </url>
   
   <url>
+    <loc>https://damnotes.netlify.com/css/08-file-naming-system/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/html/02-file-naming-system/</loc>
+  </url>
+  
+  <url>
     <loc>https://damnotes.netlify.com/css/04-flexbox/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/html/03-forms/</loc>
   </url>
   
   <url>
@@ -137,7 +226,15 @@
   </url>
   
   <url>
+    <loc>https://damnotes.netlify.com/html/00-html-anatomy/</loc>
+  </url>
+  
+  <url>
     <loc>https://damnotes.netlify.com/python/03-ipython/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/html/04-images/</loc>
   </url>
   
   <url>
@@ -149,7 +246,15 @@
   </url>
   
   <url>
+    <loc>https://damnotes.netlify.com/ai/01-machine-learning/</loc>
+  </url>
+  
+  <url>
     <loc>https://damnotes.netlify.com/python/04-matplotlib/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/04b-matplotlib/</loc>
   </url>
   
   <url>
@@ -157,7 +262,39 @@
   </url>
   
   <url>
+    <loc>https://damnotes.netlify.com/css/09-media-queries/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/07-numpy/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/08-os-datetime/</loc>
+  </url>
+  
+  <url>
     <loc>https://damnotes.netlify.com/python/05-pandas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/05b-pandas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/ai/02-probability/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/ai/03-problem-solving/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/css/10-pseudo-class/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/09-pyserial/</loc>
   </url>
   
   <url>
@@ -177,7 +314,23 @@
   </url>
   
   <url>
+    <loc>https://damnotes.netlify.com/python/10-seaborn/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/css/11-selectors/</loc>
+  </url>
+  
+  <url>
     <loc>https://damnotes.netlify.com/python/06-tensorflow/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/html/05-text-elements/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/css/12-text-properties/</loc>
   </url>
   
   <url>

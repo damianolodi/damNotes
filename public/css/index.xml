@@ -51,6 +51,16 @@ width: 150px;
     </item>
     
     <item>
+      <title>File Naming System</title>
+      <link>https://damnotes.netlify.com/css/08-file-naming-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/08-file-naming-system/</guid>
+      <description> Insert this in the &amp;lt;head&amp;gt; tag of the .html file
+&amp;lt;link href=&amp;#34;https://www.codecademy.com/stylesheets/style.css&amp;#34; type=&amp;#34;text/css&amp;#34; rel=&amp;#34;stylesheet&amp;#34;&amp;gt;  </description>
+    </item>
+    
+    <item>
       <title>Flexbox</title>
       <link>https://damnotes.netlify.com/css/04-flexbox/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -86,6 +96,52 @@ flex-wrap: wrap; &amp;ndash;&amp;gt; wrap the flex-items if necessary
 px -&amp;gt; pixels are used to set the exact size of an element
 em -&amp;gt; the em represents the size of the base font being used. It is a relative unit of measurement. They change the size of text relative to the parent element’s size of text
 rem -&amp;gt; it means root em. Instead of checking parent elements to size font, it checks the root element.</description>
+    </item>
+    
+    <item>
+      <title>Media Queries</title>
+      <link>https://damnotes.netlify.com/css/09-media-queries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/09-media-queries/</guid>
+      <description> Application  Apply when width is less than 600px
+@media (max-width:600px) { h1 { font-size: 12px; } }  See p.172 pro HTML5&amp;hellip; for every query.
+ max-width min-width max-height min-height  Breakpoints  Magari usa 600, 900, 1200 e se vuoi 1800
+/* Extra small devices (phones, 600px and down) */ @media only screen and (max-width: 600px) {} /* Small devices (portrait tablets and large phones, 600px and up) */ @media only screen and (min-width: 600px) {} /* Medium devices (landscape tablets, 768px and up) */ @media only screen and (min-width: 768px) {} /* Large devices (laptops/desktops, 992px and up) */ @media only screen and (min-width: 992px) {} /* Extra large devices (large laptops and desktops, 1200px and up) */ @media only screen and (min-width: 1200px) {}  Measurements * { height: 100vh; /* viewport height - like %, but based on the viewport and not on the parent element measure*/ width: 100vw; /*viewport width*/ width: 100vmin; /*minimum between viewport height or width*/ width: 100vmax; /*maximum between viewport height or width*/ height: 2em; /*em is the font size of the browser*/ }</description>
+    </item>
+    
+    <item>
+      <title>Pseudo Class</title>
+      <link>https://damnotes.netlify.com/css/10-pseudo-class/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/10-pseudo-class/</guid>
+      <description>Changing color of a link when hover on it
+a:hover { color: red; } Add something before or after a selected element
+.class::before { content: &amp;#34;Phrase&amp;#34;; /*here you can modify the properties of the added thing/shape*/ }  The content property is used to add an image or a text as the element to be added. If you use it to do a shape, place an empty string.</description>
+    </item>
+    
+    <item>
+      <title>Selectors</title>
+      <link>https://damnotes.netlify.com/css/11-selectors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/11-selectors/</guid>
+      <description>General Technique BEM technique (Block Element Modifiers) Use only on classes
+.block__element--modifier { property: value; }  Specificity is the order by which the browser decides which CSS styles will be displayed. A best practice in CSS is to style elements while using the lowest degree of specificity, so that if an element needs a new style, it is easy to override. IDs are the most specific selector in CSS, followed by classes, and finally, tags.</description>
+    </item>
+    
+    <item>
+      <title>Text Properties</title>
+      <link>https://damnotes.netlify.com/css/12-text-properties/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/12-text-properties/</guid>
+      <description>Typography Import Fonts  Import in html using
+&amp;lt;link href=&amp;#34;https://fonts.googleapis.com/css?family=Cabin&amp;#34; rel=&amp;#34;stylesheet&amp;#34;&amp;gt; Import in css file using
+@import url(//fonts.googleapis.com/css?family=Cabin); Last term is called font-families and can be: _ cursive _ fantasy _ monospace _ sans-serif * serif
+Font Assets   List of Web safe fonts Google Fonts  Properties Font Properties  font-family: Garamond , Times , serif; -&amp;gt; fonts after the first are called fallback fonts
+ font-size: 30px; -&amp;gt; measured in px, em or %</description>
     </item>
     
     <item>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="generator" content="Hugo 0.56.3" />
+    
+    
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/style.css">
+    
+    
+    <title> | DamNotes</title>
+</head>
+
+<body>
+    
+<div class="container border-bottom border-dark">
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="https://damnotes.netlify.com/">DamNotes</a>
+        
+        <ul class="navbar-nav">
+            
+            
+            
+            <li class=" nav-item active">
+                <a class="nav-link" href="/about/"><i data-feather="user"></i> About<span
+                        class="sr-only">(current)</span></a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+    <div class="container">
+        <main id="main">
+            
+
+<h2 class="m-1 mb-3 mt-3"></h2>
+
+
+
+<h1 id="virtual-environments">Virtual Environments</h1>
+
+<p>Install <code>virtualenv</code> if you don&rsquo;t have it.</p>
+
+<h2 id="creating-a-virtual-environment">Creating a virtual environment</h2>
+
+<p><code>cd</code> into the project folder and type</p>
+
+<pre><code>conda create --name project-name-env dependecy1 dependency2 ...
+</code></pre>
+
+<h2 id="activate-and-deactivate-environments">Activate and deactivate environments</h2>
+
+<p>To activate an environment type</p>
+
+<pre><code>source activate project-name-env
+</code></pre>
+
+<p>To deactivate use</p>
+
+<pre><code>source deactivate project-name-env
+</code></pre>
+
+<h2 id="export-the-environment">Export the environment</h2>
+
+<p>To export the environment, to keep track and have the possibility to reproduce the environment if something go wrong, create a <code>.yaml</code> file with</p>
+
+<pre><code>conda env export &gt; environment.yaml
+</code></pre>
+
+<p>To create a virtual environment from a <code>.yaml</code> file use</p>
+
+<pre><code>conda env create -f environment.yaml
+</code></pre>
+
+<h2 id="list-all-the-environments">List all the environments</h2>
+
+<p>To list all the environments on the machine, and to know where they are located, use</p>
+
+<pre><code>conda env list
+</code></pre>
+
+<hr />
+
+<p>#code/python/tips</p>
+
+
+
+        </main>
+    </div>
+    <div class="container border-top border-dark">
+    <nav class="navbar navbar-light justify-content-center">
+        <div class="navbar-nav d-flex flex-row justify-content-center">
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://github.com/damianolodi"
+                style="margin:10px;"><i data-feather="github"></i> GitHub</a>
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://www.linkedin.com/in/damiano-lodi/"
+                style="margin:10px;"><i data-feather="linkedin"></i> LinkedIn</a>
+            
+        </div>
+    </nav>
+</div>
+    
+
+<script src="https://damnotes.netlify.com/js/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+</body>
+
+</html>

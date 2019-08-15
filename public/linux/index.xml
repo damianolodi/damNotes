@@ -10,5 +10,24 @@
 	<atom:link href="https://damnotes.netlify.com/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title></title>
+      <link>https://damnotes.netlify.com/linux/00-shortcuts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/linux/00-shortcuts/</guid>
+      <description>Shortcuts ctrl + T crate new tab
+ctrl + H show hidden files</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://damnotes.netlify.com/linux/01-installation-and-setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/linux/01-installation-and-setup/</guid>
+      <description>Installation and Setup Ubuntu Setup on VM  Install linux guest addition to run the VM more stabily and with better performance (right screen resolution, less lag,&amp;hellip;)  Devices &amp;gt; Insert Guest Addition CD Image -&amp;gt; a VBoxAddition should appear on the desktop right click on VBoxLinuxAddition.run &amp;gt; properties and look if it is executable open the VBoxAddition&amp;hellip; &amp;gt; right click &amp;gt; Open in Terminal &amp;gt; sudo ./VBoxLinuxAdditions.run reboot the system   Customizing Linux One wants to dowload some themes to customize the look of the GUI.</description>
+    </item>
+    
   </channel>
 </rss>

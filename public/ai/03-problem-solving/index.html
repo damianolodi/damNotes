@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="generator" content="Hugo 0.56.3" />
+    
+    
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/style.css">
+    
+    
+    <title>Problem Solving | DamNotes</title>
+</head>
+
+<body>
+    
+<div class="container border-bottom border-dark">
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="https://damnotes.netlify.com/">DamNotes</a>
+        
+        <ul class="navbar-nav">
+            
+            
+            
+            <li class=" nav-item active">
+                <a class="nav-link" href="/about/"><i data-feather="user"></i> About<span
+                        class="sr-only">(current)</span></a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+    <div class="container">
+        <main id="main">
+            
+
+<h2 class="m-1 mb-3 mt-3">Problem Solving</h2>
+
+
+
+<h3 id="search-and-planning-problems">Search and Planning Problems</h3>
+
+<p><em>First stage of the problem solving process</em> → defining the choices and their consequences. One also need to define what the goal is or, in other words, when one can consider the problem solved.</p>
+
+<ul>
+<li><strong>The state space</strong> → the set of <em>possible</em> situations.</li>
+<li><strong>Transitions</strong> → possible moves between one state and another. One only counts direct transitions that can be accomplished with a single action. A sequence of multiple transitions ( e.g. from A to C, from C to D, and from D to B) is called <strong>path.</strong></li>
+<li><strong>Costs</strong> → refer to the fact that, oftentimes the different transitions aren’t all alike. They can differ in ways that make some transitions more preferable or cheaper and others more costly.</li>
+</ul>
+
+<hr />
+
+<h3 id="games">Games</h3>
+
+<p>Two-player, perfect-information games</p>
+
+<ul>
+<li>The different states of the game are represented by nodes in the <strong>game tree.</strong></li>
+
+<li><p><em>The nodes are arranged in levels</em> → each level correspond to a player’s turn in the game → the <em>root node</em> of the tree is the initial condition (usually depicted at the top of the diagram).</p></li>
+
+<li><p>The tree end when the winning condition is met.</p></li>
+</ul>
+
+<p><img src="/img/content/ai/tik-tak-toe.png" class="img-fluid figure-img img-custom"></p>
+
+<ul>
+<li><p>Starting from the last level <strong>assign a numerical value</strong> to every node of the tree [1, cap 2.3]</p>
+
+<ul>
+<li>One player wants to maximise the root value, the other wants to minimise it</li>
+<li>Assign numbers to previous levels based on which player is playing and <strong>assumptions</strong> → both players choose what is best for them and that what is best for one is the worst for the other (so called “zero-sum game”).</li>
+</ul></li>
+
+<li><p>The value of the root node, which is said to be the value of the game, tells us who wins</p></li>
+</ul>
+
+<h4 id="the-minimax-algorithm">The Minimax Algorithm</h4>
+
+<p><em>It guarantees optimal game play in, theoretically speaking, any deterministic, two-person, perfect-information zero-sum game.</em></p>
+
+<ul>
+<li>Given a state of the game, the algorithm simply computes the values of the children of the given state and chooses the one that has the maximum value if it is Max’s turn, and the one that has the minimum value if it is Min’s turn. More information in [2].</li>
+</ul>
+
+<h4 id="the-problem-of-massive-game-trees">The Problem of Massive Game Trees</h4>
+
+<p>In many games, the game tree is simply way too big to traverse in full. In chess the average branching factor is about 35, which means one needs to explore about 2.7 quadrillion node for just 10 moves.</p>
+
+<h4 id="tricks">Tricks</h4>
+
+<p><strong>Heuristic Evaluation Function</strong> → input = board position + which player’s turn is next → output = an estimate of the likely outcome of the game (continuing from the given board position).
+<em>Used to stop the minimal recursion before reaching an end-node</em></p>
+
+<p><strong>Depth-limited version</strong> of the minmax algorithm →  the <em>depth</em> refers to the number of steps that the game tree is expanded before applying a heuristic evaluation function</p>
+
+<h4 id="real-world-scenarios">Real-world scenarios</h4>
+
+<ul>
+<li><p>The number of states in even a moderately complex real-world scenario grows out of hand → solutions by exhaustive search (“brute force”) are out of question</p></li>
+
+<li><p>In general transitions between states are not deterministic → one needs to adapt the algorithm to accept the concept of probability and tackle real AI problems.</p></li>
+</ul>
+
+<hr />
+
+<h2 id="references">References</h2>
+
+<ol>
+<li><a href="https://course.elementsofai.com/">Elements of AI</a> — Chapter 2.1, <a href="https://course.elementsofai.com/2/3">2.3</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Minimax">Minimax</a> — Wikipedia</li>
+</ol>
+
+
+
+        </main>
+    </div>
+    <div class="container border-top border-dark">
+    <nav class="navbar navbar-light justify-content-center">
+        <div class="navbar-nav d-flex flex-row justify-content-center">
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://github.com/damianolodi"
+                style="margin:10px;"><i data-feather="github"></i> GitHub</a>
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://www.linkedin.com/in/damiano-lodi/"
+                style="margin:10px;"><i data-feather="linkedin"></i> LinkedIn</a>
+            
+        </div>
+    </nav>
+</div>
+    
+
+<script src="https://damnotes.netlify.com/js/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+</body>
+
+</html>

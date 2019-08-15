@@ -75,6 +75,147 @@
     </item>
     
     <item>
+      <title></title>
+      <link>https://damnotes.netlify.com/linux/00-shortcuts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/linux/00-shortcuts/</guid>
+      <description>Shortcuts ctrl + T crate new tab
+ctrl + H show hidden files</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://damnotes.netlify.com/linux/01-installation-and-setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/linux/01-installation-and-setup/</guid>
+      <description>Installation and Setup Ubuntu Setup on VM  Install linux guest addition to run the VM more stabily and with better performance (right screen resolution, less lag,&amp;hellip;)  Devices &amp;gt; Insert Guest Addition CD Image -&amp;gt; a VBoxAddition should appear on the desktop right click on VBoxLinuxAddition.run &amp;gt; properties and look if it is executable open the VBoxAddition&amp;hellip; &amp;gt; right click &amp;gt; Open in Terminal &amp;gt; sudo ./VBoxLinuxAdditions.run reboot the system   Customizing Linux One wants to dowload some themes to customize the look of the GUI.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://damnotes.netlify.com/python/11-pytorch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/11-pytorch/</guid>
+      <description>PyTorch  Import using import torch torch.manual_seed(n) set seeds for random number generation torch.randn((n1, n2, n3, ...)) return a random tensor with dimensions n1, n2,…, mean 0 and variance 1 doc torch.randn_like(input) return a random tensor normal distributed with the size of tensor ininput doc torch.mm(tensor1, tensor2) -&amp;gt; matrix multiplication of two tensors
+Torch and Numpy torch.from_numpy(tensor) -&amp;gt; transform an array into a tensor for Torch
+ tensor.numpy() -&amp;gt; transform a tensor into an array Memory of the 2 data structures is shared: if one changes the values in-place (with a _ operation) of one object, the other will change as well.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://damnotes.netlify.com/python/12-scypy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/12-scypy/</guid>
+      <description>ScyPy The SciPy framework builds on top of the low-level NumPy framework for multidimensional arrays, and provides a large number of higher-level scientific algorithms. See here for a Jupyter notebook tutorial on scypy
+import scipy as sp #code/python/modules</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://damnotes.netlify.com/python/13-sympy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/13-sympy/</guid>
+      <description>SymPy It is a Computer Algebra System (CAS). Documentation Sage docs is in some aspects more powerful than SymPy, but both offer very comprehensive CAS functionality. The advantage of SymPy is that it is a regular Python module and integrates well with the IPython notebook.
+See here for a Jupyter notebook tutorial on symp
+import sympy as symp #code/python/modules</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://damnotes.netlify.com/python/14-jupiter-notebooks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/14-jupiter-notebooks/</guid>
+      <description>Jupiter Notebooks Useful tutorial here
+Here find a list of useful notebooks to download and learn from them.
+ Run the jupiter server typing jupyter notebook in the command line To create a new file click new and the language you want to use in the notebook To run a cell use ctrl + enter. To run a cell and select below use shift + enter. Use option + enter to run a cell and insert below.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://damnotes.netlify.com/python/15-data-structures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/15-data-structures/</guid>
+      <description>Data Structures List Lists are the array of MATLAB, but can store different type of information, including list of lists.
+ Index begin with 0 Call an element using my_list[index] Concatenate lists using + Insert new element in position i using listName.insert(i, element) Quick list creation -&amp;gt; called List Comprehension
+evens_to_50 = [i for i in range(51) if i % 2 == 0] other_list = [[i,j] for i in range(x) for j in range(y) if (x+y)!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://damnotes.netlify.com/python/16-files-io/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/16-files-io/</guid>
+      <description>Files I/O Use
+import csv in your program.
+SIMPLE READ .CSV FILE Use with to automatically close the file at the end
+with open(&amp;#39;data.csv&amp;#39;,&amp;#39;r&amp;#39;) as csv_file: csv_reader = csv.reader(csv_file, delimiter=&amp;#39; &amp;#39;) # to skip over the header line next(csv_reader) for line in csv_reader: print(line) SIMPLE WRITE ON A NEW .CSV FILE with open(&amp;#39;data.csv&amp;#39;,&amp;#39;r&amp;#39;) as csv_file: csv_reader = csv.reader(csv_file, delimiter=&amp;#39; &amp;#39;) # open a new file with open(&amp;#39;new_file.csv&amp;#39;,&amp;#39;w&amp;#39;) as new_file: csv_writer = csv.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://damnotes.netlify.com/python/17-functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/17-functions/</guid>
+      <description> Functions Define a function using the following syntax
+def function_name (&amp;lt;parameters&amp;gt;): &amp;lt;code&amp;gt;  substitute &amp;lt;parameters&amp;gt; with as many parameters as you wants  to assign a default value to the parameter use param_name = param_value parameters could be of any type  use return value to return a value recursion is allowed To return multiple variables use
+def function_name (&amp;lt;parameters&amp;gt;): &amp;lt;code&amp;gt; return var1, var2, ... #code/python/tips
+  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://damnotes.netlify.com/python/17-lambda-functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/17-lambda-functions/</guid>
+      <description> Lambda Functions Small anonymous functions can be created with the lambda keyword. This function returns the sum of its two arguments
+lambda a, b: a+b lambda val: val &amp;gt; 1000000  Lambda functions can be used wherever function objects are required. They are syntactically restricted to a single expression. Semantically, they are just syntactic sugar for a normal function definition. Like nested function definitions, lambda functions can reference variables from the containing scope - - - - #code/python/tips  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://damnotes.netlify.com/python/18-loops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/18-loops/</guid>
+      <description>Loops and Conditionals Loops For loop The for loop iterate through all the elements of a list
+a = [1, 2, ’hi’] for var in a: #... else: #... The else condition will be executed at the end of the loop, but not if one exit with break.
+One can use for also on a string or on a dictionary
+#a simple dictionary d = {&amp;#34;foo&amp;#34; : &amp;#34;bar&amp;#34;} for key in d: print d[key] #prints &amp;#34;bar&amp;#34; *Note that dictionaries are unordered, meaning that any time you loop through a dictionary, you will go through every key, but you are not guaranteed to get them in any particular order.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://damnotes.netlify.com/python/19-python-in-atom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/19-python-in-atom/</guid>
+      <description>Python in Atom Packages List  Script &amp;ndash; to run code in Atom  cmd + i to run the script  Disable autocomplete-plus and autocomplete-snippest Install autocomplete-python Install file-icons Install minimap - when working on big screens and on big scripts Install python-autopep8  Enable Format on Save Install autopep8 with pip  Install linter-flake8 &amp;ndash; to correct error  Install flake8 with pip   Editor Settings  Select Scroll past the end Tab lenght set to 4 To increase the font size go to Settings -&amp;gt; Themes -&amp;gt; Your Stylesheet and print</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://damnotes.netlify.com/python/20-virtual-environments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/20-virtual-environments/</guid>
+      <description>Virtual Environments Install virtualenv if you don&amp;rsquo;t have it.
+Creating a virtual environment cd into the project folder and type
+conda create --name project-name-env dependecy1 dependency2 ...  Activate and deactivate environments To activate an environment type
+source activate project-name-env  To deactivate use
+source deactivate project-name-env  Export the environment To export the environment, to keep track and have the possibility to reproduce the environment if something go wrong, create a .</description>
+    </item>
+    
+    <item>
       <title>Animations</title>
       <link>https://damnotes.netlify.com/css/01-animations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -189,6 +330,47 @@ width: 150px;
     </item>
     
     <item>
+      <title>Core Concepts</title>
+      <link>https://damnotes.netlify.com/ai/00-core-concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/ai/00-core-concepts/</guid>
+      <description>Definitions  Autonomy → The ability to perform tasks in complex environments without constant guidance by a user. Adaptivity → The ability to improve performance by learning from experience. Machine Learning → Systems that improve their performance in a given task with more and more experience or data. It can be somewhat considered a subfield of AI. Data Science → It is a recent umbrella term (term that covers several sub disciplines) that includes machine learning and statistics, certain aspects of computer science including algorithms, data storage, and web application development.</description>
+    </item>
+    
+    <item>
+      <title>Document Structure</title>
+      <link>https://damnotes.netlify.com/html/01-document-structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/html/01-document-structure/</guid>
+      <description> Document Declaration Boilerplate code → some code that one has to every page of code.
+&amp;lt;@DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;My Coding Journal&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  &amp;lt;@DOCTYPE hmtl&amp;gt; → declaration &amp;lt;head&amp;gt; → it contain metadata of the webpage  Non-Semantic Tags Non-semantic tag → it does not describe the type of content it has inside.
+ &amp;lt;div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;span&amp;gt; &amp;lt;/span&amp;gt;  Semantic Tags  &amp;lt;header&amp;gt; &amp;lt;footer&amp;gt; &amp;lt;aside&amp;gt; &amp;lt;main&amp;gt; &amp;lt;article&amp;gt; &amp;lt;nav&amp;gt; &amp;lt;section&amp;gt; &amp;lt;detail&amp;gt;  </description>
+    </item>
+    
+    <item>
+      <title>File Naming System</title>
+      <link>https://damnotes.netlify.com/css/08-file-naming-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/08-file-naming-system/</guid>
+      <description> Insert this in the &amp;lt;head&amp;gt; tag of the .html file
+&amp;lt;link href=&amp;#34;https://www.codecademy.com/stylesheets/style.css&amp;#34; type=&amp;#34;text/css&amp;#34; rel=&amp;#34;stylesheet&amp;#34;&amp;gt;  </description>
+    </item>
+    
+    <item>
+      <title>File Naming System</title>
+      <link>https://damnotes.netlify.com/html/02-file-naming-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/html/02-file-naming-system/</guid>
+      <description> index.html is always the root for the homepage of a website, so for example www.yoursite.com
+ Every page of the website needs an appropriate HTML file, e.g. the about page at www.yoursite.com/about.html will be contained in the about.html file
+  </description>
+    </item>
+    
+    <item>
       <title>Flexbox</title>
       <link>https://damnotes.netlify.com/css/04-flexbox/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -200,6 +382,15 @@ width: 150px;
 flex-direction: row; &amp;ndash;&amp;gt; row, row-reverse, column, column-reverse set the main axis of the flex container
 flex-wrap: wrap; &amp;ndash;&amp;gt; wrap the flex-items if necessary
  flex-flow: flex-direction flex-wrap;  justify-content: center; &amp;ndash;&amp;gt; justify along the main axis</description>
+    </item>
+    
+    <item>
+      <title>Forms</title>
+      <link>https://damnotes.netlify.com/html/03-forms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/html/03-forms/</guid>
+      <description>&amp;lt;form action=&amp;#34;process.php&amp;#34; method=&amp;#34;POST&amp;#34;&amp;gt; &amp;lt;!--action and method attribute are server-side thing--&amp;gt; &amp;lt;div&amp;gt; &amp;lt;!--used to place the elements on different lines--&amp;gt; &amp;lt;label&amp;gt;First Name&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; name=&amp;#34;firstName&amp;#34; placeholder=&amp;#34;Enter first name&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;br&amp;gt; &amp;lt;!--line breaker-don’t use, use CSS--&amp;gt; &amp;lt;div&amp;gt; &amp;lt;label&amp;gt;Last Name&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; name=&amp;#34;lastName&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;br&amp;gt; &amp;lt;div&amp;gt; &amp;lt;label&amp;gt;Email&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;email&amp;#34; name=&amp;#34;email&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;br&amp;gt; &amp;lt;div&amp;gt; &amp;lt;label&amp;gt;Message&amp;lt;/label&amp;gt; &amp;lt;textarea name=&amp;#34;message&amp;#34;&amp;gt;&amp;lt;/textarea&amp;gt; &amp;lt;!--textarea is a bigger input region for longer text--&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;br&amp;gt; &amp;lt;div&amp;gt; &amp;lt;label&amp;gt;Gender&amp;lt;/label&amp;gt; &amp;lt;select name=&amp;#34;gender&amp;#34;&amp;gt; &amp;lt;option value=&amp;#34;male&amp;#34;&amp;gt;Male&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;female&amp;#34;&amp;gt;Female&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;other&amp;#34;&amp;gt;Other&amp;lt;/option&amp;gt; &amp;lt;/select&amp;gt; &amp;lt;!</description>
     </item>
     
     <item>
@@ -215,6 +406,15 @@ flex-wrap: wrap; &amp;ndash;&amp;gt; wrap the flex-items if necessary
     </item>
     
     <item>
+      <title>HTML Anatomy</title>
+      <link>https://damnotes.netlify.com/html/00-html-anatomy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/html/00-html-anatomy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>IPython</title>
       <link>https://damnotes.netlify.com/python/03-ipython/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -223,6 +423,16 @@ flex-wrap: wrap; &amp;ndash;&amp;gt; wrap the flex-items if necessary
       <description> .display module  from IPython import display → Used to dusplay various type of data (audio, images, &amp;hellip;) (doc).
  display.display(obj) → display a python object in all frontends (doc)
   </description>
+    </item>
+    
+    <item>
+      <title>Images</title>
+      <link>https://damnotes.netlify.com/html/04-images/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/html/04-images/</guid>
+      <description>Self-closing tag
+&amp;lt;img src=&amp;#34;https://www.example.com/picture.jpg&amp;#34; alt=&amp;#34;A field of yellow sunflowers&amp;#34;/&amp;gt;  src → attribute with the url of the image alt → description of what one can see  if an image fails to load on a web page, a user can mouse over the area originally intended for the image and read a brief description of the image. visually impaired users often browse the web with the aid of of screen reading software.</description>
     </item>
     
     <item>
@@ -241,6 +451,15 @@ flex-wrap: wrap; &amp;ndash;&amp;gt; wrap the flex-items if necessary
     </item>
     
     <item>
+      <title>Machine Learning</title>
+      <link>https://damnotes.netlify.com/ai/01-machine-learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/ai/01-machine-learning/</guid>
+      <description>Tips  Split the data set into two parts  training data → train the algorithm with this set test data → then test the algorithm here  Due to overfitting, neural networks can require massive amounts of data before they produce reliable prediction when compared to models obtained by linear regression. ~Learning to avoid overfitting and choose a model that is not too restricted, nor too flexible, is one of the most essential skills of a data scientist.</description>
+    </item>
+    
+    <item>
       <title>Matplotlib</title>
       <link>https://damnotes.netlify.com/python/04-matplotlib/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -248,6 +467,18 @@ flex-wrap: wrap; &amp;ndash;&amp;gt; wrap the flex-items if necessary
       <guid>https://damnotes.netlify.com/python/04-matplotlib/</guid>
       <description>Custom Plot Style This process is considered for a Windows machine where Python is installed using Miniconda 3 (for Anaconda it should be the same).
 The idea is to create a custom style file in the same directory where all the styles are archived. The instruction reported on the documentation probably are correct only for a &amp;ldquo;normal&amp;rdquo; Python installation. This is the process to follow if Miniconda is installed:</description>
+    </item>
+    
+    <item>
+      <title>Matplotlib 2</title>
+      <link>https://damnotes.netlify.com/python/04b-matplotlib/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/04b-matplotlib/</guid>
+      <description>See here for a Jupyter notebook tutorial on matplotlib Official documentation
+import matplotlib.pyplot as plt Use %matplotlib inline in Jupyter to display figures inside the notebooks
+Basic figure script This script create a small figure on top of another one
+#request text elements rendering with Latex matplotlib.rcParams.update({&amp;#39;font.size&amp;#39;: 18, &amp;#39;text.usetex&amp;#39;: True}) # create the figure object fig = plt.figure(figsize=(8,4), dpi=100) # create an axes object inside the figure # left, bottom, width, height (range 0 to 1) axes1 = fig.</description>
     </item>
     
     <item>
@@ -263,6 +494,39 @@ rem -&amp;gt; it means root em. Instead of checking parent elements to size font
     </item>
     
     <item>
+      <title>Media Queries</title>
+      <link>https://damnotes.netlify.com/css/09-media-queries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/09-media-queries/</guid>
+      <description> Application  Apply when width is less than 600px
+@media (max-width:600px) { h1 { font-size: 12px; } }  See p.172 pro HTML5&amp;hellip; for every query.
+ max-width min-width max-height min-height  Breakpoints  Magari usa 600, 900, 1200 e se vuoi 1800
+/* Extra small devices (phones, 600px and down) */ @media only screen and (max-width: 600px) {} /* Small devices (portrait tablets and large phones, 600px and up) */ @media only screen and (min-width: 600px) {} /* Medium devices (landscape tablets, 768px and up) */ @media only screen and (min-width: 768px) {} /* Large devices (laptops/desktops, 992px and up) */ @media only screen and (min-width: 992px) {} /* Extra large devices (large laptops and desktops, 1200px and up) */ @media only screen and (min-width: 1200px) {}  Measurements * { height: 100vh; /* viewport height - like %, but based on the viewport and not on the parent element measure*/ width: 100vw; /*viewport width*/ width: 100vmin; /*minimum between viewport height or width*/ width: 100vmax; /*maximum between viewport height or width*/ height: 2em; /*em is the font size of the browser*/ }</description>
+    </item>
+    
+    <item>
+      <title>NumPy</title>
+      <link>https://damnotes.netlify.com/python/07-numpy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/07-numpy/</guid>
+      <description>See here for a Jupyter notebook tutorial on numpy
+import numpy as np Arrays creation and properties  numpy arrays are statically typed and homogeneous. The type of the elements is determined when the array is created. np.array(list) generate an array from a list np.shape(array) , np.size(array) , np.ndim(array)print dimensions, number of elements and number of dimensions of the array np.dtype(list) print the data type of the array  Array generation from functions  np.</description>
+    </item>
+    
+    <item>
+      <title>Os and Datetime</title>
+      <link>https://damnotes.netlify.com/python/08-os-datetime/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/08-os-datetime/</guid>
+      <description>import os import datetime Os  os.getcwd() obtain the current working directory os.listdir(path) list all file in the path. Better using scandir() for more performance os.chdir(path) change the cwd to path os.remove(path) remove a file
+ os.mkdir(path) create a directory. To avoid errors if the directory exist, use
+dirName = &amp;#39;tempDir&amp;#39; try: # Create target Directory os.mkdir(dirName) print(&amp;#34;Directory &amp;#34; , dirName , &amp;#34; Created &amp;#34;) except FileExistsError: print(&amp;#34;Directory &amp;#34; , dirName , &amp;#34; already exists&amp;#34;) os.</description>
+    </item>
+    
+    <item>
       <title>Pandas</title>
       <link>https://damnotes.netlify.com/python/05-pandas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -274,6 +538,57 @@ rem -&amp;gt; it means root em. Instead of checking parent elements to size font
  pd.DataFrame(dict) → create a df from a dictionary.
  pd.to_csv(path); pd.to_json(path); pd.to_excel(path); → export to .csv, .json or .xlsx file.
   df manipulation  df.copy(deep=True) → copy the df indices and data (doc).  Statistics  df.corr(method=Pearson) → compute pairwise correlation of columns (doc) - (Pearson Correlation Coefficient - Wikipedia).</description>
+    </item>
+    
+    <item>
+      <title>Pandas</title>
+      <link>https://damnotes.netlify.com/python/05b-pandas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/05b-pandas/</guid>
+      <description>See here for some Jupyter notebook lessons on pandas
+import pandas as pd  pd.__version__ check version of the pandas API  File I/O df = pd.read_csv(r’relative_path’, sep=&amp;#39; &amp;#39;, names=[&amp;#39;column1&amp;#39;,&amp;#39;column2&amp;#39;,...], header=None, skiprows=1, skipfooter=3, index_col=False, skipinitialspace=True, parse_dates=[0], infer_datetime_format=True ) Import the cvs file in a DataFrame object. _ the path can also be a web address _ header=None is the line of the header, if present. _ nrows=5 number of rows to read, from the top of the file _ skiprows=5 and skipfooter=3, number of rows to skip from the start or the end of the file.</description>
+    </item>
+    
+    <item>
+      <title>Probability</title>
+      <link>https://damnotes.netlify.com/ai/02-probability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/ai/02-probability/</guid>
+      <description>Importance Ability to deal with uncertainty is crucial. This fact is given from the presence of noise in the data returned from every kind of sensor.
+ Probability allows to quantify uncertainty using numbers, and after that numbers can be compared. It is usually not possible to draw conclusions about whether a particular number was right or wrong based on a single observation.  One way to express probability is by using odds (the ratio of the probabilities of an event happening to that of it not happening)</description>
+    </item>
+    
+    <item>
+      <title>Problem Solving</title>
+      <link>https://damnotes.netlify.com/ai/03-problem-solving/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/ai/03-problem-solving/</guid>
+      <description>Search and Planning Problems First stage of the problem solving process → defining the choices and their consequences. One also need to define what the goal is or, in other words, when one can consider the problem solved.
+ The state space → the set of possible situations. Transitions → possible moves between one state and another. One only counts direct transitions that can be accomplished with a single action.</description>
+    </item>
+    
+    <item>
+      <title>Pseudo Class</title>
+      <link>https://damnotes.netlify.com/css/10-pseudo-class/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/10-pseudo-class/</guid>
+      <description>Changing color of a link when hover on it
+a:hover { color: red; } Add something before or after a selected element
+.class::before { content: &amp;#34;Phrase&amp;#34;; /*here you can modify the properties of the added thing/shape*/ }  The content property is used to add an image or a text as the element to be added. If you use it to do a shape, place an empty string.</description>
+    </item>
+    
+    <item>
+      <title>PySerial</title>
+      <link>https://damnotes.netlify.com/python/09-pyserial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/09-pyserial/</guid>
+      <description>Documentation
+import serial  python -m serial.tools.list_ports prints a list of available ports.  Port Opening ser = serial.Serial(	port=&amp;#39;/dev/tty.SLAB_USBtoUART&amp;#39;, baudrate=9600, bytesize=serial.EIGHTBITS, parity=serial.PARITY_NONE, stopbits=serial.STOPBITS_ONE, timeout=3 #s )  Serial open the port and create an object. * timeout set the time after which the reading process is stopped (in seconds)   #code/python/modules</description>
     </item>
     
     <item>
@@ -300,6 +615,27 @@ rem -&amp;gt; it means root em. Instead of checking parent elements to size font
     </item>
     
     <item>
+      <title>Seaborn</title>
+      <link>https://damnotes.netlify.com/python/10-seaborn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/10-seaborn/</guid>
+      <description>Docs
+import seaborn as sns Here is a small example explained
+sns.set() tips = sns.load_dataset(&amp;#34;tips&amp;#34;) # or just load a dataframe with pandas sns.relplot(x=&amp;#34;total_bill&amp;#34;, y=&amp;#34;tip&amp;#34;, col=&amp;#34;time&amp;#34;, hue=&amp;#34;smoker&amp;#34;, style=&amp;#34;smoker&amp;#34;, size=&amp;#34;size&amp;#34;, data=tips);  sns.set() set the style of the plot using matplotlib standards. doc  #code/python/modules</description>
+    </item>
+    
+    <item>
+      <title>Selectors</title>
+      <link>https://damnotes.netlify.com/css/11-selectors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/11-selectors/</guid>
+      <description>General Technique BEM technique (Block Element Modifiers) Use only on classes
+.block__element--modifier { property: value; }  Specificity is the order by which the browser decides which CSS styles will be displayed. A best practice in CSS is to style elements while using the lowest degree of specificity, so that if an element needs a new style, it is easy to override. IDs are the most specific selector in CSS, followed by classes, and finally, tags.</description>
+    </item>
+    
+    <item>
       <title>Tensorflow</title>
       <link>https://damnotes.netlify.com/python/06-tensorflow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -310,6 +646,28 @@ rem -&amp;gt; it means root em. Instead of checking parent elements to size font
   tf.data module  Docs Dataset class (doc)  tf.feature_column module  tf.feature_column.numeric_column → create a numeric column for the model (doc).
  tf.feature_column.bucketized_column(source_column, boundaries) → takes a numeric column as input and apply binning using boundaries (doc).
  tf.feature_column.cross_column() → returns a column to perform crosses of categorical features (doc)</description>
+    </item>
+    
+    <item>
+      <title>Text Elements</title>
+      <link>https://damnotes.netlify.com/html/05-text-elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/html/05-text-elements/</guid>
+      <description>Common Text  &amp;lt;!-- --&amp;gt; → comments in html5 &amp;lt;h1&amp;gt; &amp;lt;h2&amp;gt; &amp;lt;h3&amp;gt; &amp;lt;h4&amp;gt; &amp;lt;h5&amp;gt; &amp;lt;h6&amp;gt; → headings &amp;lt;p&amp;gt; → paragraph _ Spaces and returns don’t affect the appearance of the code. _ To break the line in one paragraph (without changing paragraph) use the tag &amp;lt;br /&amp;gt; &amp;lt;em&amp;gt; → italics &amp;lt;strong&amp;gt; → bold style=“color: blue” → attribute to change color to apply CSS only to that tag  Lists &amp;lt;ul&amp;gt; &amp;lt;il&amp;gt; item 1 &amp;lt;/il&amp;gt; &amp;lt;il&amp;gt; item 2 &amp;lt;/il&amp;gt; &amp;lt;il&amp;gt; item 3 &amp;lt;/il&amp;gt; &amp;lt;/ul&amp;gt;  Use it outside the &amp;lt;p&amp;gt; tag.</description>
+    </item>
+    
+    <item>
+      <title>Text Properties</title>
+      <link>https://damnotes.netlify.com/css/12-text-properties/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/12-text-properties/</guid>
+      <description>Typography Import Fonts  Import in html using
+&amp;lt;link href=&amp;#34;https://fonts.googleapis.com/css?family=Cabin&amp;#34; rel=&amp;#34;stylesheet&amp;#34;&amp;gt; Import in css file using
+@import url(//fonts.googleapis.com/css?family=Cabin); Last term is called font-families and can be: _ cursive _ fantasy _ monospace _ sans-serif * serif
+Font Assets   List of Web safe fonts Google Fonts  Properties Font Properties  font-family: Garamond , Times , serif; -&amp;gt; fonts after the first are called fallback fonts
+ font-size: 30px; -&amp;gt; measured in px, em or %</description>
     </item>
     
     <item>

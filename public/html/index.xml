@@ -10,5 +10,64 @@
 	<atom:link href="https://damnotes.netlify.com/html/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Document Structure</title>
+      <link>https://damnotes.netlify.com/html/01-document-structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/html/01-document-structure/</guid>
+      <description> Document Declaration Boilerplate code → some code that one has to every page of code.
+&amp;lt;@DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;My Coding Journal&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  &amp;lt;@DOCTYPE hmtl&amp;gt; → declaration &amp;lt;head&amp;gt; → it contain metadata of the webpage  Non-Semantic Tags Non-semantic tag → it does not describe the type of content it has inside.
+ &amp;lt;div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;span&amp;gt; &amp;lt;/span&amp;gt;  Semantic Tags  &amp;lt;header&amp;gt; &amp;lt;footer&amp;gt; &amp;lt;aside&amp;gt; &amp;lt;main&amp;gt; &amp;lt;article&amp;gt; &amp;lt;nav&amp;gt; &amp;lt;section&amp;gt; &amp;lt;detail&amp;gt;  </description>
+    </item>
+    
+    <item>
+      <title>File Naming System</title>
+      <link>https://damnotes.netlify.com/html/02-file-naming-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/html/02-file-naming-system/</guid>
+      <description> index.html is always the root for the homepage of a website, so for example www.yoursite.com
+ Every page of the website needs an appropriate HTML file, e.g. the about page at www.yoursite.com/about.html will be contained in the about.html file
+  </description>
+    </item>
+    
+    <item>
+      <title>Forms</title>
+      <link>https://damnotes.netlify.com/html/03-forms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/html/03-forms/</guid>
+      <description>&amp;lt;form action=&amp;#34;process.php&amp;#34; method=&amp;#34;POST&amp;#34;&amp;gt; &amp;lt;!--action and method attribute are server-side thing--&amp;gt; &amp;lt;div&amp;gt; &amp;lt;!--used to place the elements on different lines--&amp;gt; &amp;lt;label&amp;gt;First Name&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; name=&amp;#34;firstName&amp;#34; placeholder=&amp;#34;Enter first name&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;br&amp;gt; &amp;lt;!--line breaker-don’t use, use CSS--&amp;gt; &amp;lt;div&amp;gt; &amp;lt;label&amp;gt;Last Name&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; name=&amp;#34;lastName&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;br&amp;gt; &amp;lt;div&amp;gt; &amp;lt;label&amp;gt;Email&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;email&amp;#34; name=&amp;#34;email&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;br&amp;gt; &amp;lt;div&amp;gt; &amp;lt;label&amp;gt;Message&amp;lt;/label&amp;gt; &amp;lt;textarea name=&amp;#34;message&amp;#34;&amp;gt;&amp;lt;/textarea&amp;gt; &amp;lt;!--textarea is a bigger input region for longer text--&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;br&amp;gt; &amp;lt;div&amp;gt; &amp;lt;label&amp;gt;Gender&amp;lt;/label&amp;gt; &amp;lt;select name=&amp;#34;gender&amp;#34;&amp;gt; &amp;lt;option value=&amp;#34;male&amp;#34;&amp;gt;Male&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;female&amp;#34;&amp;gt;Female&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;other&amp;#34;&amp;gt;Other&amp;lt;/option&amp;gt; &amp;lt;/select&amp;gt; &amp;lt;!</description>
+    </item>
+    
+    <item>
+      <title>HTML Anatomy</title>
+      <link>https://damnotes.netlify.com/html/00-html-anatomy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/html/00-html-anatomy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Images</title>
+      <link>https://damnotes.netlify.com/html/04-images/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/html/04-images/</guid>
+      <description>Self-closing tag
+&amp;lt;img src=&amp;#34;https://www.example.com/picture.jpg&amp;#34; alt=&amp;#34;A field of yellow sunflowers&amp;#34;/&amp;gt;  src → attribute with the url of the image alt → description of what one can see  if an image fails to load on a web page, a user can mouse over the area originally intended for the image and read a brief description of the image. visually impaired users often browse the web with the aid of of screen reading software.</description>
+    </item>
+    
+    <item>
+      <title>Text Elements</title>
+      <link>https://damnotes.netlify.com/html/05-text-elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/html/05-text-elements/</guid>
+      <description>Common Text  &amp;lt;!-- --&amp;gt; → comments in html5 &amp;lt;h1&amp;gt; &amp;lt;h2&amp;gt; &amp;lt;h3&amp;gt; &amp;lt;h4&amp;gt; &amp;lt;h5&amp;gt; &amp;lt;h6&amp;gt; → headings &amp;lt;p&amp;gt; → paragraph _ Spaces and returns don’t affect the appearance of the code. _ To break the line in one paragraph (without changing paragraph) use the tag &amp;lt;br /&amp;gt; &amp;lt;em&amp;gt; → italics &amp;lt;strong&amp;gt; → bold style=“color: blue” → attribute to change color to apply CSS only to that tag  Lists &amp;lt;ul&amp;gt; &amp;lt;il&amp;gt; item 1 &amp;lt;/il&amp;gt; &amp;lt;il&amp;gt; item 2 &amp;lt;/il&amp;gt; &amp;lt;il&amp;gt; item 3 &amp;lt;/il&amp;gt; &amp;lt;/ul&amp;gt;  Use it outside the &amp;lt;p&amp;gt; tag.</description>
+    </item>
+    
   </channel>
 </rss>
