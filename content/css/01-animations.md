@@ -51,7 +51,3 @@ To personalize the evolution of the animation, one can use the `cubic-beizer` fu
 ```
 
 This point represent the evolution of an animation vs time in a cartesian plane.
-
-```python
-
-```

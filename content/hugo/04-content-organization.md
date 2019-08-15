@@ -12,7 +12,7 @@ draft: false
 -   Contents in the `content` directory can be nested at any level
 -   The **top levels** (i.e. `content/<DIRECTORIES>`) are considered the **content type** used to determine layouts etc.
 
-![site structure example](/img/hugo/concept-site-structure.png)
+<img src="/img/content/hugo/concept-site-structure.png" class="img-fluid figure-img img-custom">
 
 -   Here, `baseurl = "https://example.com"` is assumed in the `config.toml` file
 -   One can keep one `_index.md` for the homepage and one in each content sections, taxonomies, and taxonomy terms. Considering the previous example, this means:
@@ -40,7 +40,7 @@ A Page Bundle is a group of page in the `content` directory.
 
 -   A [Leaf Bundle](https://gohugo.io/content-management/page-bundles/#leaf-bundles) is a directory at any hierarchy within the `content/directory`, that contains an `index.md` file. It is a collection of content and attachments for single pages.
 
-![leaf bundle example](/img/hugo/leaf-bundle-example.png)
+<img src="/img/content/hugo/leaf-bundle-example.png" class="img-fluid figure-img img-custom">
 
 -   It does not allow nesting of more bundles under it.
 
@@ -49,7 +49,7 @@ A Page Bundle is a group of page in the `content` directory.
 -   A Branch Bundle is any directory at any hierarchy within the `content/directory`, that contains at least an `_index.md` file.
 -   This `_index.md` can also be directly under the `content/` directory.
 
-![branch bundle example](/img/hugo/branch-bundle-example.png)
+<img src="/img/content/hugo/branch-bundle-example.png" class="img-fluid figure-img img-custom">
 
 * * *
 
