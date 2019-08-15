@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="generator" content="Hugo 0.56.3" />
+    
+    
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/style.css">
+    
+    
+    <title>Content Positioning | DamNotes</title>
+</head>
+
+<body>
+    
+<div class="container border-bottom border-dark">
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="https://damnotes.netlify.com/">DamNotes</a>
+        
+        <ul class="navbar-nav">
+            
+            
+            
+            <li class=" nav-item active">
+                <a class="nav-link" href="/about/"><i data-feather="user"></i> About<span
+                        class="sr-only">(current)</span></a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+    <div class="container">
+        <main id="main">
+            
+
+<h2 class="m-1 mb-3 mt-3">Content Positioning</h2>
+
+
+
+<h3 id="display">Display</h3>
+
+<p><code>display: block;</code> → the element occupies all the width of the parent element</p>
+
+<p><code>display: inline;</code> → the elements are arranged horizontally</p>
+
+<p><code>display: none;</code> → not rendered</p>
+
+<hr />
+
+<h3 id="dimensions">Dimensions</h3>
+
+<p><img src="/img/content/css/box-model.png" class="img-fluid figure-img img-custom"></p>
+
+<p>All elements on a web page are interpreted by the browser as “living” inside of a box.</p>
+
+<p><code>width: 150px;</code></p>
+
+<ul>
+<li><code>min-width</code> and <code>max-width</code> also possible</li>
+</ul>
+
+<p><code>height: 70%;</code></p>
+
+<ul>
+<li><code>min-heigth</code> and <code>max-height</code> also possible</li>
+</ul>
+
+<h3 id="content-based">Content Based</h3>
+
+<p><code>width: min-content;</code> → wrap the content and use the minimum space</p>
+
+<ul>
+<li><em>no support for Edge</em></li>
+</ul>
+
+<p><code>width: max-content;</code> → don&rsquo;t wrap and use the minimum space</p>
+
+<ul>
+<li><em>no support for Edge</em></li>
+</ul>
+
+<h4 id="box-sizing">Box Sizing</h4>
+
+<p><code>box-sizing: content-box;</code></p>
+
+<p><code>box-sizing: border-box;</code> → size attributes will apply after the padding and border have been added</p>
+
+<hr />
+
+<h3 id="alignment">Alignment</h3>
+
+<p><code>float: left;</code> → subsequent content in the container is wrapped around the floating content</p>
+
+<p><code>clear: both;</code> → delete the effect of a previous float container on the actual container</p>
+
+<hr />
+
+<h3 id="overflow">Overflow</h3>
+
+<p>The overflow property is set on a parent element to instruct a web browser how to render child elements. For example, if a div’s overflow property is set to scroll, all children of this div will display overflowing content with a scroll bar.</p>
+
+<p><code>overflow: visible;</code> → default - overflow content should be displayed without affecting the container</p>
+
+<p><code>overflow: hidden;</code> → the content is clipped so any content outside of the container is not visible</p>
+
+<p><code>overflow: scroll;</code> → horizontal and vertical scroll bars are always created even if the content fits inside the container</p>
+
+<p><code>overflow: auto;</code> → scroll bars are created only when the content overflows the container</p>
+
+<hr />
+
+<h3 id="position">Position</h3>
+
+<p><code>position: static;</code> -&gt; default - content is positioned based on its location in the document and the flow properties that are assigned</p>
+
+<blockquote>
+<p>from now on use top, bottom, rigth, left to assign the offset</p>
+</blockquote>
+
+<p><strong>This elements set the position with respect to the first parent with a relative position</strong></p>
+
+<p><code>position: relative;</code> → element position is offset from where its normal flow position would be</p>
+
+<ul>
+<li>After it add left, right, top or bottom to specify the offset</li>
+<li>Other elements around it still behave as if that item were in its default position</li>
+</ul>
+
+<p><code>position: absolute;</code> → element is positioned at a specific location</p>
+
+<ul>
+<li>This removes the element from the normal flow of the document, so surrounding items ignore it</li>
+<li>After it add left, right, top or bottom to specify the offset</li>
+</ul>
+
+<p><code>position: fixed;</code> → the element is positioned relative to the viewport (the browser window); its position on the screen does not change when the document is scrolled</p>
+
+<hr />
+
+<h3 id="stacking-order">Stacking Order</h3>
+
+<p><code>z-index: 0;</code> → this only apply to non statically positioned content</p>
+
+<hr />
+
+<h3 id="box-model">Box model</h3>
+
+<p>Border</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#666">*</span> {
+    <span style="color:#008000;font-weight:bold">border</span>: <span style="color:#008000;font-weight:bold">solid</span> <span style="color:#008000;font-weight:bold">black</span> <span style="color:#666">4</span><span style="color:#b00040">px</span>;
+    <span style="color:#008000;font-weight:bold">border</span>: <span style="color:#666">4</span><span style="color:#b00040">px</span> <span style="color:#666">4</span><span style="color:#b00040">px</span> <span style="color:#666">4</span><span style="color:#b00040">px</span> <span style="color:#666">4</span><span style="color:#b00040">px</span>; <span style="color:#408080;font-style:italic">/*top right bottom left - can use thin medium thick*/</span>
+    <span style="color:#008000;font-weight:bold">border-color</span>: <span style="color:#008000;font-weight:bold">green</span>;
+    <span style="color:#008000;font-weight:bold">border-style</span>: <span style="color:#008000;font-weight:bold">solid</span>; <span style="color:#408080;font-style:italic">/*none hidden dotted dashed solid double groove ridge inset outset*/</span>
+    <span style="color:#008000;font-weight:bold">border-radius</span>: <span style="color:#666">100</span><span style="color:#b00040">%</span>;
+}</code></pre></div>
+<p>Margin - <strong>space outside the border</strong></p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#666">*</span> {
+    <span style="color:#008000;font-weight:bold">margin</span>: <span style="color:#666">5</span><span style="color:#b00040">px</span> <span style="color:#666">5</span><span style="color:#b00040">px</span> <span style="color:#666">5</span><span style="color:#b00040">px</span> <span style="color:#666">5</span><span style="color:#b00040">px</span>; <span style="color:#408080;font-style:italic">/*top right bottom left - use auto to center*/</span>
+}</code></pre></div>
+<p>Padding - <strong>space inside the border</strong> (between content and border)</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#666">*</span> {
+    <span style="color:#008000;font-weight:bold">padding</span>: <span style="color:#666">6</span><span style="color:#b00040">px</span> <span style="color:#666">6</span><span style="color:#b00040">px</span> <span style="color:#666">6</span><span style="color:#b00040">px</span> <span style="color:#666">6</span><span style="color:#b00040">px</span>; <span style="color:#408080;font-style:italic">/*top right bottom left*/</span>
+}</code></pre></div>
+<p>Box shadows - inset (if present) specify that also an inner shadow is present</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#666">*</span>{
+    <span style="color:#008000;font-weight:bold">box-shadow</span>: <span style="color:#666">0</span><span style="color:#b00040">px</span> <span style="color:#666">0</span><span style="color:#b00040">px</span> <span style="color:#666">3</span><span style="color:#b00040">px</span> <span style="color:#666">1</span><span style="color:#b00040">px</span> <span style="color:#666">#12a0a0</span>, <span style="color:#008000;font-weight:bold">inset</span> <span style="color:#666">0</span><span style="color:#b00040">px</span> <span style="color:#666">0</span><span style="color:#b00040">px</span> <span style="color:#666">3</span><span style="color:#b00040">px</span> <span style="color:#666">1</span><span style="color:#b00040">px</span> <span style="color:#666">#12a0a0</span>;
+        <span style="color:#408080;font-style:italic">/* x-direction, y-direction, blur, spread, color*/</span>
+}</code></pre></div>
+<p>Scale the dimension of the object</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#666">*</span> {
+    <span style="color:#008000;font-weight:bold">transform</span>: <span style="color:#008000">scale</span>(<span style="color:#666">2</span>);
+}</code></pre></div>
+
+
+        </main>
+    </div>
+    <div class="container border-top border-dark">
+    <nav class="navbar navbar-light justify-content-center">
+        <div class="navbar-nav d-flex flex-row justify-content-center">
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://github.com/damianolodi"
+                style="margin:10px;"><i data-feather="github"></i> GitHub</a>
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://www.linkedin.com/in/damiano-lodi/"
+                style="margin:10px;"><i data-feather="linkedin"></i> LinkedIn</a>
+            
+        </div>
+    </nav>
+</div>
+    
+
+<script src="https://damnotes.netlify.com/js/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+</body>
+
+</html>

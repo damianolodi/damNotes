@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="generator" content="Hugo 0.56.3" />
+    
+    
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/style.css">
+    
+    
+    <title>Remote Repositories | DamNotes</title>
+</head>
+
+<body>
+    
+<div class="container border-bottom border-dark">
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="https://damnotes.netlify.com/">DamNotes</a>
+        
+        <ul class="navbar-nav">
+            
+            
+            
+            <li class=" nav-item active">
+                <a class="nav-link" href="/about/"><i data-feather="user"></i> About<span
+                        class="sr-only">(current)</span></a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+    <div class="container">
+        <main id="main">
+            
+
+<h2 class="m-1 mb-3 mt-3">Remote Repositories</h2>
+
+<ol>
+<li><p><code>git clone &lt;repository_path&gt; &lt;clone_name&gt;</code> clone the provided repository in the current path. Original repo can be located on the local filesystem or on a remote machine via HTTP or SSH</p></li>
+
+<li><p><code>git remote add &lt;name&gt; &lt;url&gt;</code> create a new connection to a remote repository.</p>
+
+<ul>
+<li><p>After adding a remote, you can use <code>&lt;name&gt;</code> as a shortcut for <code>&lt;url&gt;</code> in other commands.</p></li>
+
+<li><p><code>git remote -v</code> -&gt; lists the name of the remote, origin, as well as its location</p></li>
+</ul></li>
+
+<li><p><code>git pull &lt;remote&gt;</code> fetch the specified remotes copy of the current branch and immediately merge it into the local copy</p></li>
+
+<li><p><code>git push &lt;remote&gt; &lt;branch&gt;</code> push the branch to the remote repo. creates the named branch in the remote repo if it doesn’t exist</p>
+
+<ul>
+<li><code>git push &lt;remote&gt; --all</code> push all the local branches</li>
+</ul></li>
+
+<li><p><code>git fetch &lt;remote&gt; &lt;branch&gt;</code> fetches a specific branch from the repo. Leave off <code>&lt;branch&gt;</code> to fetch all remote refs.</p>
+
+<ul>
+<li><p><code>git fetch</code> -&gt; This command will not merge changes from the remote into your local repository. It brings those changes onto what’s called a remote branch.</p>
+
+<ul>
+<li><p>To explain this we can say that even though Sally’s new commits have been fetched to your local copy of the Git project, those commits are on the origin/master branch. Your local master branch has not been updated yet, so you can’t view or make changes to any of the work she has added.</p></li>
+
+<li><p>One can merge those changes in the local master branch by using the merge command <code>git merge origin/master</code></p></li>
+</ul></li>
+</ul></li>
+</ol>
+
+
+
+        </main>
+    </div>
+    <div class="container border-top border-dark">
+    <nav class="navbar navbar-light justify-content-center">
+        <div class="navbar-nav d-flex flex-row justify-content-center">
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://github.com/damianolodi"
+                style="margin:10px;"><i data-feather="github"></i> GitHub</a>
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://www.linkedin.com/in/damiano-lodi/"
+                style="margin:10px;"><i data-feather="linkedin"></i> LinkedIn</a>
+            
+        </div>
+    </nav>
+</div>
+    
+
+<script src="https://damnotes.netlify.com/js/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+</body>
+
+</html>

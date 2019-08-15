@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on DamNotes</title>
+    <link>https://damnotes.netlify.com/git/</link>
+    <description>Recent content in Git on DamNotes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://damnotes.netlify.com/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Basics</title>
+      <link>https://damnotes.netlify.com/git/01-basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/git/01-basics/</guid>
+      <description>git init &amp;lt;directory_path&amp;gt; create empty git repository in the specified directory. Omit the arguments to initialise in the current directory git add &amp;lt;file/directory&amp;gt; stage all changes in the provided path for the next commit git commit -m “&amp;lt;message&amp;gt;” commit the staged changes with the message provided. Messages must be  in quotation marks; written in the present tense; be brief (50 characters or less) when using -m  git status list staged, unstaged and untracked files git diff show unstated changes between the index and the working directory  git diff &amp;lt;file&amp;gt; preview the differences between the file in the working directory and the one in the staging area  git log display the entire commit history.</description>
+    </item>
+    
+    <item>
+      <title>Branches</title>
+      <link>https://damnotes.netlify.com/git/02-branches/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/git/02-branches/</guid>
+      <description> git branch list all the branches in the repo
+ git branch &amp;lt;name&amp;gt; create a new branch
+ git checkout -b &amp;lt;branch&amp;gt; create and switch to a new branch
+ git checkout &amp;lt;branch&amp;gt; switch to an existing branch
+ git merge &amp;lt;branch&amp;gt; merge the provided branch into the current branch
+ git branch -d &amp;lt;branch&amp;gt; delete the selected branch
+  </description>
+    </item>
+    
+    <item>
+      <title>Config</title>
+      <link>https://damnotes.netlify.com/git/03-config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/git/03-config/</guid>
+      <description>The --global input means that one wants to apply this setting to all the project, not just the current one.
+ git config --global user.name &amp;lt;name&amp;gt; -&amp;gt; define the author name to be used fo all commits by the current user
+ git config --global user.email &amp;lt;email&amp;gt;
+ git config --global alias. &amp;lt;alias-name&amp;gt; &amp;lt;git-command&amp;gt; -&amp;gt; create shortcut for a git command
+ e.g. git config --global alias.ciao commit -m set git ciao to git commit -m  git config --global color.</description>
+    </item>
+    
+    <item>
+      <title>Linking to GitHub</title>
+      <link>https://damnotes.netlify.com/git/04-linking-to-github/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/git/04-linking-to-github/</guid>
+      <description> git init initialise the project
+ git add . add everything to the staging area
+ git commit -m &amp;quot;message&amp;quot; commit the files in the staging area
+ Go to Github, create a new repository and copy the provided link
+ git remote add origin &amp;lt;link&amp;gt; link the two repositories
+ git push -u origin master push the master branch to the remote repository
+  </description>
+    </item>
+    
+    <item>
+      <title>Remote Repositories</title>
+      <link>https://damnotes.netlify.com/git/05-remote-repositories/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/git/05-remote-repositories/</guid>
+      <description>git clone &amp;lt;repository_path&amp;gt; &amp;lt;clone_name&amp;gt; clone the provided repository in the current path. Original repo can be located on the local filesystem or on a remote machine via HTTP or SSH
+ git remote add &amp;lt;name&amp;gt; &amp;lt;url&amp;gt; create a new connection to a remote repository.
+ After adding a remote, you can use &amp;lt;name&amp;gt; as a shortcut for &amp;lt;url&amp;gt; in other commands.
+ git remote -v -&amp;gt; lists the name of the remote, origin, as well as its location</description>
+    </item>
+    
+    <item>
+      <title>Rewriting History</title>
+      <link>https://damnotes.netlify.com/git/06-rewriting-history/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/git/06-rewriting-history/</guid>
+      <description> git commit —amend replace the last commit with the staged changes and last commit combined
+ Use with nothing staged to edit the last commit’s message  git rebase &amp;lt;base&amp;gt; …
+  </description>
+    </item>
+    
+    <item>
+      <title>Undoing Changes</title>
+      <link>https://damnotes.netlify.com/git/07-undoing-changes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/git/07-undoing-changes/</guid>
+      <description> git revert &amp;lt;commit&amp;gt; create new commit that undoes all of the changes made in &amp;lt;commit&amp;gt;, then apply it to the current branch
+ git reset &amp;lt;file&amp;gt; remove the file from the stain area, but leave the working directory unchanged
+  </description>
+    </item>
+    
+  </channel>
+</rss>

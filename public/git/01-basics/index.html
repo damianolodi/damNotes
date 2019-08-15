@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="generator" content="Hugo 0.56.3" />
+    
+    
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/style.css">
+    
+    
+    <title>Basics | DamNotes</title>
+</head>
+
+<body>
+    
+<div class="container border-bottom border-dark">
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="https://damnotes.netlify.com/">DamNotes</a>
+        
+        <ul class="navbar-nav">
+            
+            
+            
+            <li class=" nav-item active">
+                <a class="nav-link" href="/about/"><i data-feather="user"></i> About<span
+                        class="sr-only">(current)</span></a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+    <div class="container">
+        <main id="main">
+            
+
+<h2 class="m-1 mb-3 mt-3">Basics</h2>
+
+<p><img src="/img/content/git/git_workflow.png" class="img-fluid figure-img img-custom"></p>
+
+<ol>
+<li><code>git init &lt;directory_path&gt;</code> create empty git repository in the specified directory. Omit the arguments to initialise in the current directory</li>
+<li><code>git add &lt;file/directory&gt;</code> stage all changes in the provided path for the next commit</li>
+<li><code>git commit -m “&lt;message&gt;”</code> commit the staged changes with the message provided. Messages must be
+
+<ul>
+<li>in quotation marks;</li>
+<li>written in the present tense;</li>
+<li>be brief (50 characters or less) when using -m</li>
+</ul></li>
+<li><code>git status</code> list staged, unstaged and untracked files</li>
+<li><code>git diff</code> show unstated changes between the index and the working directory
+
+<ul>
+<li><code>git diff &lt;file&gt;</code> preview the differences between the file in the working directory and the one in the staging area</li>
+</ul></li>
+<li><code>git log</code> display the entire commit history. See options for format customization. The 40-character code, called a <strong>SHA</strong>, uniquely identifies the commit.
+
+<ul>
+<li><code>git log -&lt;limit&gt;</code> → limit the number of commits to the specified number</li>
+<li><code>git log --oneline</code> → condense each commit to a single line</li>
+<li><code>git log --grep=&quot;&lt;pattern&gt;&quot;</code> → search for commits with a commit message that matches the one provided</li>
+<li><code>git log -- &lt;file&gt;</code> → only display commits that have the specified file</li>
+<li><code>git log --stat</code> → returns some statistics about which file has changed in each commit</li>
+</ul></li>
+</ol>
+
+
+
+        </main>
+    </div>
+    <div class="container border-top border-dark">
+    <nav class="navbar navbar-light justify-content-center">
+        <div class="navbar-nav d-flex flex-row justify-content-center">
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://github.com/damianolodi"
+                style="margin:10px;"><i data-feather="github"></i> GitHub</a>
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://www.linkedin.com/in/damiano-lodi/"
+                style="margin:10px;"><i data-feather="linkedin"></i> LinkedIn</a>
+            
+        </div>
+    </nav>
+</div>
+    
+
+<script src="https://damnotes.netlify.com/js/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+</body>
+
+</html>

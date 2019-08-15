@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="generator" content="Hugo 0.56.3" />
+    
+    
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/style.css">
+    
+    
+    <title>Grid | DamNotes</title>
+</head>
+
+<body>
+    
+<div class="container border-bottom border-dark">
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="https://damnotes.netlify.com/">DamNotes</a>
+        
+        <ul class="navbar-nav">
+            
+            
+            
+            <li class=" nav-item active">
+                <a class="nav-link" href="/about/"><i data-feather="user"></i> About<span
+                        class="sr-only">(current)</span></a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+    <div class="container">
+        <main id="main">
+            
+
+<h2 class="m-1 mb-3 mt-3">Grid</h2>
+
+
+
+<blockquote>
+<p>For a complete guide visit <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">CSS Tricks</a></p>
+</blockquote>
+
+<hr />
+
+<h2 id="dictionary">Dictionary</h2>
+
+<ul>
+<li><strong>Line</strong> &ndash;&gt; the dividing lines that make up the structure of the grid;</li>
+<li><strong>Track</strong> &ndash;&gt; the space between two adjacent grid lines;</li>
+<li><strong>Area</strong> &ndash;&gt; the total space surrounded by four grid lines;</li>
+</ul>
+
+<hr />
+
+<h2 id="properties-of-the-parent-container">Properties of the parent (container)</h2>
+
+<p><code>display: grid;</code> &ndash;&gt; create a grid container</p>
+
+<ul>
+<li><code>grid, inline-grid</code></li>
+</ul>
+
+<p><code>grid-template-columns: track-size1 track-size2 ...;</code></p>
+
+<ul>
+<li>can be expressed in <code>fr</code></li>
+</ul>
+
+<p><code>grid-template-rows: track-size1 track-size2 ...;</code></p>
+
+<ul>
+<li>can use the <code>repeat(n°, size)</code> function</li>
+<li>can use the <code>minmax(min, max)</code></li>
+<li>can be <code>auto-fill</code> and <code>auto-fit</code></li>
+</ul>
+
+<p><code>grid-template-areas</code></p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#008000;font-weight:bold">div</span> {
+    <span style="color:#008000;font-weight:bold">grid-template-areas</span>: <span style="color:#ba2121">&#34;grid-area-name1 grid-area-name2 ...&#34;</span>
+                         <span style="color:#ba2121">&#34;grid-area-name3 grid-area-name4 ...&#34;</span>;
+}</code></pre></div>
+<ul>
+<li>Use <code>.</code> to mean empty cell</li>
+<li>Defines a grid template by referencing the names of the grid areas</li>
+<li>Repeating the name of a grid area causes the content to span those cells.</li>
+</ul>
+
+<p><code>grid-column-gap: line-size;</code> &ndash;&gt; specifies the size of the grid lines</p>
+
+<p><code>grid-row-gap: line-size;</code> &ndash;&gt; applied only between cells, not on the outers lines</p>
+
+<p><code>grid-gap: grid-row-gap grid-column-gap;</code> &ndash;&gt; in the future the grid prefix will be removed</p>
+
+<p><code>justify-items: start;</code> &ndash;&gt;  align all grid items along the row axis</p>
+
+<ul>
+<li><code>start, end, center, stretch</code></li>
+</ul>
+
+<p><code>align-items: baseline;</code> &ndash;&gt; align all grid items along the column axis</p>
+
+<ul>
+<li><code>start, end, center, stretch</code></li>
+</ul>
+
+<p><code>place-items: align-items justify-items;</code></p>
+
+<p><code>justify-content: center;</code></p>
+
+<ul>
+<li><code>start, end, center, stretch</code></li>
+<li><code>space-around, space-between, space-evenly</code></li>
+</ul>
+
+<p><code>align-content: center;</code> &ndash;&gt; Needed if the total size of the grid is less than the size of the container</p>
+
+<ul>
+<li><code>start, end, center, stretch</code></li>
+<li><code>space-around, space-between, space-evenly</code></li>
+</ul>
+
+<hr />
+
+<h2 id="properties-of-the-children-item-direct-descendant">Properties of the children (item - direct descendant)</h2>
+
+<p><code>grid-column-start: line-number;</code></p>
+
+<ul>
+<li><code>line-name, span(number), span(name), auto</code></li>
+</ul>
+
+<p><code>grid-column-end: line-number;</code></p>
+
+<ul>
+<li><code>line-name span(number) span(name) auto</code></li>
+</ul>
+
+<p><code>grid-row-start: line-number;</code></p>
+
+<ul>
+<li><code>line-name span(number) span(name) auto</code></li>
+</ul>
+
+<p><code>grid-row-end: line-number;</code></p>
+
+<ul>
+<li><code>line-name span(number) span(name) auto</code></li>
+</ul>
+
+<p><code>grid-column: grid-column-start / grid-column-end;</code></p>
+
+<p><code>grid-row: grid-row-start / grid-row-end;</code></p>
+
+<p><code>grid-area: area-name;</code> &ndash;&gt; assign the element to the area called</p>
+
+<ul>
+<li><code>&lt;row-start&gt; / &lt;column-start&gt; / &lt;row-end&gt; / &lt;column-end&gt;</code></li>
+</ul>
+
+<p><code>justify-self: start;</code> &ndash;&gt; aligns only the grid item inside a cell along the row axis</p>
+
+<ul>
+<li><code>start, end, center, stretch</code></li>
+</ul>
+
+<p><code>align-self: start;</code> &ndash;&gt; aligns only the grid item inside a cell along the column axis - align vertically</p>
+
+<ul>
+<li><code>start, end, center, stretch</code></li>
+</ul>
+
+<p><code>place-self: align-self justify-self;</code> &ndash;&gt; can be auto</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"></code></pre></div>
+
+
+        </main>
+    </div>
+    <div class="container border-top border-dark">
+    <nav class="navbar navbar-light justify-content-center">
+        <div class="navbar-nav d-flex flex-row justify-content-center">
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://github.com/damianolodi"
+                style="margin:10px;"><i data-feather="github"></i> GitHub</a>
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://www.linkedin.com/in/damiano-lodi/"
+                style="margin:10px;"><i data-feather="linkedin"></i> LinkedIn</a>
+            
+        </div>
+    </nav>
+</div>
+    
+
+<script src="https://damnotes.netlify.com/js/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+</body>
+
+</html>

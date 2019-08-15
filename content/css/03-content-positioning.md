@@ -15,7 +15,7 @@ draft: false
 
 ### Dimensions
 
-<img src="/img/content/css/box-model.png" width="100%">
+<img src="/img/content/css/box-model.png" class="img-fluid figure-img img-custom">
 
 All elements on a web page are interpreted by the browser as “living” inside of a box.
 

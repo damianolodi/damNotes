@@ -3,9 +3,10 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {{ hugo.Generator }}
-    {{ $css := "css/bootstrap.min.css" | absURL }}
-    <link rel="stylesheet" href="{{ $css }}">
-    <link rel="stylesheet" href="css/style.css">
+    {{ $bootstrap_css := "css/bootstrap.min.css" | absURL }}
+    {{ $custom_css := "css/style.css" | absURL }}
+    <link rel="stylesheet" href="{{ $bootstrap_css }}">
+    <link rel="stylesheet" href="{{ $custom_css }}">
     {{ $title := print .Title " | " .Site.Title }}
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
     <title>{{ $title }}</title>

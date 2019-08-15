@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on DamNotes</title>
+    <link>https://damnotes.netlify.com/hugo/</link>
+    <description>Recent content in Hugo on DamNotes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 Aug 2019 21:19:34 +0200</lastBuildDate>
+    
+	<atom:link href="https://damnotes.netlify.com/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Functions</title>
+      <link>https://damnotes.netlify.com/hugo/06-functions/</link>
+      <pubDate>Tue, 06 Aug 2019 21:19:34 +0200</pubDate>
+      
+      <guid>https://damnotes.netlify.com/hugo/06-functions/</guid>
+      <description>Hugo functions</description>
+    </item>
+    
+    <item>
+      <title>Themes</title>
+      <link>https://damnotes.netlify.com/hugo/05-themes/</link>
+      <pubDate>Mon, 05 Aug 2019 22:19:34 +0200</pubDate>
+      
+      <guid>https://damnotes.netlify.com/hugo/05-themes/</guid>
+      <description>Bo again</description>
+    </item>
+    
+    <item>
+      <title>Configuration File</title>
+      <link>https://damnotes.netlify.com/hugo/07-config-file/</link>
+      <pubDate>Mon, 05 Aug 2019 21:19:34 +0200</pubDate>
+      
+      <guid>https://damnotes.netlify.com/hugo/07-config-file/</guid>
+      <description>How content is organized in Hugo</description>
+    </item>
+    
+    <item>
+      <title>Content Organization</title>
+      <link>https://damnotes.netlify.com/hugo/04-content-organization/</link>
+      <pubDate>Mon, 05 Aug 2019 21:19:34 +0200</pubDate>
+      
+      <guid>https://damnotes.netlify.com/hugo/04-content-organization/</guid>
+      <description>How content is organized in Hugo</description>
+    </item>
+    
+    <item>
+      <title>Folder Structure</title>
+      <link>https://damnotes.netlify.com/hugo/03-folder-structure/</link>
+      <pubDate>Mon, 05 Aug 2019 21:19:34 +0200</pubDate>
+      
+      <guid>https://damnotes.netlify.com/hugo/03-folder-structure/</guid>
+      <description>Ciao come stai?</description>
+    </item>
+    
+    <item>
+      <title>Front Matter</title>
+      <link>https://damnotes.netlify.com/hugo/02-front-matter/</link>
+      <pubDate>Mon, 05 Aug 2019 21:19:34 +0200</pubDate>
+      
+      <guid>https://damnotes.netlify.com/hugo/02-front-matter/</guid>
+      <description>Bo</description>
+    </item>
+    
+    <item>
+      <title>Quick Reference</title>
+      <link>https://damnotes.netlify.com/hugo/01-quick-reference/</link>
+      <pubDate>Mon, 05 Aug 2019 21:19:34 +0200</pubDate>
+      
+      <guid>https://damnotes.netlify.com/hugo/01-quick-reference/</guid>
+      <description>Bo2</description>
+    </item>
+    
+  </channel>
+</rss>

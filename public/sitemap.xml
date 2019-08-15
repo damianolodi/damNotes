@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://damnotes.netlify.com/</loc>
+    <lastmod>2019-08-06T21:19:34+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/hugo/06-functions/</loc>
+    <lastmod>2019-08-06T21:19:34+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/hugo/</loc>
+    <lastmod>2019-08-06T21:19:34+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/tags/</loc>
+    <lastmod>2019-08-06T21:19:34+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/tags/hugo/</loc>
+    <lastmod>2019-08-06T21:19:34+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/hugo/05-themes/</loc>
+    <lastmod>2019-08-05T22:19:34+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/hugo/07-config-file/</loc>
+    <lastmod>2019-08-05T21:19:34+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/hugo/04-content-organization/</loc>
+    <lastmod>2019-08-05T21:19:34+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/hugo/03-folder-structure/</loc>
+    <lastmod>2019-08-05T21:19:34+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/hugo/02-front-matter/</loc>
+    <lastmod>2019-08-05T21:19:34+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/hugo/01-quick-reference/</loc>
+    <lastmod>2019-08-05T21:19:34+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/css/01-animations/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/arduino/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/bash/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/bash/01-bash-scripts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/git/01-basics/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/git/02-branches/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/c/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/css/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/01-classes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/css/02-colors/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/git/03-config/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/css/03-content-positioning/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/02-core/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/electronics/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/css/04-flexbox/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/git/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/css/05-grid/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/html/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/03-ipython/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/git/04-linking-to-github/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/linux/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/04-matplotlib/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/css/06-measurement-units/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/05-pandas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/rpi/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/git/05-remote-repositories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/git/06-rewriting-history/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/06-tensorflow/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/git/07-undoing-changes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/css/07-variables/</loc>
+  </url>
+  
+</urlset>

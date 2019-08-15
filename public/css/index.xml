@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CSS on DamNotes</title>
+    <link>https://damnotes.netlify.com/css/</link>
+    <description>Recent content in CSS on DamNotes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://damnotes.netlify.com/css/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Animations</title>
+      <link>https://damnotes.netlify.com/css/01-animations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/01-animations/</guid>
+      <description>An animation requires 3 thing:
+ The start state of the animation The end state of the animation How long it should take to go from start to end state (speed of the animation)
+* { /_there are 8 animation properties total_/ animation-duration: 2s; animation-name: some-name; animation-iteration-count: infinite; /*number of iteration of the animation*/ animation-timing-function: linear; /*changing the animation speed evolution*/ animation-fill-mode: forwards; /*specify the style applied to an element when the animation has finished:*/ animation-iteration-count: 4; /*numbero of iterations - can be infinite*/ } Define the animation</description>
+    </item>
+    
+    <item>
+      <title>Colors</title>
+      <link>https://damnotes.netlify.com/css/02-colors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/02-colors/</guid>
+      <description>General color: #AABBCC; &amp;ndash;&amp;gt; hex values
+color: rgb(0,255,255); &amp;ndash;&amp;gt; rgb values
+color: rgb(5%,50%,100%); &amp;ndash;&amp;gt; rgb values
+color: rgba(255,255,255,0.5); &amp;ndash;&amp;gt; rgb with opacity between 0 and 1
+color: hsl(180,100%,50%); &amp;ndash;&amp;gt; HSL is supported only by CSS3, so older browser can have problem with the encoding of this statement
+ hue 0°-360° (color) saturation % (amount of gray in a given color) lightness % (amount of white in a given color)  Background background-color: green;</description>
+    </item>
+    
+    <item>
+      <title>Content Positioning</title>
+      <link>https://damnotes.netlify.com/css/03-content-positioning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/03-content-positioning/</guid>
+      <description>Display display: block; → the element occupies all the width of the parent element
+display: inline; → the elements are arranged horizontally
+display: none; → not rendered
+Dimensions All elements on a web page are interpreted by the browser as “living” inside of a box.
+width: 150px;
+ min-width and max-width also possible  height: 70%;
+ min-heigth and max-height also possible  Content Based width: min-content; → wrap the content and use the minimum space</description>
+    </item>
+    
+    <item>
+      <title>Flexbox</title>
+      <link>https://damnotes.netlify.com/css/04-flexbox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/04-flexbox/</guid>
+      <description>Everything refers back to the main axis and the cross axis of the container.
+ For a complete guide visit CSS Tricks
+ Properties of the parent display: flex; &amp;ndash;&amp;gt; the element becomes a flex-container - its child items becomes flex-items (only the direct descendants)
+flex-direction: row; &amp;ndash;&amp;gt; row, row-reverse, column, column-reverse set the main axis of the flex container
+flex-wrap: wrap; &amp;ndash;&amp;gt; wrap the flex-items if necessary
+ flex-flow: flex-direction flex-wrap;  justify-content: center; &amp;ndash;&amp;gt; justify along the main axis</description>
+    </item>
+    
+    <item>
+      <title>Grid</title>
+      <link>https://damnotes.netlify.com/css/05-grid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/05-grid/</guid>
+      <description>For a complete guide visit CSS Tricks
+ Dictionary  Line &amp;ndash;&amp;gt; the dividing lines that make up the structure of the grid; Track &amp;ndash;&amp;gt; the space between two adjacent grid lines; Area &amp;ndash;&amp;gt; the total space surrounded by four grid lines;  Properties of the parent (container) display: grid; &amp;ndash;&amp;gt; create a grid container
+ grid, inline-grid  grid-template-columns: track-size1 track-size2 ...;
+ can be expressed in fr  grid-template-rows: track-size1 track-size2 .</description>
+    </item>
+    
+    <item>
+      <title>Measurement Units</title>
+      <link>https://damnotes.netlify.com/css/06-measurement-units/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/06-measurement-units/</guid>
+      <description>vw, vh, vmin, vmax, rem
+px -&amp;gt; pixels are used to set the exact size of an element
+em -&amp;gt; the em represents the size of the base font being used. It is a relative unit of measurement. They change the size of text relative to the parent element’s size of text
+rem -&amp;gt; it means root em. Instead of checking parent elements to size font, it checks the root element.</description>
+    </item>
+    
+    <item>
+      <title>Variables</title>
+      <link>https://damnotes.netlify.com/css/07-variables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/07-variables/</guid>
+      <description>Define the variable using
+body { --var-name: value; }  It becomes available to use inside the element in which you create it and within any elements nested within it.
+ By creating your variables in :root, they will be available throughout the whole web page
+:root { --var-name: value; }  One can then over-write these variables by setting them again within a specific element.
+ Assign the variable using</description>
+    </item>
+    
+  </channel>
+</rss>

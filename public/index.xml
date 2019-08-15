@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DamNotes</title>
+    <link>https://damnotes.netlify.com/</link>
+    <description>Recent content on DamNotes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 Aug 2019 21:19:34 +0200</lastBuildDate>
+    
+	<atom:link href="https://damnotes.netlify.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Functions</title>
+      <link>https://damnotes.netlify.com/hugo/06-functions/</link>
+      <pubDate>Tue, 06 Aug 2019 21:19:34 +0200</pubDate>
+      
+      <guid>https://damnotes.netlify.com/hugo/06-functions/</guid>
+      <description>Hugo functions</description>
+    </item>
+    
+    <item>
+      <title>Themes</title>
+      <link>https://damnotes.netlify.com/hugo/05-themes/</link>
+      <pubDate>Mon, 05 Aug 2019 22:19:34 +0200</pubDate>
+      
+      <guid>https://damnotes.netlify.com/hugo/05-themes/</guid>
+      <description>Bo again</description>
+    </item>
+    
+    <item>
+      <title>Configuration File</title>
+      <link>https://damnotes.netlify.com/hugo/07-config-file/</link>
+      <pubDate>Mon, 05 Aug 2019 21:19:34 +0200</pubDate>
+      
+      <guid>https://damnotes.netlify.com/hugo/07-config-file/</guid>
+      <description>How content is organized in Hugo</description>
+    </item>
+    
+    <item>
+      <title>Content Organization</title>
+      <link>https://damnotes.netlify.com/hugo/04-content-organization/</link>
+      <pubDate>Mon, 05 Aug 2019 21:19:34 +0200</pubDate>
+      
+      <guid>https://damnotes.netlify.com/hugo/04-content-organization/</guid>
+      <description>How content is organized in Hugo</description>
+    </item>
+    
+    <item>
+      <title>Folder Structure</title>
+      <link>https://damnotes.netlify.com/hugo/03-folder-structure/</link>
+      <pubDate>Mon, 05 Aug 2019 21:19:34 +0200</pubDate>
+      
+      <guid>https://damnotes.netlify.com/hugo/03-folder-structure/</guid>
+      <description>Ciao come stai?</description>
+    </item>
+    
+    <item>
+      <title>Front Matter</title>
+      <link>https://damnotes.netlify.com/hugo/02-front-matter/</link>
+      <pubDate>Mon, 05 Aug 2019 21:19:34 +0200</pubDate>
+      
+      <guid>https://damnotes.netlify.com/hugo/02-front-matter/</guid>
+      <description>Bo</description>
+    </item>
+    
+    <item>
+      <title>Quick Reference</title>
+      <link>https://damnotes.netlify.com/hugo/01-quick-reference/</link>
+      <pubDate>Mon, 05 Aug 2019 21:19:34 +0200</pubDate>
+      
+      <guid>https://damnotes.netlify.com/hugo/01-quick-reference/</guid>
+      <description>Bo2</description>
+    </item>
+    
+    <item>
+      <title>Animations</title>
+      <link>https://damnotes.netlify.com/css/01-animations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/01-animations/</guid>
+      <description>An animation requires 3 thing:
+ The start state of the animation The end state of the animation How long it should take to go from start to end state (speed of the animation)
+* { /_there are 8 animation properties total_/ animation-duration: 2s; animation-name: some-name; animation-iteration-count: infinite; /*number of iteration of the animation*/ animation-timing-function: linear; /*changing the animation speed evolution*/ animation-fill-mode: forwards; /*specify the style applied to an element when the animation has finished:*/ animation-iteration-count: 4; /*numbero of iterations - can be infinite*/ } Define the animation</description>
+    </item>
+    
+    <item>
+      <title>Bash Scripts</title>
+      <link>https://damnotes.netlify.com/bash/01-bash-scripts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/bash/01-bash-scripts/</guid>
+      <description>Making Custom Commands  Access the .bashrc file with
+nano ~/.bashrc  Open with nano and not with open, otherwise problems may occur when applying the following steps.
+ Inside the file, write the following
+alias command_name=&amp;#34;command1 &amp;amp;&amp;amp; command2 &amp;amp;&amp;amp; ...&amp;#34;  The &amp;amp;&amp;amp; apply the following command only if the current one is succesfull. On the other hand, use ; to run all the commands one after the other.</description>
+    </item>
+    
+    <item>
+      <title>Basics</title>
+      <link>https://damnotes.netlify.com/git/01-basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/git/01-basics/</guid>
+      <description>git init &amp;lt;directory_path&amp;gt; create empty git repository in the specified directory. Omit the arguments to initialise in the current directory git add &amp;lt;file/directory&amp;gt; stage all changes in the provided path for the next commit git commit -m “&amp;lt;message&amp;gt;” commit the staged changes with the message provided. Messages must be  in quotation marks; written in the present tense; be brief (50 characters or less) when using -m  git status list staged, unstaged and untracked files git diff show unstated changes between the index and the working directory  git diff &amp;lt;file&amp;gt; preview the differences between the file in the working directory and the one in the staging area  git log display the entire commit history.</description>
+    </item>
+    
+    <item>
+      <title>Branches</title>
+      <link>https://damnotes.netlify.com/git/02-branches/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/git/02-branches/</guid>
+      <description> git branch list all the branches in the repo
+ git branch &amp;lt;name&amp;gt; create a new branch
+ git checkout -b &amp;lt;branch&amp;gt; create and switch to a new branch
+ git checkout &amp;lt;branch&amp;gt; switch to an existing branch
+ git merge &amp;lt;branch&amp;gt; merge the provided branch into the current branch
+ git branch -d &amp;lt;branch&amp;gt; delete the selected branch
+  </description>
+    </item>
+    
+    <item>
+      <title>Classes</title>
+      <link>https://damnotes.netlify.com/python/01-classes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/01-classes/</guid>
+      <description>Classes are used to define objects in python. Every object has properties and associated methods (functons).
+Class Definition class Person: def __init__(self, name, age): #(self, var1, var2) self.name = name #self.property_name = var1 self.age = age def my_func(self): print(&amp;#34;Hello my name is &amp;#34; + self.name)  The __init__() is needed in all classes definition and it is always executed when the class is being initiated. It is used to assign values to object properties, or other operations that are necessary to do when the object is being created.</description>
+    </item>
+    
+    <item>
+      <title>Colors</title>
+      <link>https://damnotes.netlify.com/css/02-colors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/02-colors/</guid>
+      <description>General color: #AABBCC; &amp;ndash;&amp;gt; hex values
+color: rgb(0,255,255); &amp;ndash;&amp;gt; rgb values
+color: rgb(5%,50%,100%); &amp;ndash;&amp;gt; rgb values
+color: rgba(255,255,255,0.5); &amp;ndash;&amp;gt; rgb with opacity between 0 and 1
+color: hsl(180,100%,50%); &amp;ndash;&amp;gt; HSL is supported only by CSS3, so older browser can have problem with the encoding of this statement
+ hue 0°-360° (color) saturation % (amount of gray in a given color) lightness % (amount of white in a given color)  Background background-color: green;</description>
+    </item>
+    
+    <item>
+      <title>Config</title>
+      <link>https://damnotes.netlify.com/git/03-config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/git/03-config/</guid>
+      <description>The --global input means that one wants to apply this setting to all the project, not just the current one.
+ git config --global user.name &amp;lt;name&amp;gt; -&amp;gt; define the author name to be used fo all commits by the current user
+ git config --global user.email &amp;lt;email&amp;gt;
+ git config --global alias. &amp;lt;alias-name&amp;gt; &amp;lt;git-command&amp;gt; -&amp;gt; create shortcut for a git command
+ e.g. git config --global alias.ciao commit -m set git ciao to git commit -m  git config --global color.</description>
+    </item>
+    
+    <item>
+      <title>Content Positioning</title>
+      <link>https://damnotes.netlify.com/css/03-content-positioning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/03-content-positioning/</guid>
+      <description>Display display: block; → the element occupies all the width of the parent element
+display: inline; → the elements are arranged horizontally
+display: none; → not rendered
+Dimensions All elements on a web page are interpreted by the browser as “living” inside of a box.
+width: 150px;
+ min-width and max-width also possible  height: 70%;
+ min-heigth and max-height also possible  Content Based width: min-content; → wrap the content and use the minimum space</description>
+    </item>
+    
+    <item>
+      <title>Core</title>
+      <link>https://damnotes.netlify.com/python/02-core/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/02-core/</guid>
+      <description>Lists  l = [100, 21, 88, 3] → initialize the list
+ l = list() → create empty list
+ len(list) → return the length of the list
+  Manupulation  l.append(item) → add a new item at the end of the list
+ min(list); max(list) → return min or max value of the list
+ list.sort() → sort in ascendin order
+ &amp;quot; &amp;quot;.join([&amp;quot;A&amp;quot;,&amp;quot;B&amp;quot;,&amp;quot;C&amp;quot;,&amp;quot;D&amp;quot;]) → combine list elements into the string &amp;ldquo;A B C D&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>Flexbox</title>
+      <link>https://damnotes.netlify.com/css/04-flexbox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/04-flexbox/</guid>
+      <description>Everything refers back to the main axis and the cross axis of the container.
+ For a complete guide visit CSS Tricks
+ Properties of the parent display: flex; &amp;ndash;&amp;gt; the element becomes a flex-container - its child items becomes flex-items (only the direct descendants)
+flex-direction: row; &amp;ndash;&amp;gt; row, row-reverse, column, column-reverse set the main axis of the flex container
+flex-wrap: wrap; &amp;ndash;&amp;gt; wrap the flex-items if necessary
+ flex-flow: flex-direction flex-wrap;  justify-content: center; &amp;ndash;&amp;gt; justify along the main axis</description>
+    </item>
+    
+    <item>
+      <title>Grid</title>
+      <link>https://damnotes.netlify.com/css/05-grid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/05-grid/</guid>
+      <description>For a complete guide visit CSS Tricks
+ Dictionary  Line &amp;ndash;&amp;gt; the dividing lines that make up the structure of the grid; Track &amp;ndash;&amp;gt; the space between two adjacent grid lines; Area &amp;ndash;&amp;gt; the total space surrounded by four grid lines;  Properties of the parent (container) display: grid; &amp;ndash;&amp;gt; create a grid container
+ grid, inline-grid  grid-template-columns: track-size1 track-size2 ...;
+ can be expressed in fr  grid-template-rows: track-size1 track-size2 .</description>
+    </item>
+    
+    <item>
+      <title>IPython</title>
+      <link>https://damnotes.netlify.com/python/03-ipython/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/03-ipython/</guid>
+      <description> .display module  from IPython import display → Used to dusplay various type of data (audio, images, &amp;hellip;) (doc).
+ display.display(obj) → display a python object in all frontends (doc)
+  </description>
+    </item>
+    
+    <item>
+      <title>Linking to GitHub</title>
+      <link>https://damnotes.netlify.com/git/04-linking-to-github/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/git/04-linking-to-github/</guid>
+      <description> git init initialise the project
+ git add . add everything to the staging area
+ git commit -m &amp;quot;message&amp;quot; commit the files in the staging area
+ Go to Github, create a new repository and copy the provided link
+ git remote add origin &amp;lt;link&amp;gt; link the two repositories
+ git push -u origin master push the master branch to the remote repository
+  </description>
+    </item>
+    
+    <item>
+      <title>Matplotlib</title>
+      <link>https://damnotes.netlify.com/python/04-matplotlib/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/04-matplotlib/</guid>
+      <description>Custom Plot Style This process is considered for a Windows machine where Python is installed using Miniconda 3 (for Anaconda it should be the same).
+The idea is to create a custom style file in the same directory where all the styles are archived. The instruction reported on the documentation probably are correct only for a &amp;ldquo;normal&amp;rdquo; Python installation. This is the process to follow if Miniconda is installed:</description>
+    </item>
+    
+    <item>
+      <title>Measurement Units</title>
+      <link>https://damnotes.netlify.com/css/06-measurement-units/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/06-measurement-units/</guid>
+      <description>vw, vh, vmin, vmax, rem
+px -&amp;gt; pixels are used to set the exact size of an element
+em -&amp;gt; the em represents the size of the base font being used. It is a relative unit of measurement. They change the size of text relative to the parent element’s size of text
+rem -&amp;gt; it means root em. Instead of checking parent elements to size font, it checks the root element.</description>
+    </item>
+    
+    <item>
+      <title>Pandas</title>
+      <link>https://damnotes.netlify.com/python/05-pandas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/05-pandas/</guid>
+      <description>{df → DataFrame; s → Series}
+ import pandas as pd
+  File I/O  pd.read_csv(path); pd.read_json(path); pd.read_excel(path); → read .csv, .json or .xlsx file.
+ pd.DataFrame(dict) → create a df from a dictionary.
+ pd.to_csv(path); pd.to_json(path); pd.to_excel(path); → export to .csv, .json or .xlsx file.
+  df manipulation  df.copy(deep=True) → copy the df indices and data (doc).  Statistics  df.corr(method=Pearson) → compute pairwise correlation of columns (doc) - (Pearson Correlation Coefficient - Wikipedia).</description>
+    </item>
+    
+    <item>
+      <title>Remote Repositories</title>
+      <link>https://damnotes.netlify.com/git/05-remote-repositories/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/git/05-remote-repositories/</guid>
+      <description>git clone &amp;lt;repository_path&amp;gt; &amp;lt;clone_name&amp;gt; clone the provided repository in the current path. Original repo can be located on the local filesystem or on a remote machine via HTTP or SSH
+ git remote add &amp;lt;name&amp;gt; &amp;lt;url&amp;gt; create a new connection to a remote repository.
+ After adding a remote, you can use &amp;lt;name&amp;gt; as a shortcut for &amp;lt;url&amp;gt; in other commands.
+ git remote -v -&amp;gt; lists the name of the remote, origin, as well as its location</description>
+    </item>
+    
+    <item>
+      <title>Rewriting History</title>
+      <link>https://damnotes.netlify.com/git/06-rewriting-history/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/git/06-rewriting-history/</guid>
+      <description> git commit —amend replace the last commit with the staged changes and last commit combined
+ Use with nothing staged to edit the last commit’s message  git rebase &amp;lt;base&amp;gt; …
+  </description>
+    </item>
+    
+    <item>
+      <title>Tensorflow</title>
+      <link>https://damnotes.netlify.com/python/06-tensorflow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/06-tensorflow/</guid>
+      <description>import tensorflow as tf
+ from tensorflow.python.data import Dataset → select the data module in the Python API of Tensorflow and import a class
+  tf.data module  Docs Dataset class (doc)  tf.feature_column module  tf.feature_column.numeric_column → create a numeric column for the model (doc).
+ tf.feature_column.bucketized_column(source_column, boundaries) → takes a numeric column as input and apply binning using boundaries (doc).
+ tf.feature_column.cross_column() → returns a column to perform crosses of categorical features (doc)</description>
+    </item>
+    
+    <item>
+      <title>Undoing Changes</title>
+      <link>https://damnotes.netlify.com/git/07-undoing-changes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/git/07-undoing-changes/</guid>
+      <description> git revert &amp;lt;commit&amp;gt; create new commit that undoes all of the changes made in &amp;lt;commit&amp;gt;, then apply it to the current branch
+ git reset &amp;lt;file&amp;gt; remove the file from the stain area, but leave the working directory unchanged
+  </description>
+    </item>
+    
+    <item>
+      <title>Variables</title>
+      <link>https://damnotes.netlify.com/css/07-variables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/07-variables/</guid>
+      <description>Define the variable using
+body { --var-name: value; }  It becomes available to use inside the element in which you create it and within any elements nested within it.
+ By creating your variables in :root, they will be available throughout the whole web page
+:root { --var-name: value; }  One can then over-write these variables by setting them again within a specific element.
+ Assign the variable using</description>
+    </item>
+    
+  </channel>
+</rss>

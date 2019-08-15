@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="generator" content="Hugo 0.56.3" />
+    
+    
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/style.css">
+    
+    
+    <title>Classes | DamNotes</title>
+</head>
+
+<body>
+    
+<div class="container border-bottom border-dark">
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="https://damnotes.netlify.com/">DamNotes</a>
+        
+        <ul class="navbar-nav">
+            
+            
+            
+            <li class=" nav-item active">
+                <a class="nav-link" href="/about/"><i data-feather="user"></i> About<span
+                        class="sr-only">(current)</span></a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+    <div class="container">
+        <main id="main">
+            
+
+<h2 class="m-1 mb-3 mt-3">Classes</h2>
+
+
+
+<p>Classes are used to define objects in python. Every object has <strong>properties</strong> and associated <strong>methods</strong> (functons).</p>
+
+<hr />
+
+<h3 id="class-definition">Class Definition</h3>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000;font-weight:bold">class</span> <span style="color:#00f;font-weight:bold">Person</span>:
+    <span style="color:#008000;font-weight:bold">def</span> __init__(self, name, age): <span style="color:#408080;font-style:italic">#(self, var1, var2)</span>
+        self<span style="color:#666">.</span>name <span style="color:#666">=</span> name <span style="color:#408080;font-style:italic">#self.property_name = var1</span>
+        self<span style="color:#666">.</span>age <span style="color:#666">=</span> age
+
+    <span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">my_func</span>(self):
+        <span style="color:#008000;font-weight:bold">print</span>(<span style="color:#ba2121">&#34;Hello my name is &#34;</span> <span style="color:#666">+</span> self<span style="color:#666">.</span>name)</code></pre></div>
+<ul>
+<li><p>The <code>__init__()</code> is needed in all classes definition and it is always executed when the class is being initiated. It is used to <strong>assign values to object properties,</strong> or other operations that are necessary to do when the object is being created.</p></li>
+
+<li><p>The function <code>my_func</code> is a method of the class.</p></li>
+
+<li><p>For convention, class names start with <strong>capital letters.</strong></p></li>
+</ul>
+
+<p><strong>Use</strong> <code>self.property_name</code> <strong>to access properties values inside the class definition.</strong> The <code>self</code> parameter is a reference to the current instance of the class.</p>
+
+<hr />
+
+<h3 id="object-creation">Object Creation</h3>
+
+<ul>
+<li><p><code>new_object = My_class(property_name1, property_name2, ...)</code> → <strong>create</strong> an object</p></li>
+
+<li><p><code>new_object.property_name1</code> → <strong>access a property</strong></p></li>
+
+<li><p><code>new_object.property_name1 = new_value</code> → <strong>modify a property</strong></p></li>
+
+<li><p><code>new_object.method()</code> → <strong>apply a method</strong></p></li>
+
+<li><p><code>del new_object.property_name1</code> → <strong>delete</strong> an object property</p></li>
+</ul>
+
+<hr />
+
+<h3 id="inheritance">Inheritance</h3>
+
+<p>Inheritance allows one to define a class that inherits (acquire) all the methods and properties from another class. Then one has a <strong>parent class</strong> and a <strong>child class.</strong></p>
+
+<p>To <strong>define</strong> a new <em>child class</em> use</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000;font-weight:bold">class</span> <span style="color:#00f;font-weight:bold">Student</span>(Person):
+    <span style="color:#008000;font-weight:bold">def</span> __init__(self, fname, lname, year):
+        <span style="color:#408080;font-style:italic">#add properties etc.</span>
+        self<span style="color:#666">.</span>graduationyear <span style="color:#666">=</span> year
+
+    <span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">welcome</span>(self):
+        <span style="color:#008000;font-weight:bold">print</span>(<span style="color:#ba2121">&#34;Welcome&#34;</span>, self<span style="color:#666">.</span>firstname, self<span style="color:#666">.</span>lastname, <span style="color:#ba2121">&#34;to the class of&#34;</span>, self<span style="color:#666">.</span>graduationyear)</code></pre></div>
+<ul>
+<li><p>When one adds the <code>__init__()</code> function, the <em>child class</em> will <strong>no longer inherit</strong> the parent&rsquo;s <code>__init__()</code> function. To keep the inheritance of the parent&rsquo;s <code>__init__()</code> function, add a call to the parent&rsquo;s <code>__init__()</code> function:</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000;font-weight:bold">class</span> <span style="color:#00f;font-weight:bold">Student</span>(Person):
+    <span style="color:#008000;font-weight:bold">def</span> __init__(self, fname, lname, year):
+        Person<span style="color:#666">.</span>__init__(self, fname, lname)
+        self<span style="color:#666">.</span>graduationyear <span style="color:#666">=</span> year
+
+    <span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">welcome</span>(self):
+        <span style="color:#008000;font-weight:bold">print</span>(<span style="color:#ba2121">&#34;Welcome&#34;</span>, self<span style="color:#666">.</span>firstname, self<span style="color:#666">.</span>lastname, <span style="color:#ba2121">&#34;to the class of&#34;</span>, self<span style="color:#666">.</span>graduationyear)</code></pre></div></li>
+
+<li><p>If one adds a method in the <em>child class</em> with the <strong>same name</strong> as a function in the parent class, <em>the inheritance of the parent method will be overridden.</em></p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000;font-weight:bold">class</span> <span style="color:#00f;font-weight:bold">Person</span>:
+    <span style="color:#008000;font-weight:bold">def</span> __init__(self, name, age):  <span style="color:#408080;font-style:italic"># (self, var1, var2)</span>
+        self<span style="color:#666">.</span>name <span style="color:#666">=</span> name  <span style="color:#408080;font-style:italic"># self.property_name = var1</span>
+        self<span style="color:#666">.</span>age <span style="color:#666">=</span> age
+
+    <span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">my_func</span>(self):
+        <span style="color:#008000;font-weight:bold">print</span>(<span style="color:#ba2121">&#34;Hello my name is &#34;</span> <span style="color:#666">+</span> self<span style="color:#666">.</span>name)</code></pre></div></li>
+</ul>
+
+
+
+        </main>
+    </div>
+    <div class="container border-top border-dark">
+    <nav class="navbar navbar-light justify-content-center">
+        <div class="navbar-nav d-flex flex-row justify-content-center">
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://github.com/damianolodi"
+                style="margin:10px;"><i data-feather="github"></i> GitHub</a>
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://www.linkedin.com/in/damiano-lodi/"
+                style="margin:10px;"><i data-feather="linkedin"></i> LinkedIn</a>
+            
+        </div>
+    </nav>
+</div>
+    
+
+<script src="https://damnotes.netlify.com/js/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+</body>
+
+</html>

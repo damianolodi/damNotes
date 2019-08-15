@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="generator" content="Hugo 0.56.3" />
+    
+    
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/style.css">
+    
+    
+    <title>Folder Structure | DamNotes</title>
+</head>
+
+<body>
+    
+<div class="container border-bottom border-dark">
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="https://damnotes.netlify.com/">DamNotes</a>
+        
+        <ul class="navbar-nav">
+            
+            
+            
+            <li class=" nav-item active">
+                <a class="nav-link" href="/about/"><i data-feather="user"></i> About<span
+                        class="sr-only">(current)</span></a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+    <div class="container">
+        <main id="main">
+            
+
+<h2 class="m-1 mb-3 mt-3">Folder Structure</h2>
+
+
+
+<h2 id="archetypes">Archetypes</h2>
+
+<p>Set the <em>front matter</em> for different content types.</p>
+
+<ul>
+<li><p><em>archetypes/default.md</em> → <strong>default front matter</strong> for new content</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---<span style="color:#bbb">
+</span><span style="color:#bbb"></span>title:<span style="color:#bbb"> </span><span style="color:#ba2121">&#34;{{ replace .Name &#34;</span>-<span style="color:#ba2121">&#34; &#34;</span><span style="color:#bbb"> </span><span style="color:#ba2121">&#34; | title }}&#34;</span><span style="color:#bbb">
+</span><span style="color:#bbb"></span>date:<span style="color:#bbb"> </span>{{<span style="color:#bbb"> </span>.Date<span style="color:#bbb"> </span>}}<span style="color:#bbb">
+</span><span style="color:#bbb"></span>draft:<span style="color:#bbb"> </span><span style="color:#008000;font-weight:bold">true</span><span style="color:#bbb">
+</span><span style="color:#bbb"></span>---</code></pre></div></li>
+</ul>
+
+<hr />
+
+<h2 id="config">Config</h2>
+
+<ul>
+<li>Used to store various different configurations.</li>
+<li>If the number of configuration is limited, one can just use a single <code>config.toml</code> file. Also <code>.json</code> and <code>.yaml</code> can be used.</li>
+<li>To see more about configurations and configure each site properly, visit <a href="https://gohugo.io/getting-started/configuration/#all-variables-yaml">this page</a></li>
+</ul>
+
+<hr />
+
+<h2 id="content">Content</h2>
+
+<ul>
+<li>Directory used to store all the text file for all the contents. E.g., one can create a subdirectory for posts, articles,…</li>
+<li>Hugo uses sections to assign default <a href="https://gohugo.io/content-management/types/">content types</a>
+
+<ul>
+<li>A <strong>section</strong> is a portion of the site that holds subcontinent, such as a blog section and a work section. The blog section contains individual blog posts, and the work section is a portfolio of individual projects.</li>
+<li>A <strong>static page</strong> is simply a page that renders content and nothing else. It doesn’t need to index a list of subcontinent for the user to peruse. You can’t go down any further.</li>
+</ul></li>
+</ul>
+
+<h3 id="content-types">Content Types</h3>
+
+<ul>
+<li>All markdown files inside <code>content/</code>, have a <strong>type</strong> associated to them. Hugo infers a markdown file’s type in one of two ways:
+
+<ol>
+<li>The name of the subdirectory that the file resides in: the file <code>a-blog-post.md</code> located at <code>content/blog/a-blog-post.md</code> will have the type <code>blog</code></li>
+<li>The type variable defined in that file’s front matter (optional): assigned using the <code>type</code> variable in front matter. In this cased, the type assigned by the previous method is overwritten</li>
+</ol></li>
+<li>Pages can be <strong>single pages</strong> or <strong>list pages</strong>. Those last ones are represented by <code>_index.md</code> files and are used to list all the posts of that <em>section</em> (not type!)</li>
+</ul>
+
+<hr />
+
+<h2 id="layouts">Layouts</h2>
+
+<ul>
+<li>Used to store templates that will overrides the ones from the used theme.</li>
+
+<li><p>Templates include <a href="https://gohugo.io/templates/list/">list pages</a> , your <a href="https://gohugo.io/templates/homepage/">homepage</a> , <a href="https://gohugo.io/templates/taxonomy-templates/">taxonomy templates</a> , <a href="https://gohugo.io/templates/partials/">partials</a> , <a href="https://gohugo.io/templates/single-page-templates/">single page templates</a> , and more.</p></li>
+
+<li><p><code>layouts/index.html</code> → homepage template</p></li>
+
+<li><p><code>layouts/_default/single.html</code> → <a href="https://gohugo.io/templates/single-page-templates/#readout">single page</a> template (blog posts)</p></li>
+
+<li><p><code>layouts/_default/list.html</code> → template for <a href="https://gohugo.io/templates/lists/#readout">list pages</a>. Range over a parameter using</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang">{{ <span style="color:#008000;font-weight:bold">range</span> .Pages.ByPublishDate.Reverse }}
+{{ end }}</code></pre></div></li>
+
+<li><p><code>layouts/_default/baseof.html</code> → contains common code to <strong>all</strong> other layouts. <strong>Must</strong> contain the line <code>{{ block &quot;main&quot; . }}{{ end }}</code> which tells where to place the unique code of each other layout. After this file is created, all other layouts should be contained inside the following block <code>{{ define &quot;main&quot; }}{{ end }}</code>. <a href="https://gohugo.io/templates/base/">Doc</a></p></li>
+
+<li><p><code>layout/partials/</code> → components of the website that can be extrapolated and &ldquo;described&rdquo; in a proper file (e.g. header, footer,&hellip;). Each partial can be called in another layout template using <code>{{ partial fileName.hmtl}}</code>. They can (should) be called also in <code>basof.html</code> to make the page structure clear. <a href="https://gohugo.io/templates/partials/#readout">Doc</a></p></li>
+
+<li><p><code>layout/partials/nav.html</code> → contains the menu of the website. It can be built using parameters defined under the <code>[menu]</code> keyword in the <code>config.toml</code> file of the website. <a href="https://gohugo.io/templates/menu-templates/#readout">Doc</a></p></li>
+</ul>
+
+<hr />
+
+<h2 id="static">Static</h2>
+
+<p>Store all the static content, usually in the following subdirectories:</p>
+
+<ul>
+<li><code>img</code></li>
+<li><code>css</code></li>
+<li><code>js</code></li>
+</ul>
+
+<p>When Hugo builds the site, all assets inside the static directory are <strong>copied over as-is.</strong></p>
+
+<hr />
+
+<h2 id="resources">Resources</h2>
+
+<ol>
+<li><a href="https://www.jakewiesler.com/blog/hugo-directory-structure/">Hugo’s Directory Structure Explained | Jake Wiesler</a></li>
+</ol>
+
+
+
+        </main>
+    </div>
+    <div class="container border-top border-dark">
+    <nav class="navbar navbar-light justify-content-center">
+        <div class="navbar-nav d-flex flex-row justify-content-center">
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://github.com/damianolodi"
+                style="margin:10px;"><i data-feather="github"></i> GitHub</a>
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://www.linkedin.com/in/damiano-lodi/"
+                style="margin:10px;"><i data-feather="linkedin"></i> LinkedIn</a>
+            
+        </div>
+    </nav>
+</div>
+    
+
+<script src="https://damnotes.netlify.com/js/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+</body>
+
+</html>
