@@ -1,6 +1,6 @@
 ---
 title: "Animations"
-draft: flase
+draft: false
 ---
 
 An animation requires 3 thing:

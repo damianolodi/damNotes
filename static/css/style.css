@@ -40,3 +40,11 @@ Cards sizing
 .argument-card {
     width: 13rem;
 }
+
+.img {
+    max-width: 100%;
+}
+
+img[src*="#img-custom"] {
+    width: 10%;
+}
