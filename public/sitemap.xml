@@ -91,37 +91,12 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/python/15-data-structures/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/python/16-files-io/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/python/17-functions/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/python/17-lambda-functions/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/python/18-loops/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/python/19-python-in-atom/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/python/20-virtual-environments/</loc>
     <priority>0</priority>
   </url>
   
@@ -150,6 +125,14 @@
   </url>
   
   <url>
+    <loc>https://damnotes.netlify.com/c/basic-concepts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/00-basic-concepts/</loc>
+  </url>
+  
+  <url>
     <loc>https://damnotes.netlify.com/git/01-basics/</loc>
   </url>
   
@@ -166,10 +149,6 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/python/01-classes/</loc>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/css/02-colors/</loc>
   </url>
   
@@ -179,10 +158,6 @@
   
   <url>
     <loc>https://damnotes.netlify.com/css/03-content-positioning/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/python/02-core/</loc>
   </url>
   
   <url>
@@ -250,11 +225,11 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/python/04-matplotlib/</loc>
+    <loc>https://damnotes.netlify.com/python/03-matplotlib/</loc>
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/python/04b-matplotlib/</loc>
+    <loc>https://damnotes.netlify.com/python/03b-matplotlib/</loc>
   </url>
   
   <url>
@@ -266,7 +241,7 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/python/07-numpy/</loc>
+    <loc>https://damnotes.netlify.com/python/01-numpy/</loc>
   </url>
   
   <url>
@@ -274,11 +249,11 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/python/05-pandas/</loc>
+    <loc>https://damnotes.netlify.com/python/02-pandas/</loc>
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/python/05b-pandas/</loc>
+    <loc>https://damnotes.netlify.com/python/02b-pandas/</loc>
   </url>
   
   <url>

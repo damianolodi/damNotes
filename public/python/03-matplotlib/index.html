@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://damnotes.netlify.com/css/style.css">
     
     
-    <title>C | DamNotes</title>
+    <title>Matplotlib | DamNotes</title>
 </head>
 
 <body>
@@ -36,25 +36,27 @@
         <main id="main">
             
 
-<h2 class="m-3">C</h2>
-<div
-    class="d-flex flex-row flex-wrap justify-content-around align-items-center">
+<h2 class="m-1 mb-3 mt-3">Matplotlib</h2>
 
-    
-    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-        <div
-            class="card m-1 mb-2 argument-card text-center bg-light border border-dark roudned-lg">
-            <div class="card-body">
-                <h3 class="card-title h4">Bash Scripts</h3>
-                <h4 class="card-subtitle mb-2 text-muted h6">Card subtitle
-                </h4>
-                <a href="/c/basic-concepts/" class="card-link">Read</a>
-            </div>
-        </div>
-    </div>
-    
 
-</div>
+
+<h3 id="custom-plot-style">Custom Plot Style</h3>
+
+<p>This process is considered for a Windows machine where Python is installed using Miniconda 3 (for Anaconda it should be the same).</p>
+
+<p>The idea is to create a custom style file in the same directory where all the styles are archived. The instruction reported on the documentation probably are correct only for a &ldquo;normal&rdquo; Python installation. This is the process to follow if Miniconda is installed:</p>
+
+<ol>
+<li><p>navigate into the matplotlib style folder (mine is in <code>C:\Users\UserName\Miniconda3\Lib\site-packages\matplotlib\mpl-data\stylelib</code>)</p></li>
+
+<li><p>create a file named <code>style-name.mplstyle</code> and wrtite in it the styles as reported on the documentation</p></li>
+
+<li><p>in the code use the following</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">matplotlib.pyplot</span> <span style="color:#008000;font-weight:bold">as</span> <span style="color:#00f;font-weight:bold">plt</span>
+<span style="color:#666">%</span>matplotlib inline <span style="color:#408080;font-style:italic">#if you are using jupyter</span>
+plt<span style="color:#666">.</span>style<span style="color:#666">.</span>use(<span style="color:#ba2121">&#39;style-name&#39;</span>)</code></pre></div></li>
+</ol>
+
 
 
         </main>

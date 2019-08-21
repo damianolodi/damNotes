@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://damnotes.netlify.com/css/style.css">
     
     
-    <title>C | DamNotes</title>
+    <title>Pandas | DamNotes</title>
 </head>
 
 <body>
@@ -36,25 +36,44 @@
         <main id="main">
             
 
-<h2 class="m-3">C</h2>
-<div
-    class="d-flex flex-row flex-wrap justify-content-around align-items-center">
+<h2 class="m-1 mb-3 mt-3">Pandas</h2>
 
-    
-    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-        <div
-            class="card m-1 mb-2 argument-card text-center bg-light border border-dark roudned-lg">
-            <div class="card-body">
-                <h3 class="card-title h4">Bash Scripts</h3>
-                <h4 class="card-subtitle mb-2 text-muted h6">Card subtitle
-                </h4>
-                <a href="/c/basic-concepts/" class="card-link">Read</a>
-            </div>
-        </div>
-    </div>
-    
 
-</div>
+
+<ul>
+<li><p>{<code>df</code> → DataFrame; <code>s</code> → Series}</p></li>
+
+<li><p><code>import pandas as pd</code></p></li>
+</ul>
+
+<hr />
+
+<h3 id="file-i-o">File I/O</h3>
+
+<ul>
+<li><p><code>pd.read_csv(path); pd.read_json(path); pd.read_excel(path);</code> → <strong>read</strong> .csv, .json or .xlsx file.</p></li>
+
+<li><p><code>pd.DataFrame(dict)</code> → create a <code>df</code> from a dictionary.</p></li>
+
+<li><p><code>pd.to_csv(path); pd.to_json(path); pd.to_excel(path);</code> → <strong>export</strong> to .csv, .json or .xlsx file.</p></li>
+</ul>
+
+<hr />
+
+<h3 id="df-manipulation"><code>df</code> manipulation</h3>
+
+<ul>
+<li><code>df.copy(deep=True)</code> → copy the <code>df</code> indices and data (<a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.copy.html#pandas-dataframe-copy">doc</a>).</li>
+</ul>
+
+<hr />
+
+<h3 id="statistics">Statistics</h3>
+
+<ul>
+<li><code>df.corr(method=Pearson)</code> → compute pairwise correlation of columns (<a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.corr.html#pandas-dataframe-corr">doc</a>) - (<a href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson Correlation Coefficient - Wikipedia</a>).</li>
+</ul>
+
 
 
         </main>

@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="generator" content="Hugo 0.56.3" />
+    
+    
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/style.css">
+    
+    
+    <title>Basic Concepts | DamNotes</title>
+</head>
+
+<body>
+    
+<div class="container border-bottom border-dark">
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="https://damnotes.netlify.com/">DamNotes</a>
+        
+        <ul class="navbar-nav">
+            
+            
+            
+            <li class=" nav-item active">
+                <a class="nav-link" href="/about/"><i data-feather="user"></i> About<span
+                        class="sr-only">(current)</span></a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+    <div class="container">
+        <main id="main">
+            
+
+<h2 class="m-1 mb-3 mt-3">Basic Concepts</h2>
+
+
+
+<h3 id="variable-types">Variable Types</h3>
+
+<h4 id="lists">Lists</h4>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">l <span style="color:#666">=</span> [<span style="color:#666">100</span>, <span style="color:#666">21</span>, <span style="color:#666">88</span>, <span style="color:#666">3</span>]
+l <span style="color:#666">=</span> <span style="color:#008000">list</span>() <span style="color:#408080;font-style:italic">#empty list</span>
+
+<span style="color:#408080;font-style:italic"># List Comprehension -&gt; quick list creation</span>
+evens_to_50 <span style="color:#666">=</span> [i <span style="color:#008000;font-weight:bold">for</span> i <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">range</span>(<span style="color:#666">51</span>) <span style="color:#008000;font-weight:bold">if</span> i <span style="color:#666">%</span> <span style="color:#666">2</span> <span style="color:#666">==</span> <span style="color:#666">0</span>]
+other_list <span style="color:#666">=</span> [[i,j] <span style="color:#008000;font-weight:bold">for</span> i <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">range</span>(x) <span style="color:#008000;font-weight:bold">for</span> j <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">range</span>(y) <span style="color:#008000;font-weight:bold">if</span> (x<span style="color:#666">+</span>y)<span style="color:#666">!=</span>n]
+
+<span style="color:#408080;font-style:italic"># Element selection</span>
+l[:<span style="color:#666">2</span>] <span style="color:#408080;font-style:italic"># first two items (0 and 1)</span>
+l[<span style="color:#666">3</span>:] <span style="color:#408080;font-style:italic"># ourth through last items</span>
+l[::<span style="color:#666">2</span>] <span style="color:#408080;font-style:italic"># first through end with a step of 2</span>
+<span style="color:#408080;font-style:italic">## in general [start(inclusive):end(exclusive):stride]</span>
+<span style="color:#408080;font-style:italic">## negative stride progress the list in reverse order</span>
+
+<span style="color:#408080;font-style:italic"># Multi-index lists</span>
+l <span style="color:#666">=</span> [<span style="color:#666">0</span>, <span style="color:#666">1</span>, <span style="color:#666">2</span>, <span style="color:#666">3</span>;
+     <span style="color:#666">4</span>, <span style="color:#666">5</span>, <span style="color:#666">6</span>, <span style="color:#666">7</span>]
+l[<span style="color:#666">1</span>][<span style="color:#666">2</span>] <span style="color:#408080;font-style:italic">#6</span></code></pre></div>
+<ul>
+<li><p><code>l1 + l2</code> → <strong>concatenate</strong> lists</p></li>
+
+<li><p><code>len(list)</code> → <strong>length</strong> of the list</p></li>
+
+<li><p><code>min(list)</code>, <code>max(list)</code> → return <strong>min</strong> or <strong>max</strong> value of the list</p></li>
+
+<li><p><code>l.append(item)</code> → <strong>add</strong> <em>item</em> at the end of the list</p></li>
+
+<li><p><code>l.insert(i, value)</code> → <strong>insert</strong> <em>new value</em> in position <em>i</em></p></li>
+
+<li><p><code>l.pop(index)</code> → <strong>remove</strong> item at <em>index</em></p></li>
+
+<li><p><code>list.sort()</code> → <strong>sort</strong> in ascending order</p></li>
+
+<li><p><code>item in list</code> → return a boolean if <em>item</em> <strong>is found</strong> in <em>list</em></p></li>
+
+<li><p><code>l.index(value)</code> → return <strong>first index</strong> in which <em>value</em> is found</p></li>
+</ul>
+
+<h4 id="strings">Strings</h4>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">s <span style="color:#666">=</span> <span style="color:#ba2121">&#34;Ciao!&#34;</span></code></pre></div>
+<ul>
+<li><p><code>len(string)</code> → <strong>lenght</strong> of the string</p></li>
+
+<li><p><code>&quot; &quot;.join([&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;])</code> → <strong>combine list elements</strong> into the string &ldquo;A B C D&rdquo;</p></li>
+
+<li><p><code>s.find(&quot;substring&quot;, start, stop)</code> → <strong>search</strong> substring in string and return the lowest index where it is found. Return -1 instead.</p></li>
+
+<li><p><code>s.startswith(&quot;something&quot;)</code> → check if <em>string</em> <strong>starts</strong> with &ldquo;something&rdquo;.</p></li>
+
+<li><p><code>s.endswith(&quot;something&quot;)</code>→ check if <em>string</em> <strong>ends</strong> with &ldquo;something&rdquo;.</p></li>
+
+<li><p><code>s.split('delimiter')</code> → <strong>split</strong> a string using <em>delimiter</em>. Return a list.</p></li>
+
+<li><p><code>s.replace('e','z')</code> → <strong>replace</strong> all &ldquo;e&rdquo; with &ldquo;z&rdquo;</p></li>
+
+<li><p><code>'string {0} something {1}'.format(34,'something_else')</code> → <strong>format the string</strong> replacing <code>{ }</code> with arguments (<a href="https://docs.python.org/3.1/library/stdtypes.html?highlight=format#str.format">doc</a>)</p></li>
+
+<li><p><code>zip(a,b,...)</code> → make an <strong>iterator</strong> that aggregates elements from each of the iterables (<a href="https://docs.python.org/3.3/library/functions.html?highlight=zip#zip">doc</a>)</p></li>
+</ul>
+
+<h4 id="dictionaries">Dictionaries</h4>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">d <span style="color:#666">=</span> { <span style="color:#ba2121">&#34;CA&#34;</span>:<span style="color:#ba2121">&#34;Canada&#34;</span>,
+      <span style="color:#ba2121">&#34;GB&#34;</span>:<span style="color:#ba2121">&#34;Great Britain&#34;</span>,
+      <span style="color:#ba2121">&#34;IN&#34;</span>:<span style="color:#ba2121">&#34;India&#34;</span>,
+      <span style="color:#ba2121">&#34;key&#34;</span>: value}</code></pre></div>
+<ul>
+<li><p><code>d[&quot;key&quot;]</code> → return the value associated with the key &ldquo;key&rdquo;</p></li>
+
+<li><p><code>d.keys()</code> → return a list of the keys</p></li>
+
+<li><p><code>d.values()</code> → return a list of the values</p></li>
+
+<li><p><code>d.items()</code> → return a list of <em>(key, value)</em> pairs</p></li>
+
+<li><p><code>d.get(&quot;AU&quot;, &quot;Sorry&quot;)</code> → return the value from the dictionary d that has the key &ldquo;AU&rdquo;, or the string &ldquo;Sorry&rdquo; if the key &ldquo;AU&rdquo; is not found in d</p></li>
+
+<li><p><code>&quot;key&quot; in d</code> → checks if <em>key</em> exists in <em>d</em></p></li>
+</ul>
+
+<h4 id="tuples-sistema">Tuples (sistema)</h4>
+
+<p><a href="https://docs.python.org/3.3/tutorial/datastructures.html#tuples-and-sequences">doc</a>
+Number of values divided by commas, like</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">t <span style="color:#666">=</span> <span style="color:#666">12345</span>, <span style="color:#666">54321</span>, <span style="color:#ba2121">&#39;hello!&#39;</span>
+u <span style="color:#666">=</span> t, (<span style="color:#666">1</span>, <span style="color:#666">2</span>, <span style="color:#666">3</span>, <span style="color:#666">4</span>, <span style="color:#666">5</span>) <span style="color:#408080;font-style:italic"># nested tuples</span>
+empty <span style="color:#666">=</span> () <span style="color:#408080;font-style:italic"># empty tuple</span>
+single <span style="color:#666">=</span> (<span style="color:#ba2121">&#39;hello&#39;</span>,) <span style="color:#408080;font-style:italic"># 1-element tuple</span></code></pre></div>
+<ul>
+<li><p><strong>immutable</strong> → tuples usually contain an heterogeneous sequence of elements that are accessed via <em>unpacking</em> or <em>indexing</em></p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">x, y, z <span style="color:#666">=</span> t <span style="color:#408080;font-style:italic"># unpacking tuples</span></code></pre></div></li>
+</ul>
+
+<hr />
+
+<h3 id="loops-and-conditionals">Loops and Conditionals</h3>
+
+<h4 id="if-statement">If Statement</h4>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#408080;font-style:italic"># if statement</span>
+<span style="color:#008000;font-weight:bold">if</span> condition1:
+    <span style="color:#666">&lt;</span>code<span style="color:#666">&gt;</span>
+<span style="color:#008000;font-weight:bold">elif</span> condition2:
+    <span style="color:#666">&lt;</span>code<span style="color:#666">&gt;</span>
+<span style="color:#008000;font-weight:bold">else</span>:
+    <span style="color:#666">&lt;</span>code<span style="color:#666">&gt;</span></code></pre></div>
+<ul>
+<li><code>==</code>, <code>!=</code>, <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code> → comparators</li>
+<li><strong>not</strong>, <strong>and</strong>, <strong>or</strong> → boolean operators</li>
+</ul>
+
+<h4 id="for-loop">For Loop</h4>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">for</span> item <span style="color:#a2f;font-weight:bold">in</span> listName:
+    <span style="color:#666">&lt;</span>code<span style="color:#666">&gt;</span>
+
+<span style="color:#008000;font-weight:bold">for</span> index, item <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">enumerate</span>(listName):
+    <span style="color:#008000;font-weight:bold">print</span> index, item
+
+list_a <span style="color:#666">=</span> [<span style="color:#666">3</span>, <span style="color:#666">9</span>, <span style="color:#666">17</span>, <span style="color:#666">15</span>, <span style="color:#666">19</span>]
+list_b <span style="color:#666">=</span> [<span style="color:#666">2</span>, <span style="color:#666">4</span>, <span style="color:#666">8</span>, <span style="color:#666">10</span>, <span style="color:#666">30</span>, <span style="color:#666">40</span>, <span style="color:#666">50</span>, <span style="color:#666">60</span>, <span style="color:#666">70</span>, <span style="color:#666">80</span>, <span style="color:#666">90</span>]
+<span style="color:#008000;font-weight:bold">for</span> a, b <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">zip</span>(list_a , list_b): <span style="color:#408080;font-style:italic"># loop on multiple lists</span>
+    <span style="color:#666">&lt;</span>code<span style="color:#666">&gt;</span></code></pre></div>
+<ul>
+<li>can loop also on <em>dictionaries</em> and <em>strings</em></li>
+<li>dictionaries are <strong>unordered</strong>: the loop wil go through <em>every key</em>, but <strong>not necessarily in the same order</strong></li>
+<li><code>zip()</code>→ stops at the end of the shorter list</li>
+</ul>
+
+<h4 id="while-loop">While Loop</h4>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">while</span> condition:
+    <span style="color:#666">&lt;</span>code<span style="color:#666">&gt;</span>
+<span style="color:#008000;font-weight:bold">else</span>:
+    <span style="color:#666">&lt;</span>code<span style="color:#666">&gt;</span></code></pre></div>
+<ul>
+<li><code>else</code> → executed enytime the <em>condition</em> is evaluated as <em>False</em>
+
+<ul>
+<li><strong>not executed</strong> if the cycle is interrupted by <code>break</code></li>
+</ul></li>
+</ul>
+
+<hr />
+
+<h3 id="functions">Functions</h3>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">func_name</span>(var1, var2, var3<span style="color:#666">=</span>default_value):
+    <span style="color:#666">&lt;</span>code<span style="color:#666">&gt;</span>
+    <span style="color:#008000;font-weight:bold">return</span> something1, something2, <span style="color:#666">...</span></code></pre></div>
+<ul>
+<li><strong>recursion</strong> is allowed</li>
+</ul>
+
+<hr />
+
+<h3 id="lambda-functions-sistema">Lambda Functions (sistema)</h3>
+
+<p>Small anonymous functions can be created with the <a href="https://docs.python.org/2/reference/expressions.html#lambda">lambda</a> keyword.
+This function returns the sum of its two arguments</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">lambda</span> a, b: a<span style="color:#666">+</span>b
+
+<span style="color:#008000;font-weight:bold">lambda</span> val: val <span style="color:#666">&gt;</span> <span style="color:#666">1000000</span></code></pre></div>
+<ul>
+<li><strong>Lambda functions can be used wherever function objects are required.</strong>
+They are syntactically restricted to a single expression. Semantically, they are just syntactic sugar for a normal function definition.
+Like nested function definitions, lambda functions can reference variables from the containing scope</li>
+</ul>
+
+<hr />
+
+<h3 id="classes">Classes</h3>
+
+<p>Classes are used to define <strong>objects</strong> in python. Every object has <strong>properties</strong> and associated <strong>methods</strong> (functons).</p>
+
+<h4 id="class-definition">Class definition</h4>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000;font-weight:bold">class</span> <span style="color:#00f;font-weight:bold">Person</span>:
+    <span style="color:#008000;font-weight:bold">def</span> __init__(self, name, age): <span style="color:#408080;font-style:italic">#(self, var1, var2)</span>
+        self<span style="color:#666">.</span>name <span style="color:#666">=</span> name <span style="color:#408080;font-style:italic">#self.property_name = var1</span>
+        self<span style="color:#666">.</span>age <span style="color:#666">=</span> age
+
+    <span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">my_func</span>(self):
+        <span style="color:#008000;font-weight:bold">print</span>(<span style="color:#ba2121">&#34;Hello my name is &#34;</span> <span style="color:#666">+</span> self<span style="color:#666">.</span>name)</code></pre></div>
+<ul>
+<li><p><code>__init__()</code> is <strong>needed in all classes definitions</strong></p>
+
+<ul>
+<li>it is always executed when the class is initialized</li>
+<li>it is used to <strong>assign values to object properties</strong>, or to execute operations that are necessary to do when the object is being created</li>
+</ul></li>
+
+<li><p><code>my_func</code> is a <strong>method</strong> of the class</p></li>
+
+<li><p>class names start with <strong>capital letters</strong> (convention)</p></li>
+
+<li><p><code>self.property_name</code> → <strong>access properties values</strong> inside the class definition</p>
+
+<ul>
+<li>the <code>self</code> parameter is a reference to the current instance of the class</li>
+</ul></li>
+</ul>
+
+<h4 id="class-manipulation">Class manipulation</h4>
+
+<ul>
+<li><p><code>new_object = My_class(property_name1, property_name2, ...)</code> → <strong>create</strong> an object</p></li>
+
+<li><p><code>new_object.property_name1</code> → <strong>access</strong> a property</p></li>
+
+<li><p><code>new_object.property_name1 = new_value</code> → <strong>modify</strong> a property</p></li>
+
+<li><p><code>new_object.method()</code> → <strong>apply</strong> a method</p></li>
+
+<li><p><code>del new_object.property_name1</code> → <strong>delete</strong> an object property</p></li>
+</ul>
+
+<h4 id="inheritance">Inheritance</h4>
+
+<p>Inheritance allows one to define a class that acquire all the methods and properties from another class.</p>
+
+<p>The new class is called <strong>child class</strong>, while the one from properties are inherited is called <strong>parent class</strong>.</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000;font-weight:bold">class</span> <span style="color:#00f;font-weight:bold">Student</span>(Person): <span style="color:#408080;font-style:italic"># child class definition</span>
+    <span style="color:#008000;font-weight:bold">def</span> __init__(self, fname, lname, year):
+        <span style="color:#408080;font-style:italic">#add properties etc.</span>
+        self<span style="color:#666">.</span>graduationyear <span style="color:#666">=</span> year
+
+    <span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">welcome</span>(self):
+        <span style="color:#008000;font-weight:bold">print</span>(<span style="color:#ba2121">&#34;Welcome&#34;</span>, self<span style="color:#666">.</span>fname, self<span style="color:#666">.</span>lname, <span style="color:#ba2121">&#34;to the class of&#34;</span>, self<span style="color:#666">.</span>graduationyear)</code></pre></div>
+<ul>
+<li>when <code>__init__()</code> is added, the <em>child class</em> will <strong>no longer inherit</strong> the parent&rsquo;s <code>__init__()</code> function</li>
+
+<li><p>to keep the inheritance of the parent&rsquo;s <code>__init__()</code> function, add a call to the parent&rsquo;s <code>__init__()</code> function</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000;font-weight:bold">class</span> <span style="color:#00f;font-weight:bold">Student</span>(Person):
+    <span style="color:#008000;font-weight:bold">def</span> __init__(self, fname, lname, year):
+        Person<span style="color:#666">.</span>__init__(self, fname, lname)
+        self<span style="color:#666">.</span>graduationyear <span style="color:#666">=</span> year
+
+    <span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">welcome</span>(self):
+        <span style="color:#008000;font-weight:bold">print</span>(<span style="color:#ba2121">&#34;Welcome&#34;</span>, self<span style="color:#666">.</span>fname, self<span style="color:#666">.</span>lname, <span style="color:#ba2121">&#34;to the class of&#34;</span>, self<span style="color:#666">.</span>graduationyear)</code></pre></div></li>
+
+<li><p>if a new method in the <em>child class</em> is defined with the <strong>same name</strong> as a function in the parent class, <em>the parent method will be overridden</em></p></li>
+</ul>
+
+<hr />
+
+<h3 id="virtual-environments">Virtual Environments</h3>
+
+<ul>
+<li><p>install <code>virtualenv</code></p></li>
+
+<li><p><code>cd</code> into the project folder</p></li>
+
+<li><p><code>conda create --name project-name-env dependecy1 dependency2 ...</code> → <strong>create</strong> the environment</p></li>
+
+<li><p><code>source activate project-name-env</code> → <strong>activate</strong> the environment</p></li>
+
+<li><p><code>source deactivate project-name-env</code> → <strong>deactivate</strong> the environment</p></li>
+
+<li><p><code>conda env export &gt; environment.yaml</code> → <strong>export</strong> the environment</p>
+
+<ul>
+<li><p>keep track of all the dependencies</p></li>
+
+<li><p>have the possibility to reproduce the environment if something goes wrong</p></li>
+</ul></li>
+
+<li><p><code>conda env create -f environment.yaml</code> → create a virtual environment from a <em>.yaml</em> file</p></li>
+
+<li><p><code>conda env list</code> → list all the environments on the machine with their location</p></li>
+</ul>
+
+
+
+        </main>
+    </div>
+    <div class="container border-top border-dark">
+    <nav class="navbar navbar-light justify-content-center">
+        <div class="navbar-nav d-flex flex-row justify-content-center">
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://github.com/damianolodi"
+                style="margin:10px;"><i data-feather="github"></i> GitHub</a>
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://www.linkedin.com/in/damiano-lodi/"
+                style="margin:10px;"><i data-feather="linkedin"></i> LinkedIn</a>
+            
+        </div>
+    </nav>
+</div>
+    
+
+<script src="https://damnotes.netlify.com/js/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+</body>
+
+</html>

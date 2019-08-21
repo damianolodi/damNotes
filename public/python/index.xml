@@ -55,17 +55,6 @@ Here find a list of useful notebooks to download and learn from them.
     
     <item>
       <title></title>
-      <link>https://damnotes.netlify.com/python/15-data-structures/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/15-data-structures/</guid>
-      <description>Data Structures List Lists are the array of MATLAB, but can store different type of information, including list of lists.
- Index begin with 0 Call an element using my_list[index] Concatenate lists using + Insert new element in position i using listName.insert(i, element) Quick list creation -&amp;gt; called List Comprehension
-evens_to_50 = [i for i in range(51) if i % 2 == 0] other_list = [[i,j] for i in range(x) for j in range(y) if (x+y)!</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://damnotes.netlify.com/python/16-files-io/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -78,40 +67,6 @@ with open(&amp;#39;data.csv&amp;#39;,&amp;#39;r&amp;#39;) as csv_file: csv_reade
     
     <item>
       <title></title>
-      <link>https://damnotes.netlify.com/python/17-functions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/17-functions/</guid>
-      <description> Functions Define a function using the following syntax
-def function_name (&amp;lt;parameters&amp;gt;): &amp;lt;code&amp;gt;  substitute &amp;lt;parameters&amp;gt; with as many parameters as you wants  to assign a default value to the parameter use param_name = param_value parameters could be of any type  use return value to return a value recursion is allowed To return multiple variables use
-def function_name (&amp;lt;parameters&amp;gt;): &amp;lt;code&amp;gt; return var1, var2, ... #code/python/tips
-  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://damnotes.netlify.com/python/17-lambda-functions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/17-lambda-functions/</guid>
-      <description> Lambda Functions Small anonymous functions can be created with the lambda keyword. This function returns the sum of its two arguments
-lambda a, b: a+b lambda val: val &amp;gt; 1000000  Lambda functions can be used wherever function objects are required. They are syntactically restricted to a single expression. Semantically, they are just syntactic sugar for a normal function definition. Like nested function definitions, lambda functions can reference variables from the containing scope - - - - #code/python/tips  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://damnotes.netlify.com/python/18-loops/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/18-loops/</guid>
-      <description>Loops and Conditionals Loops For loop The for loop iterate through all the elements of a list
-a = [1, 2, ’hi’] for var in a: #... else: #... The else condition will be executed at the end of the loop, but not if one exit with break.
-One can use for also on a string or on a dictionary
-#a simple dictionary d = {&amp;#34;foo&amp;#34; : &amp;#34;bar&amp;#34;} for key in d: print d[key] #prints &amp;#34;bar&amp;#34; *Note that dictionaries are unordered, meaning that any time you loop through a dictionary, you will go through every key, but you are not guaranteed to get them in any particular order.</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://damnotes.netlify.com/python/19-python-in-atom/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -120,41 +75,12 @@ One can use for also on a string or on a dictionary
     </item>
     
     <item>
-      <title></title>
-      <link>https://damnotes.netlify.com/python/20-virtual-environments/</link>
+      <title>Basic Concepts</title>
+      <link>https://damnotes.netlify.com/python/00-basic-concepts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://damnotes.netlify.com/python/20-virtual-environments/</guid>
-      <description>Virtual Environments Install virtualenv if you don&amp;rsquo;t have it.
-Creating a virtual environment cd into the project folder and type
-conda create --name project-name-env dependecy1 dependency2 ...  Activate and deactivate environments To activate an environment type
-source activate project-name-env  To deactivate use
-source deactivate project-name-env  Export the environment To export the environment, to keep track and have the possibility to reproduce the environment if something go wrong, create a .</description>
-    </item>
-    
-    <item>
-      <title>Classes</title>
-      <link>https://damnotes.netlify.com/python/01-classes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/01-classes/</guid>
-      <description>Classes are used to define objects in python. Every object has properties and associated methods (functons).
-Class Definition class Person: def __init__(self, name, age): #(self, var1, var2) self.name = name #self.property_name = var1 self.age = age def my_func(self): print(&amp;#34;Hello my name is &amp;#34; + self.name)  The __init__() is needed in all classes definition and it is always executed when the class is being initiated. It is used to assign values to object properties, or other operations that are necessary to do when the object is being created.</description>
-    </item>
-    
-    <item>
-      <title>Core</title>
-      <link>https://damnotes.netlify.com/python/02-core/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/02-core/</guid>
-      <description>Lists  l = [100, 21, 88, 3] → initialize the list
- l = list() → create empty list
- len(list) → return the length of the list
-  Manupulation  l.append(item) → add a new item at the end of the list
- min(list); max(list) → return min or max value of the list
- list.sort() → sort in ascendin order
- &amp;quot; &amp;quot;.join([&amp;quot;A&amp;quot;,&amp;quot;B&amp;quot;,&amp;quot;C&amp;quot;,&amp;quot;D&amp;quot;]) → combine list elements into the string &amp;ldquo;A B C D&amp;rdquo;</description>
+      <guid>https://damnotes.netlify.com/python/00-basic-concepts/</guid>
+      <description>Variable Types Lists l = [100, 21, 88, 3] l = list() #empty list # List Comprehension -&amp;gt; quick list creation evens_to_50 = [i for i in range(51) if i % 2 == 0] other_list = [[i,j] for i in range(x) for j in range(y) if (x+y)!=n] # Element selection l[:2] # first two items (0 and 1) l[3:] # ourth through last items l[::2] # first through end with a step of 2 ## in general [start(inclusive):end(exclusive):stride] ## negative stride progress the list in reverse order # Multi-index lists l = [0, 1, 2, 3; 4, 5, 6, 7] l[1][2] #6  l1 + l2 → concatenate lists</description>
     </item>
     
     <item>
@@ -170,20 +96,20 @@ Class Definition class Person: def __init__(self, name, age): #(self, var1, var2
     
     <item>
       <title>Matplotlib</title>
-      <link>https://damnotes.netlify.com/python/04-matplotlib/</link>
+      <link>https://damnotes.netlify.com/python/03-matplotlib/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://damnotes.netlify.com/python/04-matplotlib/</guid>
+      <guid>https://damnotes.netlify.com/python/03-matplotlib/</guid>
       <description>Custom Plot Style This process is considered for a Windows machine where Python is installed using Miniconda 3 (for Anaconda it should be the same).
 The idea is to create a custom style file in the same directory where all the styles are archived. The instruction reported on the documentation probably are correct only for a &amp;ldquo;normal&amp;rdquo; Python installation. This is the process to follow if Miniconda is installed:</description>
     </item>
     
     <item>
       <title>Matplotlib 2</title>
-      <link>https://damnotes.netlify.com/python/04b-matplotlib/</link>
+      <link>https://damnotes.netlify.com/python/03b-matplotlib/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://damnotes.netlify.com/python/04b-matplotlib/</guid>
+      <guid>https://damnotes.netlify.com/python/03b-matplotlib/</guid>
       <description>See here for a Jupyter notebook tutorial on matplotlib Official documentation
 import matplotlib.pyplot as plt Use %matplotlib inline in Jupyter to display figures inside the notebooks
 Basic figure script This script create a small figure on top of another one
@@ -192,10 +118,10 @@ Basic figure script This script create a small figure on top of another one
     
     <item>
       <title>NumPy</title>
-      <link>https://damnotes.netlify.com/python/07-numpy/</link>
+      <link>https://damnotes.netlify.com/python/01-numpy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://damnotes.netlify.com/python/07-numpy/</guid>
+      <guid>https://damnotes.netlify.com/python/01-numpy/</guid>
       <description>See here for a Jupyter notebook tutorial on numpy
 import numpy as np Arrays creation and properties  numpy arrays are statically typed and homogeneous. The type of the elements is determined when the array is created. np.array(list) generate an array from a list np.shape(array) , np.size(array) , np.ndim(array)print dimensions, number of elements and number of dimensions of the array np.dtype(list) print the data type of the array  Array generation from functions  np.</description>
     </item>
@@ -213,10 +139,10 @@ dirName = &amp;#39;tempDir&amp;#39; try: # Create target Directory os.mkdir(dirN
     
     <item>
       <title>Pandas</title>
-      <link>https://damnotes.netlify.com/python/05-pandas/</link>
+      <link>https://damnotes.netlify.com/python/02-pandas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://damnotes.netlify.com/python/05-pandas/</guid>
+      <guid>https://damnotes.netlify.com/python/02-pandas/</guid>
       <description>{df → DataFrame; s → Series}
  import pandas as pd
   File I/O  pd.read_csv(path); pd.read_json(path); pd.read_excel(path); → read .csv, .json or .xlsx file.
@@ -227,10 +153,10 @@ dirName = &amp;#39;tempDir&amp;#39; try: # Create target Directory os.mkdir(dirN
     
     <item>
       <title>Pandas</title>
-      <link>https://damnotes.netlify.com/python/05b-pandas/</link>
+      <link>https://damnotes.netlify.com/python/02b-pandas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://damnotes.netlify.com/python/05b-pandas/</guid>
+      <guid>https://damnotes.netlify.com/python/02b-pandas/</guid>
       <description>See here for some Jupyter notebook lessons on pandas
 import pandas as pd  pd.__version__ check version of the pandas API  File I/O df = pd.read_csv(r’relative_path’, sep=&amp;#39; &amp;#39;, names=[&amp;#39;column1&amp;#39;,&amp;#39;column2&amp;#39;,...], header=None, skiprows=1, skipfooter=3, index_col=False, skipinitialspace=True, parse_dates=[0], infer_datetime_format=True ) Import the cvs file in a DataFrame object. _ the path can also be a web address _ header=None is the line of the header, if present. _ nrows=5 number of rows to read, from the top of the file _ skiprows=5 and skipfooter=3, number of rows to skip from the start or the end of the file.</description>
     </item>
