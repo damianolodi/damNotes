@@ -122,8 +122,7 @@ Basic figure script This script create a small figure on top of another one
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/python/01-numpy/</guid>
-      <description>See here for a Jupyter notebook tutorial on numpy
-import numpy as np Arrays creation and properties  numpy arrays are statically typed and homogeneous. The type of the elements is determined when the array is created. np.array(list) generate an array from a list np.shape(array) , np.size(array) , np.ndim(array)print dimensions, number of elements and number of dimensions of the array np.dtype(list) print the data type of the array  Array generation from functions  np.</description>
+      <description>import numpy as np array[index1, index2] # access an element. Use : to access the all line array[start:stop:stride] # array slicing np.nditer(array) # create an iterator object to be used in for loops # Array generation np.array(list) # create array from list np.arange(first, size, spacing) # generate array np.linspace(first, last, size) # generate array, both end points are included np.logspace(first, last, size, base=e) # generate log-spaced array np.zeros((dim1,dim2)) # create array full of 0s np.</description>
     </item>
     
     <item>
@@ -143,12 +142,8 @@ dirName = &amp;#39;tempDir&amp;#39; try: # Create target Directory os.mkdir(dirN
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/python/02-pandas/</guid>
-      <description>{df → DataFrame; s → Series}
- import pandas as pd
-  File I/O  pd.read_csv(path); pd.read_json(path); pd.read_excel(path); → read .csv, .json or .xlsx file.
- pd.DataFrame(dict) → create a df from a dictionary.
- pd.to_csv(path); pd.to_json(path); pd.to_excel(path); → export to .csv, .json or .xlsx file.
-  df manipulation  df.copy(deep=True) → copy the df indices and data (doc).  Statistics  df.corr(method=Pearson) → compute pairwise correlation of columns (doc) - (Pearson Correlation Coefficient - Wikipedia).</description>
+      <description>import pandas as pd # df creations pd.DataFrame(dict) # create df from dictionary  df → DataFrame s → Series Jupyter Notebook lessons on pandas  File I/O Import file into a df
+df = pd.read_csv(r’relative_path’, #can be a web address sep = &amp;#39; &amp;#39;, usecols = [0, 1, 5] # columns to be returned from the file names = [&amp;#39;column1&amp;#39;,&amp;#39;column2&amp;#39;,...], header = None, # line of the header nrows = 5, # number of rows to read skiprows = 1, # rows to skip from top skipfooter = 3, # rows to skip from bottom ## if a list is provided, it will skip those rows index_col = False, # force to not use a column as the index of the rows skipinitialspace = True, # skip initial spaces after delimiter parse_dates = [0], # list of ints or column names containing date time format infer_datetime_format = True # infer time format and switch to faster loading (if possible) )  pd.</description>
     </item>
     
     <item>
@@ -157,8 +152,7 @@ dirName = &amp;#39;tempDir&amp;#39; try: # Create target Directory os.mkdir(dirN
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/python/02b-pandas/</guid>
-      <description>See here for some Jupyter notebook lessons on pandas
-import pandas as pd  pd.__version__ check version of the pandas API  File I/O df = pd.read_csv(r’relative_path’, sep=&amp;#39; &amp;#39;, names=[&amp;#39;column1&amp;#39;,&amp;#39;column2&amp;#39;,...], header=None, skiprows=1, skipfooter=3, index_col=False, skipinitialspace=True, parse_dates=[0], infer_datetime_format=True ) Import the cvs file in a DataFrame object. _ the path can also be a web address _ header=None is the line of the header, if present. _ nrows=5 number of rows to read, from the top of the file _ skiprows=5 and skipfooter=3, number of rows to skip from the start or the end of the file.</description>
+      <description>df.to_csv(&#39;path/fileName.txt&#39;,index=False,header=False, encoding=&#39;utf8&#39;) export dataframe to a text file. Setting these parameters to False will prevent the index and header names from being exported.  df.to_excel(“output_excel_file.xlsx&amp;quot;, sheet_name=&amp;quot;Sheet 1&amp;quot;, index=False) use to export to Excel. This may need the xlsxwriter package.  df.dtypes print the type of each column of the dataframe df[&#39;columnName&#39;] = df[&#39;columnName&#39;].astype(type) change the type of the column to type. Possible values:  str string (printed as object) int64 float64   Dataframe creation  pd.</description>
     </item>
     
     <item>

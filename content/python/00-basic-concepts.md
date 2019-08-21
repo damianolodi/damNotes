@@ -1,7 +1,7 @@
 ---
 title: "Basic Concepts"
 draft: false
-arguments: ["Variable types",
+arguments: ["Variable Types",
             "Loops and Conditionals",
             "Functions",
             "Lambda Function",

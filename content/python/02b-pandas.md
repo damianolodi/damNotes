@@ -3,43 +3,6 @@ title: "Pandas"
 draft: false
 ---
 
-**See** [here](https://bitbucket.org/hrojas/learn-pandas) **for some Jupyter notebook lessons on pandas**
-
-```py
-import pandas as pd
-```
-
--   `pd.__version__` check version of the pandas API
-
-* * *
-
-### File I/O
-
-```py
-df = pd.read_csv(r’relative_path’,
-					sep=' ',
-					names=['column1','column2',...],
-					header=None,
-					skiprows=1,
-					skipfooter=3,
-					index_col=False,
-					skipinitialspace=True,
-					parse_dates=[0],
-					infer_datetime_format=True
-					)
-```
-
-Import the cvs file in a DataFrame object.
-	_ the path can also be a web address
-	_ `header=None` is the line of the header, if present.
-	_ `nrows=5` number of rows to read, from the top of the file
-	_ `skiprows=5`  and `skipfooter=3`, number of rows to skip from the start or the end of the file. If a list is provided, it will skip those rows
-	_ `usecols=[0,2,3]`Return a subset of the columns. If list like, must be numbers or column name
-	_ `index_col=False` force to not using a column as the index of the rows
-	_ `skipinitialspace=True` skip initial spaces after delimiter
-	_ `parse_dates=[0]` list of ints or names of columns containing date time format
-	\* `infer_datetime_format=True` if possible, infer time format and switch to faster loading
-
 * * *
 
 -   `df.to_csv('path/fileName.txt',index=False,header=False, encoding='utf8')` **export dataframe to a text file**. Setting these parameters to False will prevent the index and header names from being exported.
@@ -49,12 +12,6 @@ Import the cvs file in a DataFrame object.
     -   `str` string (printed as object)
     -   `int64`
     -   `float64`
--   `df.info()` return informations about the dataframe
--   `df.shape()` return a tuples with rows and columns of the dataframe
--   `df.head(n)` and `df.tail(n)` prints the first or last n values of the dataframe
--   `df.describe()` return statistics on the data fame
-
--   `df.values` return the values in the dataframe as an **ndarray**
 
 ### Dataframe creation
 

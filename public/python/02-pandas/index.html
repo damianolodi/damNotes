@@ -40,22 +40,57 @@
 
 
 
-<ul>
-<li><p>{<code>df</code> → DataFrame; <code>s</code> → Series}</p></li>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">pandas</span> <span style="color:#008000;font-weight:bold">as</span> <span style="color:#00f;font-weight:bold">pd</span>
 
-<li><p><code>import pandas as pd</code></p></li>
+<span style="color:#408080;font-style:italic"># df creations</span>
+pd<span style="color:#666">.</span>DataFrame(<span style="color:#008000">dict</span>) <span style="color:#408080;font-style:italic"># create df from dictionary</span></code></pre></div>
+<ul>
+<li><code>df</code> → DataFrame</li>
+<li><code>s</code> → Series</li>
+<li>Jupyter Notebook <a href="https://bitbucket.org/hrojas/learn-pandas">lessons</a> on pandas</li>
 </ul>
 
 <hr />
 
 <h3 id="file-i-o">File I/O</h3>
 
+<p>Import file into a df</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">df <span style="color:#666">=</span> pd<span style="color:#666">.</span>read_csv(r<span style="">’</span>relative_path<span style="">’</span>, <span style="color:#408080;font-style:italic">#can be a web address</span>
+				sep <span style="color:#666">=</span> <span style="color:#ba2121">&#39; &#39;</span>,
+                usecols <span style="color:#666">=</span> [<span style="color:#666">0</span>, <span style="color:#666">1</span>, <span style="color:#666">5</span>] <span style="color:#408080;font-style:italic"># columns to be returned from the file</span>
+				names <span style="color:#666">=</span> [<span style="color:#ba2121">&#39;column1&#39;</span>,<span style="color:#ba2121">&#39;column2&#39;</span>,<span style="color:#666">...</span>],
+				header <span style="color:#666">=</span> None, <span style="color:#408080;font-style:italic"># line of the header</span>
+                nrows <span style="color:#666">=</span> <span style="color:#666">5</span>, <span style="color:#408080;font-style:italic"># number of rows to read</span>
+				skiprows <span style="color:#666">=</span> <span style="color:#666">1</span>, <span style="color:#408080;font-style:italic"># rows to skip from top</span>
+				skipfooter <span style="color:#666">=</span> <span style="color:#666">3</span>, <span style="color:#408080;font-style:italic"># rows to skip from bottom</span>
+                <span style="color:#408080;font-style:italic">## if a list is provided, it will skip those rows</span>
+				index_col <span style="color:#666">=</span> False, <span style="color:#408080;font-style:italic"># force to not use a column as the index of the rows</span>
+				skipinitialspace <span style="color:#666">=</span> True, <span style="color:#408080;font-style:italic"># skip initial spaces after delimiter</span>
+				parse_dates <span style="color:#666">=</span> [<span style="color:#666">0</span>], <span style="color:#408080;font-style:italic"># list of ints or column names containing date time format</span>
+				infer_datetime_format <span style="color:#666">=</span> True <span style="color:#408080;font-style:italic"># infer time format and switch to faster loading (if possible)</span>
+                )</code></pre></div>
 <ul>
-<li><p><code>pd.read_csv(path); pd.read_json(path); pd.read_excel(path);</code> → <strong>read</strong> .csv, .json or .xlsx file.</p></li>
+<li><p><code>pd.read_json(path)</code> → <strong>import</strong> .json into a df</p></li>
 
-<li><p><code>pd.DataFrame(dict)</code> → create a <code>df</code> from a dictionary.</p></li>
+<li><p><code>pd.read_excel(path)</code> → <strong>import</strong> .xlsx into a df</p></li>
 
-<li><p><code>pd.to_csv(path); pd.to_json(path); pd.to_excel(path);</code> → <strong>export</strong> to .csv, .json or .xlsx file.</p></li>
+<li><p><code>pd.to_csv(path)</code>, <code>pd.to_json(path)</code> and <code>pd.to_excel(path)</code> → <strong>export</strong> to .csv, .json or .xlsx file</p></li>
+</ul>
+
+<hr />
+
+<h3 id="df-properties"><code>df</code> properties</h3>
+
+<ul>
+<li><p><code>df.info()</code> → return informations about the dataframe</p></li>
+
+<li><p><code>df.shape()</code> → return number of rows and columns (tuple)</p></li>
+
+<li><p><code>df.head(n=5)</code>, <code>df.tail(n=5)</code> → prints the first or last <em>n</em> values</p></li>
+
+<li><p><code>df.describe()</code> → return <strong>statistics</strong> on the column</p></li>
+
+<li><p><code>df.values</code> → return the values in the <em>df</em> as an <strong>ndarray</strong></p></li>
 </ul>
 
 <hr />
