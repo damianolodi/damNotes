@@ -40,16 +40,153 @@
 
 
 
+<p>Jupyter Notebook <a href="http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb">tutorial</a> on matplotlib.
+<a href="https://matplotlib.org/">Official documentation</a></p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">matplotlib.pyplot</span> <span style="color:#008000;font-weight:bold">as</span> <span style="color:#00f;font-weight:bold">plt</span>
+<span style="color:#666">%</span>matplotlib inline <span style="color:#408080;font-style:italic"># display figures inside jupyter notebooks</span>
+
+axes<span style="color:#666">.</span>plot(a, b, <span style="color:#ba2121">&#39;b.-&#39;</span>,
+          color <span style="color:#666">=</span> <span style="color:#ba2121">&#39;#FFFFFF&#39;</span>, <span style="color:#408080;font-style:italic"># color (control)</span>
+          alpha <span style="color:#666">=</span> <span style="color:#666">0.5</span>, <span style="color:#408080;font-style:italic">#</span>
+          lw <span style="color:#666">=</span> <span style="color:#666">3</span>, <span style="color:#408080;font-style:italic"># linewidth</span>
+          ls <span style="color:#666">=</span> <span style="color:#ba2121">&#39;-&#39;</span>, <span style="color:#408080;font-style:italic"># linestyle &#39;-&#39; &#39;--&#39; &#39;-.&#39; &#39;:&#39; &#39;steps&#39;</span>
+          marker <span style="color:#666">=</span><span style="color:#ba2121">&#39;+&#39;</span>, <span style="color:#408080;font-style:italic"># markerstyle `+`, `o`, `*`, `s`, `,`, `.`, `1`, `2`, `3`,…</span>
+          ms <span style="color:#666">=</span> <span style="color:#666">3</span> <span style="color:#408080;font-style:italic"># markersize</span>
+          )</code></pre></div>
+<h3 id="basic-figure-script">Basic figure script</h3>
+
+<h4 id="create-a-small-figure-on-top-of-another-one">Create a small figure on top of another one</h4>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#408080;font-style:italic">#request text elements rendering with Latex</span>
+matplotlib<span style="color:#666">.</span>rcParams<span style="color:#666">.</span>update({<span style="color:#ba2121">&#39;font.size&#39;</span>: <span style="color:#666">18</span>, <span style="color:#ba2121">&#39;text.usetex&#39;</span>: True})
+
+<span style="color:#408080;font-style:italic"># create the figure object</span>
+fig <span style="color:#666">=</span> plt<span style="color:#666">.</span>figure(figsize<span style="color:#666">=</span>(<span style="color:#666">8</span>,<span style="color:#666">4</span>), dpi<span style="color:#666">=</span><span style="color:#666">100</span>) <span style="color:#408080;font-style:italic"># figsize in inch</span>
+<span style="color:#408080;font-style:italic"># create an axes object inside the figure</span>
+axes1 <span style="color:#666">=</span> fig<span style="color:#666">.</span>add_axes([<span style="color:#666">0.1</span>, <span style="color:#666">0.1</span>, <span style="color:#666">0.8</span>, <span style="color:#666">0.8</span>]) <span style="color:#408080;font-style:italic"># left, bottom, width, height</span>
+axes2 <span style="color:#666">=</span> fig<span style="color:#666">.</span>add_axes([<span style="color:#666">0.2</span>, <span style="color:#666">0.5</span>, <span style="color:#666">0.4</span>, <span style="color:#666">0.3</span>])
+
+<span style="color:#408080;font-style:italic"># main figure</span>
+axes1<span style="color:#666">.</span>plot(x, y, <span style="color:#ba2121">&#39;r&#39;</span>, label<span style="color:#666">=</span><span style="color:#ba2121">r</span><span style="color:#ba2121">&#39;curve1 \alpha&#39;</span>)
+axes1<span style="color:#666">.</span>plot(x, y, <span style="color:#ba2121">&#39;r&#39;</span>, label<span style="color:#666">=</span><span style="color:#ba2121">r</span><span style="color:#ba2121">&#39;curve2&#39;</span>)
+axes1<span style="color:#666">.</span>set_xlabel(<span style="color:#ba2121">r</span><span style="color:#ba2121">&#39;x&#39;</span>)
+axes1<span style="color:#666">.</span>set_xlim([<span style="color:#008000">min</span>,<span style="color:#008000">max</span>])
+axes1<span style="color:#666">.</span>set_ylabel(<span style="color:#ba2121">r</span><span style="color:#ba2121">&#39;y&#39;</span>)
+axes1<span style="color:#666">.</span>set_ylim([<span style="color:#008000">min</span>,<span style="color:#008000">max</span>]) <span style="color:#408080;font-style:italic"># set only an extreme using `left` - `right` or `top` - `bottom`</span>
+axes1<span style="color:#666">.</span>set_title(<span style="color:#ba2121">r</span><span style="color:#ba2121">&#39;title&#39;</span>)
+axes1<span style="color:#666">.</span>legend(loc<span style="color:#666">=</span><span style="color:#666">0</span>)
+
+<span style="color:#408080;font-style:italic"># insert</span>
+axes2<span style="color:#666">.</span>plot(y, x, <span style="color:#ba2121">&#39;g&#39;</span>)
+axes2<span style="color:#666">.</span>set_xlabel(<span style="color:#ba2121">r</span><span style="color:#ba2121">&#39;y&#39;</span>)
+axes2<span style="color:#666">.</span>set_ylabel(<span style="color:#ba2121">r</span><span style="color:#ba2121">&#39;x&#39;</span>)
+axes2<span style="color:#666">.</span>set_title(<span style="color:#ba2121">r</span><span style="color:#ba2121">&#39;insert title&#39;</span>); <span style="color:#408080;font-style:italic"># use raw input in strings to avoid conflicts with LaTex</span>
+axes2<span style="color:#666">.</span>axis(<span style="color:#ba2121">&#39;log&#39;</span>) <span style="color:#408080;font-style:italic"># set axis scale</span>
+
+<span style="color:#408080;font-style:italic"># save the figure</span>
+fig<span style="color:#666">.</span>savefig(<span style="color:#ba2121">&#39;file-name.png&#39;</span>, dpi<span style="color:#666">=</span><span style="color:#666">200</span>)</code></pre></div>
+<ul>
+<li>can plot pandas df with <code>ax.plot('column1', 'column2', 'r--', obj=df)</code></li>
+<li><code>axes1.legend()</code> → more details <a href="https://matplotlib.org/users/legend_guide.html#legend-location">about location</a></li>
+</ul>
+
+<h4 id="multiple-axis-on-the-same-figure">Multiple axis on the same figure</h4>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">fig, axes <span style="color:#666">=</span> plt<span style="color:#666">.</span>subplots(nrows <span style="color:#666">=</span> <span style="color:#666">1</span>, ncols <span style="color:#666">=</span> <span style="color:#666">2</span>,
+                         figsize <span style="color:#666">=</span> (<span style="color:#666">8</span>,<span style="color:#666">4</span>), dpi <span style="color:#666">=</span> <span style="color:#666">100</span>,
+                         sharex <span style="color:#666">=</span> True, sharey <span style="color:#666">=</span> False <span style="color:#408080;font-style:italic">#share axis in subpplots</span>
+                         )
+plt<span style="color:#666">.</span>subplots_adjust(wspace<span style="color:#666">=</span><span style="color:#666">0</span>,hspace<span style="color:#666">=</span><span style="color:#666">0</span>) <span style="color:#408080;font-style:italic"># adjust space between subplots in a figure</span>
+
+fig<span style="color:#666">.</span>tight_layout() <span style="color:#408080;font-style:italic"># apply at the end to correct overlapping content</span></code></pre></div>
+<ul>
+<li><a href="https://matplotlib.org/gallery.html">Plots gallery</a></li>
+</ul>
+
+<hr />
+
+<h3 id="annotating-and-drawing-on-plots">Annotating and Drawing on Plots</h3>
+
+<p>Annotate text and arrows</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">ax<span style="color:#666">.</span>annotate(label,
+			xy <span style="color:#666">=</span> (x, y), <span style="color:#408080;font-style:italic"># point position</span>
+            xytext <span style="color:#666">=</span> (x, y), <span style="color:#408080;font-style:italic"># text position</span>
+            arrowprops <span style="color:#666">=</span> <span style="color:#008000">dict</span>(facecolor <span style="color:#666">=</span> <span style="color:#ba2121">&#39;black&#39;</span>,
+							  headwidth <span style="color:#666">=</span> <span style="color:#666">4</span>,
+							  width <span style="color:#666">=</span> <span style="color:#666">1</span>,
+                              headlength <span style="color:#666">=</span> <span style="color:#666">4</span>),
+            horizontalalignment <span style="color:#666">=</span> <span style="color:#ba2121">&#39;left&#39;</span>,
+			verticalalignment <span style="color:#666">=</span> <span style="color:#ba2121">&#39;top&#39;</span>)
+
+ax<span style="color:#666">.</span>text(x, y, <span style="color:#408080;font-style:italic"># coordinates</span>
+        <span style="color:#ba2121">&#39;Hello world!&#39;</span>, <span style="color:#408080;font-style:italic"># text</span>
+        family <span style="color:#666">=</span> <span style="color:#ba2121">&#39;monospace&#39;</span>,
+        fontsize <span style="color:#666">=</span> <span style="color:#666">10</span>,
+        rotation <span style="color:#666">=</span> <span style="color:#666">90</span> <span style="color:#408080;font-style:italic"># text rotation</span>
+        )<span style="">`</span>
+
+ax<span style="color:#666">.</span>axvline(x <span style="color:#666">=</span> value, <span style="color:#408080;font-style:italic"># create vertical line in the plot</span>
+           color<span style="color:#666">=</span><span style="color:#ba2121">&#39;r&#39;</span>,
+           linewidth<span style="color:#666">=</span><span style="color:#666">1</span>)</code></pre></div>
+<hr />
+
+<h3 id="plot-animations">Plot Animations</h3>
+
+<ol>
+<li><p><code>conda install -c conda-forge ffmpeg</code> → install <code>ffmpeg</code></p></li>
+
+<li><p><code>import matplotlib.animation as animation</code> → import the animation package</p></li>
+
+<li><p><code>%matplotlib notebook</code> → allow dynamic plots in the Jupyter Notebook</p></li>
+
+<li><p>create figure as usual</p></li>
+
+<li><p>create a writer with the following code</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">Writer <span style="color:#666">=</span> animation<span style="color:#666">.</span>writers[<span style="color:#ba2121">&#39;ffmpeg&#39;</span>]
+writer <span style="color:#666">=</span> Writer(fps <span style="color:#666">=</span> <span style="color:#666">20</span>, <span style="color:#408080;font-style:italic"># used when saving the movie in a file</span>
+            metadata <span style="color:#666">=</span> <span style="color:#008000">dict</span>(artist <span style="color:#666">=</span> <span style="color:#ba2121">&#39;Damiano&#39;</span>),
+            bitrate <span style="color:#666">=</span> <span style="color:#666">1800</span>
+            )</code></pre></div></li>
+
+<li><p>create a function that will be used to animate the plot, like:</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">animate</span>(i):
+    data <span style="color:#666">=</span> data_prova<span style="color:#666">.</span>iloc[:<span style="color:#008000">int</span>(i<span style="color:#666">+</span><span style="color:#666">1</span>)]
+    plot_ax<span style="color:#666">.</span>plot(data[<span style="color:#ba2121">&#39;Tempo Trascorso [s]&#39;</span>], data[<span style="color:#ba2121">&#39;P_tot &#39;</span>], <span style="color:#ba2121">&#39;b-&#39;</span>, lw<span style="color:#666">=</span><span style="color:#666">1</span>, ms<span style="color:#666">=</span><span style="color:#666">3</span>)
+	        <span style="color:#408080;font-style:italic"># plot a text on the figure and update it in each frame</span>
+        <span style="color:#408080;font-style:italic">## the probability_text variable needs to be initialized outside the function</span>
+        <span style="color:#008000;font-weight:bold">if</span> data[<span style="color:#ba2121">&#39;P_tot &#39;</span>]<span style="color:#666">.</span>iloc[<span style="color:#008000">int</span>(i)]<span style="color:#666">&gt;=</span><span style="color:#666">0.75</span>:
+            probability_text2<span style="color:#666">.</span>set_text(<span style="color:#ba2121">&#39;</span><span style="color:#b68;font-weight:bold">%.2f</span><span style="color:#ba2121">&#39;</span> <span style="color:#666">%</span> data[<span style="color:#ba2121">&#39;P_tot &#39;</span>]<span style="color:#666">.</span>iloc[<span style="color:#008000">int</span>(i)])
+        <span style="color:#008000;font-weight:bold">else</span>:
+            probability_text<span style="color:#666">.</span>set_text(<span style="color:#ba2121">&#39;</span><span style="color:#b68;font-weight:bold">%.2f</span><span style="color:#ba2121">&#39;</span> <span style="color:#666">%</span> data[<span style="color:#ba2121">&#39;P_tot &#39;</span>]<span style="color:#666">.</span>iloc[<span style="color:#008000">int</span>(i)])</code></pre></div></li>
+
+<li><p>create the animation object (? controlla)</p>
+
+<ul>
+<li><p><code>animate</code> is the name of the animation function. it can have more variables, but the <code>i</code> is incremented automatically</p></li>
+
+<li><p><code>interval</code> is the interval (in ms) between two frames in the animation</p></li>
+
+<li><p><code>frames</code> is the number of frames that are generated in that way</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">ani <span style="color:#666">=</span> matplotlib<span style="color:#666">.</span>animation<span style="color:#666">.</span>FuncAnimation(plot_fig,
+                                         animate,
+                                         interval<span style="color:#666">=</span><span style="color:#008000">int</span>(frame_delay),
+                                         frames<span style="color:#666">=</span><span style="color:#008000">len</span>(data_prova[<span style="color:#ba2121">&#39;Tempo Trascorso [s]&#39;</span>]),
+                                         repeat<span style="color:#666">=</span>False)</code></pre></div></li>
+</ul></li>
+
+<li><p><code>ani.save(save_path+'/name.mp4', writer=writer)</code> → save</p></li>
+</ol>
+
+<hr />
+
 <h3 id="custom-plot-style">Custom Plot Style</h3>
 
-<p>This process is considered for a Windows machine where Python is installed using Miniconda 3 (for Anaconda it should be the same).</p>
+<p><em>[Windows machine, Python installed using Miniconda 3 (for Anaconda it should be the same)]</em></p>
 
-<p>The idea is to create a custom style file in the same directory where all the styles are archived. The instruction reported on the documentation probably are correct only for a &ldquo;normal&rdquo; Python installation. This is the process to follow if Miniconda is installed:</p>
+<p>The idea is to create a <strong>custom style file</strong> in the same directory where all the styles are archived. The instruction reported on the documentation probably are correct only for a &ldquo;normal&rdquo; Python installation. This is the process to follow if Miniconda is installed:</p>
 
 <ol>
 <li><p>navigate into the matplotlib style folder (mine is in <code>C:\Users\UserName\Miniconda3\Lib\site-packages\matplotlib\mpl-data\stylelib</code>)</p></li>
 
-<li><p>create a file named <code>style-name.mplstyle</code> and wrtite in it the styles as reported on the documentation</p></li>
+<li><p>create a file named <code>style-name.mplstyle</code> and write in it the styles as reported on the documentation</p></li>
 
 <li><p>in the code use the following</p>
 <div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">matplotlib.pyplot</span> <span style="color:#008000;font-weight:bold">as</span> <span style="color:#00f;font-weight:bold">plt</span>

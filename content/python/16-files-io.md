@@ -1,12 +1,17 @@
 # Files I/O
+
 Use
+
 ```py
 import csv
 ```
+
 in your program.
 
 ## SIMPLE READ .CSV FILE
+
 Use `with` to automatically close the file at the end
+
 ```py
 with open('data.csv','r') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=' ')
@@ -19,6 +24,7 @@ with open('data.csv','r') as csv_file:
 ```
 
 ## SIMPLE WRITE ON A NEW .CSV FILE
+
 ```py
 with open('data.csv','r') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=' ')
@@ -31,7 +37,9 @@ with open('data.csv','r') as csv_file:
 ```
 
 ## READING WITH DICTIONARY READER
+
 Use dictionary reader if you want more "human readable" files
+
 ```py
 with open('data.csv','r') as csv_file:
     csv_reader = csv.DictReader(csv_file,delimiter=' ')
@@ -43,6 +51,7 @@ with open('data.csv','r') as csv_file:
 ```
 
 ## WRITING WITH DICTIONARY WRITER
+
 ```py
 with open('data.csv','r') as csv_file:
     csv_reader = csv.DictReader(csv_file,delimiter=' ')
@@ -59,6 +68,3 @@ with open('data.csv','r') as csv_file:
             # del line['bo1'] #delete the 'bo1' in 'fieldnames'
             csv_writer.writerow(line)
 ```
-
-- - - -
-#code/python/tips

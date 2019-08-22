@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="generator" content="Hugo 0.56.3" />
+    
+    
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/style.css">
+    
+    
+    <title>Other Libraries | DamNotes</title>
+</head>
+
+<body>
+    
+<div class="container border-bottom border-dark">
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="https://damnotes.netlify.com/">DamNotes</a>
+        
+        <ul class="navbar-nav">
+            
+            
+            
+            <li class=" nav-item active">
+                <a class="nav-link" href="/about/"><i data-feather="user"></i> About<span
+                        class="sr-only">(current)</span></a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+    <div class="container">
+        <main id="main">
+            
+
+<h2 class="m-1 mb-3 mt-3">Other Libraries</h2>
+
+
+
+<h3 id="datetime">Datetime</h3>
+
+<ul>
+<li><code>datetime.today()</code> → print <strong>current date</strong></li>
+</ul>
+
+<hr />
+
+<h3 id="ipython">IPython</h3>
+
+<h4 id="display-module"><code>.display</code> module</h4>
+
+<p>(<a href="https://ipython.readthedocs.io/en/stable/api/generated/IPython.display.html#module-IPython.display">doc</a>)</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">from</span> <span style="color:#00f;font-weight:bold">IPython</span> <span style="color:#008000;font-weight:bold">import</span> display <span style="color:#408080;font-style:italic"># display various type of data (audio, images, ...)</span></code></pre></div>
+<ul>
+<li><code>display.display(obj)</code> → display a python object in all frontends (<a href="https://ipython.readthedocs.io/en/stable/api/generated/IPython.display.html#module-IPython.display">doc</a>)</li>
+</ul>
+
+<hr />
+
+<h3 id="pyserial">PySerial</h3>
+
+<p>(<a href="https://pyserial.readthedocs.io/en/latest/shortintro.html">Docs</a>)</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">serial</span>
+
+ser <span style="color:#666">=</span> serial<span style="color:#666">.</span>Serial(port <span style="color:#666">=</span> <span style="color:#ba2121">&#39;/dev/tty.SLAB_USBtoUART&#39;</span>,
+                    baudrate <span style="color:#666">=</span> <span style="color:#666">9600</span>,
+                    bytesize <span style="color:#666">=</span> serial<span style="color:#666">.</span>EIGHTBITS,
+                    parity <span style="color:#666">=</span> serial<span style="color:#666">.</span>PARITY_NONE,
+                    stopbits <span style="color:#666">=</span> serial<span style="color:#666">.</span>STOPBITS_ONE,
+					timeout <span style="color:#666">=</span> <span style="color:#666">3</span> <span style="color:#408080;font-style:italic">#s</span>
+                    )</code></pre></div>
+<ul>
+<li><code>python -m serial.tools.list_ports</code> → prints a list of available ports.</li>
+</ul>
+
+<hr />
+
+<h3 id="scypy">ScyPy</h3>
+
+<p>The SciPy framework builds on top of the low-level NumPy framework for multidimensional arrays, and provides a large number of higher-level scientific algorithms.
+<strong>See</strong> <a href="http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-3-Scipy.ipynb">here</a> <strong>for a Jupyter notebook tutorial on scypy</strong></p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">scipy</span> <span style="color:#008000;font-weight:bold">as</span> <span style="color:#00f;font-weight:bold">sp</span></code></pre></div>
+<hr />
+
+<h3 id="sympy">SymPy</h3>
+
+<p>It is a Computer Algebra System (CAS). <a href="https://www.sympy.org/en/index.html">Documentation</a>
+<strong>Sage</strong> <a href="http://www.sagemath.org/">docs</a> is in some aspects more powerful than SymPy, but both offer very comprehensive CAS functionality. The advantage of SymPy is that it is a regular Python module and integrates well with the IPython notebook.</p>
+
+<p><strong>See</strong> <a href="http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-5-Sympy.ipynb">here</a> <strong>for a Jupyter notebook tutorial on symp</strong></p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">sympy</span> <span style="color:#008000;font-weight:bold">as</span> <span style="color:#00f;font-weight:bold">symp</span></code></pre></div>
+
+
+        </main>
+    </div>
+    <div class="container border-top border-dark">
+    <nav class="navbar navbar-light justify-content-center">
+        <div class="navbar-nav d-flex flex-row justify-content-center">
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://github.com/damianolodi"
+                style="margin:10px;"><i data-feather="github"></i> GitHub</a>
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://www.linkedin.com/in/damiano-lodi/"
+                style="margin:10px;"><i data-feather="linkedin"></i> LinkedIn</a>
+            
+        </div>
+    </nav>
+</div>
+    
+
+<script src="https://damnotes.netlify.com/js/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+</body>
+
+</html>

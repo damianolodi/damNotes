@@ -47,39 +47,30 @@
 <li><code>torch.manual_seed(n)</code> set seeds for <strong>random number generation</strong></li>
 <li><code>torch.randn((n1, n2, n3, ...))</code> return a <strong>random tensor</strong> with dimensions n1, n2,…, mean 0 and variance 1 <a href="https://pytorch.org/docs/stable/torch.html#torch.randn">doc</a></li>
 <li><code>torch.randn_like(input)</code> return a random tensor normal distributed with the size of tensor in<code>input</code>  <a href="https://pytorch.org/docs/stable/torch.html#torch.randn_like">doc</a></li>
-
-<li><p><code>torch.mm(tensor1, tensor2)</code> -&gt; matrix multiplication of two tensors</p>
-
-<hr />
-
-<h2 id="torch-and-numpy">Torch and Numpy</h2></li>
-
-<li><p><code>torch.from_numpy(tensor)</code> -&gt; <strong>transform an array into a tensor</strong> for Torch</p></li>
-
-<li><p><code>tensor.numpy()</code> -&gt; transform a tensor into an array
-Memory of the 2 data structures is shared: if one changes the values <em>in-place</em> (with a <code>_</code> operation) of one object, the other will change as well.</p>
-
-<hr />
-
-<h2 id="tensor-manipulation">Tensor Manipulation</h2></li>
-
-<li><p><code>tensor.shape</code> -&gt; return the <strong>shape of the tensor</strong> in a tuple</p></li>
-
-<li><p><code>tensor.reshape(a, b)</code> -&gt; <strong>reshape</strong> the tensor. <em>Sometimes it clone the data in another part of the memory and return that. This could result in some inefficiencies.</em></p></li>
-
-<li><p><code>tensor.resize_(a, b)</code> -&gt; <strong>reshape</strong> the tensor without cloning the data. But if the new sizes contain a total number of elements that is less than the previous one, some data are lost. The <code>_</code> means that the operation is of type “<a href="https://discuss.pytorch.org/t/what-is-in-place-operation/16244"><code>in-place</code></a>”.</p></li>
-
-<li><p><code>tensor.view(a,b)</code> -&gt; <strong>reshape</strong> the tensor (<strong>suggested</strong>) without messing with memory <a href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor.view">doc</a></p>
-
-<ol>
-<li><code>tensor.view(a,-1)</code> -&gt; the <code>-1</code> <em>flatten</em> (multiply) all the remaining dimensions
-- - - -</li>
-</ol></li>
+<li><code>torch.mm(tensor1, tensor2)</code> -&gt; matrix multiplication of two tensors</li>
 </ul>
 
 <hr />
 
-<p>#code/python/modules</p>
+<h2 id="torch-and-numpy">Torch and Numpy</h2>
+
+<ul>
+<li><code>torch.from_numpy(tensor)</code> -&gt; <strong>transform an array into a tensor</strong> for Torch</li>
+<li><code>tensor.numpy()</code> -&gt; transform a tensor into an array
+Memory of the 2 data structures is shared: if one changes the values <em>in-place</em> (with a <code>_</code> operation) of one object, the other will change as well.</li>
+</ul>
+
+<hr />
+
+<h2 id="tensor-manipulation">Tensor Manipulation</h2>
+
+<ul>
+<li><code>tensor.shape</code> -&gt; return the <strong>shape of the tensor</strong> in a tuple</li>
+<li><code>tensor.reshape(a, b)</code> -&gt; <strong>reshape</strong> the tensor. <em>Sometimes it clone the data in another part of the memory and return that. This could result in some inefficiencies.</em></li>
+<li><code>tensor.resize_(a, b)</code> -&gt; <strong>reshape</strong> the tensor without cloning the data. But if the new sizes contain a total number of elements that is less than the previous one, some data are lost. The <code>_</code> means that the operation is of type “<a href="https://discuss.pytorch.org/t/what-is-in-place-operation/16244"><code>in-place</code></a>”.</li>
+<li><code>tensor.view(a,b)</code> -&gt; <strong>reshape</strong> the tensor (<strong>suggested</strong>) without messing with memory <a href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor.view">doc</a>
+        1.  <code>tensor.view(a,-1)</code> -&gt; the <code>-1</code> <em>flatten</em> (multiply) all the remaining dimensions</li>
+</ul>
 
 
 

@@ -99,30 +99,7 @@ ctrl + H show hidden files</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/python/11-pytorch/</guid>
-      <description>PyTorch  Import using import torch torch.manual_seed(n) set seeds for random number generation torch.randn((n1, n2, n3, ...)) return a random tensor with dimensions n1, n2,…, mean 0 and variance 1 doc torch.randn_like(input) return a random tensor normal distributed with the size of tensor ininput doc torch.mm(tensor1, tensor2) -&amp;gt; matrix multiplication of two tensors
-Torch and Numpy torch.from_numpy(tensor) -&amp;gt; transform an array into a tensor for Torch
- tensor.numpy() -&amp;gt; transform a tensor into an array Memory of the 2 data structures is shared: if one changes the values in-place (with a _ operation) of one object, the other will change as well.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://damnotes.netlify.com/python/12-scypy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/12-scypy/</guid>
-      <description>ScyPy The SciPy framework builds on top of the low-level NumPy framework for multidimensional arrays, and provides a large number of higher-level scientific algorithms. See here for a Jupyter notebook tutorial on scypy
-import scipy as sp #code/python/modules</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://damnotes.netlify.com/python/13-sympy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/13-sympy/</guid>
-      <description>SymPy It is a Computer Algebra System (CAS). Documentation Sage docs is in some aspects more powerful than SymPy, but both offer very comprehensive CAS functionality. The advantage of SymPy is that it is a regular Python module and integrates well with the IPython notebook.
-See here for a Jupyter notebook tutorial on symp
-import sympy as symp #code/python/modules</description>
+      <description>PyTorch  Import using import torch torch.manual_seed(n) set seeds for random number generation torch.randn((n1, n2, n3, ...)) return a random tensor with dimensions n1, n2,…, mean 0 and variance 1 doc torch.randn_like(input) return a random tensor normal distributed with the size of tensor ininput doc torch.mm(tensor1, tensor2) -&amp;gt; matrix multiplication of two tensors  Torch and Numpy  torch.from_numpy(tensor) -&amp;gt; transform an array into a tensor for Torch tensor.numpy() -&amp;gt; transform a tensor into an array Memory of the 2 data structures is shared: if one changes the values in-place (with a _ operation) of one object, the other will change as well.</description>
     </item>
     
     <item>
@@ -154,7 +131,7 @@ with open(&amp;#39;data.csv&amp;#39;,&amp;#39;r&amp;#39;) as csv_file: csv_reade
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/python/19-python-in-atom/</guid>
-      <description>Python in Atom Packages List  Script &amp;ndash; to run code in Atom  cmd + i to run the script  Disable autocomplete-plus and autocomplete-snippest Install autocomplete-python Install file-icons Install minimap - when working on big screens and on big scripts Install python-autopep8  Enable Format on Save Install autopep8 with pip  Install linter-flake8 &amp;ndash; to correct error  Install flake8 with pip   Editor Settings  Select Scroll past the end Tab lenght set to 4 To increase the font size go to Settings -&amp;gt; Themes -&amp;gt; Your Stylesheet and print</description>
+      <description>Python in Atom Packages List  Script &amp;ndash; to run code in Atom * cmd + i to run the script Disable autocomplete-plus and autocomplete-snippest Install autocomplete-python Install file-icons Install minimap - when working on big screens and on big scripts Install python-autopep8 _ Enable Format on Save _ Install autopep8 with pip Install linter-flake8 &amp;ndash; to correct error * Install flake8 with pip  Editor Settings  Select Scroll past the end Tab lenght set to 4 To increase the font size go to Settings -&amp;gt; Themes -&amp;gt; Your Stylesheet and print</description>
     </item>
     
     <item>
@@ -350,17 +327,6 @@ flex-wrap: wrap; &amp;ndash;&amp;gt; wrap the flex-items if necessary
     </item>
     
     <item>
-      <title>IPython</title>
-      <link>https://damnotes.netlify.com/python/03-ipython/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/03-ipython/</guid>
-      <description> .display module  from IPython import display → Used to dusplay various type of data (audio, images, &amp;hellip;) (doc).
- display.display(obj) → display a python object in all frontends (doc)
-  </description>
-    </item>
-    
-    <item>
       <title>Images</title>
       <link>https://damnotes.netlify.com/html/04-images/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -400,20 +366,8 @@ flex-wrap: wrap; &amp;ndash;&amp;gt; wrap the flex-items if necessary
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/python/03-matplotlib/</guid>
-      <description>Custom Plot Style This process is considered for a Windows machine where Python is installed using Miniconda 3 (for Anaconda it should be the same).
-The idea is to create a custom style file in the same directory where all the styles are archived. The instruction reported on the documentation probably are correct only for a &amp;ldquo;normal&amp;rdquo; Python installation. This is the process to follow if Miniconda is installed:</description>
-    </item>
-    
-    <item>
-      <title>Matplotlib 2</title>
-      <link>https://damnotes.netlify.com/python/03b-matplotlib/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/03b-matplotlib/</guid>
-      <description>See here for a Jupyter notebook tutorial on matplotlib Official documentation
-import matplotlib.pyplot as plt Use %matplotlib inline in Jupyter to display figures inside the notebooks
-Basic figure script This script create a small figure on top of another one
-#request text elements rendering with Latex matplotlib.rcParams.update({&amp;#39;font.size&amp;#39;: 18, &amp;#39;text.usetex&amp;#39;: True}) # create the figure object fig = plt.figure(figsize=(8,4), dpi=100) # create an axes object inside the figure # left, bottom, width, height (range 0 to 1) axes1 = fig.</description>
+      <description>Jupyter Notebook tutorial on matplotlib. Official documentation
+import matplotlib.pyplot as plt %matplotlib inline # display figures inside jupyter notebooks axes.plot(a, b, &amp;#39;b.-&amp;#39;, color = &amp;#39;#FFFFFF&amp;#39;, # color (control) alpha = 0.5, # lw = 3, # linewidth ls = &amp;#39;-&amp;#39;, # linestyle &amp;#39;-&amp;#39; &amp;#39;--&amp;#39; &amp;#39;-.&amp;#39; &amp;#39;:&amp;#39; &amp;#39;steps&amp;#39; marker =&amp;#39;+&amp;#39;, # markerstyle `+`, `o`, `*`, `s`, `,`, `.`, `1`, `2`, `3`,… ms = 3 # markersize ) Basic figure script Create a small figure on top of another one #request text elements rendering with Latex matplotlib.</description>
     </item>
     
     <item>
@@ -451,13 +405,24 @@ rem -&amp;gt; it means root em. Instead of checking parent elements to size font
     
     <item>
       <title>Os and Datetime</title>
-      <link>https://damnotes.netlify.com/python/08-os-datetime/</link>
+      <link>https://damnotes.netlify.com/python/08-os/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://damnotes.netlify.com/python/08-os-datetime/</guid>
+      <guid>https://damnotes.netlify.com/python/08-os/</guid>
       <description>import os import datetime Os  os.getcwd() obtain the current working directory os.listdir(path) list all file in the path. Better using scandir() for more performance os.chdir(path) change the cwd to path os.remove(path) remove a file
  os.mkdir(path) create a directory. To avoid errors if the directory exist, use
 dirName = &amp;#39;tempDir&amp;#39; try: # Create target Directory os.mkdir(dirName) print(&amp;#34;Directory &amp;#34; , dirName , &amp;#34; Created &amp;#34;) except FileExistsError: print(&amp;#34;Directory &amp;#34; , dirName , &amp;#34; already exists&amp;#34;) os.</description>
+    </item>
+    
+    <item>
+      <title>Other Libraries</title>
+      <link>https://damnotes.netlify.com/python/99-other-libraries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/99-other-libraries/</guid>
+      <description>Datetime  datetime.today() → print current date  IPython .display module (doc)
+from IPython import display # display various type of data (audio, images, ...)  display.display(obj) → display a python object in all frontends (doc)  PySerial (Docs)
+import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#39;, baudrate = 9600, bytesize = serial.EIGHTBITS, parity = serial.PARITY_NONE, stopbits = serial.STOPBITS_ONE, timeout = 3 #s )  python -m serial.tools.list_ports → prints a list of available ports.</description>
     </item>
     
     <item>
@@ -466,17 +431,8 @@ dirName = &amp;#39;tempDir&amp;#39; try: # Create target Directory os.mkdir(dirN
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/python/02-pandas/</guid>
-      <description>import pandas as pd # df creations pd.DataFrame(dict) # create df from dictionary  df → DataFrame s → Series Jupyter Notebook lessons on pandas  File I/O Import file into a df
-df = pd.read_csv(r’relative_path’, #can be a web address sep = &amp;#39; &amp;#39;, usecols = [0, 1, 5] # columns to be returned from the file names = [&amp;#39;column1&amp;#39;,&amp;#39;column2&amp;#39;,...], header = None, # line of the header nrows = 5, # number of rows to read skiprows = 1, # rows to skip from top skipfooter = 3, # rows to skip from bottom ## if a list is provided, it will skip those rows index_col = False, # force to not use a column as the index of the rows skipinitialspace = True, # skip initial spaces after delimiter parse_dates = [0], # list of ints or column names containing date time format infer_datetime_format = True # infer time format and switch to faster loading (if possible) )  pd.</description>
-    </item>
-    
-    <item>
-      <title>Pandas</title>
-      <link>https://damnotes.netlify.com/python/02b-pandas/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/02b-pandas/</guid>
-      <description>df.to_csv(&#39;path/fileName.txt&#39;,index=False,header=False, encoding=&#39;utf8&#39;) export dataframe to a text file. Setting these parameters to False will prevent the index and header names from being exported.  df.to_excel(“output_excel_file.xlsx&amp;quot;, sheet_name=&amp;quot;Sheet 1&amp;quot;, index=False) use to export to Excel. This may need the xlsxwriter package.  df.dtypes print the type of each column of the dataframe df[&#39;columnName&#39;] = df[&#39;columnName&#39;].astype(type) change the type of the column to type. Possible values:  str string (printed as object) int64 float64   Dataframe creation  pd.</description>
+      <description>import pandas as pd # df creations pd.Series([list]) # create a Series object pd.DataFrame(dict) # create df from dictionary pd.DataFrame(data=[list], index=None, columns=None, dtype=None, copy=False) # create df from list  df → DataFrame s → Series Jupyter Notebook lessons on pandas  File I/O Import file into a df
+df = pd.read_csv(r’relative_path’, #can be a web address sep = &amp;#39; &amp;#39;, usecols = [0, 1, 5] # columns to be returned from the file names = [&amp;#39;column1&amp;#39;,&amp;#39;column2&amp;#39;,.</description>
     </item>
     
     <item>
@@ -511,16 +467,6 @@ a:hover { color: red; } Add something before or after a selected element
     </item>
     
     <item>
-      <title>PySerial</title>
-      <link>https://damnotes.netlify.com/python/09-pyserial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/09-pyserial/</guid>
-      <description>Documentation
-import serial  python -m serial.tools.list_ports prints a list of available ports.  Port Opening ser = serial.Serial(	port=&amp;#39;/dev/tty.SLAB_USBtoUART&amp;#39;, baudrate=9600, bytesize=serial.EIGHTBITS, parity=serial.PARITY_NONE, stopbits=serial.STOPBITS_ONE, timeout=3 #s )  Serial open the port and create an object. * timeout set the time after which the reading process is stopped (in seconds)   #code/python/modules</description>
-    </item>
-    
-    <item>
       <title>Remote Repositories</title>
       <link>https://damnotes.netlify.com/git/05-remote-repositories/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -545,13 +491,12 @@ import serial  python -m serial.tools.list_ports prints a list of available port
     
     <item>
       <title>Seaborn</title>
-      <link>https://damnotes.netlify.com/python/10-seaborn/</link>
+      <link>https://damnotes.netlify.com/python/03b-seaborn/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://damnotes.netlify.com/python/10-seaborn/</guid>
-      <description>Docs
-import seaborn as sns Here is a small example explained
-sns.set() tips = sns.load_dataset(&amp;#34;tips&amp;#34;) # or just load a dataframe with pandas sns.relplot(x=&amp;#34;total_bill&amp;#34;, y=&amp;#34;tip&amp;#34;, col=&amp;#34;time&amp;#34;, hue=&amp;#34;smoker&amp;#34;, style=&amp;#34;smoker&amp;#34;, size=&amp;#34;size&amp;#34;, data=tips);  sns.set() set the style of the plot using matplotlib standards. doc  #code/python/modules</description>
+      <guid>https://damnotes.netlify.com/python/03b-seaborn/</guid>
+      <description>(Docs)
+import seaborn as sns sns.set() tips = sns.load_dataset(&amp;#34;tips&amp;#34;) # or just load a dataframe with pandas sns.relplot(x = &amp;#34;total_bill&amp;#34;, y = &amp;#34;tip&amp;#34;, col = &amp;#34;time&amp;#34;, hue = &amp;#34;smoker&amp;#34;, style = &amp;#34;smoker&amp;#34;, size = &amp;#34;size&amp;#34;, data = tips);  sns.set() set the style of the plot using matplotlib standards (doc)  </description>
     </item>
     
     <item>
