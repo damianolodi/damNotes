@@ -1,6 +1,7 @@
 ---
 title: "Jupyter notebooks"
 draft: false
+weight: 14
 ---
 
 ### Jupiter Notebooks

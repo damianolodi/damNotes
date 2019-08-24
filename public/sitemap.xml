@@ -3,6 +3,54 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://damnotes.netlify.com/python/00-basic-concepts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/01-numpy/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/02-pandas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/03-matplotlib/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/03b-seaborn/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/06-tensorflow/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/08-os/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/11-pytorch/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/14-jupiter-notebooks/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/16-files-io/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/19-python-in-atom/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/99-other-libraries/</loc>
+  </url>
+  
+  <url>
     <loc>https://damnotes.netlify.com/</loc>
     <lastmod>2019-08-06T21:19:34+02:00</lastmod>
     <priority>0</priority>
@@ -87,10 +135,6 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/python/19-python-in-atom/</loc>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/bash/</loc>
   </url>
   
@@ -100,10 +144,6 @@
   
   <url>
     <loc>https://damnotes.netlify.com/c/basic-concepts/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/python/00-basic-concepts/</loc>
   </url>
   
   <url>
@@ -155,10 +195,6 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/python/16-files-io/</loc>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/css/04-flexbox/</loc>
   </url>
   
@@ -187,10 +223,6 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/python/14-jupiter-notebooks/</loc>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/git/04-linking-to-github/</loc>
   </url>
   
@@ -203,31 +235,11 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/python/03-matplotlib/</loc>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/css/06-measurement-units/</loc>
   </url>
   
   <url>
     <loc>https://damnotes.netlify.com/css/09-media-queries/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/python/01-numpy/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/python/08-os/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/python/99-other-libraries/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/python/02-pandas/</loc>
   </url>
   
   <url>
@@ -240,10 +252,6 @@
   
   <url>
     <loc>https://damnotes.netlify.com/css/10-pseudo-class/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/python/11-pytorch/</loc>
   </url>
   
   <url>
@@ -263,15 +271,7 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/python/03b-seaborn/</loc>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/css/11-selectors/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/python/06-tensorflow/</loc>
   </url>
   
   <url>

@@ -1,6 +1,7 @@
 ---
 title: "Tensorflow"
 draft: false
+weight: 6
 ---
 
 -   `import tensorflow as tf`

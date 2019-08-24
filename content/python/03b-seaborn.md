@@ -1,6 +1,7 @@
 ---
 title: "Seaborn"
 draft: false
+weight: 4
 ---
 
 ([Docs](http://seaborn.pydata.org/index.html))

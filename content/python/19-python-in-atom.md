@@ -1,6 +1,7 @@
 ---
 title: "Atom"
 draft: false
+weight: 19
 ---
 
 # Python in Atom

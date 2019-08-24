@@ -11,15 +11,6 @@
     
     
     <item>
-      <title>Atom</title>
-      <link>https://damnotes.netlify.com/python/19-python-in-atom/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/19-python-in-atom/</guid>
-      <description>Python in Atom Packages List  Script &amp;ndash; to run code in Atom * cmd + i to run the script Disable autocomplete-plus and autocomplete-snippest Install autocomplete-python Install file-icons Install minimap - when working on big screens and on big scripts Install python-autopep8 _ Enable Format on Save _ Install autopep8 with pip Install linter-flake8 &amp;ndash; to correct error * Install flake8 with pip  Editor Settings  Select Scroll past the end Tab lenght set to 4 To increase the font size go to Settings -&amp;gt; Themes -&amp;gt; Your Stylesheet and print</description>
-    </item>
-    
-    <item>
       <title>Basic Concepts</title>
       <link>https://damnotes.netlify.com/python/00-basic-concepts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -29,67 +20,12 @@
     </item>
     
     <item>
-      <title>Files I/O</title>
-      <link>https://damnotes.netlify.com/python/16-files-io/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/16-files-io/</guid>
-      <description>Files I/O Use
-import csv in your program.
-SIMPLE READ .CSV FILE Use with to automatically close the file at the end
-with open(&amp;#39;data.csv&amp;#39;,&amp;#39;r&amp;#39;) as csv_file: csv_reader = csv.reader(csv_file, delimiter=&amp;#39; &amp;#39;) # to skip over the header line next(csv_reader) for line in csv_reader: print(line) SIMPLE WRITE ON A NEW .CSV FILE with open(&amp;#39;data.csv&amp;#39;,&amp;#39;r&amp;#39;) as csv_file: csv_reader = csv.reader(csv_file, delimiter=&amp;#39; &amp;#39;) # open a new file with open(&amp;#39;new_file.csv&amp;#39;,&amp;#39;w&amp;#39;) as new_file: csv_writer = csv.</description>
-    </item>
-    
-    <item>
-      <title>Jupyter notebooks</title>
-      <link>https://damnotes.netlify.com/python/14-jupiter-notebooks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/14-jupiter-notebooks/</guid>
-      <description>Jupiter Notebooks Useful tutorial here
-Here find a list of useful notebooks to download and learn from them.
- Run the jupiter server typing jupyter notebook in the command line To create a new file click new and the language you want to use in the notebook To run a cell use ctrl + enter. To run a cell and select below use shift + enter. Use option + enter to run a cell and insert below.</description>
-    </item>
-    
-    <item>
-      <title>Matplotlib</title>
-      <link>https://damnotes.netlify.com/python/03-matplotlib/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/03-matplotlib/</guid>
-      <description>Jupyter Notebook tutorial on matplotlib. Official documentation
-import matplotlib.pyplot as plt %matplotlib inline # display figures inside jupyter notebooks axes.plot(a, b, &amp;#39;b.-&amp;#39;, color = &amp;#39;#FFFFFF&amp;#39;, # color (control) alpha = 0.5, # lw = 3, # linewidth ls = &amp;#39;-&amp;#39;, # linestyle &amp;#39;-&amp;#39; &amp;#39;--&amp;#39; &amp;#39;-.&amp;#39; &amp;#39;:&amp;#39; &amp;#39;steps&amp;#39; marker =&amp;#39;+&amp;#39;, # markerstyle `+`, `o`, `*`, `s`, `,`, `.`, `1`, `2`, `3`,… ms = 3 # markersize ) Basic figure script Create a small figure on top of another one #request text elements rendering with Latex matplotlib.</description>
-    </item>
-    
-    <item>
       <title>NumPy</title>
       <link>https://damnotes.netlify.com/python/01-numpy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/python/01-numpy/</guid>
       <description>import numpy as np array[index1, index2] # access an element. Use : to access the all line array[start:stop:stride] # array slicing np.nditer(array) # create an iterator object to be used in for loops # Array generation np.array(list) # create array from list np.arange(first, size, spacing) # generate array np.linspace(first, last, size) # generate array, both end points are included np.logspace(first, last, size, base=e) # generate log-spaced array np.zeros((dim1,dim2)) # create array full of 0s np.</description>
-    </item>
-    
-    <item>
-      <title>Os</title>
-      <link>https://damnotes.netlify.com/python/08-os/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/08-os/</guid>
-      <description>import os import datetime Os  os.getcwd() obtain the current working directory os.listdir(path) list all file in the path. Better using scandir() for more performance os.chdir(path) change the cwd to path os.remove(path) remove a file
- os.mkdir(path) create a directory. To avoid errors if the directory exist, use
-dirName = &amp;#39;tempDir&amp;#39; try: # Create target Directory os.mkdir(dirName) print(&amp;#34;Directory &amp;#34; , dirName , &amp;#34; Created &amp;#34;) except FileExistsError: print(&amp;#34;Directory &amp;#34; , dirName , &amp;#34; already exists&amp;#34;) os.</description>
-    </item>
-    
-    <item>
-      <title>Other Libraries</title>
-      <link>https://damnotes.netlify.com/python/99-other-libraries/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/99-other-libraries/</guid>
-      <description>Datetime  datetime.today() → print current date  IPython .display module (doc)
-from IPython import display # display various type of data (audio, images, ...)  display.display(obj) → display a python object in all frontends (doc)  PySerial (Docs)
-import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#39;, baudrate = 9600, bytesize = serial.EIGHTBITS, parity = serial.PARITY_NONE, stopbits = serial.STOPBITS_ONE, timeout = 3 #s )  python -m serial.tools.list_ports → prints a list of available ports.</description>
     </item>
     
     <item>
@@ -103,12 +39,13 @@ df = pd.read_csv(r’relative_path’, #can be a web address sep = &amp;#39; &am
     </item>
     
     <item>
-      <title>PyTorch</title>
-      <link>https://damnotes.netlify.com/python/11-pytorch/</link>
+      <title>Matplotlib</title>
+      <link>https://damnotes.netlify.com/python/03-matplotlib/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://damnotes.netlify.com/python/11-pytorch/</guid>
-      <description>PyTorch  Import using import torch torch.manual_seed(n) set seeds for random number generation torch.randn((n1, n2, n3, ...)) return a random tensor with dimensions n1, n2,…, mean 0 and variance 1 doc torch.randn_like(input) return a random tensor normal distributed with the size of tensor ininput doc torch.mm(tensor1, tensor2) -&amp;gt; matrix multiplication of two tensors  Torch and Numpy  torch.from_numpy(tensor) -&amp;gt; transform an array into a tensor for Torch tensor.numpy() -&amp;gt; transform a tensor into an array Memory of the 2 data structures is shared: if one changes the values in-place (with a _ operation) of one object, the other will change as well.</description>
+      <guid>https://damnotes.netlify.com/python/03-matplotlib/</guid>
+      <description>Jupyter Notebook tutorial on matplotlib. Official documentation
+import matplotlib.pyplot as plt %matplotlib inline # display figures inside jupyter notebooks axes.plot(a, b, &amp;#39;b.-&amp;#39;, color = &amp;#39;#FFFFFF&amp;#39;, # color (control) alpha = 0.5, # lw = 3, # linewidth ls = &amp;#39;-&amp;#39;, # linestyle &amp;#39;-&amp;#39; &amp;#39;--&amp;#39; &amp;#39;-.&amp;#39; &amp;#39;:&amp;#39; &amp;#39;steps&amp;#39; marker =&amp;#39;+&amp;#39;, # markerstyle `+`, `o`, `*`, `s`, `,`, `.`, `1`, `2`, `3`,… ms = 3 # markersize ) Basic figure script Create a small figure on top of another one #request text elements rendering with Latex matplotlib.</description>
     </item>
     
     <item>
@@ -132,6 +69,69 @@ import seaborn as sns sns.set() tips = sns.load_dataset(&amp;#34;tips&amp;#34;) 
   tf.data module  Docs Dataset class (doc)  tf.feature_column module  tf.feature_column.numeric_column → create a numeric column for the model (doc).
  tf.feature_column.bucketized_column(source_column, boundaries) → takes a numeric column as input and apply binning using boundaries (doc).
  tf.feature_column.cross_column() → returns a column to perform crosses of categorical features (doc)</description>
+    </item>
+    
+    <item>
+      <title>Os</title>
+      <link>https://damnotes.netlify.com/python/08-os/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/08-os/</guid>
+      <description>import os import datetime Os  os.getcwd() obtain the current working directory os.listdir(path) list all file in the path. Better using scandir() for more performance os.chdir(path) change the cwd to path os.remove(path) remove a file
+ os.mkdir(path) create a directory. To avoid errors if the directory exist, use
+dirName = &amp;#39;tempDir&amp;#39; try: # Create target Directory os.mkdir(dirName) print(&amp;#34;Directory &amp;#34; , dirName , &amp;#34; Created &amp;#34;) except FileExistsError: print(&amp;#34;Directory &amp;#34; , dirName , &amp;#34; already exists&amp;#34;) os.</description>
+    </item>
+    
+    <item>
+      <title>PyTorch</title>
+      <link>https://damnotes.netlify.com/python/11-pytorch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/11-pytorch/</guid>
+      <description>PyTorch  Import using import torch torch.manual_seed(n) set seeds for random number generation torch.randn((n1, n2, n3, ...)) return a random tensor with dimensions n1, n2,…, mean 0 and variance 1 doc torch.randn_like(input) return a random tensor normal distributed with the size of tensor ininput doc torch.mm(tensor1, tensor2) -&amp;gt; matrix multiplication of two tensors  Torch and Numpy  torch.from_numpy(tensor) -&amp;gt; transform an array into a tensor for Torch tensor.numpy() -&amp;gt; transform a tensor into an array Memory of the 2 data structures is shared: if one changes the values in-place (with a _ operation) of one object, the other will change as well.</description>
+    </item>
+    
+    <item>
+      <title>Jupyter notebooks</title>
+      <link>https://damnotes.netlify.com/python/14-jupiter-notebooks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/14-jupiter-notebooks/</guid>
+      <description>Jupiter Notebooks Useful tutorial here
+Here find a list of useful notebooks to download and learn from them.
+ Run the jupiter server typing jupyter notebook in the command line To create a new file click new and the language you want to use in the notebook To run a cell use ctrl + enter. To run a cell and select below use shift + enter. Use option + enter to run a cell and insert below.</description>
+    </item>
+    
+    <item>
+      <title>Files I/O</title>
+      <link>https://damnotes.netlify.com/python/16-files-io/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/16-files-io/</guid>
+      <description>Files I/O Use
+import csv in your program.
+SIMPLE READ .CSV FILE Use with to automatically close the file at the end
+with open(&amp;#39;data.csv&amp;#39;,&amp;#39;r&amp;#39;) as csv_file: csv_reader = csv.reader(csv_file, delimiter=&amp;#39; &amp;#39;) # to skip over the header line next(csv_reader) for line in csv_reader: print(line) SIMPLE WRITE ON A NEW .CSV FILE with open(&amp;#39;data.csv&amp;#39;,&amp;#39;r&amp;#39;) as csv_file: csv_reader = csv.reader(csv_file, delimiter=&amp;#39; &amp;#39;) # open a new file with open(&amp;#39;new_file.csv&amp;#39;,&amp;#39;w&amp;#39;) as new_file: csv_writer = csv.</description>
+    </item>
+    
+    <item>
+      <title>Atom</title>
+      <link>https://damnotes.netlify.com/python/19-python-in-atom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/19-python-in-atom/</guid>
+      <description>Python in Atom Packages List  Script &amp;ndash; to run code in Atom * cmd + i to run the script Disable autocomplete-plus and autocomplete-snippest Install autocomplete-python Install file-icons Install minimap - when working on big screens and on big scripts Install python-autopep8 _ Enable Format on Save _ Install autopep8 with pip Install linter-flake8 &amp;ndash; to correct error * Install flake8 with pip  Editor Settings  Select Scroll past the end Tab lenght set to 4 To increase the font size go to Settings -&amp;gt; Themes -&amp;gt; Your Stylesheet and print</description>
+    </item>
+    
+    <item>
+      <title>Other Libraries</title>
+      <link>https://damnotes.netlify.com/python/99-other-libraries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/99-other-libraries/</guid>
+      <description>Datetime  datetime.today() → print current date  IPython .display module (doc)
+from IPython import display # display various type of data (audio, images, ...)  display.display(obj) → display a python object in all frontends (doc)  PySerial (Docs)
+import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#39;, baudrate = 9600, bytesize = serial.EIGHTBITS, parity = serial.PARITY_NONE, stopbits = serial.STOPBITS_ONE, timeout = 3 #s )  python -m serial.tools.list_ports → prints a list of available ports.</description>
     </item>
     
   </channel>

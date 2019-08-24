@@ -21,3 +21,20 @@ All functions are reported in the [documentation](https://gohugo.io/functions/).
 ### String Manipulation
 
 -   `{{ print SOMETHING }}` → print the argument using the Golang [print](https://gohugo.io/functions/print/#readout) function. See `printf` to apply string [format](https://gohugo.io/functions/printf/#readout)
+
+* * *
+
+### Range
+
+-   `{{ range $index, $value := .Pages }}` → range and assign an index to each iteration
+
+* * *
+
+### Conditionals
+
+-   `{{ if (op arg1 arg2) }} {{ else if (op arg1 arg2) }} {{ else }} {{ end }}` → `op` is operator:
+    -   `eq` → equal
+    -   `lt` → less than
+    -   `le` → less than or equal to
+    -   `gt` → greater than
+    -   `ge` → greater than or equal to

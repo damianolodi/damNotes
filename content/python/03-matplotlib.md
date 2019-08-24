@@ -1,6 +1,7 @@
 ---
 title: "Matplotlib"
 draft: false
+weight: 3
 ---
 
 Jupyter Notebook [tutorial](http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb) on matplotlib.

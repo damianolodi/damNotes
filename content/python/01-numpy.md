@@ -5,6 +5,7 @@ arguments: ["Array Generation",
             "Array Methods",
             "File I/O",
             "Data Analysis"]
+weight: 1
 ---
 
 ```py

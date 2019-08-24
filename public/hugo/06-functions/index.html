@@ -35,9 +35,9 @@
     <div class="container">
         <main id="main">
             
-
-<h2 class="m-1 mb-3 mt-3">Functions</h2>
-
+<div class="d-flex flex-column align-items-center">
+    <h2 class="m-1 mb-2 mt-2"><u>Functions</u></h2>
+</div>
 
 
 <p>All functions are reported in the <a href="https://gohugo.io/functions/">documentation</a>.</p>
@@ -58,6 +58,30 @@
 
 <ul>
 <li><code>{{ print SOMETHING }}</code> → print the argument using the Golang <a href="https://gohugo.io/functions/print/#readout">print</a> function. See <code>printf</code> to apply string <a href="https://gohugo.io/functions/printf/#readout">format</a></li>
+</ul>
+
+<hr />
+
+<h3 id="range">Range</h3>
+
+<ul>
+<li><code>{{ range $index, $value := .Pages }}</code> → range and assign an index to each iteration</li>
+</ul>
+
+<hr />
+
+<h3 id="conditionals">Conditionals</h3>
+
+<ul>
+<li><code>{{ if (op arg1 arg2) }} {{ else if (op arg1 arg2) }} {{ else }} {{ end }}</code> → <code>op</code> is operator:
+
+<ul>
+<li><code>eq</code> → equal</li>
+<li><code>lt</code> → less than</li>
+<li><code>le</code> → less than or equal to</li>
+<li><code>gt</code> → greater than</li>
+<li><code>ge</code> → greater than or equal to</li>
+</ul></li>
 </ul>
 
 
