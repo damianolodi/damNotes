@@ -1,3 +1,8 @@
+---
+title: "Atom"
+draft: false
+---
+
 # Python in Atom
 
 ## Packages List

@@ -11,39 +11,7 @@
     
     
     <item>
-      <title></title>
-      <link>https://damnotes.netlify.com/python/11-pytorch/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/11-pytorch/</guid>
-      <description>PyTorch  Import using import torch torch.manual_seed(n) set seeds for random number generation torch.randn((n1, n2, n3, ...)) return a random tensor with dimensions n1, n2,…, mean 0 and variance 1 doc torch.randn_like(input) return a random tensor normal distributed with the size of tensor ininput doc torch.mm(tensor1, tensor2) -&amp;gt; matrix multiplication of two tensors  Torch and Numpy  torch.from_numpy(tensor) -&amp;gt; transform an array into a tensor for Torch tensor.numpy() -&amp;gt; transform a tensor into an array Memory of the 2 data structures is shared: if one changes the values in-place (with a _ operation) of one object, the other will change as well.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://damnotes.netlify.com/python/14-jupiter-notebooks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/14-jupiter-notebooks/</guid>
-      <description>Jupiter Notebooks Useful tutorial here
-Here find a list of useful notebooks to download and learn from them.
- Run the jupiter server typing jupyter notebook in the command line To create a new file click new and the language you want to use in the notebook To run a cell use ctrl + enter. To run a cell and select below use shift + enter. Use option + enter to run a cell and insert below.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://damnotes.netlify.com/python/16-files-io/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/16-files-io/</guid>
-      <description>Files I/O Use
-import csv in your program.
-SIMPLE READ .CSV FILE Use with to automatically close the file at the end
-with open(&amp;#39;data.csv&amp;#39;,&amp;#39;r&amp;#39;) as csv_file: csv_reader = csv.reader(csv_file, delimiter=&amp;#39; &amp;#39;) # to skip over the header line next(csv_reader) for line in csv_reader: print(line) SIMPLE WRITE ON A NEW .CSV FILE with open(&amp;#39;data.csv&amp;#39;,&amp;#39;r&amp;#39;) as csv_file: csv_reader = csv.reader(csv_file, delimiter=&amp;#39; &amp;#39;) # open a new file with open(&amp;#39;new_file.csv&amp;#39;,&amp;#39;w&amp;#39;) as new_file: csv_writer = csv.</description>
-    </item>
-    
-    <item>
-      <title></title>
+      <title>Atom</title>
       <link>https://damnotes.netlify.com/python/19-python-in-atom/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -58,6 +26,29 @@ with open(&amp;#39;data.csv&amp;#39;,&amp;#39;r&amp;#39;) as csv_file: csv_reade
       
       <guid>https://damnotes.netlify.com/python/00-basic-concepts/</guid>
       <description>Variable Types Lists l = [100, 21, 88, 3] l = list() #empty list # List Comprehension -&amp;gt; quick list creation evens_to_50 = [i for i in range(51) if i % 2 == 0] other_list = [[i,j] for i in range(x) for j in range(y) if (x+y)!=n] # Element selection l[:2] # first two items (0 and 1) l[3:] # ourth through last items l[::2] # first through end with a step of 2 ## in general [start(inclusive):end(exclusive):stride] ## negative stride progress the list in reverse order # Multi-index lists l = [0, 1, 2, 3; 4, 5, 6, 7] l[1][2] #6  l1 + l2 → concatenate lists</description>
+    </item>
+    
+    <item>
+      <title>Files I/O</title>
+      <link>https://damnotes.netlify.com/python/16-files-io/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/16-files-io/</guid>
+      <description>Files I/O Use
+import csv in your program.
+SIMPLE READ .CSV FILE Use with to automatically close the file at the end
+with open(&amp;#39;data.csv&amp;#39;,&amp;#39;r&amp;#39;) as csv_file: csv_reader = csv.reader(csv_file, delimiter=&amp;#39; &amp;#39;) # to skip over the header line next(csv_reader) for line in csv_reader: print(line) SIMPLE WRITE ON A NEW .CSV FILE with open(&amp;#39;data.csv&amp;#39;,&amp;#39;r&amp;#39;) as csv_file: csv_reader = csv.reader(csv_file, delimiter=&amp;#39; &amp;#39;) # open a new file with open(&amp;#39;new_file.csv&amp;#39;,&amp;#39;w&amp;#39;) as new_file: csv_writer = csv.</description>
+    </item>
+    
+    <item>
+      <title>Jupyter notebooks</title>
+      <link>https://damnotes.netlify.com/python/14-jupiter-notebooks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/14-jupiter-notebooks/</guid>
+      <description>Jupiter Notebooks Useful tutorial here
+Here find a list of useful notebooks to download and learn from them.
+ Run the jupiter server typing jupyter notebook in the command line To create a new file click new and the language you want to use in the notebook To run a cell use ctrl + enter. To run a cell and select below use shift + enter. Use option + enter to run a cell and insert below.</description>
     </item>
     
     <item>
@@ -80,7 +71,7 @@ import matplotlib.pyplot as plt %matplotlib inline # display figures inside jupy
     </item>
     
     <item>
-      <title>Os and Datetime</title>
+      <title>Os</title>
       <link>https://damnotes.netlify.com/python/08-os/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -109,6 +100,15 @@ import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#3
       <guid>https://damnotes.netlify.com/python/02-pandas/</guid>
       <description>import pandas as pd # df creations pd.Series([list]) # create a Series object pd.DataFrame(dict) # create df from dictionary pd.DataFrame(data=[list], index=None, columns=None, dtype=None, copy=False) # create df from list  df → DataFrame s → Series Jupyter Notebook lessons on pandas  File I/O Import file into a df
 df = pd.read_csv(r’relative_path’, #can be a web address sep = &amp;#39; &amp;#39;, usecols = [0, 1, 5] # columns to be returned from the file names = [&amp;#39;column1&amp;#39;,&amp;#39;column2&amp;#39;,.</description>
+    </item>
+    
+    <item>
+      <title>PyTorch</title>
+      <link>https://damnotes.netlify.com/python/11-pytorch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/11-pytorch/</guid>
+      <description>PyTorch  Import using import torch torch.manual_seed(n) set seeds for random number generation torch.randn((n1, n2, n3, ...)) return a random tensor with dimensions n1, n2,…, mean 0 and variance 1 doc torch.randn_like(input) return a random tensor normal distributed with the size of tensor ininput doc torch.mm(tensor1, tensor2) -&amp;gt; matrix multiplication of two tensors  Torch and Numpy  torch.from_numpy(tensor) -&amp;gt; transform an array into a tensor for Torch tensor.numpy() -&amp;gt; transform a tensor into an array Memory of the 2 data structures is shared: if one changes the values in-place (with a _ operation) of one object, the other will change as well.</description>
     </item>
     
     <item>

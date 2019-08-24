@@ -1,16 +1,22 @@
 {{ define "main" }}
 
-<h2 class="m-3">{{ .Title }}</h2>
-<div
-    class="d-flex flex-row flex-wrap justify-content-around align-items-center">
+<div class="d-flex flex-column align-items-center">
+    <h2 class="p-1 ">
+        <u>{{ .Title }}</u>
+    </h2>
+</div>
+<div class="d-flex flex-column justify-content-around align-items-center">
 
-    {{ range .Pages.ByPublishDate.Reverse }}
-    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-        <div
-            class="card m-1 mb-2 argument-card text-center bg-light border border-dark roudned-lg">
+    {{ range $post_index, $post := .Pages.ByTitle }}
+    <div class="col-sm-12 {{ if not (eq $post_index 0) }}border-top{{ end }}">
+        <div class="card text-center border-light">
             <div class="card-body">
                 <h3 class="card-title h4">{{ .Title }}</h3>
-                <h4 class="card-subtitle mb-2 text-muted h6">Card subtitle
+                <h4 class="card-subtitle mb-2 text-muted h6">
+                    {{ range $index, $argument := .Params.Arguments }}
+                    {{ if not (eq $index 0) }}/{{ end }}
+                    {{ $argument }}
+                    {{ end }}
                 </h4>
                 <a href="{{ .RelPermalink }}" class="card-link">Read</a>
             </div>

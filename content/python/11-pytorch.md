@@ -1,3 +1,8 @@
+---
+title: "PyTorch"
+draft: false
+---
+
 # PyTorch
 
 -   Import using `import torch`
@@ -22,4 +27,4 @@
 -   `tensor.reshape(a, b)` -> **reshape** the tensor. _Sometimes it clone the data in another part of the memory and return that. This could result in some inefficiencies._
 -   `tensor.resize_(a, b)` -> **reshape** the tensor without cloning the data. But if the new sizes contain a total number of elements that is less than the previous one, some data are lost. The `_` means that the operation is of type “[`in-place`](https://discuss.pytorch.org/t/what-is-in-place-operation/16244)”.
 -   `tensor.view(a,b)` -> **reshape** the tensor (**suggested**) without messing with memory [doc](https://pytorch.org/docs/stable/tensors.html#torch.Tensor.view)
-    		1\.  `tensor.view(a,-1)` -> the `-1` _flatten_ (multiply) all the remaining dimensions
+    		1.  `tensor.view(a,-1)` -> the `-1` _flatten_ (multiply) all the remaining dimensions

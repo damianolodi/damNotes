@@ -1,4 +1,9 @@
-# Jupiter Notebooks
+---
+title: "Jupyter notebooks"
+draft: false
+---
+
+### Jupiter Notebooks
 
 Useful tutorial [here](https://youtu.be/HW29067qVWk)
 
