@@ -1,6 +1,8 @@
 ---
 title: "Text Elements"
 draft: false
+arguments: []
+weight: 5
 ---
 
 ### Common Text

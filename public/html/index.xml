@@ -42,15 +42,6 @@
     </item>
     
     <item>
-      <title>HTML Anatomy</title>
-      <link>https://damnotes.netlify.com/html/00-html-anatomy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/html/00-html-anatomy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Images</title>
       <link>https://damnotes.netlify.com/html/04-images/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -67,6 +58,15 @@
       
       <guid>https://damnotes.netlify.com/html/05-text-elements/</guid>
       <description>Common Text  &amp;lt;!-- --&amp;gt; → comments in html5 &amp;lt;h1&amp;gt; &amp;lt;h2&amp;gt; &amp;lt;h3&amp;gt; &amp;lt;h4&amp;gt; &amp;lt;h5&amp;gt; &amp;lt;h6&amp;gt; → headings &amp;lt;p&amp;gt; → paragraph _ Spaces and returns don’t affect the appearance of the code. _ To break the line in one paragraph (without changing paragraph) use the tag &amp;lt;br /&amp;gt; &amp;lt;em&amp;gt; → italics &amp;lt;strong&amp;gt; → bold style=“color: blue” → attribute to change color to apply CSS only to that tag  Lists &amp;lt;ul&amp;gt; &amp;lt;il&amp;gt; item 1 &amp;lt;/il&amp;gt; &amp;lt;il&amp;gt; item 2 &amp;lt;/il&amp;gt; &amp;lt;il&amp;gt; item 3 &amp;lt;/il&amp;gt; &amp;lt;/ul&amp;gt;  Use it outside the &amp;lt;p&amp;gt; tag.</description>
+    </item>
+    
+    <item>
+      <title>HTML Anatomy</title>
+      <link>https://damnotes.netlify.com/html/00-html-anatomy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/html/00-html-anatomy/</guid>
+      <description></description>
     </item>
     
   </channel>

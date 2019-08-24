@@ -51,16 +51,6 @@ width: 150px;
     </item>
     
     <item>
-      <title>File Naming System</title>
-      <link>https://damnotes.netlify.com/css/08-file-naming-system/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/css/08-file-naming-system/</guid>
-      <description> Insert this in the &amp;lt;head&amp;gt; tag of the .html file
-&amp;lt;link href=&amp;#34;https://www.codecademy.com/stylesheets/style.css&amp;#34; type=&amp;#34;text/css&amp;#34; rel=&amp;#34;stylesheet&amp;#34;&amp;gt;  </description>
-    </item>
-    
-    <item>
       <title>Flexbox</title>
       <link>https://damnotes.netlify.com/css/04-flexbox/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -96,6 +86,29 @@ flex-wrap: wrap; &amp;ndash;&amp;gt; wrap the flex-items if necessary
 px -&amp;gt; pixels are used to set the exact size of an element
 em -&amp;gt; the em represents the size of the base font being used. It is a relative unit of measurement. They change the size of text relative to the parent element’s size of text
 rem -&amp;gt; it means root em. Instead of checking parent elements to size font, it checks the root element.</description>
+    </item>
+    
+    <item>
+      <title>Variables</title>
+      <link>https://damnotes.netlify.com/css/07-variables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/07-variables/</guid>
+      <description>Define the variable using
+body { --var-name: value; }  It becomes available to use inside the element in which you create it and within any elements nested within it.
+ By creating your variables in :root, they will be available throughout the whole web page
+:root { --var-name: value; }  One can then over-write these variables by setting them again within a specific element.
+ Assign the variable using</description>
+    </item>
+    
+    <item>
+      <title>File Naming System</title>
+      <link>https://damnotes.netlify.com/css/08-file-naming-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/08-file-naming-system/</guid>
+      <description> Insert this in the &amp;lt;head&amp;gt; tag of the .html file
+&amp;lt;link href=&amp;#34;https://www.codecademy.com/stylesheets/style.css&amp;#34; type=&amp;#34;text/css&amp;#34; rel=&amp;#34;stylesheet&amp;#34;&amp;gt;  </description>
     </item>
     
     <item>
@@ -142,19 +155,6 @@ a:hover { color: red; } Add something before or after a selected element
 @import url(//fonts.googleapis.com/css?family=Cabin); Last term is called font-families and can be: _ cursive _ fantasy _ monospace _ sans-serif * serif
 Font Assets   List of Web safe fonts Google Fonts  Properties Font Properties  font-family: Garamond , Times , serif; -&amp;gt; fonts after the first are called fallback fonts
  font-size: 30px; -&amp;gt; measured in px, em or %</description>
-    </item>
-    
-    <item>
-      <title>Variables</title>
-      <link>https://damnotes.netlify.com/css/07-variables/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/css/07-variables/</guid>
-      <description>Define the variable using
-body { --var-name: value; }  It becomes available to use inside the element in which you create it and within any elements nested within it.
- By creating your variables in :root, they will be available throughout the whole web page
-:root { --var-name: value; }  One can then over-write these variables by setting them again within a specific element.
- Assign the variable using</description>
     </item>
     
   </channel>

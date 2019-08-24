@@ -1,6 +1,8 @@
 ---
 title: "Variables"
 draft: false
+arguments: []
+weight: 7
 ---
 
 -   Define the variable using

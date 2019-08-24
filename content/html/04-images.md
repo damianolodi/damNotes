@@ -1,6 +1,8 @@
 ---
 title: "Images"
 draft: false
+arguments: []
+weight: 4
 ---
 
 _Self-closing tag_

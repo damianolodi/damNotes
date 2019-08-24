@@ -1,9 +1,8 @@
 ---
 title: "Quick Reference"
-date: 2019-08-05T21:19:34+02:00
-summary: "Bo2"
-tags: ["hugo"]
 draft: false
+arguments: []
+weight: 1
 ---
 
 -   `hugo new site site-name` → create new project
@@ -12,7 +11,7 @@ draft: false
 
 -   `hugo server` → start local server on _localhost:1313_
 
-    -   `hugo server -D` **compile also drafts**
+    -   `hugo server -D` → **compile also drafts**
 
 -   `hugo` → build the project
 

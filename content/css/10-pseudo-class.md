@@ -1,6 +1,8 @@
 ---
 title: "Pseudo Class"
 draft: false
+arguments: []
+weight: 10
 ---
 
 -   Changing color of a link when hover on it

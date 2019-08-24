@@ -1,9 +1,8 @@
 ---
 title: "Content Organization"
-date: 2019-08-05T21:19:34+02:00
-summary: "How content is organized in Hugo"
-tags: ["hugo"]
 draft: false
+arguments: []
+weight: 4
 ---
 
 ## General Concepts

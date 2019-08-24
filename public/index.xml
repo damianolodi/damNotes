@@ -6,10 +6,41 @@
     <description>Recent content on DamNotes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Aug 2019 21:19:34 +0200</lastBuildDate>
     
 	<atom:link href="https://damnotes.netlify.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Animations</title>
+      <link>https://damnotes.netlify.com/css/01-animations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/01-animations/</guid>
+      <description>An animation requires 3 thing:
+ The start state of the animation The end state of the animation How long it should take to go from start to end state (speed of the animation)
+* { /_there are 8 animation properties total_/ animation-duration: 2s; animation-name: some-name; animation-iteration-count: infinite; /*number of iteration of the animation*/ animation-timing-function: linear; /*changing the animation speed evolution*/ animation-fill-mode: forwards; /*specify the style applied to an element when the animation has finished:*/ animation-iteration-count: 4; /*numbero of iterations - can be infinite*/ } Define the animation</description>
+    </item>
+    
+    <item>
+      <title>Bash Scripts</title>
+      <link>https://damnotes.netlify.com/bash/01-bash-scripts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/bash/01-bash-scripts/</guid>
+      <description>Making Custom Commands  Access the .bashrc file with
+nano ~/.bashrc  Open with nano and not with open, otherwise problems may occur when applying the following steps.
+ Inside the file, write the following
+alias command_name=&amp;#34;command1 &amp;amp;&amp;amp; command2 &amp;amp;&amp;amp; ...&amp;#34;  The &amp;amp;&amp;amp; apply the following command only if the current one is succesfull. On the other hand, use ; to run all the commands one after the other.</description>
+    </item>
+    
+    <item>
+      <title>Basic Concepts</title>
+      <link>https://damnotes.netlify.com/c/01-basic-concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/c/01-basic-concepts/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Basic Concepts</title>
@@ -21,12 +52,76 @@
     </item>
     
     <item>
+      <title>Document Structure</title>
+      <link>https://damnotes.netlify.com/html/01-document-structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/html/01-document-structure/</guid>
+      <description> Document Declaration Boilerplate code → some code that one has to every page of code.
+&amp;lt;@DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;My Coding Journal&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  &amp;lt;@DOCTYPE hmtl&amp;gt; → declaration &amp;lt;head&amp;gt; → it contain metadata of the webpage  Non-Semantic Tags Non-semantic tag → it does not describe the type of content it has inside.
+ &amp;lt;div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;span&amp;gt; &amp;lt;/span&amp;gt;  Semantic Tags  &amp;lt;header&amp;gt; &amp;lt;footer&amp;gt; &amp;lt;aside&amp;gt; &amp;lt;main&amp;gt; &amp;lt;article&amp;gt; &amp;lt;nav&amp;gt; &amp;lt;section&amp;gt; &amp;lt;detail&amp;gt;  </description>
+    </item>
+    
+    <item>
       <title>NumPy</title>
       <link>https://damnotes.netlify.com/python/01-numpy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/python/01-numpy/</guid>
       <description>import numpy as np array[index1, index2] # access an element. Use : to access the all line array[start:stop:stride] # array slicing np.nditer(array) # create an iterator object to be used in for loops # Array generation np.array(list) # create array from list np.arange(first, size, spacing) # generate array np.linspace(first, last, size) # generate array, both end points are included np.logspace(first, last, size, base=e) # generate log-spaced array np.zeros((dim1,dim2)) # create array full of 0s np.</description>
+    </item>
+    
+    <item>
+      <title>Quick Reference</title>
+      <link>https://damnotes.netlify.com/hugo/01-quick-reference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/hugo/01-quick-reference/</guid>
+      <description> hugo new site site-name → create new project
+ hugo version → check version installed
+ hugo server → start local server on localhost:1313
+ hugo server -D → compile also drafts  hugo → build the project
+ hugo -D → build also drafts  hugo new path/to/file.md → create new files in /content/ directory
+  </description>
+    </item>
+    
+    <item>
+      <title>Colors</title>
+      <link>https://damnotes.netlify.com/css/02-colors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/02-colors/</guid>
+      <description>General color: #AABBCC; &amp;ndash;&amp;gt; hex values
+color: rgb(0,255,255); &amp;ndash;&amp;gt; rgb values
+color: rgb(5%,50%,100%); &amp;ndash;&amp;gt; rgb values
+color: rgba(255,255,255,0.5); &amp;ndash;&amp;gt; rgb with opacity between 0 and 1
+color: hsl(180,100%,50%); &amp;ndash;&amp;gt; HSL is supported only by CSS3, so older browser can have problem with the encoding of this statement
+ hue 0°-360° (color) saturation % (amount of gray in a given color) lightness % (amount of white in a given color)  Background background-color: green;</description>
+    </item>
+    
+    <item>
+      <title>File Naming System</title>
+      <link>https://damnotes.netlify.com/html/02-file-naming-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/html/02-file-naming-system/</guid>
+      <description> index.html is always the root for the homepage of a website, so for example www.yoursite.com
+ Every page of the website needs an appropriate HTML file, e.g. the about page at www.yoursite.com/about.html will be contained in the about.html file
+  </description>
+    </item>
+    
+    <item>
+      <title>Front Matter</title>
+      <link>https://damnotes.netlify.com/hugo/02-front-matter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/hugo/02-front-matter/</guid>
+      <description>Informations between the two --- is called front matter.
+ draft: true → mark post as draft
+ image: &amp;quot;static/path-to-image.jpeg&amp;quot; → set the default post image (usuallly placed in the static directory)
+ tags: [&#39;tag1&#39;, &#39;tag2&#39;] → post tags
+ categories: [&#39;category1&#39;, ...] → post categories
+ publishdate: → set a publishing date for the post (if the build date is previous the one indicated, the post will not be published)</description>
     </item>
     
     <item>
@@ -40,6 +135,41 @@ df = pd.read_csv(r’relative_path’, #can be a web address sep = &amp;#39; &am
     </item>
     
     <item>
+      <title>Content Positioning</title>
+      <link>https://damnotes.netlify.com/css/03-content-positioning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/03-content-positioning/</guid>
+      <description>Display display: block; → the element occupies all the width of the parent element
+display: inline; → the elements are arranged horizontally
+display: none; → not rendered
+Dimensions All elements on a web page are interpreted by the browser as “living” inside of a box.
+width: 150px;
+ min-width and max-width also possible  height: 70%;
+ min-heigth and max-height also possible  Content Based width: min-content; → wrap the content and use the minimum space</description>
+    </item>
+    
+    <item>
+      <title>Folder Structure</title>
+      <link>https://damnotes.netlify.com/hugo/03-folder-structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/hugo/03-folder-structure/</guid>
+      <description>Archetypes Set the front matter for different content types.
+ archetypes/default.md → default front matter for new content
+---title:&amp;#34;{{ replace .Name &amp;#34;-&amp;#34; &amp;#34;&amp;#34; | title }}&amp;#34;date:{{.Date}}draft:true---  Config  Used to store various different configurations. If the number of configuration is limited, one can just use a single config.toml file. Also .json and .yaml can be used. To see more about configurations and configure each site properly, visit this page  Content  Directory used to store all the text file for all the contents.</description>
+    </item>
+    
+    <item>
+      <title>Forms</title>
+      <link>https://damnotes.netlify.com/html/03-forms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/html/03-forms/</guid>
+      <description>&amp;lt;form action=&amp;#34;process.php&amp;#34; method=&amp;#34;POST&amp;#34;&amp;gt; &amp;lt;!--action and method attribute are server-side thing--&amp;gt; &amp;lt;div&amp;gt; &amp;lt;!--used to place the elements on different lines--&amp;gt; &amp;lt;label&amp;gt;First Name&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; name=&amp;#34;firstName&amp;#34; placeholder=&amp;#34;Enter first name&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;br&amp;gt; &amp;lt;!--line breaker-don’t use, use CSS--&amp;gt; &amp;lt;div&amp;gt; &amp;lt;label&amp;gt;Last Name&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; name=&amp;#34;lastName&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;br&amp;gt; &amp;lt;div&amp;gt; &amp;lt;label&amp;gt;Email&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;email&amp;#34; name=&amp;#34;email&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;br&amp;gt; &amp;lt;div&amp;gt; &amp;lt;label&amp;gt;Message&amp;lt;/label&amp;gt; &amp;lt;textarea name=&amp;#34;message&amp;#34;&amp;gt;&amp;lt;/textarea&amp;gt; &amp;lt;!--textarea is a bigger input region for longer text--&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;br&amp;gt; &amp;lt;div&amp;gt; &amp;lt;label&amp;gt;Gender&amp;lt;/label&amp;gt; &amp;lt;select name=&amp;#34;gender&amp;#34;&amp;gt; &amp;lt;option value=&amp;#34;male&amp;#34;&amp;gt;Male&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;female&amp;#34;&amp;gt;Female&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;other&amp;#34;&amp;gt;Other&amp;lt;/option&amp;gt; &amp;lt;/select&amp;gt; &amp;lt;!</description>
+    </item>
+    
+    <item>
       <title>Matplotlib</title>
       <link>https://damnotes.netlify.com/python/03-matplotlib/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -50,6 +180,39 @@ import matplotlib.pyplot as plt %matplotlib inline # display figures inside jupy
     </item>
     
     <item>
+      <title>Content Organization</title>
+      <link>https://damnotes.netlify.com/hugo/04-content-organization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/hugo/04-content-organization/</guid>
+      <description>General Concepts  Content should be organised in such a way to reflect the rendered site. Contents in the content directory can be nested at any level The top levels (i.e. content/&amp;lt;DIRECTORIES&amp;gt;) are considered the content type used to determine layouts etc.   Here, baseurl = &amp;quot;https://example.com&amp;quot; is assumed in the config.toml file One can keep one _index.md for the homepage and one in each content sections, taxonomies, and taxonomy terms.</description>
+    </item>
+    
+    <item>
+      <title>Flexbox</title>
+      <link>https://damnotes.netlify.com/css/04-flexbox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/04-flexbox/</guid>
+      <description>Everything refers back to the main axis and the cross axis of the container.
+ For a complete guide visit CSS Tricks
+ Properties of the parent display: flex; &amp;ndash;&amp;gt; the element becomes a flex-container - its child items becomes flex-items (only the direct descendants)
+flex-direction: row; &amp;ndash;&amp;gt; row, row-reverse, column, column-reverse set the main axis of the flex container
+flex-wrap: wrap; &amp;ndash;&amp;gt; wrap the flex-items if necessary
+ flex-flow: flex-direction flex-wrap;  justify-content: center; &amp;ndash;&amp;gt; justify along the main axis</description>
+    </item>
+    
+    <item>
+      <title>Images</title>
+      <link>https://damnotes.netlify.com/html/04-images/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/html/04-images/</guid>
+      <description>Self-closing tag
+&amp;lt;img src=&amp;#34;https://www.example.com/picture.jpg&amp;#34; alt=&amp;#34;A field of yellow sunflowers&amp;#34;/&amp;gt;  src → attribute with the url of the image alt → description of what one can see  if an image fails to load on a web page, a user can mouse over the area originally intended for the image and read a brief description of the image. visually impaired users often browse the web with the aid of of screen reading software.</description>
+    </item>
+    
+    <item>
       <title>Seaborn</title>
       <link>https://damnotes.netlify.com/python/03b-seaborn/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -57,6 +220,61 @@ import matplotlib.pyplot as plt %matplotlib inline # display figures inside jupy
       <guid>https://damnotes.netlify.com/python/03b-seaborn/</guid>
       <description>(Docs)
 import seaborn as sns sns.set() tips = sns.load_dataset(&amp;#34;tips&amp;#34;) # or just load a dataframe with pandas sns.relplot(x = &amp;#34;total_bill&amp;#34;, y = &amp;#34;tip&amp;#34;, col = &amp;#34;time&amp;#34;, hue = &amp;#34;smoker&amp;#34;, style = &amp;#34;smoker&amp;#34;, size = &amp;#34;size&amp;#34;, data = tips);  sns.set() set the style of the plot using matplotlib standards (doc)  </description>
+    </item>
+    
+    <item>
+      <title>Grid</title>
+      <link>https://damnotes.netlify.com/css/05-grid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/05-grid/</guid>
+      <description>For a complete guide visit CSS Tricks
+ Dictionary  Line &amp;ndash;&amp;gt; the dividing lines that make up the structure of the grid; Track &amp;ndash;&amp;gt; the space between two adjacent grid lines; Area &amp;ndash;&amp;gt; the total space surrounded by four grid lines;  Properties of the parent (container) display: grid; &amp;ndash;&amp;gt; create a grid container
+ grid, inline-grid  grid-template-columns: track-size1 track-size2 ...;
+ can be expressed in fr  grid-template-rows: track-size1 track-size2 .</description>
+    </item>
+    
+    <item>
+      <title>Text Elements</title>
+      <link>https://damnotes.netlify.com/html/05-text-elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/html/05-text-elements/</guid>
+      <description>Common Text  &amp;lt;!-- --&amp;gt; → comments in html5 &amp;lt;h1&amp;gt; &amp;lt;h2&amp;gt; &amp;lt;h3&amp;gt; &amp;lt;h4&amp;gt; &amp;lt;h5&amp;gt; &amp;lt;h6&amp;gt; → headings &amp;lt;p&amp;gt; → paragraph _ Spaces and returns don’t affect the appearance of the code. _ To break the line in one paragraph (without changing paragraph) use the tag &amp;lt;br /&amp;gt; &amp;lt;em&amp;gt; → italics &amp;lt;strong&amp;gt; → bold style=“color: blue” → attribute to change color to apply CSS only to that tag  Lists &amp;lt;ul&amp;gt; &amp;lt;il&amp;gt; item 1 &amp;lt;/il&amp;gt; &amp;lt;il&amp;gt; item 2 &amp;lt;/il&amp;gt; &amp;lt;il&amp;gt; item 3 &amp;lt;/il&amp;gt; &amp;lt;/ul&amp;gt;  Use it outside the &amp;lt;p&amp;gt; tag.</description>
+    </item>
+    
+    <item>
+      <title>Themes</title>
+      <link>https://damnotes.netlify.com/hugo/05-themes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/hugo/05-themes/</guid>
+      <description>  Add a theme as a submodule using git submodule add github-link themes/theme-name in the website root Hugo applies the decided theme first and then applies anything that is in the local directory. To set a theme, add theme= theme_name to the config.toml file.  Create a Theme  To create a new theme use hugo new theme theme-name  </description>
+    </item>
+    
+    <item>
+      <title>Functions</title>
+      <link>https://damnotes.netlify.com/hugo/06-functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/hugo/06-functions/</guid>
+      <description>All functions are reported in the documentation.
+ {{ .Site.Params.homeText | markdownify }} → access the site parameter homeText (in the config file) and apply the markdownify function
+ {{ $css := &amp;quot;css/bootstrap.min.css&amp;quot; | absURL }} → define a variable and apply the absURL function
+ {{ hugo.Generator }} → add in the html head to display the hufo version as a metadata in the source code
+  String Manipulation  {{ print SOMETHING }} → print the argument using the Golang print function.</description>
+    </item>
+    
+    <item>
+      <title>Measurement Units</title>
+      <link>https://damnotes.netlify.com/css/06-measurement-units/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/06-measurement-units/</guid>
+      <description>vw, vh, vmin, vmax, rem
+px -&amp;gt; pixels are used to set the exact size of an element
+em -&amp;gt; the em represents the size of the base font being used. It is a relative unit of measurement. They change the size of text relative to the parent element’s size of text
+rem -&amp;gt; it means root em. Instead of checking parent elements to size font, it checks the root element.</description>
     </item>
     
     <item>
@@ -73,6 +291,39 @@ import seaborn as sns sns.set() tips = sns.load_dataset(&amp;#34;tips&amp;#34;) 
     </item>
     
     <item>
+      <title>Configuration File</title>
+      <link>https://damnotes.netlify.com/hugo/07-config-file/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/hugo/07-config-file/</guid>
+      <description>It is possible to set different url permalink per section. See here for more informations
+[permalinks] blog = &amp;#34;/:filename/&amp;#34;</description>
+    </item>
+    
+    <item>
+      <title>Variables</title>
+      <link>https://damnotes.netlify.com/css/07-variables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/07-variables/</guid>
+      <description>Define the variable using
+body { --var-name: value; }  It becomes available to use inside the element in which you create it and within any elements nested within it.
+ By creating your variables in :root, they will be available throughout the whole web page
+:root { --var-name: value; }  One can then over-write these variables by setting them again within a specific element.
+ Assign the variable using</description>
+    </item>
+    
+    <item>
+      <title>File Naming System</title>
+      <link>https://damnotes.netlify.com/css/08-file-naming-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/08-file-naming-system/</guid>
+      <description> Insert this in the &amp;lt;head&amp;gt; tag of the .html file
+&amp;lt;link href=&amp;#34;https://www.codecademy.com/stylesheets/style.css&amp;#34; type=&amp;#34;text/css&amp;#34; rel=&amp;#34;stylesheet&amp;#34;&amp;gt;  </description>
+    </item>
+    
+    <item>
       <title>Os</title>
       <link>https://damnotes.netlify.com/python/08-os/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -84,12 +335,58 @@ dirName = &amp;#39;tempDir&amp;#39; try: # Create target Directory os.mkdir(dirN
     </item>
     
     <item>
+      <title>Media Queries</title>
+      <link>https://damnotes.netlify.com/css/09-media-queries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/09-media-queries/</guid>
+      <description> Application  Apply when width is less than 600px
+@media (max-width:600px) { h1 { font-size: 12px; } }  See p.172 pro HTML5&amp;hellip; for every query.
+ max-width min-width max-height min-height  Breakpoints  Magari usa 600, 900, 1200 e se vuoi 1800
+/* Extra small devices (phones, 600px and down) */ @media only screen and (max-width: 600px) {} /* Small devices (portrait tablets and large phones, 600px and up) */ @media only screen and (min-width: 600px) {} /* Medium devices (landscape tablets, 768px and up) */ @media only screen and (min-width: 768px) {} /* Large devices (laptops/desktops, 992px and up) */ @media only screen and (min-width: 992px) {} /* Extra large devices (large laptops and desktops, 1200px and up) */ @media only screen and (min-width: 1200px) {}  Measurements * { height: 100vh; /* viewport height - like %, but based on the viewport and not on the parent element measure*/ width: 100vw; /*viewport width*/ width: 100vmin; /*minimum between viewport height or width*/ width: 100vmax; /*maximum between viewport height or width*/ height: 2em; /*em is the font size of the browser*/ }</description>
+    </item>
+    
+    <item>
+      <title>Pseudo Class</title>
+      <link>https://damnotes.netlify.com/css/10-pseudo-class/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/10-pseudo-class/</guid>
+      <description>Changing color of a link when hover on it
+a:hover { color: red; } Add something before or after a selected element
+.class::before { content: &amp;#34;Phrase&amp;#34;; /*here you can modify the properties of the added thing/shape*/ }  The content property is used to add an image or a text as the element to be added. If you use it to do a shape, place an empty string.</description>
+    </item>
+    
+    <item>
       <title>PyTorch</title>
       <link>https://damnotes.netlify.com/python/11-pytorch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/python/11-pytorch/</guid>
       <description>PyTorch  Import using import torch torch.manual_seed(n) set seeds for random number generation torch.randn((n1, n2, n3, ...)) return a random tensor with dimensions n1, n2,…, mean 0 and variance 1 doc torch.randn_like(input) return a random tensor normal distributed with the size of tensor ininput doc torch.mm(tensor1, tensor2) -&amp;gt; matrix multiplication of two tensors  Torch and Numpy  torch.from_numpy(tensor) -&amp;gt; transform an array into a tensor for Torch tensor.numpy() -&amp;gt; transform a tensor into an array Memory of the 2 data structures is shared: if one changes the values in-place (with a _ operation) of one object, the other will change as well.</description>
+    </item>
+    
+    <item>
+      <title>Selectors</title>
+      <link>https://damnotes.netlify.com/css/11-selectors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/11-selectors/</guid>
+      <description>General Technique BEM technique (Block Element Modifiers) Use only on classes
+.block__element--modifier { property: value; }  Specificity is the order by which the browser decides which CSS styles will be displayed. A best practice in CSS is to style elements while using the lowest degree of specificity, so that if an element needs a new style, it is easy to override. IDs are the most specific selector in CSS, followed by classes, and finally, tags.</description>
+    </item>
+    
+    <item>
+      <title>Text Properties</title>
+      <link>https://damnotes.netlify.com/css/12-text-properties/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/css/12-text-properties/</guid>
+      <description>Typography Import Fonts  Import in html using
+&amp;lt;link href=&amp;#34;https://fonts.googleapis.com/css?family=Cabin&amp;#34; rel=&amp;#34;stylesheet&amp;#34;&amp;gt; Import in css file using
+@import url(//fonts.googleapis.com/css?family=Cabin); Last term is called font-families and can be: _ cursive _ fantasy _ monospace _ sans-serif * serif
+Font Assets   List of Web safe fonts Google Fonts  Properties Font Properties  font-family: Garamond , Times , serif; -&amp;gt; fonts after the first are called fallback fonts
+ font-size: 30px; -&amp;gt; measured in px, em or %</description>
     </item>
     
     <item>
@@ -136,69 +433,6 @@ import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#3
     </item>
     
     <item>
-      <title>Functions</title>
-      <link>https://damnotes.netlify.com/hugo/06-functions/</link>
-      <pubDate>Tue, 06 Aug 2019 21:19:34 +0200</pubDate>
-      
-      <guid>https://damnotes.netlify.com/hugo/06-functions/</guid>
-      <description>Hugo functions</description>
-    </item>
-    
-    <item>
-      <title>Themes</title>
-      <link>https://damnotes.netlify.com/hugo/05-themes/</link>
-      <pubDate>Mon, 05 Aug 2019 22:19:34 +0200</pubDate>
-      
-      <guid>https://damnotes.netlify.com/hugo/05-themes/</guid>
-      <description>Bo again</description>
-    </item>
-    
-    <item>
-      <title>Configuration File</title>
-      <link>https://damnotes.netlify.com/hugo/07-config-file/</link>
-      <pubDate>Mon, 05 Aug 2019 21:19:34 +0200</pubDate>
-      
-      <guid>https://damnotes.netlify.com/hugo/07-config-file/</guid>
-      <description>How content is organized in Hugo</description>
-    </item>
-    
-    <item>
-      <title>Content Organization</title>
-      <link>https://damnotes.netlify.com/hugo/04-content-organization/</link>
-      <pubDate>Mon, 05 Aug 2019 21:19:34 +0200</pubDate>
-      
-      <guid>https://damnotes.netlify.com/hugo/04-content-organization/</guid>
-      <description>How content is organized in Hugo</description>
-    </item>
-    
-    <item>
-      <title>Folder Structure</title>
-      <link>https://damnotes.netlify.com/hugo/03-folder-structure/</link>
-      <pubDate>Mon, 05 Aug 2019 21:19:34 +0200</pubDate>
-      
-      <guid>https://damnotes.netlify.com/hugo/03-folder-structure/</guid>
-      <description>Ciao come stai?</description>
-    </item>
-    
-    <item>
-      <title>Front Matter</title>
-      <link>https://damnotes.netlify.com/hugo/02-front-matter/</link>
-      <pubDate>Mon, 05 Aug 2019 21:19:34 +0200</pubDate>
-      
-      <guid>https://damnotes.netlify.com/hugo/02-front-matter/</guid>
-      <description>Bo</description>
-    </item>
-    
-    <item>
-      <title>Quick Reference</title>
-      <link>https://damnotes.netlify.com/hugo/01-quick-reference/</link>
-      <pubDate>Mon, 05 Aug 2019 21:19:34 +0200</pubDate>
-      
-      <guid>https://damnotes.netlify.com/hugo/01-quick-reference/</guid>
-      <description>Bo2</description>
-    </item>
-    
-    <item>
       <title></title>
       <link>https://damnotes.netlify.com/linux/00-shortcuts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -215,38 +449,6 @@ ctrl + H show hidden files</description>
       
       <guid>https://damnotes.netlify.com/linux/01-installation-and-setup/</guid>
       <description>Installation and Setup Ubuntu Setup on VM  Install linux guest addition to run the VM more stabily and with better performance (right screen resolution, less lag,&amp;hellip;)  Devices &amp;gt; Insert Guest Addition CD Image -&amp;gt; a VBoxAddition should appear on the desktop right click on VBoxLinuxAddition.run &amp;gt; properties and look if it is executable open the VBoxAddition&amp;hellip; &amp;gt; right click &amp;gt; Open in Terminal &amp;gt; sudo ./VBoxLinuxAdditions.run reboot the system   Customizing Linux One wants to dowload some themes to customize the look of the GUI.</description>
-    </item>
-    
-    <item>
-      <title>Animations</title>
-      <link>https://damnotes.netlify.com/css/01-animations/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/css/01-animations/</guid>
-      <description>An animation requires 3 thing:
- The start state of the animation The end state of the animation How long it should take to go from start to end state (speed of the animation)
-* { /_there are 8 animation properties total_/ animation-duration: 2s; animation-name: some-name; animation-iteration-count: infinite; /*number of iteration of the animation*/ animation-timing-function: linear; /*changing the animation speed evolution*/ animation-fill-mode: forwards; /*specify the style applied to an element when the animation has finished:*/ animation-iteration-count: 4; /*numbero of iterations - can be infinite*/ } Define the animation</description>
-    </item>
-    
-    <item>
-      <title>Bash Scripts</title>
-      <link>https://damnotes.netlify.com/bash/01-bash-scripts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/bash/01-bash-scripts/</guid>
-      <description>Making Custom Commands  Access the .bashrc file with
-nano ~/.bashrc  Open with nano and not with open, otherwise problems may occur when applying the following steps.
- Inside the file, write the following
-alias command_name=&amp;#34;command1 &amp;amp;&amp;amp; command2 &amp;amp;&amp;amp; ...&amp;#34;  The &amp;amp;&amp;amp; apply the following command only if the current one is succesfull. On the other hand, use ; to run all the commands one after the other.</description>
-    </item>
-    
-    <item>
-      <title>Bash Scripts</title>
-      <link>https://damnotes.netlify.com/c/basic-concepts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/c/basic-concepts/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -274,20 +476,6 @@ alias command_name=&amp;#34;command1 &amp;amp;&amp;amp; command2 &amp;amp;&amp;a
     </item>
     
     <item>
-      <title>Colors</title>
-      <link>https://damnotes.netlify.com/css/02-colors/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/css/02-colors/</guid>
-      <description>General color: #AABBCC; &amp;ndash;&amp;gt; hex values
-color: rgb(0,255,255); &amp;ndash;&amp;gt; rgb values
-color: rgb(5%,50%,100%); &amp;ndash;&amp;gt; rgb values
-color: rgba(255,255,255,0.5); &amp;ndash;&amp;gt; rgb with opacity between 0 and 1
-color: hsl(180,100%,50%); &amp;ndash;&amp;gt; HSL is supported only by CSS3, so older browser can have problem with the encoding of this statement
- hue 0°-360° (color) saturation % (amount of gray in a given color) lightness % (amount of white in a given color)  Background background-color: green;</description>
-    </item>
-    
-    <item>
       <title>Config</title>
       <link>https://damnotes.netlify.com/git/03-config/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -301,21 +489,6 @@ color: hsl(180,100%,50%); &amp;ndash;&amp;gt; HSL is supported only by CSS3, so 
     </item>
     
     <item>
-      <title>Content Positioning</title>
-      <link>https://damnotes.netlify.com/css/03-content-positioning/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/css/03-content-positioning/</guid>
-      <description>Display display: block; → the element occupies all the width of the parent element
-display: inline; → the elements are arranged horizontally
-display: none; → not rendered
-Dimensions All elements on a web page are interpreted by the browser as “living” inside of a box.
-width: 150px;
- min-width and max-width also possible  height: 70%;
- min-heigth and max-height also possible  Content Based width: min-content; → wrap the content and use the minimum space</description>
-    </item>
-    
-    <item>
       <title>Core Concepts</title>
       <link>https://damnotes.netlify.com/ai/00-core-concepts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -325,89 +498,12 @@ width: 150px;
     </item>
     
     <item>
-      <title>Document Structure</title>
-      <link>https://damnotes.netlify.com/html/01-document-structure/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/html/01-document-structure/</guid>
-      <description> Document Declaration Boilerplate code → some code that one has to every page of code.
-&amp;lt;@DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;My Coding Journal&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  &amp;lt;@DOCTYPE hmtl&amp;gt; → declaration &amp;lt;head&amp;gt; → it contain metadata of the webpage  Non-Semantic Tags Non-semantic tag → it does not describe the type of content it has inside.
- &amp;lt;div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;span&amp;gt; &amp;lt;/span&amp;gt;  Semantic Tags  &amp;lt;header&amp;gt; &amp;lt;footer&amp;gt; &amp;lt;aside&amp;gt; &amp;lt;main&amp;gt; &amp;lt;article&amp;gt; &amp;lt;nav&amp;gt; &amp;lt;section&amp;gt; &amp;lt;detail&amp;gt;  </description>
-    </item>
-    
-    <item>
-      <title>File Naming System</title>
-      <link>https://damnotes.netlify.com/css/08-file-naming-system/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/css/08-file-naming-system/</guid>
-      <description> Insert this in the &amp;lt;head&amp;gt; tag of the .html file
-&amp;lt;link href=&amp;#34;https://www.codecademy.com/stylesheets/style.css&amp;#34; type=&amp;#34;text/css&amp;#34; rel=&amp;#34;stylesheet&amp;#34;&amp;gt;  </description>
-    </item>
-    
-    <item>
-      <title>File Naming System</title>
-      <link>https://damnotes.netlify.com/html/02-file-naming-system/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/html/02-file-naming-system/</guid>
-      <description> index.html is always the root for the homepage of a website, so for example www.yoursite.com
- Every page of the website needs an appropriate HTML file, e.g. the about page at www.yoursite.com/about.html will be contained in the about.html file
-  </description>
-    </item>
-    
-    <item>
-      <title>Flexbox</title>
-      <link>https://damnotes.netlify.com/css/04-flexbox/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/css/04-flexbox/</guid>
-      <description>Everything refers back to the main axis and the cross axis of the container.
- For a complete guide visit CSS Tricks
- Properties of the parent display: flex; &amp;ndash;&amp;gt; the element becomes a flex-container - its child items becomes flex-items (only the direct descendants)
-flex-direction: row; &amp;ndash;&amp;gt; row, row-reverse, column, column-reverse set the main axis of the flex container
-flex-wrap: wrap; &amp;ndash;&amp;gt; wrap the flex-items if necessary
- flex-flow: flex-direction flex-wrap;  justify-content: center; &amp;ndash;&amp;gt; justify along the main axis</description>
-    </item>
-    
-    <item>
-      <title>Forms</title>
-      <link>https://damnotes.netlify.com/html/03-forms/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/html/03-forms/</guid>
-      <description>&amp;lt;form action=&amp;#34;process.php&amp;#34; method=&amp;#34;POST&amp;#34;&amp;gt; &amp;lt;!--action and method attribute are server-side thing--&amp;gt; &amp;lt;div&amp;gt; &amp;lt;!--used to place the elements on different lines--&amp;gt; &amp;lt;label&amp;gt;First Name&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; name=&amp;#34;firstName&amp;#34; placeholder=&amp;#34;Enter first name&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;br&amp;gt; &amp;lt;!--line breaker-don’t use, use CSS--&amp;gt; &amp;lt;div&amp;gt; &amp;lt;label&amp;gt;Last Name&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; name=&amp;#34;lastName&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;br&amp;gt; &amp;lt;div&amp;gt; &amp;lt;label&amp;gt;Email&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;email&amp;#34; name=&amp;#34;email&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;br&amp;gt; &amp;lt;div&amp;gt; &amp;lt;label&amp;gt;Message&amp;lt;/label&amp;gt; &amp;lt;textarea name=&amp;#34;message&amp;#34;&amp;gt;&amp;lt;/textarea&amp;gt; &amp;lt;!--textarea is a bigger input region for longer text--&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;br&amp;gt; &amp;lt;div&amp;gt; &amp;lt;label&amp;gt;Gender&amp;lt;/label&amp;gt; &amp;lt;select name=&amp;#34;gender&amp;#34;&amp;gt; &amp;lt;option value=&amp;#34;male&amp;#34;&amp;gt;Male&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;female&amp;#34;&amp;gt;Female&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;other&amp;#34;&amp;gt;Other&amp;lt;/option&amp;gt; &amp;lt;/select&amp;gt; &amp;lt;!</description>
-    </item>
-    
-    <item>
-      <title>Grid</title>
-      <link>https://damnotes.netlify.com/css/05-grid/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/css/05-grid/</guid>
-      <description>For a complete guide visit CSS Tricks
- Dictionary  Line &amp;ndash;&amp;gt; the dividing lines that make up the structure of the grid; Track &amp;ndash;&amp;gt; the space between two adjacent grid lines; Area &amp;ndash;&amp;gt; the total space surrounded by four grid lines;  Properties of the parent (container) display: grid; &amp;ndash;&amp;gt; create a grid container
- grid, inline-grid  grid-template-columns: track-size1 track-size2 ...;
- can be expressed in fr  grid-template-rows: track-size1 track-size2 .</description>
-    </item>
-    
-    <item>
       <title>HTML Anatomy</title>
       <link>https://damnotes.netlify.com/html/00-html-anatomy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/html/00-html-anatomy/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Images</title>
-      <link>https://damnotes.netlify.com/html/04-images/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/html/04-images/</guid>
-      <description>Self-closing tag
-&amp;lt;img src=&amp;#34;https://www.example.com/picture.jpg&amp;#34; alt=&amp;#34;A field of yellow sunflowers&amp;#34;/&amp;gt;  src → attribute with the url of the image alt → description of what one can see  if an image fails to load on a web page, a user can mouse over the area originally intended for the image and read a brief description of the image. visually impaired users often browse the web with the aid of of screen reading software.</description>
     </item>
     
     <item>
@@ -435,30 +531,6 @@ flex-wrap: wrap; &amp;ndash;&amp;gt; wrap the flex-items if necessary
     </item>
     
     <item>
-      <title>Measurement Units</title>
-      <link>https://damnotes.netlify.com/css/06-measurement-units/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/css/06-measurement-units/</guid>
-      <description>vw, vh, vmin, vmax, rem
-px -&amp;gt; pixels are used to set the exact size of an element
-em -&amp;gt; the em represents the size of the base font being used. It is a relative unit of measurement. They change the size of text relative to the parent element’s size of text
-rem -&amp;gt; it means root em. Instead of checking parent elements to size font, it checks the root element.</description>
-    </item>
-    
-    <item>
-      <title>Media Queries</title>
-      <link>https://damnotes.netlify.com/css/09-media-queries/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/css/09-media-queries/</guid>
-      <description> Application  Apply when width is less than 600px
-@media (max-width:600px) { h1 { font-size: 12px; } }  See p.172 pro HTML5&amp;hellip; for every query.
- max-width min-width max-height min-height  Breakpoints  Magari usa 600, 900, 1200 e se vuoi 1800
-/* Extra small devices (phones, 600px and down) */ @media only screen and (max-width: 600px) {} /* Small devices (portrait tablets and large phones, 600px and up) */ @media only screen and (min-width: 600px) {} /* Medium devices (landscape tablets, 768px and up) */ @media only screen and (min-width: 768px) {} /* Large devices (laptops/desktops, 992px and up) */ @media only screen and (min-width: 992px) {} /* Extra large devices (large laptops and desktops, 1200px and up) */ @media only screen and (min-width: 1200px) {}  Measurements * { height: 100vh; /* viewport height - like %, but based on the viewport and not on the parent element measure*/ width: 100vw; /*viewport width*/ width: 100vmin; /*minimum between viewport height or width*/ width: 100vmax; /*maximum between viewport height or width*/ height: 2em; /*em is the font size of the browser*/ }</description>
-    </item>
-    
-    <item>
       <title>Probability</title>
       <link>https://damnotes.netlify.com/ai/02-probability/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -476,17 +548,6 @@ rem -&amp;gt; it means root em. Instead of checking parent elements to size font
       <guid>https://damnotes.netlify.com/ai/03-problem-solving/</guid>
       <description>Search and Planning Problems First stage of the problem solving process → defining the choices and their consequences. One also need to define what the goal is or, in other words, when one can consider the problem solved.
  The state space → the set of possible situations. Transitions → possible moves between one state and another. One only counts direct transitions that can be accomplished with a single action.</description>
-    </item>
-    
-    <item>
-      <title>Pseudo Class</title>
-      <link>https://damnotes.netlify.com/css/10-pseudo-class/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/css/10-pseudo-class/</guid>
-      <description>Changing color of a link when hover on it
-a:hover { color: red; } Add something before or after a selected element
-.class::before { content: &amp;#34;Phrase&amp;#34;; /*here you can modify the properties of the added thing/shape*/ }  The content property is used to add an image or a text as the element to be added. If you use it to do a shape, place an empty string.</description>
     </item>
     
     <item>
@@ -513,38 +574,6 @@ a:hover { color: red; } Add something before or after a selected element
     </item>
     
     <item>
-      <title>Selectors</title>
-      <link>https://damnotes.netlify.com/css/11-selectors/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/css/11-selectors/</guid>
-      <description>General Technique BEM technique (Block Element Modifiers) Use only on classes
-.block__element--modifier { property: value; }  Specificity is the order by which the browser decides which CSS styles will be displayed. A best practice in CSS is to style elements while using the lowest degree of specificity, so that if an element needs a new style, it is easy to override. IDs are the most specific selector in CSS, followed by classes, and finally, tags.</description>
-    </item>
-    
-    <item>
-      <title>Text Elements</title>
-      <link>https://damnotes.netlify.com/html/05-text-elements/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/html/05-text-elements/</guid>
-      <description>Common Text  &amp;lt;!-- --&amp;gt; → comments in html5 &amp;lt;h1&amp;gt; &amp;lt;h2&amp;gt; &amp;lt;h3&amp;gt; &amp;lt;h4&amp;gt; &amp;lt;h5&amp;gt; &amp;lt;h6&amp;gt; → headings &amp;lt;p&amp;gt; → paragraph _ Spaces and returns don’t affect the appearance of the code. _ To break the line in one paragraph (without changing paragraph) use the tag &amp;lt;br /&amp;gt; &amp;lt;em&amp;gt; → italics &amp;lt;strong&amp;gt; → bold style=“color: blue” → attribute to change color to apply CSS only to that tag  Lists &amp;lt;ul&amp;gt; &amp;lt;il&amp;gt; item 1 &amp;lt;/il&amp;gt; &amp;lt;il&amp;gt; item 2 &amp;lt;/il&amp;gt; &amp;lt;il&amp;gt; item 3 &amp;lt;/il&amp;gt; &amp;lt;/ul&amp;gt;  Use it outside the &amp;lt;p&amp;gt; tag.</description>
-    </item>
-    
-    <item>
-      <title>Text Properties</title>
-      <link>https://damnotes.netlify.com/css/12-text-properties/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/css/12-text-properties/</guid>
-      <description>Typography Import Fonts  Import in html using
-&amp;lt;link href=&amp;#34;https://fonts.googleapis.com/css?family=Cabin&amp;#34; rel=&amp;#34;stylesheet&amp;#34;&amp;gt; Import in css file using
-@import url(//fonts.googleapis.com/css?family=Cabin); Last term is called font-families and can be: _ cursive _ fantasy _ monospace _ sans-serif * serif
-Font Assets   List of Web safe fonts Google Fonts  Properties Font Properties  font-family: Garamond , Times , serif; -&amp;gt; fonts after the first are called fallback fonts
- font-size: 30px; -&amp;gt; measured in px, em or %</description>
-    </item>
-    
-    <item>
       <title>Undoing Changes</title>
       <link>https://damnotes.netlify.com/git/07-undoing-changes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -553,19 +582,6 @@ Font Assets   List of Web safe fonts Google Fonts  Properties Font Properties  f
       <description> git revert &amp;lt;commit&amp;gt; create new commit that undoes all of the changes made in &amp;lt;commit&amp;gt;, then apply it to the current branch
  git reset &amp;lt;file&amp;gt; remove the file from the stain area, but leave the working directory unchanged
   </description>
-    </item>
-    
-    <item>
-      <title>Variables</title>
-      <link>https://damnotes.netlify.com/css/07-variables/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/css/07-variables/</guid>
-      <description>Define the variable using
-body { --var-name: value; }  It becomes available to use inside the element in which you create it and within any elements nested within it.
- By creating your variables in :root, they will be available throughout the whole web page
-:root { --var-name: value; }  One can then over-write these variables by setting them again within a specific element.
- Assign the variable using</description>
     </item>
     
   </channel>

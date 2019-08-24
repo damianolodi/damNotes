@@ -9,7 +9,7 @@
 
     {{ range $post_index, $post := .Pages.ByWeight  }}
     <div class="col-sm-12 {{ if not (eq $post_index 0) }}border-top{{ end }}">
-        <div class="card text-center border-light">
+        <div class="card text-center border-white">
             <div class="card-body">
                 <h3 class="card-title h4">{{ .Title }}</h3>
                 {{ if .Params.Arguments }}

@@ -1,6 +1,8 @@
 ---
 title: "File Naming System"
 draft: false
+arguments: []
+weight: 8
 ---
 
 -   Insert this in the `<head>` tag of the `.html` file

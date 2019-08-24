@@ -1,6 +1,8 @@
 ---
 title: "File Naming System"
 draft: false
+arguments: []
+weight: 2
 ---
 
 -   `index.html` is always the root for the homepage of a website, so for example `www.yoursite.com`

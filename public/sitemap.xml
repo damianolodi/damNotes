@@ -3,7 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://damnotes.netlify.com/css/01-animations/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/bash/01-bash-scripts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/c/01-basic-concepts/</loc>
+  </url>
+  
+  <url>
     <loc>https://damnotes.netlify.com/python/00-basic-concepts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/html/01-document-structure/</loc>
   </url>
   
   <url>
@@ -11,7 +27,35 @@
   </url>
   
   <url>
+    <loc>https://damnotes.netlify.com/hugo/01-quick-reference/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/css/02-colors/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/html/02-file-naming-system/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/hugo/02-front-matter/</loc>
+  </url>
+  
+  <url>
     <loc>https://damnotes.netlify.com/python/02-pandas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/css/03-content-positioning/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/hugo/03-folder-structure/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/html/03-forms/</loc>
   </url>
   
   <url>
@@ -19,7 +63,39 @@
   </url>
   
   <url>
+    <loc>https://damnotes.netlify.com/hugo/04-content-organization/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/css/04-flexbox/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/html/04-images/</loc>
+  </url>
+  
+  <url>
     <loc>https://damnotes.netlify.com/python/03b-seaborn/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/css/05-grid/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/html/05-text-elements/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/hugo/05-themes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/hugo/06-functions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/css/06-measurement-units/</loc>
   </url>
   
   <url>
@@ -27,11 +103,39 @@
   </url>
   
   <url>
+    <loc>https://damnotes.netlify.com/hugo/07-config-file/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/css/07-variables/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/css/08-file-naming-system/</loc>
+  </url>
+  
+  <url>
     <loc>https://damnotes.netlify.com/python/08-os/</loc>
   </url>
   
   <url>
+    <loc>https://damnotes.netlify.com/css/09-media-queries/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/css/10-pseudo-class/</loc>
+  </url>
+  
+  <url>
     <loc>https://damnotes.netlify.com/python/11-pytorch/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/css/11-selectors/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/css/12-text-properties/</loc>
   </url>
   
   <url>
@@ -51,64 +155,6 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/</loc>
-    <lastmod>2019-08-06T21:19:34+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/hugo/06-functions/</loc>
-    <lastmod>2019-08-06T21:19:34+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/hugo/</loc>
-    <lastmod>2019-08-06T21:19:34+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/tags/</loc>
-    <lastmod>2019-08-06T21:19:34+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/tags/hugo/</loc>
-    <lastmod>2019-08-06T21:19:34+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/hugo/05-themes/</loc>
-    <lastmod>2019-08-05T22:19:34+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/hugo/07-config-file/</loc>
-    <lastmod>2019-08-05T21:19:34+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/hugo/04-content-organization/</loc>
-    <lastmod>2019-08-05T21:19:34+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/hugo/03-folder-structure/</loc>
-    <lastmod>2019-08-05T21:19:34+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/hugo/02-front-matter/</loc>
-    <lastmod>2019-08-05T21:19:34+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/hugo/01-quick-reference/</loc>
-    <lastmod>2019-08-05T21:19:34+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/linux/00-shortcuts/</loc>
     <priority>0</priority>
   </url>
@@ -123,10 +169,6 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/css/01-animations/</loc>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/arduino/</loc>
   </url>
   
@@ -136,14 +178,6 @@
   
   <url>
     <loc>https://damnotes.netlify.com/bash/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/bash/01-bash-scripts/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/c/basic-concepts/</loc>
   </url>
   
   <url>
@@ -163,15 +197,7 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/css/02-colors/</loc>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/git/03-config/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/css/03-content-positioning/</loc>
   </url>
   
   <url>
@@ -179,7 +205,8 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/html/01-document-structure/</loc>
+    <loc>https://damnotes.netlify.com/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -187,27 +214,7 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/css/08-file-naming-system/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/html/02-file-naming-system/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/css/04-flexbox/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/html/03-forms/</loc>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/git/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/css/05-grid/</loc>
   </url>
   
   <url>
@@ -219,7 +226,7 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/html/04-images/</loc>
+    <loc>https://damnotes.netlify.com/hugo/</loc>
   </url>
   
   <url>
@@ -235,23 +242,11 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/css/06-measurement-units/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/css/09-media-queries/</loc>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/ai/02-probability/</loc>
   </url>
   
   <url>
     <loc>https://damnotes.netlify.com/ai/03-problem-solving/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/css/10-pseudo-class/</loc>
   </url>
   
   <url>
@@ -271,23 +266,12 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/css/11-selectors/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/html/05-text-elements/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/css/12-text-properties/</loc>
+    <loc>https://damnotes.netlify.com/tags/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://damnotes.netlify.com/git/07-undoing-changes/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/css/07-variables/</loc>
   </url>
   
 </urlset>

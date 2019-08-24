@@ -1,6 +1,8 @@
 ---
 title: "Animations"
 draft: false
+arguments: []
+weight: 1
 ---
 
 An animation requires 3 thing:

@@ -1,9 +1,8 @@
 ---
 title: "Functions"
-date: 2019-08-06T21:19:34+02:00
-summary: "Hugo functions"
-tags: ["hugo"]
 draft: false
+arguments: []
+weight: 6
 ---
 
 All functions are reported in the [documentation](https://gohugo.io/functions/).

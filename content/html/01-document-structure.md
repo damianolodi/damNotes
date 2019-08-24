@@ -1,6 +1,8 @@
 ---
 title: "Document Structure"
 draft: false
+arguments: []
+weight: 1
 ---
 
 ### Document Declaration

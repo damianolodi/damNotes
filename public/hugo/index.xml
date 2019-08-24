@@ -6,72 +6,88 @@
     <description>Recent content in Hugo on DamNotes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Aug 2019 21:19:34 +0200</lastBuildDate>
     
 	<atom:link href="https://damnotes.netlify.com/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Functions</title>
-      <link>https://damnotes.netlify.com/hugo/06-functions/</link>
-      <pubDate>Tue, 06 Aug 2019 21:19:34 +0200</pubDate>
+      <title>Quick Reference</title>
+      <link>https://damnotes.netlify.com/hugo/01-quick-reference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://damnotes.netlify.com/hugo/06-functions/</guid>
-      <description>Hugo functions</description>
-    </item>
-    
-    <item>
-      <title>Themes</title>
-      <link>https://damnotes.netlify.com/hugo/05-themes/</link>
-      <pubDate>Mon, 05 Aug 2019 22:19:34 +0200</pubDate>
-      
-      <guid>https://damnotes.netlify.com/hugo/05-themes/</guid>
-      <description>Bo again</description>
-    </item>
-    
-    <item>
-      <title>Configuration File</title>
-      <link>https://damnotes.netlify.com/hugo/07-config-file/</link>
-      <pubDate>Mon, 05 Aug 2019 21:19:34 +0200</pubDate>
-      
-      <guid>https://damnotes.netlify.com/hugo/07-config-file/</guid>
-      <description>How content is organized in Hugo</description>
-    </item>
-    
-    <item>
-      <title>Content Organization</title>
-      <link>https://damnotes.netlify.com/hugo/04-content-organization/</link>
-      <pubDate>Mon, 05 Aug 2019 21:19:34 +0200</pubDate>
-      
-      <guid>https://damnotes.netlify.com/hugo/04-content-organization/</guid>
-      <description>How content is organized in Hugo</description>
-    </item>
-    
-    <item>
-      <title>Folder Structure</title>
-      <link>https://damnotes.netlify.com/hugo/03-folder-structure/</link>
-      <pubDate>Mon, 05 Aug 2019 21:19:34 +0200</pubDate>
-      
-      <guid>https://damnotes.netlify.com/hugo/03-folder-structure/</guid>
-      <description>Ciao come stai?</description>
+      <guid>https://damnotes.netlify.com/hugo/01-quick-reference/</guid>
+      <description> hugo new site site-name → create new project
+ hugo version → check version installed
+ hugo server → start local server on localhost:1313
+ hugo server -D → compile also drafts  hugo → build the project
+ hugo -D → build also drafts  hugo new path/to/file.md → create new files in /content/ directory
+  </description>
     </item>
     
     <item>
       <title>Front Matter</title>
       <link>https://damnotes.netlify.com/hugo/02-front-matter/</link>
-      <pubDate>Mon, 05 Aug 2019 21:19:34 +0200</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/hugo/02-front-matter/</guid>
-      <description>Bo</description>
+      <description>Informations between the two --- is called front matter.
+ draft: true → mark post as draft
+ image: &amp;quot;static/path-to-image.jpeg&amp;quot; → set the default post image (usuallly placed in the static directory)
+ tags: [&#39;tag1&#39;, &#39;tag2&#39;] → post tags
+ categories: [&#39;category1&#39;, ...] → post categories
+ publishdate: → set a publishing date for the post (if the build date is previous the one indicated, the post will not be published)</description>
     </item>
     
     <item>
-      <title>Quick Reference</title>
-      <link>https://damnotes.netlify.com/hugo/01-quick-reference/</link>
-      <pubDate>Mon, 05 Aug 2019 21:19:34 +0200</pubDate>
+      <title>Folder Structure</title>
+      <link>https://damnotes.netlify.com/hugo/03-folder-structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://damnotes.netlify.com/hugo/01-quick-reference/</guid>
-      <description>Bo2</description>
+      <guid>https://damnotes.netlify.com/hugo/03-folder-structure/</guid>
+      <description>Archetypes Set the front matter for different content types.
+ archetypes/default.md → default front matter for new content
+---title:&amp;#34;{{ replace .Name &amp;#34;-&amp;#34; &amp;#34;&amp;#34; | title }}&amp;#34;date:{{.Date}}draft:true---  Config  Used to store various different configurations. If the number of configuration is limited, one can just use a single config.toml file. Also .json and .yaml can be used. To see more about configurations and configure each site properly, visit this page  Content  Directory used to store all the text file for all the contents.</description>
+    </item>
+    
+    <item>
+      <title>Content Organization</title>
+      <link>https://damnotes.netlify.com/hugo/04-content-organization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/hugo/04-content-organization/</guid>
+      <description>General Concepts  Content should be organised in such a way to reflect the rendered site. Contents in the content directory can be nested at any level The top levels (i.e. content/&amp;lt;DIRECTORIES&amp;gt;) are considered the content type used to determine layouts etc.   Here, baseurl = &amp;quot;https://example.com&amp;quot; is assumed in the config.toml file One can keep one _index.md for the homepage and one in each content sections, taxonomies, and taxonomy terms.</description>
+    </item>
+    
+    <item>
+      <title>Themes</title>
+      <link>https://damnotes.netlify.com/hugo/05-themes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/hugo/05-themes/</guid>
+      <description>  Add a theme as a submodule using git submodule add github-link themes/theme-name in the website root Hugo applies the decided theme first and then applies anything that is in the local directory. To set a theme, add theme= theme_name to the config.toml file.  Create a Theme  To create a new theme use hugo new theme theme-name  </description>
+    </item>
+    
+    <item>
+      <title>Functions</title>
+      <link>https://damnotes.netlify.com/hugo/06-functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/hugo/06-functions/</guid>
+      <description>All functions are reported in the documentation.
+ {{ .Site.Params.homeText | markdownify }} → access the site parameter homeText (in the config file) and apply the markdownify function
+ {{ $css := &amp;quot;css/bootstrap.min.css&amp;quot; | absURL }} → define a variable and apply the absURL function
+ {{ hugo.Generator }} → add in the html head to display the hufo version as a metadata in the source code
+  String Manipulation  {{ print SOMETHING }} → print the argument using the Golang print function.</description>
+    </item>
+    
+    <item>
+      <title>Configuration File</title>
+      <link>https://damnotes.netlify.com/hugo/07-config-file/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/hugo/07-config-file/</guid>
+      <description>It is possible to set different url permalink per section. See here for more informations
+[permalinks] blog = &amp;#34;/:filename/&amp;#34;</description>
     </item>
     
   </channel>

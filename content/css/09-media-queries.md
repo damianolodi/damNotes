@@ -1,6 +1,8 @@
 ---
 title: "Media Queries"
 draft: false
+arguments: []
+weight: 9
 ---
 
 ### Application

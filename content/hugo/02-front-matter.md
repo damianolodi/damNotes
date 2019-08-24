@@ -1,9 +1,8 @@
 ---
 title: "Front Matter"
-date: 2019-08-05T21:19:34+02:00
-summary: "Bo"
-tags: ["hugo"]
 draft: false
+arguments: []
+weight: 2
 ---
 
 Informations between the two `---` is called **front matter**.

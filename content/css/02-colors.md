@@ -1,6 +1,8 @@
 ---
 title: "Colors"
 draft: false
+arguments: []
+weight: 2
 ---
 
 ## General

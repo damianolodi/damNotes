@@ -1,9 +1,8 @@
 ---
 title: "Themes"
-date: 2019-08-05T22:19:34+02:00
-summary: "Bo again"
-tags: ["hugo"]
 draft: false
+arguments: []
+weight: 5
 ---
 
 -   Add a theme as a submodule using `git submodule add github-link themes/theme-name` in the website root

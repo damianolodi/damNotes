@@ -1,9 +1,8 @@
 ---
 title: "Folder Structure"
-date: 2019-08-05T21:19:34+02:00
-summary: "Ciao come stai?"
-tags: ["hugo"]
 draft: false
+arguments: []
+weight: 3
 ---
 
 ## Archetypes

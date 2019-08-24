@@ -1,6 +1,8 @@
 ---
 title: "Text Properties"
 draft: false
+arguments: []
+weight: 12
 ---
 
 ### Typography

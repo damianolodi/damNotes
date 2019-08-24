@@ -1,6 +1,8 @@
 ---
 title: "Flexbox"
 draft: false
+arguments: []
+weight: 4
 ---
 
 Everything refers back to the **main axis** and the **cross axis** of the container.

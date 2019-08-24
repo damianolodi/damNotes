@@ -1,6 +1,8 @@
 ---
 title: "Bash Scripts"
 draft: false
+arguments: []
+weight: 1
 ---
 
 ### Making Custom Commands
