@@ -47,6 +47,10 @@
   </url>
   
   <url>
+    <loc>https://damnotes.netlify.com/c/02-stdio/</loc>
+  </url>
+  
+  <url>
     <loc>https://damnotes.netlify.com/css/03-content-positioning/</loc>
   </url>
   
@@ -60,6 +64,10 @@
   
   <url>
     <loc>https://damnotes.netlify.com/python/03-matplotlib/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/c/03-unistd/</loc>
   </url>
   
   <url>
@@ -79,6 +87,10 @@
   </url>
   
   <url>
+    <loc>https://damnotes.netlify.com/c/04-string/</loc>
+  </url>
+  
+  <url>
     <loc>https://damnotes.netlify.com/css/05-grid/</loc>
   </url>
   
@@ -91,6 +103,10 @@
   </url>
   
   <url>
+    <loc>https://damnotes.netlify.com/c/05-ctype/</loc>
+  </url>
+  
+  <url>
     <loc>https://damnotes.netlify.com/hugo/06-functions/</loc>
   </url>
   
@@ -100,6 +116,10 @@
   
   <url>
     <loc>https://damnotes.netlify.com/python/06-tensorflow/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/c/06-stdlib/</loc>
   </url>
   
   <url>

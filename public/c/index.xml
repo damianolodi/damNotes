@@ -16,7 +16,62 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/c/01-basic-concepts/</guid>
+      <description>Basics int var_name = value; // variable initialization char str_name[n]; // array initialization char str_name[] = &amp;#34;Hello World!&amp;#34;; const int VAR_NAME = value; // constant declaration  int main (void) { // execution start from here  // code  return 0; }  Best practice: variables are named with capital letters when global
+ Math operations → +, -, *, /, % (mod)
+ For each string of n charachters, n+1 bytes are allocated in memory: the last is added by C as the null character \0 (all zeros)</description>
+    </item>
+    
+    <item>
+      <title>stdio.c</title>
+      <link>https://damnotes.netlify.com/c/02-stdio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/c/02-stdio/</guid>
+      <description>#include &amp;lt;stdio.h&amp;gt; Vedi funzionr printf() + placeholder %s, %i, %f (float) + f mena format
+scanf(&amp;ldquo;%i&amp;rdquo;, &amp;amp;varName) scanf(&amp;ldquo;%s&amp;rdquo;, s)
+%p → prin the pointer</description>
+    </item>
+    
+    <item>
+      <title>unistd.c</title>
+      <link>https://damnotes.netlify.com/c/03-unistd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/c/03-unistd/</guid>
+      <description>Vedi funzione sleep(i)</description>
+    </item>
+    
+    <item>
+      <title>string.c</title>
+      <link>https://damnotes.netlify.com/c/04-string/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/c/04-string/</guid>
+      <description>Vedi funzione strlen(string), strcmp(str1, str2), strcpy(s1, s2)</description>
+    </item>
+    
+    <item>
+      <title>ctype.c</title>
+      <link>https://damnotes.netlify.com/c/05-ctype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/c/05-ctype/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>stdlib.c</title>
+      <link>https://damnotes.netlify.com/c/06-stdlib/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/c/06-stdlib/</guid>
+      <description>vedi malloc(memoryAmount) [allocate memory]
+e.g. malloc(strlen(s)+1 * sizeof(char))
+free(pointerName) [deallocate memory]
+If memory is not deallocated, program can cause memory leaks. !! Always free memory allocated with malloc!!
+ Segmentation fault: error caused by the fact that I try to access to memory that I should not use.
+ When allocating memory, PCs usually allocate a little bit more to avoid problems.
+  realloc() reallocate memory in the (heap part) if available.</description>
     </item>
     
   </channel>

@@ -39,7 +39,9 @@ alias command_name=&amp;#34;command1 &amp;amp;&amp;amp; command2 &amp;amp;&amp;a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/c/01-basic-concepts/</guid>
-      <description></description>
+      <description>Basics int var_name = value; // variable initialization char str_name[n]; // array initialization char str_name[] = &amp;#34;Hello World!&amp;#34;; const int VAR_NAME = value; // constant declaration  int main (void) { // execution start from here  // code  return 0; }  Best practice: variables are named with capital letters when global
+ Math operations → +, -, *, /, % (mod)
+ For each string of n charachters, n+1 bytes are allocated in memory: the last is added by C as the null character \0 (all zeros)</description>
     </item>
     
     <item>
@@ -135,6 +137,17 @@ df = pd.read_csv(r’relative_path’, #can be a web address sep = &amp;#39; &am
     </item>
     
     <item>
+      <title>stdio.c</title>
+      <link>https://damnotes.netlify.com/c/02-stdio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/c/02-stdio/</guid>
+      <description>#include &amp;lt;stdio.h&amp;gt; Vedi funzionr printf() + placeholder %s, %i, %f (float) + f mena format
+scanf(&amp;ldquo;%i&amp;rdquo;, &amp;amp;varName) scanf(&amp;ldquo;%s&amp;rdquo;, s)
+%p → prin the pointer</description>
+    </item>
+    
+    <item>
       <title>Content Positioning</title>
       <link>https://damnotes.netlify.com/css/03-content-positioning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -177,6 +190,15 @@ width: 150px;
       <guid>https://damnotes.netlify.com/python/03-matplotlib/</guid>
       <description>Jupyter Notebook tutorial on matplotlib. Official documentation
 import matplotlib.pyplot as plt %matplotlib inline # display figures inside jupyter notebooks axes.plot(a, b, &amp;#39;b.-&amp;#39;, color = &amp;#39;#FFFFFF&amp;#39;, # color (control) alpha = 0.5, # lw = 3, # linewidth ls = &amp;#39;-&amp;#39;, # linestyle &amp;#39;-&amp;#39; &amp;#39;--&amp;#39; &amp;#39;-.&amp;#39; &amp;#39;:&amp;#39; &amp;#39;steps&amp;#39; marker =&amp;#39;+&amp;#39;, # markerstyle `+`, `o`, `*`, `s`, `,`, `.`, `1`, `2`, `3`,… ms = 3 # markersize ) Basic figure script Create a small figure on top of another one #request text elements rendering with Latex matplotlib.</description>
+    </item>
+    
+    <item>
+      <title>unistd.c</title>
+      <link>https://damnotes.netlify.com/c/03-unistd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/c/03-unistd/</guid>
+      <description>Vedi funzione sleep(i)</description>
     </item>
     
     <item>
@@ -223,6 +245,15 @@ import seaborn as sns sns.set() tips = sns.load_dataset(&amp;#34;tips&amp;#34;) 
     </item>
     
     <item>
+      <title>string.c</title>
+      <link>https://damnotes.netlify.com/c/04-string/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/c/04-string/</guid>
+      <description>Vedi funzione strlen(string), strcmp(str1, str2), strcpy(s1, s2)</description>
+    </item>
+    
+    <item>
       <title>Grid</title>
       <link>https://damnotes.netlify.com/css/05-grid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -250,6 +281,15 @@ import seaborn as sns sns.set() tips = sns.load_dataset(&amp;#34;tips&amp;#34;) 
       
       <guid>https://damnotes.netlify.com/hugo/05-themes/</guid>
       <description>  Add a theme as a submodule using git submodule add github-link themes/theme-name in the website root Hugo applies the decided theme first and then applies anything that is in the local directory. To set a theme, add theme= theme_name to the config.toml file.  Create a Theme  To create a new theme use hugo new theme theme-name  </description>
+    </item>
+    
+    <item>
+      <title>ctype.c</title>
+      <link>https://damnotes.netlify.com/c/05-ctype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/c/05-ctype/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -288,6 +328,21 @@ rem -&amp;gt; it means root em. Instead of checking parent elements to size font
   tf.data module  Docs Dataset class (doc)  tf.feature_column module  tf.feature_column.numeric_column → create a numeric column for the model (doc).
  tf.feature_column.bucketized_column(source_column, boundaries) → takes a numeric column as input and apply binning using boundaries (doc).
  tf.feature_column.cross_column() → returns a column to perform crosses of categorical features (doc)</description>
+    </item>
+    
+    <item>
+      <title>stdlib.c</title>
+      <link>https://damnotes.netlify.com/c/06-stdlib/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/c/06-stdlib/</guid>
+      <description>vedi malloc(memoryAmount) [allocate memory]
+e.g. malloc(strlen(s)+1 * sizeof(char))
+free(pointerName) [deallocate memory]
+If memory is not deallocated, program can cause memory leaks. !! Always free memory allocated with malloc!!
+ Segmentation fault: error caused by the fact that I try to access to memory that I should not use.
+ When allocating memory, PCs usually allocate a little bit more to avoid problems.
+  realloc() reallocate memory in the (heap part) if available.</description>
     </item>
     
     <item>

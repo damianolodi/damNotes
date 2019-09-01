@@ -40,6 +40,184 @@
 </div>
 
 
+<h3 id="basics">Basics</h3>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#b00040">int</span> var_name <span style="color:#666">=</span> value; <span style="color:#408080;font-style:italic">// variable initialization
+</span><span style="color:#408080;font-style:italic"></span><span style="color:#b00040">char</span> str_name[n]; <span style="color:#408080;font-style:italic">// array initialization
+</span><span style="color:#408080;font-style:italic"></span><span style="color:#b00040">char</span> str_name[] <span style="color:#666">=</span> <span style="color:#ba2121">&#34;Hello World!&#34;</span>;
+<span style="color:#008000;font-weight:bold">const</span> <span style="color:#b00040">int</span> VAR_NAME <span style="color:#666">=</span> value; <span style="color:#408080;font-style:italic">// constant declaration
+</span><span style="color:#408080;font-style:italic"></span>
+<span style="color:#b00040">int</span> <span style="color:#00f">main</span> (<span style="color:#b00040">void</span>) {   <span style="color:#408080;font-style:italic">// execution start from here
+</span><span style="color:#408080;font-style:italic"></span>    <span style="color:#408080;font-style:italic">// code
+</span><span style="color:#408080;font-style:italic"></span>    <span style="color:#008000;font-weight:bold">return</span> <span style="color:#666">0</span>;
+}</code></pre></div>
+<ul>
+<li><p><strong>Best practice</strong>: variables are named with capital letters when global</p></li>
+
+<li><p>Math operations → <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code> (mod)</p></li>
+
+<li><p>For each string of <em>n</em> charachters, <em>n+1</em> bytes are allocated in memory: the last is added by C as the <em>null</em> character <code>\0</code> (all zeros)</p></li>
+
+<li><p><code>(type) var_name</code> → change variable type</p></li>
+
+<li><p><code>man function_name</code> → use in terminal to return documentation about the function</p></li>
+</ul>
+
+<h4 id="main-with-external-parameters"><code>main</code> with external parameters</h4>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#b00040">int</span> <span style="color:#00f">main</span> (<span style="color:#b00040">int</span> argc, <span style="color:#b00040">char</span><span style="color:#666">*</span> argv[]) {
+}</code></pre></div>
+<ul>
+<li><p>Enable the program to <strong>accept parameter from the command line</strong> when run</p></li>
+
+<li><p><code>argc</code> → number of written words, <em>including</em> the name of the program. This value is auto-generated</p></li>
+
+<li><p><code>argv[]</code> → array of strings. <code>argv[1]</code> is the location of the first parameter inserted by the user</p></li>
+</ul>
+
+<h4 id="compilation">Compilation</h4>
+
+<ul>
+<li><p><code>clang file.c</code> → compile and produce <code>a.out</code></p></li>
+
+<li><p><code>clang -0 file file.c</code> → compile and produce <code>file</code></p></li>
+
+<li><p><code>make file.c</code> → call clang to compile (elaborate on that)</p></li>
+</ul>
+
+<h3 id="variables-type">Variables Type</h3>
+
+<ul>
+<li><strong>Arrays</strong>
+
+<ul>
+<li>fixed size</li>
+<li>cannot contain mixed data types</li>
+</ul></li>
+</ul>
+
+<hr />
+
+<h3 id="loops-and-conditionals">Loops and Conditionals</h3>
+
+<h4 id="if-statement">If Statement</h4>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#008000;font-weight:bold">if</span> (condition) {
+} <span style="color:#008000;font-weight:bold">else</span> {
+}</code></pre></div>
+<ul>
+<li><code>==</code>, <code>!=</code>, <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code> → comparators</li>
+<li><strong>not</strong>, <strong>and</strong>, <strong>or</strong> → boolean operators</li>
+</ul>
+
+<h4 id="for-loop">For Loop</h4>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#008000;font-weight:bold">for</span> (initialization; condition; last step) {
+}</code></pre></div>
+<h4 id="while-loop">While Loop</h4>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#008000;font-weight:bold">while</span> (condition) {
+}
+
+<span style="color:#008000;font-weight:bold">do</span> {
+} <span style="color:#008000;font-weight:bold">while</span> (condition);</code></pre></div>
+<hr />
+
+<h3 id="functions">Functions</h3>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#408080;font-style:italic">// before main
+</span><span style="color:#408080;font-style:italic"></span><span style="color:#b00040">int</span> <span style="color:#00f">function_name</span> (parameters); <span style="color:#408080;font-style:italic">// PROTOTYPE
+</span><span style="color:#408080;font-style:italic"></span>
+<span style="color:#408080;font-style:italic">// after main
+</span><span style="color:#408080;font-style:italic"></span><span style="color:#b00040">int</span> <span style="color:#00f">function_name</span> (parameters) { <span style="color:#408080;font-style:italic">// DEFINITION
+</span><span style="color:#408080;font-style:italic"></span>    <span style="color:#408080;font-style:italic">// code
+</span><span style="color:#408080;font-style:italic"></span>}</code></pre></div>
+<hr />
+
+<h3 id="pointers">Pointers</h3>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#b00040">int</span><span style="color:#666">*</span> pointer_name; <span style="color:#408080;font-style:italic">// pointer declaration
+</span><span style="color:#408080;font-style:italic"></span>
+<span style="color:#408080;font-style:italic">// return the value pointed by that pointer
+</span><span style="color:#408080;font-style:italic"></span>var <span style="color:#666">=</span> <span style="color:#666">*</span>pointer_name;
+
+<span style="color:#408080;font-style:italic">// return the address of the variable
+</span><span style="color:#408080;font-style:italic"></span>pointer <span style="color:#666">=</span> <span style="color:#666">&amp;</span>var_name;</code></pre></div>
+<ul>
+<li><p><strong>DEF</strong>: memory addres of a variable of a certain type</p></li>
+
+<li><p>Pointers are 64 bits in lenght</p></li>
+</ul>
+
+<hr />
+
+<h3 id="data-structures">Data Structures</h3>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#408080;font-style:italic">// structure definition
+</span><span style="color:#408080;font-style:italic"></span><span style="color:#008000;font-weight:bold">typedef</span> <span style="color:#008000;font-weight:bold">struct</span> {
+    <span style="color:#b00040">int</span> var1;
+    <span style="color:#b00040">char</span> var2;
+} struct_name;
+
+<span style="color:#408080;font-style:italic">// structure initialization
+</span><span style="color:#408080;font-style:italic"></span>struct_name var_name;
+struct_name var_name[n]; <span style="color:#408080;font-style:italic">// array of structure
+</span><span style="color:#408080;font-style:italic"></span>
+<span style="color:#408080;font-style:italic">// access with dot notation
+</span><span style="color:#408080;font-style:italic"></span>var_name.var1 <span style="color:#666">=</span> value;</code></pre></div>
+<ul>
+<li>save in a <code>file.h</code></li>
+<li>import with <code>#include</code></li>
+</ul>
+
+<h4 id="recursive-structures">Recursive Structures</h4>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#008000;font-weight:bold">typedef</span> <span style="color:#008000;font-weight:bold">struct</span> struct_name {
+    <span style="color:#b00040">int</span> n;
+    <span style="color:#008000;font-weight:bold">struct</span> struct_name <span style="color:#666">*</span>next; <span style="color:#408080;font-style:italic">// pointer to my structure
+</span><span style="color:#408080;font-style:italic"></span>} struct_name;</code></pre></div>
+<ul>
+<li><p><code>struct_name</code> is called also before definition so that the compiler knows that a structure called <code>struct_name</code> exists</p></li>
+
+<li><p>this sort of structure can be usefull to create a &ldquo;linked list&rdquo; in which I store a value and the pointer to the next value in the list</p>
+
+<ul>
+<li>the last element of the list will point to NULL</li>
+<li>this solve the fact that arrays are fixed size in C, but it has the downside that when parsing the list I always have to begin from the start and I cannot go backward</li>
+<li>if I don&rsquo;t care about sorting, this is an O(1) in terms of adding elements to the list (against O(n) when using <code>malloc</code>) but I am &ldquo;wasting&rdquo; memory to store all those pointers</li>
+</ul></li>
+</ul>
+
+<p><img src="/img/content/c/linked-list.jpg" class="img-fluid figure-img img-custom"></p>
+
+<hr />
+
+<h3 id="compiler-workflow">Compiler Workflow</h3>
+
+<ol>
+<li><strong>Preprocessing</strong>
+
+<ul>
+<li><code>#include</code> are called <em>preprocessor directives</em></li>
+<li><code>#</code> means that it should be handeled first, before everything else</li>
+</ul></li>
+<li><strong>Compiling</strong>
+
+<ul>
+<li>Code is translated into <em>assembly language</em>, understood by CPUs</li>
+</ul></li>
+<li><strong>Assembling</strong>
+
+<ul>
+<li><em>Assembly</em> is translateed into 0s ans 1s</li>
+</ul></li>
+<li><strong>Linking</strong>
+
+<ul>
+<li>Also libraries are compiled in 0s and 1s, and all those files are linked/attached one another</li>
+</ul></li>
+</ol>
+
+<hr />
+
+<h3 id="tips">Tips</h3>
+
+<ul>
+<li><code>echo $</code> → print what was returned by main. <strong>Usefull to debug</strong> complicated programs. Return a non-0 value if anything goes wrong</li>
+</ul>
+
+
 
         </main>
     </div>
