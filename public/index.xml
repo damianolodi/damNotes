@@ -127,6 +127,22 @@ color: hsl(180,100%,50%); &amp;ndash;&amp;gt; HSL is supported only by CSS3, so 
     </item>
     
     <item>
+      <title>Open Source Applications</title>
+      <link>https://damnotes.netlify.com/linux/02-open-source-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/linux/02-open-source-app/</guid>
+      <description>This note will provide a list of the main open source applications and software divided by categories and purposes.
+Server  Web Server: Apache HTTPD (more complete), Nginx (lighter), Stack LAMP (Linux, Apache, MySQL, PHP - for web developers)
+ Database: Postgre, MySQL, MariaDB
+ Unix File Server: NFS
+ Windows File Server: Samba
+ Directory Server: OpenLDAP
+  Desktop  Office: LibreOffice, OpenOffice
+ Browser: Firefox, Chromium</description>
+    </item>
+    
+    <item>
       <title>Pandas</title>
       <link>https://damnotes.netlify.com/python/02-pandas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -485,6 +501,20 @@ with open(&amp;#39;data.csv&amp;#39;,&amp;#39;r&amp;#39;) as csv_file: csv_reade
       <description>Datetime  datetime.today() → print current date  IPython .display module (doc)
 from IPython import display # display various type of data (audio, images, ...)  display.display(obj) → display a python object in all frontends (doc)  PySerial (Docs)
 import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#39;, baudrate = 9600, bytesize = serial.EIGHTBITS, parity = serial.PARITY_NONE, stopbits = serial.STOPBITS_ONE, timeout = 3 #s )  python -m serial.tools.list_ports → prints a list of available ports.</description>
+    </item>
+    
+    <item>
+      <title>VirtualBox</title>
+      <link>https://damnotes.netlify.com/linux/99-virtualbox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/linux/99-virtualbox/</guid>
+      <description>Create New Virtual Machine  Click new and insert name for the OS. It should find the corresponding OS type. If not, select the right type and version;
+ assign RAM quantity (2GB for 8GB machines should be ok)
+ Create new virtual HD &amp;gt; VDI &amp;gt; Dynamically allocated
+ Select HD size (15GB should be ok)
+ Select the machine and go to Settings
+ General &amp;gt; Advanced tab &amp;gt; select Bidirectional in Shared Clipboard [can copy/paste between VM and base OS] System can change the assigned RAM and can change the chipset to ICH9 (experimental, but can have better performance) Processor &amp;gt; assign the number of core to the VM.</description>
     </item>
     
     <item>

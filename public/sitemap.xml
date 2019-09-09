@@ -43,6 +43,10 @@
   </url>
   
   <url>
+    <loc>https://damnotes.netlify.com/linux/02-open-source-app/</loc>
+  </url>
+  
+  <url>
     <loc>https://damnotes.netlify.com/python/02-pandas/</loc>
   </url>
   
@@ -172,6 +176,10 @@
   
   <url>
     <loc>https://damnotes.netlify.com/python/99-other-libraries/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/linux/99-virtualbox/</loc>
   </url>
   
   <url>

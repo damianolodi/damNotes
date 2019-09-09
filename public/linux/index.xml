@@ -11,6 +11,36 @@
     
     
     <item>
+      <title>Open Source Applications</title>
+      <link>https://damnotes.netlify.com/linux/02-open-source-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/linux/02-open-source-app/</guid>
+      <description>This note will provide a list of the main open source applications and software divided by categories and purposes.
+Server  Web Server: Apache HTTPD (more complete), Nginx (lighter), Stack LAMP (Linux, Apache, MySQL, PHP - for web developers)
+ Database: Postgre, MySQL, MariaDB
+ Unix File Server: NFS
+ Windows File Server: Samba
+ Directory Server: OpenLDAP
+  Desktop  Office: LibreOffice, OpenOffice
+ Browser: Firefox, Chromium</description>
+    </item>
+    
+    <item>
+      <title>VirtualBox</title>
+      <link>https://damnotes.netlify.com/linux/99-virtualbox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/linux/99-virtualbox/</guid>
+      <description>Create New Virtual Machine  Click new and insert name for the OS. It should find the corresponding OS type. If not, select the right type and version;
+ assign RAM quantity (2GB for 8GB machines should be ok)
+ Create new virtual HD &amp;gt; VDI &amp;gt; Dynamically allocated
+ Select HD size (15GB should be ok)
+ Select the machine and go to Settings
+ General &amp;gt; Advanced tab &amp;gt; select Bidirectional in Shared Clipboard [can copy/paste between VM and base OS] System can change the assigned RAM and can change the chipset to ICH9 (experimental, but can have better performance) Processor &amp;gt; assign the number of core to the VM.</description>
+    </item>
+    
+    <item>
       <title></title>
       <link>https://damnotes.netlify.com/linux/00-shortcuts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
