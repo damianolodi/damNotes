@@ -88,6 +88,30 @@ alias command_name=&amp;#34;command1 &amp;amp;&amp;amp; command2 &amp;amp;&amp;a
     </item>
     
     <item>
+      <title>Shortcuts</title>
+      <link>https://damnotes.netlify.com/linux/01-shortcuts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/linux/01-shortcuts/</guid>
+      <description> ctrl + alt + arrow up/down → change desktop
+ ctrl + T → crate new tab
+ ctrl + H → show hidden files
+ ctrl + alt + F1/F2/... → open the tty console. Useful when desktop env. is blocked or for any other reason. One of the function key (typically F7) is used for the graphical session
+  </description>
+    </item>
+    
+    <item>
+      <title>Basics</title>
+      <link>https://damnotes.netlify.com/linux/02-basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/linux/02-basics/</guid>
+      <description>Bash Basics var = &amp;#34;value&amp;#34; # define new variable export var = &amp;#34;value&amp;#34; # define variable also for othe bash sessions echo $var # access the value of a variable which command_name # return the path in which the executable is found  bash → open a new bash session
+ exit → exit from the current bash session  env → list all environment variables
+ PATH → variable that contains all the paths (separated by columns) in which to search for executables  alias → return all defined aliases</description>
+    </item>
+    
+    <item>
       <title>Colors</title>
       <link>https://damnotes.netlify.com/css/02-colors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -515,16 +539,6 @@ import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#3
  Select HD size (15GB should be ok)
  Select the machine and go to Settings
  General &amp;gt; Advanced tab &amp;gt; select Bidirectional in Shared Clipboard [can copy/paste between VM and base OS] System can change the assigned RAM and can change the chipset to ICH9 (experimental, but can have better performance) Processor &amp;gt; assign the number of core to the VM.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://damnotes.netlify.com/linux/00-shortcuts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/linux/00-shortcuts/</guid>
-      <description>Shortcuts ctrl + T crate new tab
-ctrl + H show hidden files</description>
     </item>
     
     <item>

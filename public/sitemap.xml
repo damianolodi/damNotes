@@ -31,6 +31,14 @@
   </url>
   
   <url>
+    <loc>https://damnotes.netlify.com/linux/01-shortcuts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/linux/02-basics/</loc>
+  </url>
+  
+  <url>
     <loc>https://damnotes.netlify.com/css/02-colors/</loc>
   </url>
   
@@ -180,11 +188,6 @@
   
   <url>
     <loc>https://damnotes.netlify.com/linux/99-virtualbox/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/linux/00-shortcuts/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
