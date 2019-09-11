@@ -16,6 +16,7 @@ collections:
       - {label: "Draft", name: "draft", widget: "boolean", default: false}
       - {label: "Arguments", name: "arguments", widget: "list", required: false}
       - {label: "Weight", name: "weight", widget: "number", valueType: "int", min: 1}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "html"
     label: "HTML"
     folder: "content/hmtl"
@@ -26,6 +27,7 @@ collections:
       - {label: "Draft", name: "draft", widget: "boolean", default: false}
       - {label: "Arguments", name: "arguments", widget: "list", required: false}
       - {label: "Weight", name: "weight", widget: "number", valueType: "int", min: 1}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "css"
     label: "CSS"
     folder: "content/css"
@@ -36,6 +38,7 @@ collections:
       - {label: "Draft", name: "draft", widget: "boolean", default: false}
       - {label: "Arguments", name: "arguments", widget: "list", required: false}
       - {label: "Weight", name: "weight", widget: "number", valueType: "int", min: 1}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "hugo"
     label: "Hugo"
     folder: "content/hugo"
@@ -46,6 +49,7 @@ collections:
       - {label: "Draft", name: "draft", widget: "boolean", default: false}
       - {label: "Arguments", name: "arguments", widget: "list", required: false}
       - {label: "Weight", name: "weight", widget: "number", valueType: "int", min: 1}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "python"
     label: "Python"
     folder: "content/python"
@@ -56,6 +60,7 @@ collections:
       - {label: "Draft", name: "draft", widget: "boolean", default: false}
       - {label: "Arguments", name: "arguments", widget: "list", required: false}
       - {label: "Weight", name: "weight", widget: "number", valueType: "int", min: 1}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "git"
     label: "Git"
     folder: "content/git"
@@ -66,6 +71,7 @@ collections:
       - {label: "Draft", name: "draft", widget: "boolean", default: false}
       - {label: "Arguments", name: "arguments", widget: "list", required: false}
       - {label: "Weight", name: "weight", widget: "number", valueType: "int", min: 1}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "ai"
     label: "Artificial Intelligence"
     folder: "content/ai"
@@ -76,6 +82,7 @@ collections:
       - {label: "Draft", name: "draft", widget: "boolean", default: false}
       - {label: "Arguments", name: "arguments", widget: "list", required: false}
       - {label: "Weight", name: "weight", widget: "number", valueType: "int", min: 1}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "rpi"
     label: "Raspberry Pi"
     folder: "content/rpi"
@@ -86,6 +93,7 @@ collections:
       - {label: "Draft", name: "draft", widget: "boolean", default: false}
       - {label: "Arguments", name: "arguments", widget: "list", required: false}
       - {label: "Weight", name: "weight", widget: "number", valueType: "int", min: 1}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "arduino"
     label: "Arduino"
     folder: "content/arduino"
@@ -96,6 +104,7 @@ collections:
       - {label: "Draft", name: "draft", widget: "boolean", default: false}
       - {label: "Arguments", name: "arguments", widget: "list", required: false}
       - {label: "Weight", name: "weight", widget: "number", valueType: "int", min: 1}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "linux"
     label: "Linux"
     folder: "content/linux"
@@ -106,6 +115,7 @@ collections:
       - {label: "Draft", name: "draft", widget: "boolean", default: false}
       - {label: "Arguments", name: "arguments", widget: "list", required: false}
       - {label: "Weight", name: "weight", widget: "number", valueType: "int", min: 1}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "bash"
     label: "Bash"
     folder: "content/bash"
@@ -116,6 +126,7 @@ collections:
       - {label: "Draft", name: "draft", widget: "boolean", default: false}
       - {label: "Arguments", name: "arguments", widget: "list", required: false}
       - {label: "Weight", name: "weight", widget: "number", valueType: "int", min: 1}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "electronics"
     label: "Electronics"
     folder: "content/electronics"
@@ -126,3 +137,4 @@ collections:
       - {label: "Draft", name: "draft", widget: "boolean", default: false}
       - {label: "Arguments", name: "arguments", widget: "list", required: false}
       - {label: "Weight", name: "weight", widget: "number", valueType: "int", min: 1}
+      - {label: "Body", name: "body", widget: "markdown"}
