@@ -10,7 +10,7 @@ collections:
     label: "C"
     folder: "content/c"
     create: true
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{weight}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Draft", name: "draft", widget: "boolean", default: false}
@@ -21,7 +21,7 @@ collections:
     label: "HTML"
     folder: "content/hmtl"
     create: true
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{weight}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Draft", name: "draft", widget: "boolean", default: false}
@@ -32,7 +32,7 @@ collections:
     label: "CSS"
     folder: "content/css"
     create: true
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{weight}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Draft", name: "draft", widget: "boolean", default: false}
@@ -43,7 +43,7 @@ collections:
     label: "Hugo"
     folder: "content/hugo"
     create: true
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{weight}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Draft", name: "draft", widget: "boolean", default: false}
@@ -54,7 +54,7 @@ collections:
     label: "Python"
     folder: "content/python"
     create: true
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{weight}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Draft", name: "draft", widget: "boolean", default: false}
@@ -65,7 +65,7 @@ collections:
     label: "Git"
     folder: "content/git"
     create: true
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{weight}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Draft", name: "draft", widget: "boolean", default: false}
@@ -76,7 +76,7 @@ collections:
     label: "Artificial Intelligence"
     folder: "content/ai"
     create: true
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{weight}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Draft", name: "draft", widget: "boolean", default: false}
@@ -87,7 +87,7 @@ collections:
     label: "Raspberry Pi"
     folder: "content/rpi"
     create: true
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{weight}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Draft", name: "draft", widget: "boolean", default: false}
@@ -98,7 +98,7 @@ collections:
     label: "Arduino"
     folder: "content/arduino"
     create: true
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{weight}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Draft", name: "draft", widget: "boolean", default: false}
@@ -109,7 +109,7 @@ collections:
     label: "Linux"
     folder: "content/linux"
     create: true
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{weight}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Draft", name: "draft", widget: "boolean", default: false}
@@ -120,7 +120,7 @@ collections:
     label: "Bash"
     folder: "content/bash"
     create: true
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{weight}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Draft", name: "draft", widget: "boolean", default: false}
@@ -131,7 +131,7 @@ collections:
     label: "Electronics"
     folder: "content/electronics"
     create: true
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{weight}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Draft", name: "draft", widget: "boolean", default: false}

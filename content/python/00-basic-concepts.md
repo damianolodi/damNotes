@@ -7,7 +7,7 @@ arguments: ["Variable Types",
             "Lambda Function",
             "Classes",
             "Virtual Environments"]
-weight: 1
+weight: -1
 ---
 
 ### Variable Types

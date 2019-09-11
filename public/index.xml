@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>Basic Concepts</title>
+      <link>https://damnotes.netlify.com/python/00-basic-concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/00-basic-concepts/</guid>
+      <description>Variable Types Lists l = [100, 21, 88, 3] l = list() #empty list # List Comprehension -&amp;gt; quick list creation evens_to_50 = [i for i in range(51) if i % 2 == 0] other_list = [[i,j] for i in range(x) for j in range(y) if (x+y)!=n] # Element selection l[:2] # first two items (0 and 1) l[3:] # ourth through last items l[::2] # first through end with a step of 2 ## in general [start(inclusive):end(exclusive):stride] ## negative stride progress the list in reverse order # Multi-index lists l = [0, 1, 2, 3; 4, 5, 6, 7] l[1][2] #6  l1 + l2 → concatenate lists</description>
+    </item>
+    
+    <item>
       <title>Animations</title>
       <link>https://damnotes.netlify.com/css/01-animations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -42,15 +51,6 @@ alias command_name=&amp;#34;command1 &amp;amp;&amp;amp; command2 &amp;amp;&amp;a
       <description>Basics int var_name = value; // variable initialization char str_name[n]; // array initialization char str_name[] = &amp;#34;Hello World!&amp;#34;; const int VAR_NAME = value; // constant declaration  int main (void) { // execution start from here  // code  return 0; }  Best practice: variables are named with capital letters when global
  Math operations → +, -, *, /, % (mod)
  For each string of n charachters, n+1 bytes are allocated in memory: the last is added by C as the null character \0 (all zeros)</description>
-    </item>
-    
-    <item>
-      <title>Basic Concepts</title>
-      <link>https://damnotes.netlify.com/python/00-basic-concepts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/00-basic-concepts/</guid>
-      <description>Variable Types Lists l = [100, 21, 88, 3] l = list() #empty list # List Comprehension -&amp;gt; quick list creation evens_to_50 = [i for i in range(51) if i % 2 == 0] other_list = [[i,j] for i in range(x) for j in range(y) if (x+y)!=n] # Element selection l[:2] # first two items (0 and 1) l[3:] # ourth through last items l[::2] # first through end with a step of 2 ## in general [start(inclusive):end(exclusive):stride] ## negative stride progress the list in reverse order # Multi-index lists l = [0, 1, 2, 3; 4, 5, 6, 7] l[1][2] #6  l1 + l2 → concatenate lists</description>
     </item>
     
     <item>
