@@ -6,11 +6,121 @@ media_folder: "static/img/uploads" # Media files will be stored in the repo unde
 public_folder: "/img/uploads"
 
 collections:
+  - name: "c"
+    label: "C"
+    folder: "content/c"
+    create: true
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+      - {label: "Arguments", name: "arguments", widget: "list", required: false}
+      - {label: "Weight", name: "weight", widget: "number", valueType: "int", min: 1}
+  - name: "html"
+    label: "HTML"
+    folder: "content/hmtl"
+    create: true
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+      - {label: "Arguments", name: "arguments", widget: "list", required: false}
+      - {label: "Weight", name: "weight", widget: "number", valueType: "int", min: 1}
+  - name: "css"
+    label: "CSS"
+    folder: "content/css"
+    create: true
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+      - {label: "Arguments", name: "arguments", widget: "list", required: false}
+      - {label: "Weight", name: "weight", widget: "number", valueType: "int", min: 1}
+  - name: "hugo"
+    label: "Hugo"
+    folder: "content/hugo"
+    create: true
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+      - {label: "Arguments", name: "arguments", widget: "list", required: false}
+      - {label: "Weight", name: "weight", widget: "number", valueType: "int", min: 1}
   - name: "python"
     label: "Python"
     folder: "content/python"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+      - {label: "Arguments", name: "arguments", widget: "list", required: false}
+      - {label: "Weight", name: "weight", widget: "number", valueType: "int", min: 1}
+  - name: "git"
+    label: "Git"
+    folder: "content/git"
+    create: true
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+      - {label: "Arguments", name: "arguments", widget: "list", required: false}
+      - {label: "Weight", name: "weight", widget: "number", valueType: "int", min: 1}
+  - name: "ai"
+    label: "Artificial Intelligence"
+    folder: "content/ai"
+    create: true
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+      - {label: "Arguments", name: "arguments", widget: "list", required: false}
+      - {label: "Weight", name: "weight", widget: "number", valueType: "int", min: 1}
+  - name: "rpi"
+    label: "Raspberry Pi"
+    folder: "content/rpi"
+    create: true
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+      - {label: "Arguments", name: "arguments", widget: "list", required: false}
+      - {label: "Weight", name: "weight", widget: "number", valueType: "int", min: 1}
+  - name: "arduino"
+    label: "Arduino"
+    folder: "content/arduino"
+    create: true
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+      - {label: "Arguments", name: "arguments", widget: "list", required: false}
+      - {label: "Weight", name: "weight", widget: "number", valueType: "int", min: 1}
+  - name: "linux"
+    label: "Linux"
+    folder: "content/linux"
+    create: true
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+      - {label: "Arguments", name: "arguments", widget: "list", required: false}
+      - {label: "Weight", name: "weight", widget: "number", valueType: "int", min: 1}
+  - name: "bash"
+    label: "Bash"
+    folder: "content/bash"
+    create: true
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+      - {label: "Arguments", name: "arguments", widget: "list", required: false}
+      - {label: "Weight", name: "weight", widget: "number", valueType: "int", min: 1}
+  - name: "electronics"
+    label: "Electronics"
+    folder: "content/electronics"
+    create: true
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Draft", name: "draft", widget: "boolean", default: false}
