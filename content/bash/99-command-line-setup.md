@@ -1,11 +1,16 @@
 ---
 title: "Command Line Setup"
 draft: false
-arguments: [""]
+arguments: ["Terminal Setup on macOS",
+            "Custom Commands"]
 weight: 99
 ---
 
 In `~`, the file `.bash_profile` is used for _login shells_, while `.bashrc` is used for _non-login shells_ (terminal session opened using the `bash` command).
+
+In OSX, _all sessions are login sessions so they will not source `$HOME/.bashrc`_, they will source `$HOME/.profile` or `$HOME/.bash_profile` ([reference](https://stackoverflow.com/questions/44658135/osx-terminal-not-recognizing-bashrc-and-bash-profile-on-startup))
+
+* * *
 
 ### Terminal Setup on macOS
 
@@ -52,6 +57,19 @@ export PS1;
 - `$()` is called _command substitution_
 
 - Colors number can be found [here](https://upload.wikimedia.org/wikipedia/commons/1/15/Xterm_256color_chart.svg)
+
+* * *
+
+### Custom Commands
+
+Open the `~/.bashrc` file and type the following
+
+```bash
+alias command_name="command1 && command2 && ..."
+```
+
+The `&&` apply the following command only if the current one is succesfull. On the other hand, use `;` to run all the commands one after the other.
+
 
 * * *
 
