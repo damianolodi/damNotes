@@ -1,11 +1,13 @@
 ---
 title: "Open Source Applications"
 draft: false
-arguments: [""]
+arguments: ["Server",
+            "Utility",
+            "Package Managers"]
 weight: 02
 ---
 
-This note will provide a list of the main open source applications and software divided by categories and purposes.
+This note provides a list of the main open source applications and softwares divided by categories and purposes.
 
 ### Server
 

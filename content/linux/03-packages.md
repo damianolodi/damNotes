@@ -1,7 +1,7 @@
 ---
 title: "Packages"
 draft: false
-arguments: [""]
+arguments: ["tree"]
 weight: 03
 ---
 

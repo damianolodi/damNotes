@@ -1,7 +1,8 @@
 ---
 title: "Shortcuts"
 draft: false
-arguments: [""]
+arguments: ["Change Desktop",
+            "Open tty Consoles"]
 weight: 01
 ---
 
