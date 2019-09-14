@@ -15,12 +15,12 @@ weight: 1
 ### Basics
 
 ```c
-int var_name = value; // variable initialization
-char str_name[n]; // array initialization
+int var_name = value;           // variable initialization
+char str_name[n];               // array initialization
 char str_name[] = "Hello World!";
-const int VAR_NAME = value; // constant declaration
+const int VAR_NAME = value;     // constant declaration
 
-int main (void) {   // execution start from here
+int main (void) {               // execution start from here
     // code
     return 0;
 }
@@ -28,7 +28,7 @@ int main (void) {   // execution start from here
 
 -   **Best practice**: variables are named with capital letters when global
 
--   Math operations &rarr; `+`, `-`, `*`, `/`, `%` (mod)
+-   **Math operators** &rarr; `+`, `-`, `*`, `/`, `%` (mod)
 
 -   For each string of _n_ charachters, _n+1_ bytes are allocated in memory: the last is added by C as the _null_ character `\0` (all zeros)
 
@@ -36,7 +36,7 @@ int main (void) {   // execution start from here
 
 -   `man function_name` &rarr; use in terminal to return documentation about the function
 
-#### `main` with external parameters
+#### `main` with External Parameters
 
 ```c
 int main (int argc, char* argv[]) {
@@ -56,6 +56,8 @@ int main (int argc, char* argv[]) {
 -   `clang -0 file file.c` &rarr; compile and produce `file`
 
 -   `make file.c` &rarr; call clang to compile (elaborate on that)
+
+* * *
 
 ### Variables Type
 

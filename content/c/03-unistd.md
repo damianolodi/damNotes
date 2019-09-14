@@ -1,8 +1,12 @@
 ---
 title: "unistd.c"
 draft: false
-arguments: [""]
+arguments: ["Pause Program Execution"]
 weight: 3
 ---
 
-Vedi funzione sleep(i)
+```c
+#include <unistd.h>
+```
+
+- `sleep(i)` &rarr; **suspend code execution** for at least _i seconds_ 

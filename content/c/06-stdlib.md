@@ -1,23 +1,29 @@
 ---
 title: "stdlib.c"
 draft: false
-arguments: [""]
+arguments: ["Memory Allocation"]
 weight: 6
 ---
 
-vedi malloc(memoryAmount) [allocate memory]
+```c
+#include <stdlib.h>
+```
 
-e.g. malloc(strlen(s)+1 \* sizeof(char))
+- `malloc(size)` &rarr; try to allocate requested memory size (in bytes) and returns a pointer to the first byte
 
-free(pointerName) [deallocate memory]
+```c
+    // allocate space for 4 integer numbers
+    int *p = malloc(4 * sizeof(int));
+```
+    
+    - **Segmentation fault**: error caused by the fact that the program is trying to access memory that it should not use
 
-If memory is not deallocated, program can cause memory leaks.
-!! Always free memory allocated with malloc!!
+    - When allocating memory, PCs usually allocate a little bit more to avoid problems
 
--   **Segmentation fault**: error caused by the fact that I try to access to memory that I should not use.
+- `free(pointName)` &rarr; **deallocate memory** previously allocated with `malloc`. **WARNING:** always free memory allocated with malloc. If memory is not deallocated, program can cause memory leaks.
 
--   When allocating memory, PCs usually allocate a little bit more to avoid problems.
+- `realloc()` &rarr; try to **reallocate memory** in the heap part, if available. It is an _O(n)_ in term of efficency
 
-realloc() reallocate memory in the (heap part) if available. $O(n)$ in term of efficency
-
-### Memory Allocation
+```c
+    str = realloc(str, 5 * sizeof(char));
+```

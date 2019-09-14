@@ -1,7 +1,8 @@
 ---
 title: "stdio.c"
 draft: false
-arguments: [""]
+arguments: ["Print to Console",
+            "Request Input from User"]
 weight: 2
 ---
 
@@ -9,9 +10,13 @@ weight: 2
 #include <stdio.h>
 ```
 
-Vedi funzionr printf() + placeholder %s, %i, %f (float) + f mena format
+- `printf(` &rarr; Possible placeholders:
+    
+    - `%c` (single char), `%s` (string), 
+    
+    - `%i` (integer), `%f` (float), `%u` (unsigned decimal integer)
 
-scanf("%i", &varName)
-scanf("%s", s)
+    - `%p` (pointer)
 
-%p &rarr; prin the pointer
+- `scanf("%i", &varName)` &rarr; **wait user input**. Various placeholders are available (number in different bases, strings,...). Return the number of characters written, or a negative number if some errors occured. **WARNING:** the input should be checked for correctness
+
