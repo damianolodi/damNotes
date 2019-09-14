@@ -100,6 +100,12 @@ pd<span style="color:#666">.</span>DataFrame(data<span style="color:#666">=</spa
 <li><p><code>df.dtypes</code> &rarr; return <strong>type</strong> of each column</p></li>
 
 <li><p><code>df['columnName'] = df['columnName'].astype(type)</code> &rarr; <strong>change the type</strong> of the column [<code>str</code> (printed as object), <code>int64</code>, <code>float64</code>]</p></li>
+
+<li><p><code>df.index</code> &rarr; access the indexes</p>
+
+<ul>
+<li><code>len(df.index)</code> &rarr; <strong>number of row</strong> of the df (fastest method)</li>
+</ul></li>
 </ul>
 
 <hr />
@@ -107,8 +113,6 @@ pd<span style="color:#666">.</span>DataFrame(data<span style="color:#666">=</spa
 <h3 id="df-manipulation"><code>df</code> Manipulation</h3>
 
 <ul>
-<li><p><code>df.index</code> &rarr; access the indexes</p></li>
-
 <li><p><code>df.reindex([list])</code> &rarr; reassign indexes manually</p></li>
 
 <li><p><code>df.rename(columns={oldName1: newName1, ...}, inplace = True)</code> &rarr; <strong>rename</strong> columns</p></li>
@@ -140,6 +144,8 @@ pd<span style="color:#666">.</span>DataFrame(data<span style="color:#666">=</spa
 <li><p><code>df.iloc[0:n,:]</code> &rarr; select the first <em>n</em> rows and all the columns</p></li>
 
 <li><p><code>df.loc[44,:]</code> &rarr; select line 44 [only usable if there is an <em>index</em> in the dataframe]</p></li>
+
+<li><p><code>df.shift(n, axis=0)</code> &rarr; <strong>shift rows</strong> by <em>n</em> (can be negative)</p></li>
 
 <li><p><code>df[df[&quot;Area&quot;] == &quot;Ireland”]</code> &rarr; select rows where <em>Area</em> is <em>Ireland</em></p></li>
 

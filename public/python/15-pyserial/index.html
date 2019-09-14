@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://damnotes.netlify.com/css/style.css">
     
     
-    <title>unistd.c | DamNotes</title>
+    <title>PySerial | DamNotes</title>
 
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js">
     </script>
@@ -39,11 +39,20 @@
         <main id="main">
             
 <div class="d-flex flex-column align-items-center">
-    <h2 class="m-1 mb-2 mt-2"><u>unistd.c</u></h2>
+    <h2 class="m-1 mb-2 mt-2"><u>PySerial</u></h2>
 </div>
-<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#bc7a00">#include</span> <span style="color:#bc7a00">&lt;unistd.h&gt;</span></code></pre></div>
+<p>(<a href="https://pyserial.readthedocs.io/en/latest/shortintro.html">Docs</a>)</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">serial</span>
+
+ser <span style="color:#666">=</span> serial<span style="color:#666">.</span>Serial(port <span style="color:#666">=</span> <span style="color:#ba2121">&#39;/dev/tty.SLAB_USBtoUART&#39;</span>,
+                    baudrate <span style="color:#666">=</span> <span style="color:#666">9600</span>,
+                    bytesize <span style="color:#666">=</span> serial<span style="color:#666">.</span>EIGHTBITS,
+                    parity <span style="color:#666">=</span> serial<span style="color:#666">.</span>PARITY_NONE,
+                    stopbits <span style="color:#666">=</span> serial<span style="color:#666">.</span>STOPBITS_ONE,
+					timeout <span style="color:#666">=</span> <span style="color:#666">3</span> <span style="color:#408080;font-style:italic">#s</span>
+                    )</code></pre></div>
 <ul>
-<li><code>sleep(i)</code> &rarr; <strong>suspend code execution</strong> for at least <em>i seconds</em></li>
+<li><code>python -m serial.tools.list_ports</code> &rarr; prints a list of available ports.</li>
 </ul>
 
 

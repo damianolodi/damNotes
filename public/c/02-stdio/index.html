@@ -42,12 +42,19 @@
     <h2 class="m-1 mb-2 mt-2"><u>stdio.c</u></h2>
 </div>
 <div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#bc7a00">#include</span> <span style="color:#bc7a00">&lt;stdio.h&gt;</span></code></pre></div>
-<p>Vedi funzionr printf() + placeholder %s, %i, %f (float) + f mena format</p>
+<ul>
+<li><p><code>printf(</code> &rarr; Possible placeholders:</p>
 
-<p>scanf(&ldquo;%i&rdquo;, &amp;varName)
-scanf(&ldquo;%s&rdquo;, s)</p>
+<ul>
+<li><p><code>%c</code> (single char), <code>%s</code> (string),</p></li>
 
-<p>%p &rarr; prin the pointer</p>
+<li><p><code>%i</code> (integer), <code>%f</code> (float), <code>%u</code> (unsigned decimal integer)</p></li>
+
+<li><p><code>%p</code> (pointer)</p></li>
+</ul></li>
+
+<li><p><code>scanf(&quot;%i&quot;, &amp;varName)</code> &rarr; <strong>wait user input</strong>. Various placeholders are available (number in different bases, strings,&hellip;). Return the number of characters written, or a negative number if some errors occured. <strong>WARNING:</strong> the input should be checked for correctness</p></li>
+</ul>
 
 
 

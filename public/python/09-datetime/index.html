@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://damnotes.netlify.com/css/style.css">
     
     
-    <title>unistd.c | DamNotes</title>
+    <title>Datetime | DamNotes</title>
 
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js">
     </script>
@@ -39,11 +39,20 @@
         <main id="main">
             
 <div class="d-flex flex-column align-items-center">
-    <h2 class="m-1 mb-2 mt-2"><u>unistd.c</u></h2>
+    <h2 class="m-1 mb-2 mt-2"><u>Datetime</u></h2>
 </div>
-<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#bc7a00">#include</span> <span style="color:#bc7a00">&lt;unistd.h&gt;</span></code></pre></div>
+<p>(<a href="https://docs.python.org/3/library/datetime.html">Docs</a>)</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">datetime</span> <span style="color:#008000;font-weight:bold">as</span> <span style="color:#00f;font-weight:bold">dt</span></code></pre></div>
 <ul>
-<li><code>sleep(i)</code> &rarr; <strong>suspend code execution</strong> for at least <em>i seconds</em></li>
+<li><p><code>dt.datetime.now()</code> &rarr; return <strong>current date and time</strong> in standard format</p>
+
+<ul>
+<li><p><code>dt.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')</code> &rarr; format the returned valued</p></li>
+
+<li><p><code>dt.datetime.now().time()</code> &rarr; return only the date</p></li>
+</ul></li>
+
+<li><p><code>datetime.today()</code> &rarr; return <strong>current date</strong></p></li>
 </ul>
 
 

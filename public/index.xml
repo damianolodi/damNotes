@@ -31,26 +31,25 @@
     </item>
     
     <item>
-      <title>Bash Scripts</title>
-      <link>https://damnotes.netlify.com/bash/01-bash-scripts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/bash/01-bash-scripts/</guid>
-      <description>Making Custom Commands  Access the .bashrc file with
-nano ~/.bashrc  Open with nano and not with open, otherwise problems may occur when applying the following steps.
- Inside the file, write the following
-alias command_name=&amp;#34;command1 &amp;amp;&amp;amp; command2 &amp;amp;&amp;amp; ...&amp;#34;  The &amp;amp;&amp;amp; apply the following command only if the current one is succesfull. On the other hand, use ; to run all the commands one after the other.</description>
-    </item>
-    
-    <item>
       <title>Basic Concepts</title>
       <link>https://damnotes.netlify.com/c/01-basic-concepts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/c/01-basic-concepts/</guid>
       <description>Basics int var_name = value; // variable initialization char str_name[n]; // array initialization char str_name[] = &amp;#34;Hello World!&amp;#34;; const int VAR_NAME = value; // constant declaration  int main (void) { // execution start from here  // code  return 0; }  Best practice: variables are named with capital letters when global
- Math operations &amp;rarr; +, -, *, /, % (mod)
+ Math operators &amp;rarr; +, -, *, /, % (mod)
  For each string of n charachters, n+1 bytes are allocated in memory: the last is added by C as the null character \0 (all zeros)</description>
+    </item>
+    
+    <item>
+      <title>Basics</title>
+      <link>https://damnotes.netlify.com/bash/01-basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/bash/01-basics/</guid>
+      <description>var = &amp;#34;value&amp;#34; # define new variable export var = &amp;#34;value&amp;#34; # define variable also for othe bash sessions echo $var # access the value of a variable which command_name # return the path in which the executable is found  bash &amp;rarr; open a new bash session
+ exit &amp;rarr; exit from the current bash session  env &amp;rarr; list all environment variables
+ PATH &amp;rarr; variable that contains all the paths (separated by columns) in which to search for executables  alias &amp;rarr; return all defined aliases</description>
     </item>
     
     <item>
@@ -110,17 +109,6 @@ alias command_name=&amp;#34;command1 &amp;amp;&amp;amp; command2 &amp;amp;&amp;a
     </item>
     
     <item>
-      <title>Basics</title>
-      <link>https://damnotes.netlify.com/linux/02-basics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/linux/02-basics/</guid>
-      <description>Bash Basics var = &amp;#34;value&amp;#34; # define new variable export var = &amp;#34;value&amp;#34; # define variable also for othe bash sessions echo $var # access the value of a variable which command_name # return the path in which the executable is found  bash &amp;rarr; open a new bash session
- exit &amp;rarr; exit from the current bash session  env &amp;rarr; list all environment variables
- PATH &amp;rarr; variable that contains all the paths (separated by columns) in which to search for executables  alias &amp;rarr; return all defined aliases</description>
-    </item>
-    
-    <item>
       <title>Colors</title>
       <link>https://damnotes.netlify.com/css/02-colors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -132,6 +120,20 @@ color: rgb(5%,50%,100%); &amp;ndash;&amp;gt; rgb values
 color: rgba(255,255,255,0.5); &amp;ndash;&amp;gt; rgb with opacity between 0 and 1
 color: hsl(180,100%,50%); &amp;ndash;&amp;gt; HSL is supported only by CSS3, so older browser can have problem with the encoding of this statement
  hue 0°-360° (color) saturation % (amount of gray in a given color) lightness % (amount of white in a given color)  Background background-color: green;</description>
+    </item>
+    
+    <item>
+      <title>File Management</title>
+      <link>https://damnotes.netlify.com/bash/02-file-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/bash/02-file-management/</guid>
+      <description>touch file_name &amp;rarr; create new file
+ mkdir dir_name &amp;rarr; create new directory
+ mkdir -p parent_dir/dir &amp;rarr; crete parent directories if not present
+ rmdir parent_dir/dir &amp;rarr; remove dir (not the parent directory). NOT WORKING on non-empty directories
+  rm file_name &amp;rarr; remove file
+ rm -r dir &amp;rarr; remove the directory and all files contained in it (r stands for recursive)  mv what_path where_path &amp;rarr; move a file into a new directory</description>
     </item>
     
     <item>
@@ -165,14 +167,15 @@ color: hsl(180,100%,50%); &amp;ndash;&amp;gt; HSL is supported only by CSS3, so 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/linux/02-open-source-app/</guid>
-      <description>This note will provide a list of the main open source applications and software divided by categories and purposes.
+      <description>This note provides a list of the main open source applications and softwares divided by categories and purposes.
 Server  Web Server: Apache HTTPD (more complete), Nginx (lighter), Stack LAMP (Linux, Apache, MySQL, PHP - for web developers)
  Database: Postgre, MySQL, MariaDB
  Unix File Server: NFS
  Windows File Server: Samba
  Directory Server: OpenLDAP
   Desktop  Office: LibreOffice, OpenOffice
- Browser: Firefox, Chromium</description>
+ Browser: Firefox, Chromium
+ Email Client: Thunderbird</description>
     </item>
     
     <item>
@@ -190,9 +193,12 @@ Server  Web Server: Apache HTTPD (more complete), Nginx (lighter), Stack LAMP (L
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/c/02-stdio/</guid>
-      <description>#include &amp;lt;stdio.h&amp;gt; Vedi funzionr printf() + placeholder %s, %i, %f (float) + f mena format
-scanf(&amp;ldquo;%i&amp;rdquo;, &amp;amp;varName) scanf(&amp;ldquo;%s&amp;rdquo;, s)
-%p &amp;rarr; prin the pointer</description>
+      <description>#include &amp;lt;stdio.h&amp;gt;  printf( &amp;rarr; Possible placeholders:
+ %c (single char), %s (string),
+ %i (integer), %f (float), %u (unsigned decimal integer)
+ %p (pointer)
+  scanf(&amp;quot;%i&amp;quot;, &amp;amp;varName) &amp;rarr; wait user input. Various placeholders are available (number in different bases, strings,&amp;hellip;). Return the number of characters written, or a negative number if some errors occured. WARNING: the input should be checked for correctness
+  </description>
     </item>
     
     <item>
@@ -208,6 +214,18 @@ Dimensions All elements on a web page are interpreted by the browser as “livin
 width: 150px;
  min-width and max-width also possible  height: 70%;
  min-heigth and max-height also possible  Content Based width: min-content; &amp;rarr; wrap the content and use the minimum space</description>
+    </item>
+    
+    <item>
+      <title>Files Information Extraction</title>
+      <link>https://damnotes.netlify.com/bash/03-extracting-information-from-files/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/bash/03-extracting-information-from-files/</guid>
+      <description>cat file_name &amp;rarr; print file content. Not very practical for big files
+ cat file_name | less &amp;rarr; redirect output to the program less, to visualize small bunch of content (can use less file_name)
+ &amp;gt; shift + 7, n and N &amp;rarr; search, next and previous results
+  head file_name -n num &amp;rarr; print the first num lines of the file. Remove the -n parameter to print first 10 lines</description>
     </item>
     
     <item>
@@ -255,7 +273,7 @@ import matplotlib.pyplot as plt %matplotlib inline # display figures inside jupy
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/c/03-unistd/</guid>
-      <description>Vedi funzione sleep(i)</description>
+      <description>#include &amp;lt;unistd.h&amp;gt;  sleep(i) &amp;rarr; suspend code execution for at least i seconds  </description>
     </item>
     
     <item>
@@ -307,7 +325,11 @@ import seaborn as sns sns.set() tips = sns.load_dataset(&amp;#34;tips&amp;#34;) 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/c/04-string/</guid>
-      <description>Vedi funzione strlen(string), strcmp(str1, str2), strcpy(s1, s2)</description>
+      <description>#include &amp;lt;string.h&amp;gt; In this context, s usually represent the pointer to the string.
+ strlen(s) &amp;rarr; return lenght of the string
+ strcmp(s1, s2) &amp;rarr; compare the two strings. Return 0 if the two strings are equal
+ strcpy(s1, s2) &amp;rarr; copy s2 into s1
+  </description>
     </item>
     
     <item>
@@ -346,7 +368,9 @@ import seaborn as sns sns.set() tips = sns.load_dataset(&amp;#34;tips&amp;#34;) 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/c/05-ctype/</guid>
-      <description></description>
+      <description>#include &amp;lt;ctype.h&amp;gt;  isdigit(int) &amp;rarr; return non-zero if the provided value is a digit
+ isalnum(int) &amp;rarr; retutn non-zero if the provided value is a digit or a letter
+  </description>
     </item>
     
     <item>
@@ -380,13 +404,10 @@ rem -&amp;gt; it means root em. Instead of checking parent elements to size font
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/c/06-stdlib/</guid>
-      <description>vedi malloc(memoryAmount) [allocate memory]
-e.g. malloc(strlen(s)+1 * sizeof(char))
-free(pointerName) [deallocate memory]
-If memory is not deallocated, program can cause memory leaks. !! Always free memory allocated with malloc!!
- Segmentation fault: error caused by the fact that I try to access to memory that I should not use.
- When allocating memory, PCs usually allocate a little bit more to avoid problems.
-  realloc() reallocate memory in the (heap part) if available.</description>
+      <description>#include &amp;lt;stdlib.h&amp;gt;  malloc(size) &amp;rarr; try to allocate requested memory size (in bytes) and returns a pointer to the first byte
+// allocate space for 4 integer numbers int *p = malloc(4 * sizeof(int));  Segmentation fault: error caused by the fact that the program is trying to access memory that it should not use
+ When allocating memory, PCs usually allocate a little bit more to avoid problems
+  free(pointName) &amp;rarr; deallocate memory previously allocated with malloc.</description>
     </item>
     
     <item>
@@ -434,6 +455,20 @@ body { --var-name: value; }  It becomes available to use inside the element in w
  os.chdir(path) &amp;rarr; change the cwd to path
  os.remove(path) &amp;rarr; remove a file
  os.mkdir(path) &amp;rarr; create a directory. To avoid errors if the directory exist, use</description>
+    </item>
+    
+    <item>
+      <title>Datetime</title>
+      <link>https://damnotes.netlify.com/python/09-datetime/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/09-datetime/</guid>
+      <description>(Docs)
+import datetime as dt  dt.datetime.now() &amp;rarr; return current date and time in standard format
+ dt.datetime.now().strftime(&#39;%Y-%m-%d %H:%M:%S.%f&#39;) &amp;rarr; format the returned valued
+ dt.datetime.now().time() &amp;rarr; return only the date
+  datetime.today() &amp;rarr; return current date
+  </description>
     </item>
     
     <item>
@@ -496,25 +531,22 @@ Here find a list of useful notebooks to download and learn from them.
     </item>
     
     <item>
+      <title>PySerial</title>
+      <link>https://damnotes.netlify.com/python/15-pyserial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/15-pyserial/</guid>
+      <description>(Docs)
+import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#39;, baudrate = 9600, bytesize = serial.EIGHTBITS, parity = serial.PARITY_NONE, stopbits = serial.STOPBITS_ONE, timeout = 3 #s )  python -m serial.tools.list_ports &amp;rarr; prints a list of available ports.  </description>
+    </item>
+    
+    <item>
       <title>Files I/O</title>
       <link>https://damnotes.netlify.com/python/16-files-io/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/python/16-files-io/</guid>
       <description>import csv Read CSV files with open(&amp;#39;data.csv&amp;#39;,&amp;#39;r&amp;#39;) as csv_file: csv_reader = csv.reader(csv_file, delimiter=&amp;#39; &amp;#39;) next(csv_reader) # skip over the header line for line in csv_reader: print(line)  use with to automatically close the file at the end  Write on CSV files with open(&amp;#39;new_file.csv&amp;#39;,&amp;#39;w&amp;#39;) as new_file: csv_writer = csv.writer(new_file, delimiter=&amp;#39;\t&amp;#39;) for line in csv_reader: csv_writer.writerow(something)  use w+ to create the file if it does not exist  Reading with Dictionary Reader Use if more &amp;ldquo;human readable&amp;rdquo; files are needed</description>
-    </item>
-    
-    <item>
-      <title>Python Installation and Setup</title>
-      <link>https://damnotes.netlify.com/python/19-python-in-atom/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/19-python-in-atom/</guid>
-      <description>Installation macOS  Download the installer of Python 3 form the official website and install it. An application calle Python will be created in the Applications folder
- Create an alias so that python command will call python3 instead
- in Users/user_name/ type nano ~/.bash_profile
- check that the last line is adding python to the path calling PATH=...
- write alias python=python3 at the bottom of the file</description>
     </item>
     
     <item>
@@ -532,14 +564,27 @@ Here find a list of useful notebooks to download and learn from them.
     </item>
     
     <item>
+      <title>Python Installation and Setup</title>
+      <link>https://damnotes.netlify.com/python/98-python-installation-and-setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/98-python-installation-and-setup/</guid>
+      <description>Installation macOS  Download the installer of Python 3 form the official website and install it. An application calle Python will be created in the Applications folder
+ Create an alias so that python command will call python3 instead
+ in Users/user_name/ type nano ~/.bash_profile
+ check that the last line is adding python to the path calling PATH=...
+ write alias python=python3 at the bottom of the file</description>
+    </item>
+    
+    <item>
       <title>Command Line Setup</title>
       <link>https://damnotes.netlify.com/bash/99-command-line-setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/bash/99-command-line-setup/</guid>
       <description>In ~, the file .bash_profile is used for login shells, while .bashrc is used for non-login shells (terminal session opened using the bash command).
-Terminal Setup on macOS  Open the .bash_profile file and type the following to automatically load the content of the file contained in .bashrc. This will guarantee that both type of shells will behave the same
-if [ -f ~/.bashrc ]; then source ~./bashrc fi Open the .</description>
+In OSX, all sessions are login sessions so they will not source $HOME/.bashrc, they will source $HOME/.profile or $HOME/.bash_profile (reference)
+Terminal Setup on macOS  Open the .bash_profile file and type the following to automatically load the content of the file contained in .bashrc. This will guarantee that both type of shells will behave the same</description>
     </item>
     
     <item>
@@ -548,9 +593,9 @@ if [ -f ~/.bashrc ]; then source ~./bashrc fi Open the .</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/python/99-other-libraries/</guid>
-      <description>Datetime  datetime.today() &amp;rarr; print current date  IPython .display module (doc)
-from IPython import display # display various type of data (audio, images, ...)  display.display(obj) &amp;rarr; display a python object in all frontends (doc)  PySerial (Docs)
-import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#39;, baudrate = 9600, bytesize = serial.EIGHTBITS, parity = serial.PARITY_NONE, stopbits = serial.STOPBITS_ONE, timeout = 3 #s )  python -m serial.tools.list_ports &amp;rarr; prints a list of available ports.</description>
+      <description>IPython .display module (doc)
+from IPython import display # display various type of data (audio, images, ...)  display.display(obj) &amp;rarr; display a python object in all frontends (doc)  ScyPy The SciPy framework builds on top of the low-level NumPy framework for multidimensional arrays, and provides a large number of higher-level scientific algorithms. See here for a Jupyter notebook tutorial on scypy
+import scipy as sp SymPy It is a Computer Algebra System (CAS).</description>
     </item>
     
     <item>
@@ -560,20 +605,11 @@ import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#3
       
       <guid>https://damnotes.netlify.com/linux/99-virtualbox/</guid>
       <description>Create New Virtual Machine  Click new and insert name for the OS. It should find the corresponding OS type. If not, select the right type and version;
- assign RAM quantity (2GB for 8GB machines should be ok)
+ Assign RAM quantity (2GB for 8GB machines should be ok)
  Create new virtual HD &amp;gt; VDI &amp;gt; Dynamically allocated
  Select HD size (15GB should be ok)
  Select the machine and go to Settings
- General &amp;gt; Advanced tab &amp;gt; select Bidirectional in Shared Clipboard [can copy/paste between VM and base OS] System can change the assigned RAM and can change the chipset to ICH9 (experimental, but can have better performance) Processor &amp;gt; assign the number of core to the VM.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://damnotes.netlify.com/linux/01-installation-and-setup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/linux/01-installation-and-setup/</guid>
-      <description>Installation and Setup Ubuntu Setup on VM  Install linux guest addition to run the VM more stabily and with better performance (right screen resolution, less lag,&amp;hellip;)  Devices &amp;gt; Insert Guest Addition CD Image -&amp;gt; a VBoxAddition should appear on the desktop right click on VBoxLinuxAddition.run &amp;gt; properties and look if it is executable open the VBoxAddition&amp;hellip; &amp;gt; right click &amp;gt; Open in Terminal &amp;gt; sudo ./VBoxLinuxAdditions.run reboot the system   Customizing Linux One wants to dowload some themes to customize the look of the GUI.</description>
+ General &amp;gt; Advanced tab &amp;gt; select Bidirectional in Shared Clipboard [can copy/paste between VM and base OS]</description>
     </item>
     
     <item>

@@ -44,19 +44,19 @@
 
 
 <h3 id="basics">Basics</h3>
-<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#b00040">int</span> var_name <span style="color:#666">=</span> value; <span style="color:#408080;font-style:italic">// variable initialization
-</span><span style="color:#408080;font-style:italic"></span><span style="color:#b00040">char</span> str_name[n]; <span style="color:#408080;font-style:italic">// array initialization
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#b00040">int</span> var_name <span style="color:#666">=</span> value;           <span style="color:#408080;font-style:italic">// variable initialization
+</span><span style="color:#408080;font-style:italic"></span><span style="color:#b00040">char</span> str_name[n];               <span style="color:#408080;font-style:italic">// array initialization
 </span><span style="color:#408080;font-style:italic"></span><span style="color:#b00040">char</span> str_name[] <span style="color:#666">=</span> <span style="color:#ba2121">&#34;Hello World!&#34;</span>;
-<span style="color:#008000;font-weight:bold">const</span> <span style="color:#b00040">int</span> VAR_NAME <span style="color:#666">=</span> value; <span style="color:#408080;font-style:italic">// constant declaration
+<span style="color:#008000;font-weight:bold">const</span> <span style="color:#b00040">int</span> VAR_NAME <span style="color:#666">=</span> value;     <span style="color:#408080;font-style:italic">// constant declaration
 </span><span style="color:#408080;font-style:italic"></span>
-<span style="color:#b00040">int</span> <span style="color:#00f">main</span> (<span style="color:#b00040">void</span>) {   <span style="color:#408080;font-style:italic">// execution start from here
+<span style="color:#b00040">int</span> <span style="color:#00f">main</span> (<span style="color:#b00040">void</span>) {               <span style="color:#408080;font-style:italic">// execution start from here
 </span><span style="color:#408080;font-style:italic"></span>    <span style="color:#408080;font-style:italic">// code
 </span><span style="color:#408080;font-style:italic"></span>    <span style="color:#008000;font-weight:bold">return</span> <span style="color:#666">0</span>;
 }</code></pre></div>
 <ul>
 <li><p><strong>Best practice</strong>: variables are named with capital letters when global</p></li>
 
-<li><p>Math operations &rarr; <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code> (mod)</p></li>
+<li><p><strong>Math operators</strong> &rarr; <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code> (mod)</p></li>
 
 <li><p>For each string of <em>n</em> charachters, <em>n+1</em> bytes are allocated in memory: the last is added by C as the <em>null</em> character <code>\0</code> (all zeros)</p></li>
 
@@ -65,7 +65,7 @@
 <li><p><code>man function_name</code> &rarr; use in terminal to return documentation about the function</p></li>
 </ul>
 
-<h4 id="main-with-external-parameters"><code>main</code> with external parameters</h4>
+<h4 id="main-with-external-parameters"><code>main</code> with External Parameters</h4>
 <div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#b00040">int</span> <span style="color:#00f">main</span> (<span style="color:#b00040">int</span> argc, <span style="color:#b00040">char</span><span style="color:#666">*</span> argv[]) {
 }</code></pre></div>
 <ul>
@@ -85,6 +85,8 @@
 
 <li><p><code>make file.c</code> &rarr; call clang to compile (elaborate on that)</p></li>
 </ul>
+
+<hr />
 
 <h3 id="variables-type">Variables Type</h3>
 

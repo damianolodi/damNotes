@@ -9,7 +9,7 @@ collections:
   - name: "c"
     label: "C"
     folder: "content/c"
-    create: true
+    create: false
     slug: "{{weight}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
@@ -31,7 +31,7 @@ collections:
   - name: "html"
     label: "HTML"
     folder: "content/hmtl"
-    create: true
+    create: false
     slug: "{{weight}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
@@ -53,7 +53,7 @@ collections:
   - name: "css"
     label: "CSS"
     folder: "content/css"
-    create: true
+    create: false
     slug: "{{weight}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
@@ -75,7 +75,7 @@ collections:
   - name: "hugo"
     label: "Hugo"
     folder: "content/hugo"
-    create: true
+    create: false
     slug: "{{weight}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
@@ -119,7 +119,7 @@ collections:
   - name: "git"
     label: "Git"
     folder: "content/git"
-    create: true
+    create: false
     slug: "{{weight}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
@@ -141,7 +141,7 @@ collections:
   - name: "ai"
     label: "Artificial Intelligence"
     folder: "content/ai"
-    create: true
+    create: false
     slug: "{{weight}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
@@ -163,7 +163,7 @@ collections:
   - name: "rpi"
     label: "Raspberry Pi"
     folder: "content/rpi"
-    create: true
+    create: false
     slug: "{{weight}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
@@ -185,7 +185,7 @@ collections:
   - name: "arduino"
     label: "Arduino"
     folder: "content/arduino"
-    create: true
+    create: false
     slug: "{{weight}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
@@ -207,7 +207,7 @@ collections:
   - name: "linux"
     label: "Linux"
     folder: "content/linux"
-    create: true
+    create: false
     slug: "{{weight}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
@@ -229,7 +229,7 @@ collections:
   - name: "bash"
     label: "Bash"
     folder: "content/bash"
-    create: true
+    create: false
     slug: "{{weight}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
@@ -251,7 +251,7 @@ collections:
   - name: "electronics"
     label: "Electronics"
     folder: "content/electronics"
-    create: true
+    create: false
     slug: "{{weight}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }

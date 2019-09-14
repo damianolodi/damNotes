@@ -45,6 +45,10 @@
 
 <p>In <code>~</code>, the file <code>.bash_profile</code> is used for <em>login shells</em>, while <code>.bashrc</code> is used for <em>non-login shells</em> (terminal session opened using the <code>bash</code> command).</p>
 
+<p>In OSX, <em>all sessions are login sessions so they will not source <code>$HOME/.bashrc</code></em>, they will source <code>$HOME/.profile</code> or <code>$HOME/.bash_profile</code> (<a href="https://stackoverflow.com/questions/44658135/osx-terminal-not-recognizing-bashrc-and-bash-profile-on-startup">reference</a>)</p>
+
+<hr />
+
 <h3 id="terminal-setup-on-macos">Terminal Setup on macOS</h3>
 
 <ul>
@@ -88,6 +92,14 @@
 
 <li><p>Colors number can be found <a href="https://upload.wikimedia.org/wikipedia/commons/1/15/Xterm_256color_chart.svg">here</a></p></li>
 </ul>
+
+<hr />
+
+<h3 id="custom-commands">Custom Commands</h3>
+
+<p>Open the <code>~/.bashrc</code> file and type the following</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#008000">alias</span> <span style="color:#19177c">command_name</span><span style="color:#666">=</span><span style="color:#ba2121">&#34;command1 &amp;&amp; command2 &amp;&amp; ...&#34;</span></code></pre></div>
+<p>The <code>&amp;&amp;</code> apply the following command only if the current one is succesfull. On the other hand, use <code>;</code> to run all the commands one after the other.</p>
 
 <hr />
 

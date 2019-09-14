@@ -41,26 +41,22 @@
 <div class="d-flex flex-column align-items-center">
     <h2 class="m-1 mb-2 mt-2"><u>stdlib.c</u></h2>
 </div>
-
-
-<p>vedi malloc(memoryAmount) [allocate memory]</p>
-
-<p>e.g. malloc(strlen(s)+1 * sizeof(char))</p>
-
-<p>free(pointerName) [deallocate memory]</p>
-
-<p>If memory is not deallocated, program can cause memory leaks.
-!! Always free memory allocated with malloc!!</p>
-
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#bc7a00">#include</span> <span style="color:#bc7a00">&lt;stdlib.h&gt;</span></code></pre></div>
 <ul>
-<li><p><strong>Segmentation fault</strong>: error caused by the fact that I try to access to memory that I should not use.</p></li>
+<li><p><code>malloc(size)</code> &rarr; try to allocate requested memory size (in bytes) and returns a pointer to the first byte</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#408080;font-style:italic">// allocate space for 4 integer numbers
+</span><span style="color:#408080;font-style:italic"></span><span style="color:#b00040">int</span> <span style="color:#666">*</span>p <span style="color:#666">=</span> malloc(<span style="color:#666">4</span> <span style="color:#666">*</span> <span style="color:#008000;font-weight:bold">sizeof</span>(<span style="color:#b00040">int</span>));</code></pre></div>
+<ul>
+<li><p><strong>Segmentation fault</strong>: error caused by the fact that the program is trying to access memory that it should not use</p></li>
 
-<li><p>When allocating memory, PCs usually allocate a little bit more to avoid problems.</p></li>
+<li><p>When allocating memory, PCs usually allocate a little bit more to avoid problems</p></li>
+</ul></li>
+
+<li><p><code>free(pointName)</code> &rarr; <strong>deallocate memory</strong> previously allocated with <code>malloc</code>. <strong>WARNING:</strong> always free memory allocated with malloc. If memory is not deallocated, program can cause memory leaks.</p></li>
+
+<li><p><code>realloc()</code> &rarr; try to <strong>reallocate memory</strong> in the heap part, if available. It is an <em>O(n)</em> in term of efficency</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">str <span style="color:#666">=</span> realloc(str, <span style="color:#666">5</span> <span style="color:#666">*</span> <span style="color:#008000;font-weight:bold">sizeof</span>(<span style="color:#b00040">char</span>));</code></pre></div></li>
 </ul>
-
-<p>realloc() reallocate memory in the (heap part) if available. $O(n)$ in term of efficency</p>
-
-<h3 id="memory-allocation">Memory Allocation</h3>
 
 
 

@@ -45,10 +45,10 @@
 
 <h3 id="create-new-virtual-machine">Create New Virtual Machine</h3>
 
-<ol>
+<ul>
 <li><p>Click <em>new</em> and insert name for the OS. It should find the corresponding OS type. If not, select the right type and version;</p></li>
 
-<li><p>assign RAM quantity (2GB for 8GB machines should be ok)</p></li>
+<li><p>Assign RAM quantity (2GB for 8GB machines should be ok)</p></li>
 
 <li><p><em>Create new virtual HD</em> &gt; <em>VDI</em> &gt; <em>Dynamically allocated</em></p></li>
 
@@ -57,13 +57,19 @@
 <li><p>Select the machine and go to <em>Settings</em></p>
 
 <ul>
-<li><em>General</em> &gt; <em>Advanced</em> tab &gt; select <em>Bidirectional</em> in <em>Shared Clipboard</em> [can copy/paste between VM and base OS]</li>
-<li><em>System</em> can change the assigned RAM and can change the chipset to ICH9 (experimental, but can have better performance)</li>
-<li><em>Processor</em> &gt; assign the number of core to the VM. Select <em>Enable PAE/NX</em> to improve performance on newer machines</li>
-<li><em>Display</em> &gt; select video memory to 128MB. Enable 3D acceleration if needed</li>
-<li><em>Network</em> &gt; select <em>Bridged adapter</em>. In this way, the network card of the VM is directly connected to the real one and both the systems are visible from the network. In the default <em>NAT</em> option, the IP address has a different class from the one of the real machine, and it can be &ldquo;invisible&rdquo; from the network</li>
-<li><em>Ports</em> &gt; can configure USB and serial ports</li>
-<li><em>Shared Folders</em> &gt; create folder to &ldquo;communicate&rdquo; with the VM, sharing files if needed. Select <em>Auto Mount</em></li>
+<li><p><em>General</em> &gt; <em>Advanced</em> tab &gt; select <em>Bidirectional</em> in <em>Shared Clipboard</em> [can copy/paste between VM and base OS]</p></li>
+
+<li><p><em>System</em> can change the assigned RAM and can change the chipset to ICH9 (experimental, but can have better performance)</p></li>
+
+<li><p><em>Processor</em> &gt; assign the number of core to the VM. Select <em>Enable PAE/NX</em> to improve performance on newer machines</p></li>
+
+<li><p><em>Display</em> &gt; select video memory to 128MB. Enable 3D acceleration if needed</p></li>
+
+<li><p><em>Network</em> &gt; select <em>Bridged adapter</em>. In this way, the network card of the VM is directly connected to the real one and both the systems are visible from the network. In the default <em>NAT</em> option, the IP address has a different class from the one of the real machine, and it can be &ldquo;invisible&rdquo; from the network</p></li>
+
+<li><p><em>Ports</em> &gt; can configure USB and serial ports</p></li>
+
+<li><p><em>Shared Folders</em> &gt; create folder to &ldquo;communicate&rdquo; with the VM, sharing files if needed. Select <em>Auto Mount</em></p></li>
 </ul></li>
 
 <li><p>Start the VM. In the new window, select in the bottom left corner the CD icon and then select the ISO of the OS to virtualize</p></li>
@@ -71,7 +77,7 @@
 <li><p>Install following the directions given by the OS</p></li>
 
 <li><p>When restarting, click again on the CD icon and select <em>Remove disk from virtual drive</em>, so that the VM will boot from the HD and not from the ISO</p></li>
-</ol>
+</ul>
 
 <hr />
 

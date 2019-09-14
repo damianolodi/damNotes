@@ -17,7 +17,7 @@
       
       <guid>https://damnotes.netlify.com/c/01-basic-concepts/</guid>
       <description>Basics int var_name = value; // variable initialization char str_name[n]; // array initialization char str_name[] = &amp;#34;Hello World!&amp;#34;; const int VAR_NAME = value; // constant declaration  int main (void) { // execution start from here  // code  return 0; }  Best practice: variables are named with capital letters when global
- Math operations &amp;rarr; +, -, *, /, % (mod)
+ Math operators &amp;rarr; +, -, *, /, % (mod)
  For each string of n charachters, n+1 bytes are allocated in memory: the last is added by C as the null character \0 (all zeros)</description>
     </item>
     
@@ -27,9 +27,12 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/c/02-stdio/</guid>
-      <description>#include &amp;lt;stdio.h&amp;gt; Vedi funzionr printf() + placeholder %s, %i, %f (float) + f mena format
-scanf(&amp;ldquo;%i&amp;rdquo;, &amp;amp;varName) scanf(&amp;ldquo;%s&amp;rdquo;, s)
-%p &amp;rarr; prin the pointer</description>
+      <description>#include &amp;lt;stdio.h&amp;gt;  printf( &amp;rarr; Possible placeholders:
+ %c (single char), %s (string),
+ %i (integer), %f (float), %u (unsigned decimal integer)
+ %p (pointer)
+  scanf(&amp;quot;%i&amp;quot;, &amp;amp;varName) &amp;rarr; wait user input. Various placeholders are available (number in different bases, strings,&amp;hellip;). Return the number of characters written, or a negative number if some errors occured. WARNING: the input should be checked for correctness
+  </description>
     </item>
     
     <item>
@@ -38,7 +41,7 @@ scanf(&amp;ldquo;%i&amp;rdquo;, &amp;amp;varName) scanf(&amp;ldquo;%s&amp;rdquo;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/c/03-unistd/</guid>
-      <description>Vedi funzione sleep(i)</description>
+      <description>#include &amp;lt;unistd.h&amp;gt;  sleep(i) &amp;rarr; suspend code execution for at least i seconds  </description>
     </item>
     
     <item>
@@ -47,7 +50,11 @@ scanf(&amp;ldquo;%i&amp;rdquo;, &amp;amp;varName) scanf(&amp;ldquo;%s&amp;rdquo;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/c/04-string/</guid>
-      <description>Vedi funzione strlen(string), strcmp(str1, str2), strcpy(s1, s2)</description>
+      <description>#include &amp;lt;string.h&amp;gt; In this context, s usually represent the pointer to the string.
+ strlen(s) &amp;rarr; return lenght of the string
+ strcmp(s1, s2) &amp;rarr; compare the two strings. Return 0 if the two strings are equal
+ strcpy(s1, s2) &amp;rarr; copy s2 into s1
+  </description>
     </item>
     
     <item>
@@ -56,7 +63,9 @@ scanf(&amp;ldquo;%i&amp;rdquo;, &amp;amp;varName) scanf(&amp;ldquo;%s&amp;rdquo;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/c/05-ctype/</guid>
-      <description></description>
+      <description>#include &amp;lt;ctype.h&amp;gt;  isdigit(int) &amp;rarr; return non-zero if the provided value is a digit
+ isalnum(int) &amp;rarr; retutn non-zero if the provided value is a digit or a letter
+  </description>
     </item>
     
     <item>
@@ -65,13 +74,10 @@ scanf(&amp;ldquo;%i&amp;rdquo;, &amp;amp;varName) scanf(&amp;ldquo;%s&amp;rdquo;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/c/06-stdlib/</guid>
-      <description>vedi malloc(memoryAmount) [allocate memory]
-e.g. malloc(strlen(s)+1 * sizeof(char))
-free(pointerName) [deallocate memory]
-If memory is not deallocated, program can cause memory leaks. !! Always free memory allocated with malloc!!
- Segmentation fault: error caused by the fact that I try to access to memory that I should not use.
- When allocating memory, PCs usually allocate a little bit more to avoid problems.
-  realloc() reallocate memory in the (heap part) if available.</description>
+      <description>#include &amp;lt;stdlib.h&amp;gt;  malloc(size) &amp;rarr; try to allocate requested memory size (in bytes) and returns a pointer to the first byte
+// allocate space for 4 integer numbers int *p = malloc(4 * sizeof(int));  Segmentation fault: error caused by the fact that the program is trying to access memory that it should not use
+ When allocating memory, PCs usually allocate a little bit more to avoid problems
+  free(pointName) &amp;rarr; deallocate memory previously allocated with malloc.</description>
     </item>
     
   </channel>

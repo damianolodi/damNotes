@@ -11,15 +11,40 @@
     
     
     <item>
-      <title>Bash Scripts</title>
-      <link>https://damnotes.netlify.com/bash/01-bash-scripts/</link>
+      <title>Basics</title>
+      <link>https://damnotes.netlify.com/bash/01-basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://damnotes.netlify.com/bash/01-bash-scripts/</guid>
-      <description>Making Custom Commands  Access the .bashrc file with
-nano ~/.bashrc  Open with nano and not with open, otherwise problems may occur when applying the following steps.
- Inside the file, write the following
-alias command_name=&amp;#34;command1 &amp;amp;&amp;amp; command2 &amp;amp;&amp;amp; ...&amp;#34;  The &amp;amp;&amp;amp; apply the following command only if the current one is succesfull. On the other hand, use ; to run all the commands one after the other.</description>
+      <guid>https://damnotes.netlify.com/bash/01-basics/</guid>
+      <description>var = &amp;#34;value&amp;#34; # define new variable export var = &amp;#34;value&amp;#34; # define variable also for othe bash sessions echo $var # access the value of a variable which command_name # return the path in which the executable is found  bash &amp;rarr; open a new bash session
+ exit &amp;rarr; exit from the current bash session  env &amp;rarr; list all environment variables
+ PATH &amp;rarr; variable that contains all the paths (separated by columns) in which to search for executables  alias &amp;rarr; return all defined aliases</description>
+    </item>
+    
+    <item>
+      <title>File Management</title>
+      <link>https://damnotes.netlify.com/bash/02-file-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/bash/02-file-management/</guid>
+      <description>touch file_name &amp;rarr; create new file
+ mkdir dir_name &amp;rarr; create new directory
+ mkdir -p parent_dir/dir &amp;rarr; crete parent directories if not present
+ rmdir parent_dir/dir &amp;rarr; remove dir (not the parent directory). NOT WORKING on non-empty directories
+  rm file_name &amp;rarr; remove file
+ rm -r dir &amp;rarr; remove the directory and all files contained in it (r stands for recursive)  mv what_path where_path &amp;rarr; move a file into a new directory</description>
+    </item>
+    
+    <item>
+      <title>Files Information Extraction</title>
+      <link>https://damnotes.netlify.com/bash/03-extracting-information-from-files/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/bash/03-extracting-information-from-files/</guid>
+      <description>cat file_name &amp;rarr; print file content. Not very practical for big files
+ cat file_name | less &amp;rarr; redirect output to the program less, to visualize small bunch of content (can use less file_name)
+ &amp;gt; shift + 7, n and N &amp;rarr; search, next and previous results
+  head file_name -n num &amp;rarr; print the first num lines of the file. Remove the -n parameter to print first 10 lines</description>
     </item>
     
     <item>
@@ -29,8 +54,8 @@ alias command_name=&amp;#34;command1 &amp;amp;&amp;amp; command2 &amp;amp;&amp;a
       
       <guid>https://damnotes.netlify.com/bash/99-command-line-setup/</guid>
       <description>In ~, the file .bash_profile is used for login shells, while .bashrc is used for non-login shells (terminal session opened using the bash command).
-Terminal Setup on macOS  Open the .bash_profile file and type the following to automatically load the content of the file contained in .bashrc. This will guarantee that both type of shells will behave the same
-if [ -f ~/.bashrc ]; then source ~./bashrc fi Open the .</description>
+In OSX, all sessions are login sessions so they will not source $HOME/.bashrc, they will source $HOME/.profile or $HOME/.bash_profile (reference)
+Terminal Setup on macOS  Open the .bash_profile file and type the following to automatically load the content of the file contained in .bashrc. This will guarantee that both type of shells will behave the same</description>
     </item>
     
   </channel>

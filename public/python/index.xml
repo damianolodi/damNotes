@@ -72,6 +72,20 @@ import seaborn as sns sns.set() tips = sns.load_dataset(&amp;#34;tips&amp;#34;) 
     </item>
     
     <item>
+      <title>Datetime</title>
+      <link>https://damnotes.netlify.com/python/09-datetime/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/09-datetime/</guid>
+      <description>(Docs)
+import datetime as dt  dt.datetime.now() &amp;rarr; return current date and time in standard format
+ dt.datetime.now().strftime(&#39;%Y-%m-%d %H:%M:%S.%f&#39;) &amp;rarr; format the returned valued
+ dt.datetime.now().time() &amp;rarr; return only the date
+  datetime.today() &amp;rarr; return current date
+  </description>
+    </item>
+    
+    <item>
       <title>Jupyter notebooks</title>
       <link>https://damnotes.netlify.com/python/14-jupiter-notebooks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -85,25 +99,22 @@ Here find a list of useful notebooks to download and learn from them.
     </item>
     
     <item>
+      <title>PySerial</title>
+      <link>https://damnotes.netlify.com/python/15-pyserial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/15-pyserial/</guid>
+      <description>(Docs)
+import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#39;, baudrate = 9600, bytesize = serial.EIGHTBITS, parity = serial.PARITY_NONE, stopbits = serial.STOPBITS_ONE, timeout = 3 #s )  python -m serial.tools.list_ports &amp;rarr; prints a list of available ports.  </description>
+    </item>
+    
+    <item>
       <title>Files I/O</title>
       <link>https://damnotes.netlify.com/python/16-files-io/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/python/16-files-io/</guid>
       <description>import csv Read CSV files with open(&amp;#39;data.csv&amp;#39;,&amp;#39;r&amp;#39;) as csv_file: csv_reader = csv.reader(csv_file, delimiter=&amp;#39; &amp;#39;) next(csv_reader) # skip over the header line for line in csv_reader: print(line)  use with to automatically close the file at the end  Write on CSV files with open(&amp;#39;new_file.csv&amp;#39;,&amp;#39;w&amp;#39;) as new_file: csv_writer = csv.writer(new_file, delimiter=&amp;#39;\t&amp;#39;) for line in csv_reader: csv_writer.writerow(something)  use w+ to create the file if it does not exist  Reading with Dictionary Reader Use if more &amp;ldquo;human readable&amp;rdquo; files are needed</description>
-    </item>
-    
-    <item>
-      <title>Python Installation and Setup</title>
-      <link>https://damnotes.netlify.com/python/19-python-in-atom/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/19-python-in-atom/</guid>
-      <description>Installation macOS  Download the installer of Python 3 form the official website and install it. An application calle Python will be created in the Applications folder
- Create an alias so that python command will call python3 instead
- in Users/user_name/ type nano ~/.bash_profile
- check that the last line is adding python to the path calling PATH=...
- write alias python=python3 at the bottom of the file</description>
     </item>
     
     <item>
@@ -121,14 +132,27 @@ Here find a list of useful notebooks to download and learn from them.
     </item>
     
     <item>
+      <title>Python Installation and Setup</title>
+      <link>https://damnotes.netlify.com/python/98-python-installation-and-setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/98-python-installation-and-setup/</guid>
+      <description>Installation macOS  Download the installer of Python 3 form the official website and install it. An application calle Python will be created in the Applications folder
+ Create an alias so that python command will call python3 instead
+ in Users/user_name/ type nano ~/.bash_profile
+ check that the last line is adding python to the path calling PATH=...
+ write alias python=python3 at the bottom of the file</description>
+    </item>
+    
+    <item>
       <title>Other Libraries</title>
       <link>https://damnotes.netlify.com/python/99-other-libraries/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/python/99-other-libraries/</guid>
-      <description>Datetime  datetime.today() &amp;rarr; print current date  IPython .display module (doc)
-from IPython import display # display various type of data (audio, images, ...)  display.display(obj) &amp;rarr; display a python object in all frontends (doc)  PySerial (Docs)
-import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#39;, baudrate = 9600, bytesize = serial.EIGHTBITS, parity = serial.PARITY_NONE, stopbits = serial.STOPBITS_ONE, timeout = 3 #s )  python -m serial.tools.list_ports &amp;rarr; prints a list of available ports.</description>
+      <description>IPython .display module (doc)
+from IPython import display # display various type of data (audio, images, ...)  display.display(obj) &amp;rarr; display a python object in all frontends (doc)  ScyPy The SciPy framework builds on top of the low-level NumPy framework for multidimensional arrays, and provides a large number of higher-level scientific algorithms. See here for a Jupyter notebook tutorial on scypy
+import scipy as sp SymPy It is a Computer Algebra System (CAS).</description>
     </item>
     
   </channel>
