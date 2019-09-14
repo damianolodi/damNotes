@@ -48,11 +48,11 @@
 <hr />
 
 <ul>
-<li><p><code>{{ .Site.Params.homeText | markdownify }}</code> → access the <em>site parameter</em> <code>homeText</code> (in the <em>config</em> file) and apply the <a href="https://gohugo.io/functions/markdownify/#readout">markdownify</a> function</p></li>
+<li><p><code>{{ .Site.Params.homeText | markdownify }}</code> &rarr; access the <em>site parameter</em> <code>homeText</code> (in the <em>config</em> file) and apply the <a href="https://gohugo.io/functions/markdownify/#readout">markdownify</a> function</p></li>
 
-<li><p><code>{{ $css := &quot;css/bootstrap.min.css&quot; | absURL }}</code> → <strong>define a variable</strong> and apply the <a href="https://gohugo.io/functions/absurl/">absURL</a> function</p></li>
+<li><p><code>{{ $css := &quot;css/bootstrap.min.css&quot; | absURL }}</code> &rarr; <strong>define a variable</strong> and apply the <a href="https://gohugo.io/functions/absurl/">absURL</a> function</p></li>
 
-<li><p><code>{{ hugo.Generator }}</code> → add in the html head to display the hufo version as a metadata in the source code</p></li>
+<li><p><code>{{ hugo.Generator }}</code> &rarr; add in the html head to display the hufo version as a metadata in the source code</p></li>
 </ul>
 
 <hr />
@@ -60,7 +60,7 @@
 <h3 id="string-manipulation">String Manipulation</h3>
 
 <ul>
-<li><code>{{ print SOMETHING }}</code> → print the argument using the Golang <a href="https://gohugo.io/functions/print/#readout">print</a> function. See <code>printf</code> to apply string <a href="https://gohugo.io/functions/printf/#readout">format</a></li>
+<li><code>{{ print SOMETHING }}</code> &rarr; print the argument using the Golang <a href="https://gohugo.io/functions/print/#readout">print</a> function. See <code>printf</code> to apply string <a href="https://gohugo.io/functions/printf/#readout">format</a></li>
 </ul>
 
 <hr />
@@ -68,7 +68,7 @@
 <h3 id="range">Range</h3>
 
 <ul>
-<li><code>{{ range $index, $value := .Pages }}</code> → range and assign an index to each iteration</li>
+<li><code>{{ range $index, $value := .Pages }}</code> &rarr; range and assign an index to each iteration</li>
 </ul>
 
 <hr />
@@ -76,14 +76,14 @@
 <h3 id="conditionals">Conditionals</h3>
 
 <ul>
-<li><code>{{ if (op arg1 arg2) }} {{ else if (op arg1 arg2) }} {{ else }} {{ end }}</code> → <code>op</code> is operator:
+<li><code>{{ if (op arg1 arg2) }} {{ else if (op arg1 arg2) }} {{ else }} {{ end }}</code> &rarr; <code>op</code> is operator:
 
 <ul>
-<li><code>eq</code> → equal</li>
-<li><code>lt</code> → less than</li>
-<li><code>le</code> → less than or equal to</li>
-<li><code>gt</code> → greater than</li>
-<li><code>ge</code> → greater than or equal to</li>
+<li><code>eq</code> &rarr; equal</li>
+<li><code>lt</code> &rarr; less than</li>
+<li><code>le</code> &rarr; less than or equal to</li>
+<li><code>gt</code> &rarr; greater than</li>
+<li><code>ge</code> &rarr; greater than or equal to</li>
 </ul></li>
 </ul>
 

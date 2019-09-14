@@ -28,13 +28,13 @@ int main (void) {   // execution start from here
 
 -   **Best practice**: variables are named with capital letters when global
 
--   Math operations → `+`, `-`, `*`, `/`, `%` (mod)
+-   Math operations &rarr; `+`, `-`, `*`, `/`, `%` (mod)
 
 -   For each string of _n_ charachters, _n+1_ bytes are allocated in memory: the last is added by C as the _null_ character `\0` (all zeros)
 
--   `(type) var_name` → change variable type
+-   `(type) var_name` &rarr; change variable type
 
--   `man function_name` → use in terminal to return documentation about the function
+-   `man function_name` &rarr; use in terminal to return documentation about the function
 
 #### `main` with external parameters
 
@@ -45,17 +45,17 @@ int main (int argc, char* argv[]) {
 
 -   Enable the program to **accept parameter from the command line** when run
 
--   `argc` → number of written words, _including_ the name of the program. This value is auto-generated
+-   `argc` &rarr; number of written words, _including_ the name of the program. This value is auto-generated
 
--   `argv[]` → array of strings. `argv[1]` is the location of the first parameter inserted by the user
+-   `argv[]` &rarr; array of strings. `argv[1]` is the location of the first parameter inserted by the user
 
 #### Compilation
 
--   `clang file.c` → compile and produce `a.out`
+-   `clang file.c` &rarr; compile and produce `a.out`
 
--   `clang -0 file file.c` → compile and produce `file`
+-   `clang -0 file file.c` &rarr; compile and produce `file`
 
--   `make file.c` → call clang to compile (elaborate on that)
+-   `make file.c` &rarr; call clang to compile (elaborate on that)
 
 ### Variables Type
 
@@ -75,8 +75,8 @@ if (condition) {
 }
 ```
 
--   `==`, `!=`, `>`, `<`, `>=`, `<=` → comparators
--   **not**, **and**, **or** → boolean operators
+-   `==`, `!=`, `>`, `<`, `>=`, `<=` &rarr; comparators
+-   **not**, **and**, **or** &rarr; boolean operators
 
 #### For Loop
 
@@ -185,4 +185,4 @@ typedef struct struct_name {
 
 ### Tips
 
--   `echo $` → print what was returned by main. **Usefull to debug** complicated programs. Return a non-0 value if anything goes wrong
+-   `echo $` &rarr; print what was returned by main. **Usefull to debug** complicated programs. Return a non-0 value if anything goes wrong

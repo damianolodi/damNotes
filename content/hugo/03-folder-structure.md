@@ -9,7 +9,7 @@ weight: 3
 
 Set the _front matter_ for different content types.
 
--   _archetypes/default.md_ → **default front matter** for new content
+-   _archetypes/default.md_ &rarr; **default front matter** for new content
 
 ```yaml
 ---
@@ -50,18 +50,18 @@ draft: true
 -   Used to store templates that will overrides the ones from the used theme.
 -   Templates include [list pages](https://gohugo.io/templates/list/) , your [homepage](https://gohugo.io/templates/homepage/) , [taxonomy templates](https://gohugo.io/templates/taxonomy-templates/) , [partials](https://gohugo.io/templates/partials/) , [single page templates](https://gohugo.io/templates/single-page-templates/) , and more.
 
--   `layouts/index.html` → homepage template
--   `layouts/_default/single.html` → [single page](https://gohugo.io/templates/single-page-templates/#readout) template (blog posts)
--   `layouts/_default/list.html` → template for [list pages](https://gohugo.io/templates/lists/#readout). Range over a parameter using
+-   `layouts/index.html` &rarr; homepage template
+-   `layouts/_default/single.html` &rarr; [single page](https://gohugo.io/templates/single-page-templates/#readout) template (blog posts)
+-   `layouts/_default/list.html` &rarr; template for [list pages](https://gohugo.io/templates/lists/#readout). Range over a parameter using
 
 ```golang
 {{ range .Pages.ByPublishDate.Reverse }}
 {{ end }}
 ```
 
--   `layouts/_default/baseof.html` → contains common code to **all** other layouts. **Must** contain the line `{{ block "main" . }}{{ end }}` which tells where to place the unique code of each other layout. After this file is created, all other layouts should be contained inside the following block `{{ define "main" }}{{ end }}`. [Doc](https://gohugo.io/templates/base/)
--   `layout/partials/` → components of the website that can be extrapolated and "described" in a proper file (e.g. header, footer,...). Each partial can be called in another layout template using `{{ partial fileName.hmtl}}`. They can (should) be called also in `basof.html` to make the page structure clear. [Doc](https://gohugo.io/templates/partials/#readout)
--   `layout/partials/nav.html` → contains the menu of the website. It can be built using parameters defined under the `[menu]` keyword in the `config.toml` file of the website. [Doc](https://gohugo.io/templates/menu-templates/#readout)
+-   `layouts/_default/baseof.html` &rarr; contains common code to **all** other layouts. **Must** contain the line `{{ block "main" . }}{{ end }}` which tells where to place the unique code of each other layout. After this file is created, all other layouts should be contained inside the following block `{{ define "main" }}{{ end }}`. [Doc](https://gohugo.io/templates/base/)
+-   `layout/partials/` &rarr; components of the website that can be extrapolated and "described" in a proper file (e.g. header, footer,...). Each partial can be called in another layout template using `{{ partial fileName.hmtl}}`. They can (should) be called also in `basof.html` to make the page structure clear. [Doc](https://gohugo.io/templates/partials/#readout)
+-   `layout/partials/nav.html` &rarr; contains the menu of the website. It can be built using parameters defined under the `[menu]` keyword in the `config.toml` file of the website. [Doc](https://gohugo.io/templates/menu-templates/#readout)
 
 * * *
 

@@ -17,7 +17,7 @@
       
       <guid>https://damnotes.netlify.com/c/01-basic-concepts/</guid>
       <description>Basics int var_name = value; // variable initialization char str_name[n]; // array initialization char str_name[] = &amp;#34;Hello World!&amp;#34;; const int VAR_NAME = value; // constant declaration  int main (void) { // execution start from here  // code  return 0; }  Best practice: variables are named with capital letters when global
- Math operations → +, -, *, /, % (mod)
+ Math operations &amp;rarr; +, -, *, /, % (mod)
  For each string of n charachters, n+1 bytes are allocated in memory: the last is added by C as the null character \0 (all zeros)</description>
     </item>
     
@@ -29,7 +29,7 @@
       <guid>https://damnotes.netlify.com/c/02-stdio/</guid>
       <description>#include &amp;lt;stdio.h&amp;gt; Vedi funzionr printf() + placeholder %s, %i, %f (float) + f mena format
 scanf(&amp;ldquo;%i&amp;rdquo;, &amp;amp;varName) scanf(&amp;ldquo;%s&amp;rdquo;, s)
-%p → prin the pointer</description>
+%p &amp;rarr; prin the pointer</description>
     </item>
     
     <item>

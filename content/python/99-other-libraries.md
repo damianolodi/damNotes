@@ -6,7 +6,7 @@ weight: 99
 
 ### Datetime
 
--   `datetime.today()` → print **current date**
+-   `datetime.today()` &rarr; print **current date**
 
 * * *
 
@@ -20,7 +20,7 @@ weight: 99
 from IPython import display # display various type of data (audio, images, ...)
 ```
 
--   `display.display(obj)` → display a python object in all frontends ([doc](https://ipython.readthedocs.io/en/stable/api/generated/IPython.display.html#module-IPython.display))
+-   `display.display(obj)` &rarr; display a python object in all frontends ([doc](https://ipython.readthedocs.io/en/stable/api/generated/IPython.display.html#module-IPython.display))
 
 * * *
 
@@ -40,7 +40,7 @@ ser = serial.Serial(port = '/dev/tty.SLAB_USBtoUART',
                     )
 ```
 
--   `python -m serial.tools.list_ports` → prints a list of available ports.
+-   `python -m serial.tools.list_ports` &rarr; prints a list of available ports.
 
 * * *
 
@@ -70,6 +70,6 @@ import sympy as symp
 
 ### Sys
 
--   `sys.version` → contain python version installed on the machine
+-   `sys.version` &rarr; contain python version installed on the machine
 
--   `sys.executable` → contain information about the interpreter used
+-   `sys.executable` &rarr; contain information about the interpreter used

@@ -6,8 +6,8 @@ draft: false
 ### Tips
 
 -   Split the data set into two parts
-    1.  **training data** → train the algorithm with this set
-    2.  **test data** → then test the algorithm here
+    1.  **training data** &rarr; train the algorithm with this set
+    2.  **test data** &rarr; then test the algorithm here
 -   Due to **overfitting**, neural networks can require massive amounts of data before they produce reliable prediction when compared to models obtained by linear regression. ~Learning to avoid overfitting and choose a model that is not too restricted, nor too flexible, is one of the most essential skills of a data scientist.~
 
 * * *

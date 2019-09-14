@@ -9,31 +9,31 @@ All functions are reported in the [documentation](https://gohugo.io/functions/).
 
 * * *
 
--   `{{ .Site.Params.homeText | markdownify }}` → access the _site parameter_ `homeText` (in the _config_ file) and apply the [markdownify](https://gohugo.io/functions/markdownify/#readout) function
+-   `{{ .Site.Params.homeText | markdownify }}` &rarr; access the _site parameter_ `homeText` (in the _config_ file) and apply the [markdownify](https://gohugo.io/functions/markdownify/#readout) function
 
--   `{{ $css := "css/bootstrap.min.css" | absURL }}` → **define a variable** and apply the [absURL](https://gohugo.io/functions/absurl/) function
+-   `{{ $css := "css/bootstrap.min.css" | absURL }}` &rarr; **define a variable** and apply the [absURL](https://gohugo.io/functions/absurl/) function
 
--   `{{ hugo.Generator }}` → add in the html head to display the hufo version as a metadata in the source code
+-   `{{ hugo.Generator }}` &rarr; add in the html head to display the hufo version as a metadata in the source code
 
 * * *
 
 ### String Manipulation
 
--   `{{ print SOMETHING }}` → print the argument using the Golang [print](https://gohugo.io/functions/print/#readout) function. See `printf` to apply string [format](https://gohugo.io/functions/printf/#readout)
+-   `{{ print SOMETHING }}` &rarr; print the argument using the Golang [print](https://gohugo.io/functions/print/#readout) function. See `printf` to apply string [format](https://gohugo.io/functions/printf/#readout)
 
 * * *
 
 ### Range
 
--   `{{ range $index, $value := .Pages }}` → range and assign an index to each iteration
+-   `{{ range $index, $value := .Pages }}` &rarr; range and assign an index to each iteration
 
 * * *
 
 ### Conditionals
 
--   `{{ if (op arg1 arg2) }} {{ else if (op arg1 arg2) }} {{ else }} {{ end }}` → `op` is operator:
-    -   `eq` → equal
-    -   `lt` → less than
-    -   `le` → less than or equal to
-    -   `gt` → greater than
-    -   `ge` → greater than or equal to
+-   `{{ if (op arg1 arg2) }} {{ else if (op arg1 arg2) }} {{ else }} {{ end }}` &rarr; `op` is operator:
+    -   `eq` &rarr; equal
+    -   `lt` &rarr; less than
+    -   `le` &rarr; less than or equal to
+    -   `gt` &rarr; greater than
+    -   `ge` &rarr; greater than or equal to

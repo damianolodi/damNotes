@@ -14,4 +14,4 @@ Vedi funzionr printf() + placeholder %s, %i, %f (float) + f mena format
 scanf("%i", &varName)
 scanf("%s", s)
 
-%p → prin the pointer
+%p &rarr; prin the pointer

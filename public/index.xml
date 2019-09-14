@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/python/00-basic-concepts/</guid>
-      <description>Variable Types Lists l = [100, 21, 88, 3] l = list() #empty list # List Comprehension -&amp;gt; quick list creation evens_to_50 = [i for i in range(51) if i % 2 == 0] other_list = [[i,j] for i in range(x) for j in range(y) if (x+y)!=n] # Element selection l[:2] # first two items (0 and 1) l[3:] # ourth through last items l[::2] # first through end with a step of 2 ## in general [start(inclusive):end(exclusive):stride] ## negative stride progress the list in reverse order # Multi-index lists l = [0, 1, 2, 3; 4, 5, 6, 7] l[1][2] #6  l1 + l2 → concatenate lists</description>
+      <description>Variable Types Lists l = [100, 21, 88, 3] l = list() # empty list # List Comprehension -&amp;gt; quick list creation evens_to_50 = [i for i in range(51) if i % 2 == 0] other_list = [[i,j] for i in range(x) for j in range(y) if (x+y)!=n] # Element selection l[:2] # first two items (0 and 1) l[3:] # third through last items l[::2] # first through end with a step of 2 ## in general [start(inclusive):end(exclusive):stride] ## negative stride progress the list in reverse order # Multi-index lists l = [0, 1, 2, 3; 4, 5, 6, 7] l[1][2] # 6  l1 + l2 &amp;rarr; concatenate lists</description>
     </item>
     
     <item>
@@ -49,8 +49,17 @@ alias command_name=&amp;#34;command1 &amp;amp;&amp;amp; command2 &amp;amp;&amp;a
       
       <guid>https://damnotes.netlify.com/c/01-basic-concepts/</guid>
       <description>Basics int var_name = value; // variable initialization char str_name[n]; // array initialization char str_name[] = &amp;#34;Hello World!&amp;#34;; const int VAR_NAME = value; // constant declaration  int main (void) { // execution start from here  // code  return 0; }  Best practice: variables are named with capital letters when global
- Math operations → +, -, *, /, % (mod)
+ Math operations &amp;rarr; +, -, *, /, % (mod)
  For each string of n charachters, n+1 bytes are allocated in memory: the last is added by C as the null character \0 (all zeros)</description>
+    </item>
+    
+    <item>
+      <title>Basics</title>
+      <link>https://damnotes.netlify.com/rpi/1-basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/rpi/1-basics/</guid>
+      <description> Pinout </description>
     </item>
     
     <item>
@@ -59,8 +68,8 @@ alias command_name=&amp;#34;command1 &amp;amp;&amp;amp; command2 &amp;amp;&amp;a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/html/01-document-structure/</guid>
-      <description> Document Declaration Boilerplate code → some code that one has to every page of code.
-&amp;lt;@DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;My Coding Journal&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  &amp;lt;@DOCTYPE hmtl&amp;gt; → declaration &amp;lt;head&amp;gt; → it contain metadata of the webpage  Non-Semantic Tags Non-semantic tag → it does not describe the type of content it has inside.
+      <description> Document Declaration Boilerplate code &amp;rarr; some code that one has to every page of code.
+&amp;lt;@DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;My Coding Journal&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  &amp;lt;@DOCTYPE hmtl&amp;gt; &amp;rarr; declaration &amp;lt;head&amp;gt; &amp;rarr; it contain metadata of the webpage  Non-Semantic Tags Non-semantic tag &amp;rarr; it does not describe the type of content it has inside.
  &amp;lt;div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;span&amp;gt; &amp;lt;/span&amp;gt;  Semantic Tags  &amp;lt;header&amp;gt; &amp;lt;footer&amp;gt; &amp;lt;aside&amp;gt; &amp;lt;main&amp;gt; &amp;lt;article&amp;gt; &amp;lt;nav&amp;gt; &amp;lt;section&amp;gt; &amp;lt;detail&amp;gt;  </description>
     </item>
     
@@ -79,11 +88,11 @@ alias command_name=&amp;#34;command1 &amp;amp;&amp;amp; command2 &amp;amp;&amp;a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/hugo/01-quick-reference/</guid>
-      <description> hugo new site site-name → create new project
- hugo version → check version installed
- hugo server → start local server on localhost:1313
- hugo server -D → compile also drafts  hugo → build the project
- hugo -D → build also drafts  hugo new path/to/file.md → create new files in /content/ directory
+      <description> hugo new site site-name &amp;rarr; create new project
+ hugo version &amp;rarr; check version installed
+ hugo server &amp;rarr; start local server on localhost:1313
+ hugo server -D &amp;rarr; compile also drafts  hugo &amp;rarr; build the project
+ hugo -D &amp;rarr; build also drafts  hugo new path/to/file.md &amp;rarr; create new files in /content/ directory
   </description>
     </item>
     
@@ -93,10 +102,10 @@ alias command_name=&amp;#34;command1 &amp;amp;&amp;amp; command2 &amp;amp;&amp;a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/linux/01-shortcuts/</guid>
-      <description> ctrl + alt + arrow up/down → change desktop
- ctrl + T → crate new tab
- ctrl + H → show hidden files
- ctrl + alt + F1/F2/... → open the tty console. Useful when desktop env. is blocked or for any other reason. One of the function key (typically F7) is used for the graphical session
+      <description> ctrl + alt + arrow up/down &amp;rarr; change desktop
+ ctrl + T &amp;rarr; crate new tab
+ ctrl + H &amp;rarr; show hidden files
+ ctrl + alt + F1/F2/... &amp;rarr; open the tty console. Useful when desktop env. is blocked or for any other reason. One of the function key (typically F7) is used for the graphical session
   </description>
     </item>
     
@@ -106,9 +115,9 @@ alias command_name=&amp;#34;command1 &amp;amp;&amp;amp; command2 &amp;amp;&amp;a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/linux/02-basics/</guid>
-      <description>Bash Basics var = &amp;#34;value&amp;#34; # define new variable export var = &amp;#34;value&amp;#34; # define variable also for othe bash sessions echo $var # access the value of a variable which command_name # return the path in which the executable is found  bash → open a new bash session
- exit → exit from the current bash session  env → list all environment variables
- PATH → variable that contains all the paths (separated by columns) in which to search for executables  alias → return all defined aliases</description>
+      <description>Bash Basics var = &amp;#34;value&amp;#34; # define new variable export var = &amp;#34;value&amp;#34; # define variable also for othe bash sessions echo $var # access the value of a variable which command_name # return the path in which the executable is found  bash &amp;rarr; open a new bash session
+ exit &amp;rarr; exit from the current bash session  env &amp;rarr; list all environment variables
+ PATH &amp;rarr; variable that contains all the paths (separated by columns) in which to search for executables  alias &amp;rarr; return all defined aliases</description>
     </item>
     
     <item>
@@ -143,11 +152,11 @@ color: hsl(180,100%,50%); &amp;ndash;&amp;gt; HSL is supported only by CSS3, so 
       
       <guid>https://damnotes.netlify.com/hugo/02-front-matter/</guid>
       <description>Informations between the two --- is called front matter.
- draft: true → mark post as draft
- image: &amp;quot;static/path-to-image.jpeg&amp;quot; → set the default post image (usuallly placed in the static directory)
- tags: [&#39;tag1&#39;, &#39;tag2&#39;] → post tags
- categories: [&#39;category1&#39;, ...] → post categories
- publishdate: → set a publishing date for the post (if the build date is previous the one indicated, the post will not be published)</description>
+ draft: true &amp;rarr; mark post as draft
+ image: &amp;quot;static/path-to-image.jpeg&amp;quot; &amp;rarr; set the default post image (usuallly placed in the static directory)
+ tags: [&#39;tag1&#39;, &#39;tag2&#39;] &amp;rarr; post tags
+ categories: [&#39;category1&#39;, ...] &amp;rarr; post categories
+ publishdate: &amp;rarr; set a publishing date for the post (if the build date is previous the one indicated, the post will not be published)</description>
     </item>
     
     <item>
@@ -172,8 +181,7 @@ Server  Web Server: Apache HTTPD (more complete), Nginx (lighter), Stack LAMP (L
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/python/02-pandas/</guid>
-      <description>import pandas as pd # df creations pd.Series([list]) # create a Series object pd.DataFrame(dict) # create df from dictionary pd.DataFrame(data=[list], index=None, columns=None, dtype=None, copy=False) # create df from list  df → DataFrame s → Series Jupyter Notebook lessons on pandas  File I/O Import file into a df
-df = pd.read_csv(r’relative_path’, #can be a web address sep = &amp;#39; &amp;#39;, usecols = [0, 1, 5] # columns to be returned from the file names = [&amp;#39;column1&amp;#39;,&amp;#39;column2&amp;#39;,.</description>
+      <description>import pandas as pd # df creations pd.Series([list]) # create a Series object pd.DataFrame(dict) # create df from dictionary pd.DataFrame(data=[list], index=None,	# create df from list columns=None, dtype=None, copy=False)  df &amp;rarr; DataFrame s &amp;rarr; Series Jupyter Notebook lessons on pandas  File I/O df = pd.read_csv(r’relative_path’, #can be a web address sep = &amp;#39; &amp;#39;, usecols = [0, 1, 5] # columns to be returned from the file names = [&amp;#39;column1&amp;#39;,&amp;#39;column2&amp;#39;,.</description>
     </item>
     
     <item>
@@ -184,7 +192,7 @@ df = pd.read_csv(r’relative_path’, #can be a web address sep = &amp;#39; &am
       <guid>https://damnotes.netlify.com/c/02-stdio/</guid>
       <description>#include &amp;lt;stdio.h&amp;gt; Vedi funzionr printf() + placeholder %s, %i, %f (float) + f mena format
 scanf(&amp;ldquo;%i&amp;rdquo;, &amp;amp;varName) scanf(&amp;ldquo;%s&amp;rdquo;, s)
-%p → prin the pointer</description>
+%p &amp;rarr; prin the pointer</description>
     </item>
     
     <item>
@@ -193,13 +201,13 @@ scanf(&amp;ldquo;%i&amp;rdquo;, &amp;amp;varName) scanf(&amp;ldquo;%s&amp;rdquo;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/css/03-content-positioning/</guid>
-      <description>Display display: block; → the element occupies all the width of the parent element
-display: inline; → the elements are arranged horizontally
-display: none; → not rendered
+      <description>Display display: block; &amp;rarr; the element occupies all the width of the parent element
+display: inline; &amp;rarr; the elements are arranged horizontally
+display: none; &amp;rarr; not rendered
 Dimensions All elements on a web page are interpreted by the browser as “living” inside of a box.
 width: 150px;
  min-width and max-width also possible  height: 70%;
- min-heigth and max-height also possible  Content Based width: min-content; → wrap the content and use the minimum space</description>
+ min-heigth and max-height also possible  Content Based width: min-content; &amp;rarr; wrap the content and use the minimum space</description>
     </item>
     
     <item>
@@ -209,7 +217,7 @@ width: 150px;
       
       <guid>https://damnotes.netlify.com/hugo/03-folder-structure/</guid>
       <description>Archetypes Set the front matter for different content types.
- archetypes/default.md → default front matter for new content
+ archetypes/default.md &amp;rarr; default front matter for new content
 ---title:&amp;#34;{{ replace .Name &amp;#34;-&amp;#34; &amp;#34;&amp;#34; | title }}&amp;#34;date:{{.Date}}draft:true---  Config  Used to store various different configurations. If the number of configuration is limited, one can just use a single config.toml file. Also .json and .yaml can be used. To see more about configurations and configure each site properly, visit this page  Content  Directory used to store all the text file for all the contents.</description>
     </item>
     
@@ -229,7 +237,7 @@ width: 150px;
       
       <guid>https://damnotes.netlify.com/python/03-matplotlib/</guid>
       <description>Jupyter Notebook tutorial on matplotlib. Official documentation
-import matplotlib.pyplot as plt %matplotlib inline # display figures inside jupyter notebooks axes.plot(a, b, &amp;#39;b.-&amp;#39;, color = &amp;#39;#FFFFFF&amp;#39;, # color (control) alpha = 0.5, # lw = 3, # linewidth ls = &amp;#39;-&amp;#39;, # linestyle &amp;#39;-&amp;#39; &amp;#39;--&amp;#39; &amp;#39;-.&amp;#39; &amp;#39;:&amp;#39; &amp;#39;steps&amp;#39; marker =&amp;#39;+&amp;#39;, # markerstyle `+`, `o`, `*`, `s`, `,`, `.`, `1`, `2`, `3`,… ms = 3 # markersize ) Basic figure script Create a small figure on top of another one #request text elements rendering with Latex matplotlib.</description>
+import matplotlib.pyplot as plt %matplotlib inline # display figures inside jupyter notebooks axes.plot(a, b, &amp;#39;b.-&amp;#39;, color = &amp;#39;#FFFFFF&amp;#39;, # color (control) alpha = 0.5, lw = 3, # linewidth ls = &amp;#39;-&amp;#39;, # linestyle &amp;#39;-&amp;#39; &amp;#39;--&amp;#39; &amp;#39;-.&amp;#39; &amp;#39;:&amp;#39; &amp;#39;steps&amp;#39; marker =&amp;#39;+&amp;#39;, # markerstyle `+`, `o`, `*`, `s`, `,`, `.`, `1`, `2`, `3`,… ms = 3 # markersize ) Basic figure script Create a small figure on top of another one #request text elements rendering with Latex matplotlib.</description>
     </item>
     
     <item>
@@ -238,7 +246,7 @@ import matplotlib.pyplot as plt %matplotlib inline # display figures inside jupy
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/linux/03-packages/</guid>
-      <description> tree → show the recursive directory structure as a tree view (starting from the current directory)  </description>
+      <description> tree &amp;rarr; show the recursive directory structure as a tree view (starting from the current directory)  </description>
     </item>
     
     <item>
@@ -280,7 +288,7 @@ flex-wrap: wrap; &amp;ndash;&amp;gt; wrap the flex-items if necessary
       
       <guid>https://damnotes.netlify.com/html/04-images/</guid>
       <description>Self-closing tag
-&amp;lt;img src=&amp;#34;https://www.example.com/picture.jpg&amp;#34; alt=&amp;#34;A field of yellow sunflowers&amp;#34;/&amp;gt;  src → attribute with the url of the image alt → description of what one can see  if an image fails to load on a web page, a user can mouse over the area originally intended for the image and read a brief description of the image. visually impaired users often browse the web with the aid of of screen reading software.</description>
+&amp;lt;img src=&amp;#34;https://www.example.com/picture.jpg&amp;#34; alt=&amp;#34;A field of yellow sunflowers&amp;#34;/&amp;gt;  src &amp;rarr; attribute with the url of the image alt &amp;rarr; description of what one can see  if an image fails to load on a web page, a user can mouse over the area originally intended for the image and read a brief description of the image. visually impaired users often browse the web with the aid of of screen reading software.</description>
     </item>
     
     <item>
@@ -320,7 +328,7 @@ import seaborn as sns sns.set() tips = sns.load_dataset(&amp;#34;tips&amp;#34;) 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/html/05-text-elements/</guid>
-      <description>Common Text  &amp;lt;!-- --&amp;gt; → comments in html5 &amp;lt;h1&amp;gt; &amp;lt;h2&amp;gt; &amp;lt;h3&amp;gt; &amp;lt;h4&amp;gt; &amp;lt;h5&amp;gt; &amp;lt;h6&amp;gt; → headings &amp;lt;p&amp;gt; → paragraph _ Spaces and returns don’t affect the appearance of the code. _ To break the line in one paragraph (without changing paragraph) use the tag &amp;lt;br /&amp;gt; &amp;lt;em&amp;gt; → italics &amp;lt;strong&amp;gt; → bold style=“color: blue” → attribute to change color to apply CSS only to that tag  Lists &amp;lt;ul&amp;gt; &amp;lt;il&amp;gt; item 1 &amp;lt;/il&amp;gt; &amp;lt;il&amp;gt; item 2 &amp;lt;/il&amp;gt; &amp;lt;il&amp;gt; item 3 &amp;lt;/il&amp;gt; &amp;lt;/ul&amp;gt;  Use it outside the &amp;lt;p&amp;gt; tag.</description>
+      <description>Common Text  &amp;lt;!-- --&amp;gt; &amp;rarr; comments in html5 &amp;lt;h1&amp;gt; &amp;lt;h2&amp;gt; &amp;lt;h3&amp;gt; &amp;lt;h4&amp;gt; &amp;lt;h5&amp;gt; &amp;lt;h6&amp;gt; &amp;rarr; headings &amp;lt;p&amp;gt; &amp;rarr; paragraph _ Spaces and returns don’t affect the appearance of the code. _ To break the line in one paragraph (without changing paragraph) use the tag &amp;lt;br /&amp;gt; &amp;lt;em&amp;gt; &amp;rarr; italics &amp;lt;strong&amp;gt; &amp;rarr; bold style=“color: blue” &amp;rarr; attribute to change color to apply CSS only to that tag  Lists &amp;lt;ul&amp;gt; &amp;lt;il&amp;gt; item 1 &amp;lt;/il&amp;gt; &amp;lt;il&amp;gt; item 2 &amp;lt;/il&amp;gt; &amp;lt;il&amp;gt; item 3 &amp;lt;/il&amp;gt; &amp;lt;/ul&amp;gt;  Use it outside the &amp;lt;p&amp;gt; tag.</description>
     </item>
     
     <item>
@@ -348,10 +356,10 @@ import seaborn as sns sns.set() tips = sns.load_dataset(&amp;#34;tips&amp;#34;) 
       
       <guid>https://damnotes.netlify.com/hugo/06-functions/</guid>
       <description>All functions are reported in the documentation.
- {{ .Site.Params.homeText | markdownify }} → access the site parameter homeText (in the config file) and apply the markdownify function
- {{ $css := &amp;quot;css/bootstrap.min.css&amp;quot; | absURL }} → define a variable and apply the absURL function
- {{ hugo.Generator }} → add in the html head to display the hufo version as a metadata in the source code
-  String Manipulation  {{ print SOMETHING }} → print the argument using the Golang print function.</description>
+ {{ .Site.Params.homeText | markdownify }} &amp;rarr; access the site parameter homeText (in the config file) and apply the markdownify function
+ {{ $css := &amp;quot;css/bootstrap.min.css&amp;quot; | absURL }} &amp;rarr; define a variable and apply the absURL function
+ {{ hugo.Generator }} &amp;rarr; add in the html head to display the hufo version as a metadata in the source code
+  String Manipulation  {{ print SOMETHING }} &amp;rarr; print the argument using the Golang print function.</description>
     </item>
     
     <item>
@@ -364,19 +372,6 @@ import seaborn as sns sns.set() tips = sns.load_dataset(&amp;#34;tips&amp;#34;) 
 px -&amp;gt; pixels are used to set the exact size of an element
 em -&amp;gt; the em represents the size of the base font being used. It is a relative unit of measurement. They change the size of text relative to the parent element’s size of text
 rem -&amp;gt; it means root em. Instead of checking parent elements to size font, it checks the root element.</description>
-    </item>
-    
-    <item>
-      <title>Tensorflow</title>
-      <link>https://damnotes.netlify.com/python/06-tensorflow/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/06-tensorflow/</guid>
-      <description>import tensorflow as tf
- from tensorflow.python.data import Dataset → select the data module in the Python API of Tensorflow and import a class
-  tf.data module  Docs Dataset class (doc)  tf.feature_column module  tf.feature_column.numeric_column → create a numeric column for the model (doc).
- tf.feature_column.bucketized_column(source_column, boundaries) → takes a numeric column as input and apply binning using boundaries (doc).
- tf.feature_column.cross_column() → returns a column to perform crosses of categorical features (doc)</description>
     </item>
     
     <item>
@@ -433,9 +428,12 @@ body { --var-name: value; }  It becomes available to use inside the element in w
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/python/08-os/</guid>
-      <description>import os import datetime Os  os.getcwd() obtain the current working directory os.listdir(path) list all file in the path. Better using scandir() for more performance os.chdir(path) change the cwd to path os.remove(path) remove a file
- os.mkdir(path) create a directory. To avoid errors if the directory exist, use
-dirName = &amp;#39;tempDir&amp;#39; try: # Create target Directory os.mkdir(dirName) print(&amp;#34;Directory &amp;#34; , dirName , &amp;#34; Created &amp;#34;) except FileExistsError: print(&amp;#34;Directory &amp;#34; , dirName , &amp;#34; already exists&amp;#34;) os.</description>
+      <description>import os Os  os.getcwd() &amp;rarr; return the current working directory
+ os.listdir(path) &amp;rarr; list all file in the path. It is better using scandir() for more performance
+ os.scandir(path) &amp;rarr; scan all files in the path and create an os.DirEntry object containing all files with their information (doc)
+ os.chdir(path) &amp;rarr; change the cwd to path
+ os.remove(path) &amp;rarr; remove a file
+ os.mkdir(path) &amp;rarr; create a directory. To avoid errors if the directory exist, use</description>
     </item>
     
     <item>
@@ -459,15 +457,6 @@ dirName = &amp;#39;tempDir&amp;#39; try: # Create target Directory os.mkdir(dirN
       <description>Changing color of a link when hover on it
 a:hover { color: red; } Add something before or after a selected element
 .class::before { content: &amp;#34;Phrase&amp;#34;; /*here you can modify the properties of the added thing/shape*/ }  The content property is used to add an image or a text as the element to be added. If you use it to do a shape, place an empty string.</description>
-    </item>
-    
-    <item>
-      <title>PyTorch</title>
-      <link>https://damnotes.netlify.com/python/11-pytorch/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/11-pytorch/</guid>
-      <description>PyTorch  Import using import torch torch.manual_seed(n) set seeds for random number generation torch.randn((n1, n2, n3, ...)) return a random tensor with dimensions n1, n2,…, mean 0 and variance 1 doc torch.randn_like(input) return a random tensor normal distributed with the size of tensor ininput doc torch.mm(tensor1, tensor2) -&amp;gt; matrix multiplication of two tensors  Torch and Numpy  torch.from_numpy(tensor) -&amp;gt; transform an array into a tensor for Torch tensor.numpy() -&amp;gt; transform a tensor into an array Memory of the 2 data structures is shared: if one changes the values in-place (with a _ operation) of one object, the other will change as well.</description>
     </item>
     
     <item>
@@ -499,9 +488,11 @@ Font Assets   List of Web safe fonts Google Fonts  Properties Font Properties  f
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/python/14-jupiter-notebooks/</guid>
-      <description>Jupiter Notebooks Useful tutorial here
+      <description>Useful tutorial here
 Here find a list of useful notebooks to download and learn from them.
- Run the jupiter server typing jupyter notebook in the command line To create a new file click new and the language you want to use in the notebook To run a cell use ctrl + enter. To run a cell and select below use shift + enter. Use option + enter to run a cell and insert below.</description>
+ Run the jupiter server typing jupyter notebook in the command line
+ To create a new file click new and the language you want to use in the notebook
+ To run a cell use ctrl + enter. To run a cell and select below use shift + enter. Use option + enter to run a cell and insert below.</description>
     </item>
     
     <item>
@@ -510,19 +501,45 @@ Here find a list of useful notebooks to download and learn from them.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/python/16-files-io/</guid>
-      <description>Files I/O Use
-import csv in your program.
-SIMPLE READ .CSV FILE Use with to automatically close the file at the end
-with open(&amp;#39;data.csv&amp;#39;,&amp;#39;r&amp;#39;) as csv_file: csv_reader = csv.reader(csv_file, delimiter=&amp;#39; &amp;#39;) # to skip over the header line next(csv_reader) for line in csv_reader: print(line) SIMPLE WRITE ON A NEW .CSV FILE with open(&amp;#39;data.csv&amp;#39;,&amp;#39;r&amp;#39;) as csv_file: csv_reader = csv.reader(csv_file, delimiter=&amp;#39; &amp;#39;) # open a new file with open(&amp;#39;new_file.csv&amp;#39;,&amp;#39;w&amp;#39;) as new_file: csv_writer = csv.</description>
+      <description>import csv Read CSV files with open(&amp;#39;data.csv&amp;#39;,&amp;#39;r&amp;#39;) as csv_file: csv_reader = csv.reader(csv_file, delimiter=&amp;#39; &amp;#39;) next(csv_reader) # skip over the header line for line in csv_reader: print(line)  use with to automatically close the file at the end  Write on CSV files with open(&amp;#39;new_file.csv&amp;#39;,&amp;#39;w&amp;#39;) as new_file: csv_writer = csv.writer(new_file, delimiter=&amp;#39;\t&amp;#39;) for line in csv_reader: csv_writer.writerow(something)  use w+ to create the file if it does not exist  Reading with Dictionary Reader Use if more &amp;ldquo;human readable&amp;rdquo; files are needed</description>
     </item>
     
     <item>
-      <title>Atom</title>
+      <title>Python Installation and Setup</title>
       <link>https://damnotes.netlify.com/python/19-python-in-atom/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/python/19-python-in-atom/</guid>
-      <description>Python in Atom Packages List  Script &amp;ndash; to run code in Atom * cmd + i to run the script Disable autocomplete-plus and autocomplete-snippest Install autocomplete-python Install file-icons Install minimap - when working on big screens and on big scripts Install python-autopep8 _ Enable Format on Save _ Install autopep8 with pip Install linter-flake8 &amp;ndash; to correct error * Install flake8 with pip  Editor Settings  Select Scroll past the end Tab lenght set to 4 To increase the font size go to Settings -&amp;gt; Themes -&amp;gt; Your Stylesheet and print</description>
+      <description>Installation macOS  Download the installer of Python 3 form the official website and install it. An application calle Python will be created in the Applications folder
+ Create an alias so that python command will call python3 instead
+ in Users/user_name/ type nano ~/.bash_profile
+ check that the last line is adding python to the path calling PATH=...
+ write alias python=python3 at the bottom of the file</description>
+    </item>
+    
+    <item>
+      <title>PyTorch</title>
+      <link>https://damnotes.netlify.com/python/11-pytorch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/11-pytorch/</guid>
+      <description>PyTorch  Import using import torch
+ torch.manual_seed(n) set seeds for random number generation
+ torch.randn((n1, n2, n3, ...)) return a random tensor with dimensions n1, n2,…, mean 0 and variance 1 doc
+ torch.randn_like(input) return a random tensor normal distributed with the size of tensor ininput doc
+ torch.mm(tensor1, tensor2) -&amp;gt; matrix multiplication of two tensors
+  Torch and Numpy  torch.from_numpy(tensor) -&amp;gt; transform an array into a tensor for Torch</description>
+    </item>
+    
+    <item>
+      <title>Command Line Setup</title>
+      <link>https://damnotes.netlify.com/bash/99-command-line-setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/bash/99-command-line-setup/</guid>
+      <description>In ~, the file .bash_profile is used for login shells, while .bashrc is used for non-login shells (terminal session opened using the bash command).
+Terminal Setup on macOS  Open the .bash_profile file and type the following to automatically load the content of the file contained in .bashrc. This will guarantee that both type of shells will behave the same
+if [ -f ~/.bashrc ]; then source ~./bashrc fi Open the .</description>
     </item>
     
     <item>
@@ -531,9 +548,9 @@ with open(&amp;#39;data.csv&amp;#39;,&amp;#39;r&amp;#39;) as csv_file: csv_reade
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/python/99-other-libraries/</guid>
-      <description>Datetime  datetime.today() → print current date  IPython .display module (doc)
-from IPython import display # display various type of data (audio, images, ...)  display.display(obj) → display a python object in all frontends (doc)  PySerial (Docs)
-import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#39;, baudrate = 9600, bytesize = serial.EIGHTBITS, parity = serial.PARITY_NONE, stopbits = serial.STOPBITS_ONE, timeout = 3 #s )  python -m serial.tools.list_ports → prints a list of available ports.</description>
+      <description>Datetime  datetime.today() &amp;rarr; print current date  IPython .display module (doc)
+from IPython import display # display various type of data (audio, images, ...)  display.display(obj) &amp;rarr; display a python object in all frontends (doc)  PySerial (Docs)
+import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#39;, baudrate = 9600, bytesize = serial.EIGHTBITS, parity = serial.PARITY_NONE, stopbits = serial.STOPBITS_ONE, timeout = 3 #s )  python -m serial.tools.list_ports &amp;rarr; prints a list of available ports.</description>
     </item>
     
     <item>
@@ -602,7 +619,7 @@ import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#3
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/ai/00-core-concepts/</guid>
-      <description>Definitions  Autonomy → The ability to perform tasks in complex environments without constant guidance by a user. Adaptivity → The ability to improve performance by learning from experience. Machine Learning → Systems that improve their performance in a given task with more and more experience or data. It can be somewhat considered a subfield of AI. Data Science → It is a recent umbrella term (term that covers several sub disciplines) that includes machine learning and statistics, certain aspects of computer science including algorithms, data storage, and web application development.</description>
+      <description>Definitions  Autonomy &amp;rarr; The ability to perform tasks in complex environments without constant guidance by a user. Adaptivity &amp;rarr; The ability to improve performance by learning from experience. Machine Learning &amp;rarr; Systems that improve their performance in a given task with more and more experience or data. It can be somewhat considered a subfield of AI. Data Science &amp;rarr; It is a recent umbrella term (term that covers several sub disciplines) that includes machine learning and statistics, certain aspects of computer science including algorithms, data storage, and web application development.</description>
     </item>
     
     <item>
@@ -635,7 +652,7 @@ import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#3
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/ai/01-machine-learning/</guid>
-      <description>Tips  Split the data set into two parts  training data → train the algorithm with this set test data → then test the algorithm here  Due to overfitting, neural networks can require massive amounts of data before they produce reliable prediction when compared to models obtained by linear regression. ~Learning to avoid overfitting and choose a model that is not too restricted, nor too flexible, is one of the most essential skills of a data scientist.</description>
+      <description>Tips  Split the data set into two parts  training data &amp;rarr; train the algorithm with this set test data &amp;rarr; then test the algorithm here  Due to overfitting, neural networks can require massive amounts of data before they produce reliable prediction when compared to models obtained by linear regression. ~Learning to avoid overfitting and choose a model that is not too restricted, nor too flexible, is one of the most essential skills of a data scientist.</description>
     </item>
     
     <item>
@@ -654,8 +671,8 @@ import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#3
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/ai/03-problem-solving/</guid>
-      <description>Search and Planning Problems First stage of the problem solving process → defining the choices and their consequences. One also need to define what the goal is or, in other words, when one can consider the problem solved.
- The state space → the set of possible situations. Transitions → possible moves between one state and another. One only counts direct transitions that can be accomplished with a single action.</description>
+      <description>Search and Planning Problems First stage of the problem solving process &amp;rarr; defining the choices and their consequences. One also need to define what the goal is or, in other words, when one can consider the problem solved.
+ The state space &amp;rarr; the set of possible situations. Transitions &amp;rarr; possible moves between one state and another. One only counts direct transitions that can be accomplished with a single action.</description>
     </item>
     
     <item>

@@ -7,7 +7,7 @@ weight: 1
 
 ### Document Declaration
 
-**Boilerplate code** → some code that one has to every page of code.
+**Boilerplate code** &rarr; some code that one has to every page of code.
 
 ```html
 <@DOCTYPE html>
@@ -20,14 +20,14 @@ weight: 1
 </html>
 ```
 
--   `<@DOCTYPE hmtl>` → **declaration**
--   `<head>` → it contain metadata of the webpage
+-   `<@DOCTYPE hmtl>` &rarr; **declaration**
+-   `<head>` &rarr; it contain metadata of the webpage
 
 * * *
 
 ### Non-Semantic Tags
 
-**Non-semantic tag** → it does not describe the type of content it has inside.
+**Non-semantic tag** &rarr; it does not describe the type of content it has inside.
 
 -   `<div> </div>`
 -   `<span> </span>`

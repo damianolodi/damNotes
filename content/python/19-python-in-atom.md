@@ -31,7 +31,7 @@ weight: 19
 
 #### Shortcuts
 
--   `cmd + shift + P` → open command palette
+-   `cmd + shift + P` &rarr; open command palette
 
 -   Python interpreter used (version) is displayed in the botton left corner. Can be changed clicking on that
 
@@ -46,9 +46,9 @@ weight: 19
 
 #### Settings
 
--   **color themes** → default dark theme is ok
+-   **color themes** &rarr; default dark theme is ok
 
--   **file icons** → _vscode-icon_ or _material icon theme_
+-   **file icons** &rarr; _vscode-icon_ or _material icon theme_
 
 -   open user settings and place the following code
 

@@ -20,7 +20,7 @@ One way to express probability is by using **odds** (the _ratio of the probabili
 
 -   _The purpose of the formula is to update the prior odds when new information becomes available, to obtain the posterior odds, or the odds after obtaining the information._ [2]
 
-**Likelihood ratio** → probability of the observation in case the event of interest (in the above, rain), **divided by** the probability of the observation in case of no event (in the above, no rain).
+**Likelihood ratio** &rarr; probability of the observation in case the event of interest (in the above, rain), **divided by** the probability of the observation in case of no event (in the above, no rain).
 
 <img src="/img/content/ai/likelihood-ratio.png" class="img-fluid figure-img img-custom">
 
@@ -35,10 +35,10 @@ Usually the likelihood ration comes from an observation of a new set of events, 
 ### Bayes Classifier
 
 -   The Bayes classifier is a **machine learning technique** that can be used to **classify objects** such as text documents into two or more classes. The classifier is **trained by analysing a set of training data,** for which the correct classes are given.
-    -   _The naive Bayes classifier can be used to determine the probabilities of the classes given a number of different observations._ → Used in [3] as a naive model to make a spam filter.
+    -   _The naive Bayes classifier can be used to determine the probabilities of the classes given a number of different observations._ &rarr; Used in [3] as a naive model to make a spam filter.
 
 
--   **Assumption** → the feature variables are conditionally independent given the class.
+-   **Assumption** &rarr; the feature variables are conditionally independent given the class.
 
 * * *
 

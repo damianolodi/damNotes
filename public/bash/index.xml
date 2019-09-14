@@ -22,5 +22,16 @@ nano ~/.bashrc  Open with nano and not with open, otherwise problems may occur w
 alias command_name=&amp;#34;command1 &amp;amp;&amp;amp; command2 &amp;amp;&amp;amp; ...&amp;#34;  The &amp;amp;&amp;amp; apply the following command only if the current one is succesfull. On the other hand, use ; to run all the commands one after the other.</description>
     </item>
     
+    <item>
+      <title>Command Line Setup</title>
+      <link>https://damnotes.netlify.com/bash/99-command-line-setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/bash/99-command-line-setup/</guid>
+      <description>In ~, the file .bash_profile is used for login shells, while .bashrc is used for non-login shells (terminal session opened using the bash command).
+Terminal Setup on macOS  Open the .bash_profile file and type the following to automatically load the content of the file contained in .bashrc. This will guarantee that both type of shells will behave the same
+if [ -f ~/.bashrc ]; then source ~./bashrc fi Open the .</description>
+    </item>
+    
   </channel>
 </rss>

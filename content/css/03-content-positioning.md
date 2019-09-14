@@ -7,11 +7,11 @@ weight: 3
 
 ### Display
 
-`display: block;` → the element occupies all the width of the parent element
+`display: block;` &rarr; the element occupies all the width of the parent element
 
-`display: inline;` → the elements are arranged horizontally
+`display: inline;` &rarr; the elements are arranged horizontally
 
-`display: none;` → not rendered
+`display: none;` &rarr; not rendered
 
 * * *
 
@@ -31,11 +31,11 @@ All elements on a web page are interpreted by the browser as “living” inside
 
 ### Content Based
 
-`width: min-content;` → wrap the content and use the minimum space
+`width: min-content;` &rarr; wrap the content and use the minimum space
 
 -   _no support for Edge_
 
-`width: max-content;` → don't wrap and use the minimum space
+`width: max-content;` &rarr; don't wrap and use the minimum space
 
 -   _no support for Edge_
 
@@ -43,15 +43,15 @@ All elements on a web page are interpreted by the browser as “living” inside
 
 `box-sizing: content-box;`
 
-`box-sizing: border-box;` → size attributes will apply after the padding and border have been added
+`box-sizing: border-box;` &rarr; size attributes will apply after the padding and border have been added
 
 * * *
 
 ### Alignment
 
-`float: left;` → subsequent content in the container is wrapped around the floating content
+`float: left;` &rarr; subsequent content in the container is wrapped around the floating content
 
-`clear: both;` → delete the effect of a previous float container on the actual container
+`clear: both;` &rarr; delete the effect of a previous float container on the actual container
 
 * * *
 
@@ -59,13 +59,13 @@ All elements on a web page are interpreted by the browser as “living” inside
 
 The overflow property is set on a parent element to instruct a web browser how to render child elements. For example, if a div’s overflow property is set to scroll, all children of this div will display overflowing content with a scroll bar.
 
-`overflow: visible;` → default - overflow content should be displayed without affecting the container
+`overflow: visible;` &rarr; default - overflow content should be displayed without affecting the container
 
-`overflow: hidden;` → the content is clipped so any content outside of the container is not visible
+`overflow: hidden;` &rarr; the content is clipped so any content outside of the container is not visible
 
-`overflow: scroll;` → horizontal and vertical scroll bars are always created even if the content fits inside the container
+`overflow: scroll;` &rarr; horizontal and vertical scroll bars are always created even if the content fits inside the container
 
-`overflow: auto;` → scroll bars are created only when the content overflows the container
+`overflow: auto;` &rarr; scroll bars are created only when the content overflows the container
 
 * * *
 
@@ -77,23 +77,23 @@ The overflow property is set on a parent element to instruct a web browser how t
 
 **This elements set the position with respect to the first parent with a relative position**
 
-`position: relative;` → element position is offset from where its normal flow position would be
+`position: relative;` &rarr; element position is offset from where its normal flow position would be
 
 -   After it add left, right, top or bottom to specify the offset
 -   Other elements around it still behave as if that item were in its default position
 
-`position: absolute;` → element is positioned at a specific location
+`position: absolute;` &rarr; element is positioned at a specific location
 
 -   This removes the element from the normal flow of the document, so surrounding items ignore it
 -   After it add left, right, top or bottom to specify the offset
 
-`position: fixed;` → the element is positioned relative to the viewport (the browser window); its position on the screen does not change when the document is scrolled
+`position: fixed;` &rarr; the element is positioned relative to the viewport (the browser window); its position on the screen does not change when the document is scrolled
 
 * * *
 
 ### Stacking Order
 
-`z-index: 0;` → this only apply to non statically positioned content
+`z-index: 0;` &rarr; this only apply to non statically positioned content
 
 * * *
 

@@ -16,8 +16,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/html/01-document-structure/</guid>
-      <description> Document Declaration Boilerplate code → some code that one has to every page of code.
-&amp;lt;@DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;My Coding Journal&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  &amp;lt;@DOCTYPE hmtl&amp;gt; → declaration &amp;lt;head&amp;gt; → it contain metadata of the webpage  Non-Semantic Tags Non-semantic tag → it does not describe the type of content it has inside.
+      <description> Document Declaration Boilerplate code &amp;rarr; some code that one has to every page of code.
+&amp;lt;@DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;My Coding Journal&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  &amp;lt;@DOCTYPE hmtl&amp;gt; &amp;rarr; declaration &amp;lt;head&amp;gt; &amp;rarr; it contain metadata of the webpage  Non-Semantic Tags Non-semantic tag &amp;rarr; it does not describe the type of content it has inside.
  &amp;lt;div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;span&amp;gt; &amp;lt;/span&amp;gt;  Semantic Tags  &amp;lt;header&amp;gt; &amp;lt;footer&amp;gt; &amp;lt;aside&amp;gt; &amp;lt;main&amp;gt; &amp;lt;article&amp;gt; &amp;lt;nav&amp;gt; &amp;lt;section&amp;gt; &amp;lt;detail&amp;gt;  </description>
     </item>
     
@@ -48,7 +48,7 @@
       
       <guid>https://damnotes.netlify.com/html/04-images/</guid>
       <description>Self-closing tag
-&amp;lt;img src=&amp;#34;https://www.example.com/picture.jpg&amp;#34; alt=&amp;#34;A field of yellow sunflowers&amp;#34;/&amp;gt;  src → attribute with the url of the image alt → description of what one can see  if an image fails to load on a web page, a user can mouse over the area originally intended for the image and read a brief description of the image. visually impaired users often browse the web with the aid of of screen reading software.</description>
+&amp;lt;img src=&amp;#34;https://www.example.com/picture.jpg&amp;#34; alt=&amp;#34;A field of yellow sunflowers&amp;#34;/&amp;gt;  src &amp;rarr; attribute with the url of the image alt &amp;rarr; description of what one can see  if an image fails to load on a web page, a user can mouse over the area originally intended for the image and read a brief description of the image. visually impaired users often browse the web with the aid of of screen reading software.</description>
     </item>
     
     <item>
@@ -57,7 +57,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/html/05-text-elements/</guid>
-      <description>Common Text  &amp;lt;!-- --&amp;gt; → comments in html5 &amp;lt;h1&amp;gt; &amp;lt;h2&amp;gt; &amp;lt;h3&amp;gt; &amp;lt;h4&amp;gt; &amp;lt;h5&amp;gt; &amp;lt;h6&amp;gt; → headings &amp;lt;p&amp;gt; → paragraph _ Spaces and returns don’t affect the appearance of the code. _ To break the line in one paragraph (without changing paragraph) use the tag &amp;lt;br /&amp;gt; &amp;lt;em&amp;gt; → italics &amp;lt;strong&amp;gt; → bold style=“color: blue” → attribute to change color to apply CSS only to that tag  Lists &amp;lt;ul&amp;gt; &amp;lt;il&amp;gt; item 1 &amp;lt;/il&amp;gt; &amp;lt;il&amp;gt; item 2 &amp;lt;/il&amp;gt; &amp;lt;il&amp;gt; item 3 &amp;lt;/il&amp;gt; &amp;lt;/ul&amp;gt;  Use it outside the &amp;lt;p&amp;gt; tag.</description>
+      <description>Common Text  &amp;lt;!-- --&amp;gt; &amp;rarr; comments in html5 &amp;lt;h1&amp;gt; &amp;lt;h2&amp;gt; &amp;lt;h3&amp;gt; &amp;lt;h4&amp;gt; &amp;lt;h5&amp;gt; &amp;lt;h6&amp;gt; &amp;rarr; headings &amp;lt;p&amp;gt; &amp;rarr; paragraph _ Spaces and returns don’t affect the appearance of the code. _ To break the line in one paragraph (without changing paragraph) use the tag &amp;lt;br /&amp;gt; &amp;lt;em&amp;gt; &amp;rarr; italics &amp;lt;strong&amp;gt; &amp;rarr; bold style=“color: blue” &amp;rarr; attribute to change color to apply CSS only to that tag  Lists &amp;lt;ul&amp;gt; &amp;lt;il&amp;gt; item 1 &amp;lt;/il&amp;gt; &amp;lt;il&amp;gt; item 2 &amp;lt;/il&amp;gt; &amp;lt;il&amp;gt; item 3 &amp;lt;/il&amp;gt; &amp;lt;/ul&amp;gt;  Use it outside the &amp;lt;p&amp;gt; tag.</description>
     </item>
     
     <item>

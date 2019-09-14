@@ -11,8 +11,8 @@ _Self-closing tag_
 <img src="https://www.example.com/picture.jpg" alt="A field of yellow sunflowers"/>
 ```
 
--   `src` → attribute with the url of the image
--   `alt` → description of what one can see
+-   `src` &rarr; attribute with the url of the image
+-   `alt` &rarr; description of what one can see
     -   _if an image fails to load on a web page, a user can mouse over the area originally intended for the image and read a brief description of the image._
     -   _visually impaired users often browse the web with the aid of of screen reading software._
     -   _if the image on the web page is not one that conveys any meaningful information to a user (visually impaired or otherwise), the alt attribute should not be used._

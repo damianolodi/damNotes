@@ -41,13 +41,13 @@ color: hsl(180,100%,50%); &amp;ndash;&amp;gt; HSL is supported only by CSS3, so 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/css/03-content-positioning/</guid>
-      <description>Display display: block; → the element occupies all the width of the parent element
-display: inline; → the elements are arranged horizontally
-display: none; → not rendered
+      <description>Display display: block; &amp;rarr; the element occupies all the width of the parent element
+display: inline; &amp;rarr; the elements are arranged horizontally
+display: none; &amp;rarr; not rendered
 Dimensions All elements on a web page are interpreted by the browser as “living” inside of a box.
 width: 150px;
  min-width and max-width also possible  height: 70%;
- min-heigth and max-height also possible  Content Based width: min-content; → wrap the content and use the minimum space</description>
+ min-heigth and max-height also possible  Content Based width: min-content; &amp;rarr; wrap the content and use the minimum space</description>
     </item>
     
     <item>

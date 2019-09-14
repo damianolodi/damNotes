@@ -39,10 +39,10 @@ This note will provide a list of the main open source applications and software 
 
 Each GNU/Linux distro has a proper online repository from wich one can download and install software. The installation happens automatically through the **package manages**
 
--   RHEL → DNF
+-   RHEL &rarr; DNF
 
--   Debian → APT
+-   Debian &rarr; APT
 
--   Suse → ZYPPER
+-   Suse &rarr; ZYPPER
 
 All the software in the repository is open soruce, controlled and ad-free.

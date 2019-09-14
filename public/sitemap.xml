@@ -19,6 +19,10 @@
   </url>
   
   <url>
+    <loc>https://damnotes.netlify.com/rpi/1-basics/</loc>
+  </url>
+  
+  <url>
     <loc>https://damnotes.netlify.com/html/01-document-structure/</loc>
   </url>
   
@@ -131,10 +135,6 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/python/06-tensorflow/</loc>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/c/06-stdlib/</loc>
   </url>
   
@@ -163,10 +163,6 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/python/11-pytorch/</loc>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/css/11-selectors/</loc>
   </url>
   
@@ -184,6 +180,14 @@
   
   <url>
     <loc>https://damnotes.netlify.com/python/19-python-in-atom/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/11-pytorch/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/bash/99-command-line-setup/</loc>
   </url>
   
   <url>

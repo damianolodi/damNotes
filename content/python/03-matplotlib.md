@@ -1,6 +1,11 @@
 ---
 title: "Matplotlib"
 draft: false
+arguments: ["Superimposing Figures",
+            "Multiple Axis",
+            "Plot Annotations",
+            "Plot Animation",
+            "Custom Plot Styles"]
 weight: 3
 ---
 
@@ -12,12 +17,12 @@ import matplotlib.pyplot as plt
 %matplotlib inline # display figures inside jupyter notebooks
 
 axes.plot(a, b, 'b.-',
-          color = '#FFFFFF', # color (control)
-          alpha = 0.5, #
-          lw = 3, # linewidth
-          ls = '-', # linestyle '-' '--' '-.' ':' 'steps'
-          marker ='+', # markerstyle `+`, `o`, `*`, `s`, `,`, `.`, `1`, `2`, `3`,…
-          ms = 3 # markersize
+          color = '#FFFFFF',    # color (control)
+          alpha = 0.5,
+          lw = 3,               # linewidth
+          ls = '-',             # linestyle '-' '--' '-.' ':' 'steps'
+          marker ='+',          # markerstyle `+`, `o`, `*`, `s`, `,`, `.`, `1`, `2`, `3`,…
+          ms = 3                # markersize
           )
 ```
 
@@ -57,7 +62,7 @@ fig.savefig('file-name.png', dpi=200)
 ```
 
 -   can plot pandas df with `ax.plot('column1', 'column2', 'r--', obj=df)`
--   `axes1.legend()` → more details [about location](https://matplotlib.org/users/legend_guide.html#legend-location)
+-   `axes1.legend()` &rarr; more details [about location](https://matplotlib.org/users/legend_guide.html#legend-location)
 
 #### Multiple axis on the same figure
 
@@ -75,42 +80,45 @@ fig.tight_layout() # apply at the end to correct overlapping content
 
 * * *
 
-### Annotating and Drawing on Plots
+### Plot Annotation and Drawing
 
 Annotate text and arrows
 
 ```py
+# Annotate with text
+ax.text(x, y,                   # coordinates
+        'Hello world!',         # text
+        family = 'monospace',
+        fontsize = 10,
+        rotation = 90           # text rotation
+        )
+
+# Draw line
+ax.axvline(x = value,   # create vertical line in the plot
+           color='r',
+           linewidth=1)
+
+# Draw arrow
 ax.annotate(label,
-			xy = (x, y), # point position
-            xytext = (x, y), # text position
+			xy = (x, y),        # point position
+            xytext = (x, y),    # text position
             arrowprops = dict(facecolor = 'black',
 							  headwidth = 4,
 							  width = 1,
                               headlength = 4),
             horizontalalignment = 'left',
 			verticalalignment = 'top')
-
-ax.text(x, y, # coordinates
-        'Hello world!', # text
-        family = 'monospace',
-        fontsize = 10,
-        rotation = 90 # text rotation
-        )`
-
-ax.axvline(x = value, # create vertical line in the plot
-           color='r',
-           linewidth=1)
 ```
 
 * * *
 
 ### Plot Animations
 
-1.  `conda install -c conda-forge ffmpeg` → install `ffmpeg`
+1.  `conda install -c conda-forge ffmpeg` &rarr; install `ffmpeg`
 
-2.  `import matplotlib.animation as animation` → import the animation package
+2.  `import matplotlib.animation as animation` &rarr; import the animation package
 
-3.  `%matplotlib notebook` → allow dynamic plots in the Jupyter Notebook
+3.  `%matplotlib notebook` &rarr; allow dynamic plots in the Jupyter Notebook
 
 4.  create figure as usual
 
@@ -154,7 +162,7 @@ writer = Writer(fps = 20, # used when saving the movie in a file
                                                  repeat=False)
 ```
 
-8.  `ani.save(save_path+'/name.mp4', writer=writer)` → save
+8.  `ani.save(save_path+'/name.mp4', writer=writer)` &rarr; save
 
 * * *
 

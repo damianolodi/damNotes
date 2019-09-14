@@ -49,12 +49,12 @@
 <span style="color:#666">%</span>matplotlib inline <span style="color:#408080;font-style:italic"># display figures inside jupyter notebooks</span>
 
 axes<span style="color:#666">.</span>plot(a, b, <span style="color:#ba2121">&#39;b.-&#39;</span>,
-          color <span style="color:#666">=</span> <span style="color:#ba2121">&#39;#FFFFFF&#39;</span>, <span style="color:#408080;font-style:italic"># color (control)</span>
-          alpha <span style="color:#666">=</span> <span style="color:#666">0.5</span>, <span style="color:#408080;font-style:italic">#</span>
-          lw <span style="color:#666">=</span> <span style="color:#666">3</span>, <span style="color:#408080;font-style:italic"># linewidth</span>
-          ls <span style="color:#666">=</span> <span style="color:#ba2121">&#39;-&#39;</span>, <span style="color:#408080;font-style:italic"># linestyle &#39;-&#39; &#39;--&#39; &#39;-.&#39; &#39;:&#39; &#39;steps&#39;</span>
-          marker <span style="color:#666">=</span><span style="color:#ba2121">&#39;+&#39;</span>, <span style="color:#408080;font-style:italic"># markerstyle `+`, `o`, `*`, `s`, `,`, `.`, `1`, `2`, `3`,…</span>
-          ms <span style="color:#666">=</span> <span style="color:#666">3</span> <span style="color:#408080;font-style:italic"># markersize</span>
+          color <span style="color:#666">=</span> <span style="color:#ba2121">&#39;#FFFFFF&#39;</span>,    <span style="color:#408080;font-style:italic"># color (control)</span>
+          alpha <span style="color:#666">=</span> <span style="color:#666">0.5</span>,
+          lw <span style="color:#666">=</span> <span style="color:#666">3</span>,               <span style="color:#408080;font-style:italic"># linewidth</span>
+          ls <span style="color:#666">=</span> <span style="color:#ba2121">&#39;-&#39;</span>,             <span style="color:#408080;font-style:italic"># linestyle &#39;-&#39; &#39;--&#39; &#39;-.&#39; &#39;:&#39; &#39;steps&#39;</span>
+          marker <span style="color:#666">=</span><span style="color:#ba2121">&#39;+&#39;</span>,          <span style="color:#408080;font-style:italic"># markerstyle `+`, `o`, `*`, `s`, `,`, `.`, `1`, `2`, `3`,…</span>
+          ms <span style="color:#666">=</span> <span style="color:#666">3</span>                <span style="color:#408080;font-style:italic"># markersize</span>
           )</code></pre></div>
 <h3 id="basic-figure-script">Basic figure script</h3>
 
@@ -89,7 +89,7 @@ axes2<span style="color:#666">.</span>axis(<span style="color:#ba2121">&#39;log&
 fig<span style="color:#666">.</span>savefig(<span style="color:#ba2121">&#39;file-name.png&#39;</span>, dpi<span style="color:#666">=</span><span style="color:#666">200</span>)</code></pre></div>
 <ul>
 <li>can plot pandas df with <code>ax.plot('column1', 'column2', 'r--', obj=df)</code></li>
-<li><code>axes1.legend()</code> → more details <a href="https://matplotlib.org/users/legend_guide.html#legend-location">about location</a></li>
+<li><code>axes1.legend()</code> &rarr; more details <a href="https://matplotlib.org/users/legend_guide.html#legend-location">about location</a></li>
 </ul>
 
 <h4 id="multiple-axis-on-the-same-figure">Multiple axis on the same figure</h4>
@@ -106,39 +106,42 @@ fig<span style="color:#666">.</span>tight_layout() <span style="color:#408080;fo
 
 <hr />
 
-<h3 id="annotating-and-drawing-on-plots">Annotating and Drawing on Plots</h3>
+<h3 id="plot-annotation-and-drawing">Plot Annotation and Drawing</h3>
 
 <p>Annotate text and arrows</p>
-<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">ax<span style="color:#666">.</span>annotate(label,
-			xy <span style="color:#666">=</span> (x, y), <span style="color:#408080;font-style:italic"># point position</span>
-            xytext <span style="color:#666">=</span> (x, y), <span style="color:#408080;font-style:italic"># text position</span>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#408080;font-style:italic"># Annotate with text</span>
+ax<span style="color:#666">.</span>text(x, y,                   <span style="color:#408080;font-style:italic"># coordinates</span>
+        <span style="color:#ba2121">&#39;Hello world!&#39;</span>,         <span style="color:#408080;font-style:italic"># text</span>
+        family <span style="color:#666">=</span> <span style="color:#ba2121">&#39;monospace&#39;</span>,
+        fontsize <span style="color:#666">=</span> <span style="color:#666">10</span>,
+        rotation <span style="color:#666">=</span> <span style="color:#666">90</span>           <span style="color:#408080;font-style:italic"># text rotation</span>
+        )
+
+<span style="color:#408080;font-style:italic"># Draw line</span>
+ax<span style="color:#666">.</span>axvline(x <span style="color:#666">=</span> value,   <span style="color:#408080;font-style:italic"># create vertical line in the plot</span>
+           color<span style="color:#666">=</span><span style="color:#ba2121">&#39;r&#39;</span>,
+           linewidth<span style="color:#666">=</span><span style="color:#666">1</span>)
+
+<span style="color:#408080;font-style:italic"># Draw arrow</span>
+ax<span style="color:#666">.</span>annotate(label,
+			xy <span style="color:#666">=</span> (x, y),        <span style="color:#408080;font-style:italic"># point position</span>
+            xytext <span style="color:#666">=</span> (x, y),    <span style="color:#408080;font-style:italic"># text position</span>
             arrowprops <span style="color:#666">=</span> <span style="color:#008000">dict</span>(facecolor <span style="color:#666">=</span> <span style="color:#ba2121">&#39;black&#39;</span>,
 							  headwidth <span style="color:#666">=</span> <span style="color:#666">4</span>,
 							  width <span style="color:#666">=</span> <span style="color:#666">1</span>,
                               headlength <span style="color:#666">=</span> <span style="color:#666">4</span>),
             horizontalalignment <span style="color:#666">=</span> <span style="color:#ba2121">&#39;left&#39;</span>,
-			verticalalignment <span style="color:#666">=</span> <span style="color:#ba2121">&#39;top&#39;</span>)
-
-ax<span style="color:#666">.</span>text(x, y, <span style="color:#408080;font-style:italic"># coordinates</span>
-        <span style="color:#ba2121">&#39;Hello world!&#39;</span>, <span style="color:#408080;font-style:italic"># text</span>
-        family <span style="color:#666">=</span> <span style="color:#ba2121">&#39;monospace&#39;</span>,
-        fontsize <span style="color:#666">=</span> <span style="color:#666">10</span>,
-        rotation <span style="color:#666">=</span> <span style="color:#666">90</span> <span style="color:#408080;font-style:italic"># text rotation</span>
-        )<span style="">`</span>
-
-ax<span style="color:#666">.</span>axvline(x <span style="color:#666">=</span> value, <span style="color:#408080;font-style:italic"># create vertical line in the plot</span>
-           color<span style="color:#666">=</span><span style="color:#ba2121">&#39;r&#39;</span>,
-           linewidth<span style="color:#666">=</span><span style="color:#666">1</span>)</code></pre></div>
+			verticalalignment <span style="color:#666">=</span> <span style="color:#ba2121">&#39;top&#39;</span>)</code></pre></div>
 <hr />
 
 <h3 id="plot-animations">Plot Animations</h3>
 
 <ol>
-<li><p><code>conda install -c conda-forge ffmpeg</code> → install <code>ffmpeg</code></p></li>
+<li><p><code>conda install -c conda-forge ffmpeg</code> &rarr; install <code>ffmpeg</code></p></li>
 
-<li><p><code>import matplotlib.animation as animation</code> → import the animation package</p></li>
+<li><p><code>import matplotlib.animation as animation</code> &rarr; import the animation package</p></li>
 
-<li><p><code>%matplotlib notebook</code> → allow dynamic plots in the Jupyter Notebook</p></li>
+<li><p><code>%matplotlib notebook</code> &rarr; allow dynamic plots in the Jupyter Notebook</p></li>
 
 <li><p>create figure as usual</p></li>
 
@@ -175,7 +178,7 @@ writer <span style="color:#666">=</span> Writer(fps <span style="color:#666">=</
                                          repeat<span style="color:#666">=</span>False)</code></pre></div></li>
 </ul></li>
 
-<li><p><code>ani.save(save_path+'/name.mp4', writer=writer)</code> → save</p></li>
+<li><p><code>ani.save(save_path+'/name.mp4', writer=writer)</code> &rarr; save</p></li>
 </ol>
 
 <hr />

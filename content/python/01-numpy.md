@@ -11,17 +11,17 @@ weight: 1
 ```py
 import numpy as np
 
-array[index1, index2] # access an element. Use : to access the all line
-array[start:stop:stride] # array slicing
-np.nditer(array) # create an iterator object to be used in for loops
+array[index1, index2]       # access an element. Use : to access the all line
+array[start:stop:stride]    # array slicing
+np.nditer(array)            # create an iterator object to be used in for loops
 
 # Array generation
-np.array(list) # create array from list
+np.array(list)                  # create array from list
 np.arange(first, size, spacing) # generate array
-np.linspace(first, last, size) # generate array, both end points are included
+np.linspace(first, last, size)  # generate array, both end points are included
 np.logspace(first, last, size, base=e) # generate log-spaced array
-np.zeros((dim1,dim2)) # create array full of 0s
-np.ones((dim1,dim2)) # create array full of 1s
+np.zeros((dim1,dim2))           # create array full of 0s
+np.ones((dim1,dim2))            # create array full of 1s
 ```
 
 Numpy arrays are statically typed and homogeneous. The type of the elements is determined when the array is created.
@@ -32,46 +32,46 @@ Numpy arrays are statically typed and homogeneous. The type of the elements is d
 
 ### Arrays Methods
 
--   `np.shape(array)` → return array **dimensions** (tuple)
+-   `np.shape(array)` &rarr; return array **dimensions** (tuple)
 
--   `np.size(array)` → return **number of elements**
+-   `np.size(array)` &rarr; return **number of elements**
 
--   `np.ndim(array)` → return **number of dimensions**
+-   `np.ndim(array)` &rarr; return **number of dimensions**
 
--   `np.dtype(list)` → return the **data type** of the array
+-   `np.dtype(list)` &rarr; return the **data type** of the array
 
--   `np.random.rand(d0,d1,...)` → generate a `d0, d1,…` dimension array made of **uniformly distributed random numbers** between 0 and 1
+-   `np.random.rand(d0,d1,...)` &rarr; generate a `d0, d1,…` dimension array made of **uniformly distributed random numbers** between 0 and 1
 
--   `np.random.randn(d0,d1,...)` → generate a `d0, d1,…` dimension array made of **gaussian distributed random numbers** between 0 and 1
+-   `np.random.randn(d0,d1,...)` &rarr; generate a `d0, d1,…` dimension array made of **gaussian distributed random numbers** between 0 and 1
 
--   `np.random.permutation(array)` → shuffle the array (or pandas Series)
+-   `np.random.permutation(array)` &rarr; shuffle the array (or pandas Series)
 
 * * *
 
 ### File I/O from Arrays
 
--   `data = np.genfromtxt('csv-or-tsv-file.dat')` → **import data** from file
+-   `data = np.genfromtxt('csv-or-tsv-file.dat')` &rarr; **import data** from file
 
--   `savetxt('file-name.csv', array-name, fmt='%.5f')` → **save the array** in a cvs file and specify the format (optional)
+-   `savetxt('file-name.csv', array-name, fmt='%.5f')` &rarr; **save the array** in a cvs file and specify the format (optional)
 
--   `np.save(‘file-name.npy’,array-name)` → save array in a _proprietary file format_
+-   `np.save(‘file-name.npy’,array-name)` &rarr; save array in a _proprietary file format_
 
--   `np.load(‘file-name.npy’)` → load array from _proprietary file format_
+-   `np.load(‘file-name.npy’)` &rarr; load array from _proprietary file format_
 
 * * *
 
 ### Data Analysis
 
--   `mean(array)` → compute the _mean_ of the array
+-   `mean(array)` &rarr; compute the _mean_ of the array
 
--   `std(array)` → compute _standard deviation_
+-   `std(array)` &rarr; compute _standard deviation_
 
--   `var(array)` → compute _variance_
+-   `var(array)` &rarr; compute _variance_
 
--   `array.min()`, `array.max()` → find _min_ and _max_ values
+-   `array.min()`, `array.max()` &rarr; find _min_ and _max_ values
 
--   `sum(array)`, `cumsum(array)` → compute _sum_ and _cumulative sum_
+-   `sum(array)`, `cumsum(array)` &rarr; compute _sum_ and _cumulative sum_
 
--   `prod(array)`, `cumprod(array)` → compute _product_ and _cumulative product_
+-   `prod(array)`, `cumprod(array)` &rarr; compute _product_ and _cumulative product_
 
--   `np.dot(a,b)` → **dot product** of 2 arrays/matrices [doc](https://docs.scipy.org/doc/numpy/reference/generated/numpy.dot.html#numpy.dot)
+-   `np.dot(a,b)` &rarr; **dot product** of 2 arrays/matrices [doc](https://docs.scipy.org/doc/numpy/reference/generated/numpy.dot.html#numpy.dot)

@@ -41,34 +41,9 @@
 <div class="d-flex flex-column align-items-center">
     <h2 class="m-1 mb-2 mt-2"><u>Basics</u></h2>
 </div>
-<p><img src="/img/content/git/git_workflow.png" class="img-fluid figure-img img-custom"></p>
 
-<ol>
-<li><code>git init &lt;directory_path&gt;</code> create empty git repository in the specified directory. Omit the arguments to initialise in the current directory</li>
-<li><code>git add &lt;file/directory&gt;</code> stage all changes in the provided path for the next commit</li>
-<li><code>git commit -m “&lt;message&gt;”</code> commit the staged changes with the message provided. Messages must be
 
-<ul>
-<li>in quotation marks;</li>
-<li>written in the present tense;</li>
-<li>be brief (50 characters or less) when using -m</li>
-</ul></li>
-<li><code>git status</code> list staged, unstaged and untracked files</li>
-<li><code>git diff</code> show unstated changes between the index and the working directory
-
-<ul>
-<li><code>git diff &lt;file&gt;</code> preview the differences between the file in the working directory and the one in the staging area</li>
-</ul></li>
-<li><code>git log</code> display the entire commit history. See options for format customization. The 40-character code, called a <strong>SHA</strong>, uniquely identifies the commit.
-
-<ul>
-<li><code>git log -&lt;limit&gt;</code> &rarr; limit the number of commits to the specified number</li>
-<li><code>git log --oneline</code> &rarr; condense each commit to a single line</li>
-<li><code>git log --grep=&quot;&lt;pattern&gt;&quot;</code> &rarr; search for commits with a commit message that matches the one provided</li>
-<li><code>git log -- &lt;file&gt;</code> &rarr; only display commits that have the specified file</li>
-<li><code>git log --stat</code> &rarr; returns some statistics about which file has changed in each commit</li>
-</ul></li>
-</ol>
+<h3 id="pinout">Pinout</h3>
 
 
 

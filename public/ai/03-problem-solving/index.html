@@ -45,12 +45,12 @@
 
 <h3 id="search-and-planning-problems">Search and Planning Problems</h3>
 
-<p><em>First stage of the problem solving process</em> → defining the choices and their consequences. One also need to define what the goal is or, in other words, when one can consider the problem solved.</p>
+<p><em>First stage of the problem solving process</em> &rarr; defining the choices and their consequences. One also need to define what the goal is or, in other words, when one can consider the problem solved.</p>
 
 <ul>
-<li><strong>The state space</strong> → the set of <em>possible</em> situations.</li>
-<li><strong>Transitions</strong> → possible moves between one state and another. One only counts direct transitions that can be accomplished with a single action. A sequence of multiple transitions ( e.g. from A to C, from C to D, and from D to B) is called <strong>path.</strong></li>
-<li><strong>Costs</strong> → refer to the fact that, oftentimes the different transitions aren’t all alike. They can differ in ways that make some transitions more preferable or cheaper and others more costly.</li>
+<li><strong>The state space</strong> &rarr; the set of <em>possible</em> situations.</li>
+<li><strong>Transitions</strong> &rarr; possible moves between one state and another. One only counts direct transitions that can be accomplished with a single action. A sequence of multiple transitions ( e.g. from A to C, from C to D, and from D to B) is called <strong>path.</strong></li>
+<li><strong>Costs</strong> &rarr; refer to the fact that, oftentimes the different transitions aren’t all alike. They can differ in ways that make some transitions more preferable or cheaper and others more costly.</li>
 </ul>
 
 <hr />
@@ -62,7 +62,7 @@
 <ul>
 <li>The different states of the game are represented by nodes in the <strong>game tree.</strong></li>
 
-<li><p><em>The nodes are arranged in levels</em> → each level correspond to a player’s turn in the game → the <em>root node</em> of the tree is the initial condition (usually depicted at the top of the diagram).</p></li>
+<li><p><em>The nodes are arranged in levels</em> &rarr; each level correspond to a player’s turn in the game &rarr; the <em>root node</em> of the tree is the initial condition (usually depicted at the top of the diagram).</p></li>
 
 <li><p>The tree end when the winning condition is met.</p></li>
 </ul>
@@ -74,7 +74,7 @@
 
 <ul>
 <li>One player wants to maximise the root value, the other wants to minimise it</li>
-<li>Assign numbers to previous levels based on which player is playing and <strong>assumptions</strong> → both players choose what is best for them and that what is best for one is the worst for the other (so called “zero-sum game”).</li>
+<li>Assign numbers to previous levels based on which player is playing and <strong>assumptions</strong> &rarr; both players choose what is best for them and that what is best for one is the worst for the other (so called “zero-sum game”).</li>
 </ul></li>
 
 <li><p>The value of the root node, which is said to be the value of the game, tells us who wins</p></li>
@@ -94,17 +94,17 @@
 
 <h4 id="tricks">Tricks</h4>
 
-<p><strong>Heuristic Evaluation Function</strong> → input = board position + which player’s turn is next → output = an estimate of the likely outcome of the game (continuing from the given board position).
+<p><strong>Heuristic Evaluation Function</strong> &rarr; input = board position + which player’s turn is next &rarr; output = an estimate of the likely outcome of the game (continuing from the given board position).
 <em>Used to stop the minimal recursion before reaching an end-node</em></p>
 
-<p><strong>Depth-limited version</strong> of the minmax algorithm →  the <em>depth</em> refers to the number of steps that the game tree is expanded before applying a heuristic evaluation function</p>
+<p><strong>Depth-limited version</strong> of the minmax algorithm &rarr;  the <em>depth</em> refers to the number of steps that the game tree is expanded before applying a heuristic evaluation function</p>
 
 <h4 id="real-world-scenarios">Real-world scenarios</h4>
 
 <ul>
-<li><p>The number of states in even a moderately complex real-world scenario grows out of hand → solutions by exhaustive search (“brute force”) are out of question</p></li>
+<li><p>The number of states in even a moderately complex real-world scenario grows out of hand &rarr; solutions by exhaustive search (“brute force”) are out of question</p></li>
 
-<li><p>In general transitions between states are not deterministic → one needs to adapt the algorithm to accept the concept of probability and tackle real AI problems.</p></li>
+<li><p>In general transitions between states are not deterministic &rarr; one needs to adapt the algorithm to accept the concept of probability and tackle real AI problems.</p></li>
 </ul>
 
 <hr />

@@ -5,16 +5,16 @@ arguments: []
 weight: 1
 ---
 
--   `hugo new site site-name` → create new project
+-   `hugo new site site-name` &rarr; create new project
 
--   `hugo version` → check version installed
+-   `hugo version` &rarr; check version installed
 
--   `hugo server` → start local server on _localhost:1313_
+-   `hugo server` &rarr; start local server on _localhost:1313_
 
-    -   `hugo server -D` → **compile also drafts**
+    -   `hugo server -D` &rarr; **compile also drafts**
 
--   `hugo` → build the project
+-   `hugo` &rarr; build the project
 
-    -   `hugo -D` → build also drafts
+    -   `hugo -D` &rarr; build also drafts
 
--   `hugo new path/to/file.md` → create new files in `/content/` directory
+-   `hugo new path/to/file.md` &rarr; create new files in `/content/` directory

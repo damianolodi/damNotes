@@ -9,17 +9,17 @@ Informations between the two `---` is called **front matter**.
 
 * * *
 
--   `draft: true` → mark post as draft
+-   `draft: true` &rarr; mark post as draft
 
--   `image: "static/path-to-image.jpeg"` → set the **default post image** (usuallly placed in the `static` directory)
+-   `image: "static/path-to-image.jpeg"` &rarr; set the **default post image** (usuallly placed in the `static` directory)
 
--   `tags: ['tag1', 'tag2']` → post tags
+-   `tags: ['tag1', 'tag2']` &rarr; post tags
 
--   `categories: ['category1', ...]` → post categories
+-   `categories: ['category1', ...]` &rarr; post categories
 
--   `publishdate:` → set a publishing date for the post (if the build date is previous the one indicated, the post will not be published)
+-   `publishdate:` &rarr; set a publishing date for the post (if the build date is previous the one indicated, the post will not be published)
 
--   `expirydate` → if the build date is previous the one indicated, the post will not be compiled
+-   `expirydate` &rarr; if the build date is previous the one indicated, the post will not be compiled
 
 * * *
 

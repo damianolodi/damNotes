@@ -4,47 +4,39 @@ draft: false
 weight: 16
 ---
 
-### Files I/O
-
-Use
-
 ```py
 import csv
 ```
 
-in your program.
-
-## SIMPLE READ .CSV FILE
-
-Use `with` to automatically close the file at the end
+### Read CSV files
 
 ```py
 with open('data.csv','r') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=' ')
 
-    # to skip over the header line
-    next(csv_reader)
+    next(csv_reader)        # skip over the header line
 
     for line in csv_reader:
         print(line)
 ```
 
-## SIMPLE WRITE ON A NEW .CSV FILE
+- use `with` to automatically close the file at the end
+
+### Write on CSV files
 
 ```py
-with open('data.csv','r') as csv_file:
-    csv_reader = csv.reader(csv_file, delimiter=' ')
-    # open a new file
-    with open('new_file.csv','w') as new_file:
-        csv_writer = csv.writer(new_file, delimiter='\t')
+with open('new_file.csv','w') as new_file:
+    csv_writer = csv.writer(new_file, delimiter='\t')
 
-        for line in csv_reader:
-            csv_writer.writerow(line)
+    for line in csv_reader:
+        csv_writer.writerow(something)
 ```
 
-## READING WITH DICTIONARY READER
+- use `w+` to create the file if it does not exist
 
-Use dictionary reader if you want more "human readable" files
+### Reading with Dictionary Reader
+
+Use if more "human readable" files are needed
 
 ```py
 with open('data.csv','r') as csv_file:
@@ -52,25 +44,21 @@ with open('data.csv','r') as csv_file:
 
     for line in csv_reader:
         print(line)
-        #print only the time
-        #print(line['ora'])
 ```
 
-## WRITING WITH DICTIONARY WRITER
+### Writing with Dictionary Writer
 
 ```py
 with open('data.csv','r') as csv_file:
     csv_reader = csv.DictReader(csv_file,delimiter=' ')
-    # open a new file
+    
     with open('new_file.csv','w') as new_file:
-        # create the list of filednames
-        fieldnames = ['data','ora','bo1','bo2','bo3','bo4','bo5','bo6','bo7','bo8']
-        csv_writer = csv.DictWriter(new_file, fieldnames=fieldnames, delimiter='\t')
-        #write the header in the new file
-        csv_writer.writeheader()
+        field_names = ['data','ora','bo1','bo2','bo3','bo4','bo5','bo6','bo7','bo8']
+        csv_writer = csv.DictWriter(new_file, field_names=field_names, delimiter='\t')
+        csv_writer.writeheader()    # write the header in the new file
 
         for line in csv_reader:
             # skip writing the 'bo1' column
-            # del line['bo1'] #delete the 'bo1' in 'fieldnames'
+            # del line['bo1'] #delete the 'bo1' in 'field_names'
             csv_writer.writerow(line)
 ```

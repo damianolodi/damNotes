@@ -16,10 +16,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/linux/01-shortcuts/</guid>
-      <description> ctrl + alt + arrow up/down → change desktop
- ctrl + T → crate new tab
- ctrl + H → show hidden files
- ctrl + alt + F1/F2/... → open the tty console. Useful when desktop env. is blocked or for any other reason. One of the function key (typically F7) is used for the graphical session
+      <description> ctrl + alt + arrow up/down &amp;rarr; change desktop
+ ctrl + T &amp;rarr; crate new tab
+ ctrl + H &amp;rarr; show hidden files
+ ctrl + alt + F1/F2/... &amp;rarr; open the tty console. Useful when desktop env. is blocked or for any other reason. One of the function key (typically F7) is used for the graphical session
   </description>
     </item>
     
@@ -29,9 +29,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/linux/02-basics/</guid>
-      <description>Bash Basics var = &amp;#34;value&amp;#34; # define new variable export var = &amp;#34;value&amp;#34; # define variable also for othe bash sessions echo $var # access the value of a variable which command_name # return the path in which the executable is found  bash → open a new bash session
- exit → exit from the current bash session  env → list all environment variables
- PATH → variable that contains all the paths (separated by columns) in which to search for executables  alias → return all defined aliases</description>
+      <description>Bash Basics var = &amp;#34;value&amp;#34; # define new variable export var = &amp;#34;value&amp;#34; # define variable also for othe bash sessions echo $var # access the value of a variable which command_name # return the path in which the executable is found  bash &amp;rarr; open a new bash session
+ exit &amp;rarr; exit from the current bash session  env &amp;rarr; list all environment variables
+ PATH &amp;rarr; variable that contains all the paths (separated by columns) in which to search for executables  alias &amp;rarr; return all defined aliases</description>
     </item>
     
     <item>
@@ -56,7 +56,7 @@ Server  Web Server: Apache HTTPD (more complete), Nginx (lighter), Stack LAMP (L
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/linux/03-packages/</guid>
-      <description> tree → show the recursive directory structure as a tree view (starting from the current directory)  </description>
+      <description> tree &amp;rarr; show the recursive directory structure as a tree view (starting from the current directory)  </description>
     </item>
     
     <item>

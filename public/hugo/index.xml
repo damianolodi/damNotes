@@ -16,11 +16,11 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/hugo/01-quick-reference/</guid>
-      <description> hugo new site site-name → create new project
- hugo version → check version installed
- hugo server → start local server on localhost:1313
- hugo server -D → compile also drafts  hugo → build the project
- hugo -D → build also drafts  hugo new path/to/file.md → create new files in /content/ directory
+      <description> hugo new site site-name &amp;rarr; create new project
+ hugo version &amp;rarr; check version installed
+ hugo server &amp;rarr; start local server on localhost:1313
+ hugo server -D &amp;rarr; compile also drafts  hugo &amp;rarr; build the project
+ hugo -D &amp;rarr; build also drafts  hugo new path/to/file.md &amp;rarr; create new files in /content/ directory
   </description>
     </item>
     
@@ -31,11 +31,11 @@
       
       <guid>https://damnotes.netlify.com/hugo/02-front-matter/</guid>
       <description>Informations between the two --- is called front matter.
- draft: true → mark post as draft
- image: &amp;quot;static/path-to-image.jpeg&amp;quot; → set the default post image (usuallly placed in the static directory)
- tags: [&#39;tag1&#39;, &#39;tag2&#39;] → post tags
- categories: [&#39;category1&#39;, ...] → post categories
- publishdate: → set a publishing date for the post (if the build date is previous the one indicated, the post will not be published)</description>
+ draft: true &amp;rarr; mark post as draft
+ image: &amp;quot;static/path-to-image.jpeg&amp;quot; &amp;rarr; set the default post image (usuallly placed in the static directory)
+ tags: [&#39;tag1&#39;, &#39;tag2&#39;] &amp;rarr; post tags
+ categories: [&#39;category1&#39;, ...] &amp;rarr; post categories
+ publishdate: &amp;rarr; set a publishing date for the post (if the build date is previous the one indicated, the post will not be published)</description>
     </item>
     
     <item>
@@ -45,7 +45,7 @@
       
       <guid>https://damnotes.netlify.com/hugo/03-folder-structure/</guid>
       <description>Archetypes Set the front matter for different content types.
- archetypes/default.md → default front matter for new content
+ archetypes/default.md &amp;rarr; default front matter for new content
 ---title:&amp;#34;{{ replace .Name &amp;#34;-&amp;#34; &amp;#34;&amp;#34; | title }}&amp;#34;date:{{.Date}}draft:true---  Config  Used to store various different configurations. If the number of configuration is limited, one can just use a single config.toml file. Also .json and .yaml can be used. To see more about configurations and configure each site properly, visit this page  Content  Directory used to store all the text file for all the contents.</description>
     </item>
     
@@ -74,10 +74,10 @@
       
       <guid>https://damnotes.netlify.com/hugo/06-functions/</guid>
       <description>All functions are reported in the documentation.
- {{ .Site.Params.homeText | markdownify }} → access the site parameter homeText (in the config file) and apply the markdownify function
- {{ $css := &amp;quot;css/bootstrap.min.css&amp;quot; | absURL }} → define a variable and apply the absURL function
- {{ hugo.Generator }} → add in the html head to display the hufo version as a metadata in the source code
-  String Manipulation  {{ print SOMETHING }} → print the argument using the Golang print function.</description>
+ {{ .Site.Params.homeText | markdownify }} &amp;rarr; access the site parameter homeText (in the config file) and apply the markdownify function
+ {{ $css := &amp;quot;css/bootstrap.min.css&amp;quot; | absURL }} &amp;rarr; define a variable and apply the absURL function
+ {{ hugo.Generator }} &amp;rarr; add in the html head to display the hufo version as a metadata in the source code
+  String Manipulation  {{ print SOMETHING }} &amp;rarr; print the argument using the Golang print function.</description>
     </item>
     
     <item>

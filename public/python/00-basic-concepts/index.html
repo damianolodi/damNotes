@@ -47,63 +47,63 @@
 
 <h4 id="lists">Lists</h4>
 <div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">l <span style="color:#666">=</span> [<span style="color:#666">100</span>, <span style="color:#666">21</span>, <span style="color:#666">88</span>, <span style="color:#666">3</span>]
-l <span style="color:#666">=</span> <span style="color:#008000">list</span>() <span style="color:#408080;font-style:italic">#empty list</span>
+l <span style="color:#666">=</span> <span style="color:#008000">list</span>() <span style="color:#408080;font-style:italic"># empty list</span>
 
 <span style="color:#408080;font-style:italic"># List Comprehension -&gt; quick list creation</span>
 evens_to_50 <span style="color:#666">=</span> [i <span style="color:#008000;font-weight:bold">for</span> i <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">range</span>(<span style="color:#666">51</span>) <span style="color:#008000;font-weight:bold">if</span> i <span style="color:#666">%</span> <span style="color:#666">2</span> <span style="color:#666">==</span> <span style="color:#666">0</span>]
 other_list <span style="color:#666">=</span> [[i,j] <span style="color:#008000;font-weight:bold">for</span> i <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">range</span>(x) <span style="color:#008000;font-weight:bold">for</span> j <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">range</span>(y) <span style="color:#008000;font-weight:bold">if</span> (x<span style="color:#666">+</span>y)<span style="color:#666">!=</span>n]
 
 <span style="color:#408080;font-style:italic"># Element selection</span>
-l[:<span style="color:#666">2</span>] <span style="color:#408080;font-style:italic"># first two items (0 and 1)</span>
-l[<span style="color:#666">3</span>:] <span style="color:#408080;font-style:italic"># ourth through last items</span>
-l[::<span style="color:#666">2</span>] <span style="color:#408080;font-style:italic"># first through end with a step of 2</span>
+l[:<span style="color:#666">2</span>]   <span style="color:#408080;font-style:italic"># first two items (0 and 1)</span>
+l[<span style="color:#666">3</span>:]   <span style="color:#408080;font-style:italic"># third through last items</span>
+l[::<span style="color:#666">2</span>]  <span style="color:#408080;font-style:italic"># first through end with a step of 2</span>
 <span style="color:#408080;font-style:italic">## in general [start(inclusive):end(exclusive):stride]</span>
 <span style="color:#408080;font-style:italic">## negative stride progress the list in reverse order</span>
 
 <span style="color:#408080;font-style:italic"># Multi-index lists</span>
 l <span style="color:#666">=</span> [<span style="color:#666">0</span>, <span style="color:#666">1</span>, <span style="color:#666">2</span>, <span style="color:#666">3</span>;
      <span style="color:#666">4</span>, <span style="color:#666">5</span>, <span style="color:#666">6</span>, <span style="color:#666">7</span>]
-l[<span style="color:#666">1</span>][<span style="color:#666">2</span>] <span style="color:#408080;font-style:italic">#6</span></code></pre></div>
+l[<span style="color:#666">1</span>][<span style="color:#666">2</span>] <span style="color:#408080;font-style:italic"># 6</span></code></pre></div>
 <ul>
-<li><p><code>l1 + l2</code> → <strong>concatenate</strong> lists</p></li>
+<li><p><code>l1 + l2</code> &rarr; <strong>concatenate</strong> lists</p></li>
 
-<li><p><code>len(list)</code> → <strong>length</strong> of the list</p></li>
+<li><p><code>len(list)</code> &rarr; <strong>length</strong> of the list</p></li>
 
-<li><p><code>min(list)</code>, <code>max(list)</code> → return <strong>min</strong> or <strong>max</strong> value of the list</p></li>
+<li><p><code>min(list)</code>, <code>max(list)</code> &rarr; return <strong>min</strong> or <strong>max</strong> value of the list</p></li>
 
-<li><p><code>l.append(item)</code> → <strong>add</strong> <em>item</em> at the end of the list</p></li>
+<li><p><code>l.append(item)</code> &rarr; <strong>add</strong> <em>item</em> at the end of the list</p></li>
 
-<li><p><code>l.insert(i, value)</code> → <strong>insert</strong> <em>new value</em> in position <em>i</em></p></li>
+<li><p><code>l.insert(i, value)</code> &rarr; <strong>insert</strong> <em>new value</em> in position <em>i</em></p></li>
 
-<li><p><code>l.pop(index)</code> → <strong>remove</strong> item at <em>index</em></p></li>
+<li><p><code>l.pop(index)</code> &rarr; <strong>remove</strong> item at <em>index</em></p></li>
 
-<li><p><code>list.sort()</code> → <strong>sort</strong> in ascending order</p></li>
+<li><p><code>list.sort()</code> &rarr; <strong>sort</strong> in ascending order</p></li>
 
-<li><p><code>item in list</code> → return a boolean if <em>item</em> <strong>is found</strong> in <em>list</em></p></li>
+<li><p><code>item in list</code> &rarr; return a boolean if <em>item</em> <strong>is found</strong> in <em>list</em></p></li>
 
-<li><p><code>l.index(value)</code> → return <strong>first index</strong> in which <em>value</em> is found</p></li>
+<li><p><code>l.index(value)</code> &rarr; return <strong>first index</strong> in which <em>value</em> is found</p></li>
 </ul>
 
 <h4 id="strings">Strings</h4>
 <div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">s <span style="color:#666">=</span> <span style="color:#ba2121">&#34;Ciao!&#34;</span></code></pre></div>
 <ul>
-<li><p><code>len(string)</code> → <strong>lenght</strong> of the string</p></li>
+<li><p><code>len(string)</code> &rarr; <strong>lenght</strong> of the string</p></li>
 
-<li><p><code>&quot; &quot;.join([&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;])</code> → <strong>combine list elements</strong> into the string &ldquo;A B C D&rdquo;</p></li>
+<li><p><code>&quot; &quot;.join([&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;])</code> &rarr; <strong>combine list elements</strong> into the string &ldquo;A B C D&rdquo;</p></li>
 
-<li><p><code>s.find(&quot;substring&quot;, start, stop)</code> → <strong>search</strong> substring in string and return the lowest index where it is found. Return -1 instead.</p></li>
+<li><p><code>s.find(&quot;substring&quot;, start, stop)</code> &rarr; <strong>search</strong> substring in string and return the lowest index where it is found. Return -1 instead.</p></li>
 
-<li><p><code>s.startswith(&quot;something&quot;)</code> → check if <em>string</em> <strong>starts</strong> with &ldquo;something&rdquo;.</p></li>
+<li><p><code>s.startswith(&quot;something&quot;)</code> &rarr; check if <em>string</em> <strong>starts</strong> with &ldquo;something&rdquo;.</p></li>
 
-<li><p><code>s.endswith(&quot;something&quot;)</code>→ check if <em>string</em> <strong>ends</strong> with &ldquo;something&rdquo;.</p></li>
+<li><p><code>s.endswith(&quot;something&quot;)</code>&rarr; check if <em>string</em> <strong>ends</strong> with &ldquo;something&rdquo;.</p></li>
 
-<li><p><code>s.split('delimiter')</code> → <strong>split</strong> a string using <em>delimiter</em>. Return a list.</p></li>
+<li><p><code>s.split('delimiter')</code> &rarr; <strong>split</strong> a string using <em>delimiter</em>. Return a list.</p></li>
 
-<li><p><code>s.replace('e','z')</code> → <strong>replace</strong> all &ldquo;e&rdquo; with &ldquo;z&rdquo;</p></li>
+<li><p><code>s.replace('e','z')</code> &rarr; <strong>replace</strong> all &ldquo;e&rdquo; with &ldquo;z&rdquo;</p></li>
 
-<li><p><code>'string {0} something {1}'.format(34,'something_else')</code> → <strong>format the string</strong> replacing <code>{ }</code> with arguments (<a href="https://docs.python.org/3.1/library/stdtypes.html?highlight=format#str.format">doc</a>)</p></li>
+<li><p><code>'string {0} something {1}'.format(34,'something_else')</code> &rarr; <strong>format the string</strong> replacing <code>{ }</code> with arguments (<a href="https://docs.python.org/3.1/library/stdtypes.html?highlight=format#str.format">doc</a>)</p></li>
 
-<li><p><code>zip(a,b,...)</code> → make an <strong>iterator</strong> that aggregates elements from each of the iterables (<a href="https://docs.python.org/3.3/library/functions.html?highlight=zip#zip">doc</a>)</p></li>
+<li><p><code>zip(a,b,...)</code> &rarr; make an <strong>iterator</strong> that aggregates elements from each of the iterables (<a href="https://docs.python.org/3.3/library/functions.html?highlight=zip#zip">doc</a>)</p></li>
 </ul>
 
 <h4 id="dictionaries">Dictionaries</h4>
@@ -112,29 +112,28 @@ l[<span style="color:#666">1</span>][<span style="color:#666">2</span>] <span st
       <span style="color:#ba2121">&#34;IN&#34;</span>:<span style="color:#ba2121">&#34;India&#34;</span>,
       <span style="color:#ba2121">&#34;key&#34;</span>: value}</code></pre></div>
 <ul>
-<li><p><code>d[&quot;key&quot;]</code> → return the value associated with the key &ldquo;key&rdquo;</p></li>
+<li><p><code>d[&quot;key&quot;]</code> &rarr; return the value associated with the key &ldquo;key&rdquo;</p></li>
 
-<li><p><code>d.keys()</code> → return a list of the keys</p></li>
+<li><p><code>d.keys()</code> &rarr; return a list of the keys</p></li>
 
-<li><p><code>d.values()</code> → return a list of the values</p></li>
+<li><p><code>d.values()</code> &rarr; return a list of the values</p></li>
 
-<li><p><code>d.items()</code> → return a list of <em>(key, value)</em> pairs</p></li>
+<li><p><code>d.items()</code> &rarr; return a list of <em>(key, value)</em> pairs</p></li>
 
-<li><p><code>d.get(&quot;AU&quot;, &quot;Sorry&quot;)</code> → return the value from the dictionary d that has the key &ldquo;AU&rdquo;, or the string &ldquo;Sorry&rdquo; if the key &ldquo;AU&rdquo; is not found in d</p></li>
+<li><p><code>d.get(&quot;AU&quot;, &quot;Sorry&quot;)</code> &rarr; return the value from the dictionary d that has the key &ldquo;AU&rdquo;, or the string &ldquo;Sorry&rdquo; if the key &ldquo;AU&rdquo; is not found in d</p></li>
 
-<li><p><code>&quot;key&quot; in d</code> → checks if <em>key</em> exists in <em>d</em></p></li>
+<li><p><code>&quot;key&quot; in d</code> &rarr; checks if <em>key</em> exists in <em>d</em></p></li>
 </ul>
 
 <h4 id="tuples-sistema">Tuples (sistema)</h4>
 
-<p><a href="https://docs.python.org/3.3/tutorial/datastructures.html#tuples-and-sequences">doc</a>
-Number of values divided by commas, like</p>
+<p>(<a href="https://docs.python.org/3.3/tutorial/datastructures.html#tuples-and-sequences">doc</a>) Values divided by commas, like</p>
 <div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">t <span style="color:#666">=</span> <span style="color:#666">12345</span>, <span style="color:#666">54321</span>, <span style="color:#ba2121">&#39;hello!&#39;</span>
 u <span style="color:#666">=</span> t, (<span style="color:#666">1</span>, <span style="color:#666">2</span>, <span style="color:#666">3</span>, <span style="color:#666">4</span>, <span style="color:#666">5</span>) <span style="color:#408080;font-style:italic"># nested tuples</span>
 empty <span style="color:#666">=</span> () <span style="color:#408080;font-style:italic"># empty tuple</span>
 single <span style="color:#666">=</span> (<span style="color:#ba2121">&#39;hello&#39;</span>,) <span style="color:#408080;font-style:italic"># 1-element tuple</span></code></pre></div>
 <ul>
-<li><p><strong>immutable</strong> → tuples usually contain an heterogeneous sequence of elements that are accessed via <em>unpacking</em> or <em>indexing</em></p>
+<li><p><strong>immutable</strong> &rarr; tuples usually contain an heterogeneous sequence of elements that are accessed via <em>unpacking</em> or <em>indexing</em></p>
 <div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">x, y, z <span style="color:#666">=</span> t <span style="color:#408080;font-style:italic"># unpacking tuples</span></code></pre></div></li>
 </ul>
 
@@ -151,8 +150,8 @@ single <span style="color:#666">=</span> (<span style="color:#ba2121">&#39;hello
 <span style="color:#008000;font-weight:bold">else</span>:
     <span style="color:#666">&lt;</span>code<span style="color:#666">&gt;</span></code></pre></div>
 <ul>
-<li><code>==</code>, <code>!=</code>, <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code> → comparators</li>
-<li><strong>not</strong>, <strong>and</strong>, <strong>or</strong> → boolean operators</li>
+<li><code>==</code>, <code>!=</code>, <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code> &rarr; comparators</li>
+<li><strong>not</strong>, <strong>and</strong>, <strong>or</strong> &rarr; boolean operators</li>
 </ul>
 
 <h4 id="for-loop">For Loop</h4>
@@ -169,7 +168,7 @@ list_b <span style="color:#666">=</span> [<span style="color:#666">2</span>, <sp
 <ul>
 <li>can loop also on <em>dictionaries</em> and <em>strings</em></li>
 <li>dictionaries are <strong>unordered</strong>: the loop wil go through <em>every key</em>, but <strong>not necessarily in the same order</strong></li>
-<li><code>zip()</code>→ stops at the end of the shorter list</li>
+<li><code>zip()</code>&rarr; stops at the end of the shorter list</li>
 </ul>
 
 <h4 id="while-loop">While Loop</h4>
@@ -178,7 +177,7 @@ list_b <span style="color:#666">=</span> [<span style="color:#666">2</span>, <sp
 <span style="color:#008000;font-weight:bold">else</span>:
     <span style="color:#666">&lt;</span>code<span style="color:#666">&gt;</span></code></pre></div>
 <ul>
-<li><code>else</code> → executed enytime the <em>condition</em> is evaluated as <em>False</em>
+<li><code>else</code> &rarr; executed enytime the <em>condition</em> is evaluated as <em>False</em>
 
 <ul>
 <li><strong>not executed</strong> if the cycle is interrupted by <code>break</code></li>
@@ -236,7 +235,7 @@ Like nested function definitions, lambda functions can reference variables from 
 
 <li><p>class names start with <strong>capital letters</strong> (convention)</p></li>
 
-<li><p><code>self.property_name</code> → <strong>access properties values</strong> inside the class definition</p>
+<li><p><code>self.property_name</code> &rarr; <strong>access properties values</strong> inside the class definition</p>
 
 <ul>
 <li>the <code>self</code> parameter is a reference to the current instance of the class</li>
@@ -246,15 +245,15 @@ Like nested function definitions, lambda functions can reference variables from 
 <h4 id="class-manipulation">Class manipulation</h4>
 
 <ul>
-<li><p><code>new_object = My_class(property_name1, property_name2, ...)</code> → <strong>create</strong> an object</p></li>
+<li><p><code>new_object = My_class(property_name1, property_name2, ...)</code> &rarr; <strong>create</strong> an object</p></li>
 
-<li><p><code>new_object.property_name1</code> → <strong>access</strong> a property</p></li>
+<li><p><code>new_object.property_name1</code> &rarr; <strong>access</strong> a property</p></li>
 
-<li><p><code>new_object.property_name1 = new_value</code> → <strong>modify</strong> a property</p></li>
+<li><p><code>new_object.property_name1 = new_value</code> &rarr; <strong>modify</strong> a property</p></li>
 
-<li><p><code>new_object.method()</code> → <strong>apply</strong> a method</p></li>
+<li><p><code>new_object.method()</code> &rarr; <strong>apply</strong> a method</p></li>
 
-<li><p><code>del new_object.property_name1</code> → <strong>delete</strong> an object property</p></li>
+<li><p><code>del new_object.property_name1</code> &rarr; <strong>delete</strong> an object property</p></li>
 </ul>
 
 <h4 id="inheritance">Inheritance</h4>
@@ -293,13 +292,13 @@ Like nested function definitions, lambda functions can reference variables from 
 
 <li><p><code>cd</code> into the project folder</p></li>
 
-<li><p><code>conda create --name project-name-env dependecy1 dependency2 ...</code> → <strong>create</strong> the environment</p></li>
+<li><p><code>conda create --name project-name-env dependecy1 dependency2 ...</code> &rarr; <strong>create</strong> the environment</p></li>
 
-<li><p><code>source activate project-name-env</code> → <strong>activate</strong> the environment</p></li>
+<li><p><code>source activate project-name-env</code> &rarr; <strong>activate</strong> the environment</p></li>
 
-<li><p><code>source deactivate project-name-env</code> → <strong>deactivate</strong> the environment</p></li>
+<li><p><code>source deactivate project-name-env</code> &rarr; <strong>deactivate</strong> the environment</p></li>
 
-<li><p><code>conda env export &gt; environment.yaml</code> → <strong>export</strong> the environment</p>
+<li><p><code>conda env export &gt; environment.yaml</code> &rarr; <strong>export</strong> the environment</p>
 
 <ul>
 <li><p>keep track of all the dependencies</p></li>
@@ -307,9 +306,9 @@ Like nested function definitions, lambda functions can reference variables from 
 <li><p>have the possibility to reproduce the environment if something goes wrong</p></li>
 </ul></li>
 
-<li><p><code>conda env create -f environment.yaml</code> → create a virtual environment from a <em>.yaml</em> file</p></li>
+<li><p><code>conda env create -f environment.yaml</code> &rarr; create a virtual environment from a <em>.yaml</em> file</p></li>
 
-<li><p><code>conda env list</code> → list all the environments on the machine with their location</p></li>
+<li><p><code>conda env list</code> &rarr; list all the environments on the machine with their location</p></li>
 </ul>
 
 

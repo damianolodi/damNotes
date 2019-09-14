@@ -45,17 +45,17 @@
 
 <div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">numpy</span> <span style="color:#008000;font-weight:bold">as</span> <span style="color:#00f;font-weight:bold">np</span>
 
-array[index1, index2] <span style="color:#408080;font-style:italic"># access an element. Use : to access the all line</span>
-array[start:stop:stride] <span style="color:#408080;font-style:italic"># array slicing</span>
-np<span style="color:#666">.</span>nditer(array) <span style="color:#408080;font-style:italic"># create an iterator object to be used in for loops</span>
+array[index1, index2]       <span style="color:#408080;font-style:italic"># access an element. Use : to access the all line</span>
+array[start:stop:stride]    <span style="color:#408080;font-style:italic"># array slicing</span>
+np<span style="color:#666">.</span>nditer(array)            <span style="color:#408080;font-style:italic"># create an iterator object to be used in for loops</span>
 
 <span style="color:#408080;font-style:italic"># Array generation</span>
-np<span style="color:#666">.</span>array(<span style="color:#008000">list</span>) <span style="color:#408080;font-style:italic"># create array from list</span>
+np<span style="color:#666">.</span>array(<span style="color:#008000">list</span>)                  <span style="color:#408080;font-style:italic"># create array from list</span>
 np<span style="color:#666">.</span>arange(first, size, spacing) <span style="color:#408080;font-style:italic"># generate array</span>
-np<span style="color:#666">.</span>linspace(first, last, size) <span style="color:#408080;font-style:italic"># generate array, both end points are included</span>
+np<span style="color:#666">.</span>linspace(first, last, size)  <span style="color:#408080;font-style:italic"># generate array, both end points are included</span>
 np<span style="color:#666">.</span>logspace(first, last, size, base<span style="color:#666">=</span>e) <span style="color:#408080;font-style:italic"># generate log-spaced array</span>
-np<span style="color:#666">.</span>zeros((dim1,dim2)) <span style="color:#408080;font-style:italic"># create array full of 0s</span>
-np<span style="color:#666">.</span>ones((dim1,dim2)) <span style="color:#408080;font-style:italic"># create array full of 1s</span></code></pre></div>
+np<span style="color:#666">.</span>zeros((dim1,dim2))           <span style="color:#408080;font-style:italic"># create array full of 0s</span>
+np<span style="color:#666">.</span>ones((dim1,dim2))            <span style="color:#408080;font-style:italic"># create array full of 1s</span></code></pre></div>
 <p>Numpy arrays are statically typed and homogeneous. The type of the elements is determined when the array is created.</p>
 
 <ul>
@@ -67,19 +67,19 @@ np<span style="color:#666">.</span>ones((dim1,dim2)) <span style="color:#408080;
 <h3 id="arrays-methods">Arrays Methods</h3>
 
 <ul>
-<li><p><code>np.shape(array)</code> → return array <strong>dimensions</strong> (tuple)</p></li>
+<li><p><code>np.shape(array)</code> &rarr; return array <strong>dimensions</strong> (tuple)</p></li>
 
-<li><p><code>np.size(array)</code> → return <strong>number of elements</strong></p></li>
+<li><p><code>np.size(array)</code> &rarr; return <strong>number of elements</strong></p></li>
 
-<li><p><code>np.ndim(array)</code> → return <strong>number of dimensions</strong></p></li>
+<li><p><code>np.ndim(array)</code> &rarr; return <strong>number of dimensions</strong></p></li>
 
-<li><p><code>np.dtype(list)</code> → return the <strong>data type</strong> of the array</p></li>
+<li><p><code>np.dtype(list)</code> &rarr; return the <strong>data type</strong> of the array</p></li>
 
-<li><p><code>np.random.rand(d0,d1,...)</code> → generate a <code>d0, d1,…</code> dimension array made of <strong>uniformly distributed random numbers</strong> between 0 and 1</p></li>
+<li><p><code>np.random.rand(d0,d1,...)</code> &rarr; generate a <code>d0, d1,…</code> dimension array made of <strong>uniformly distributed random numbers</strong> between 0 and 1</p></li>
 
-<li><p><code>np.random.randn(d0,d1,...)</code> → generate a <code>d0, d1,…</code> dimension array made of <strong>gaussian distributed random numbers</strong> between 0 and 1</p></li>
+<li><p><code>np.random.randn(d0,d1,...)</code> &rarr; generate a <code>d0, d1,…</code> dimension array made of <strong>gaussian distributed random numbers</strong> between 0 and 1</p></li>
 
-<li><p><code>np.random.permutation(array)</code> → shuffle the array (or pandas Series)</p></li>
+<li><p><code>np.random.permutation(array)</code> &rarr; shuffle the array (or pandas Series)</p></li>
 </ul>
 
 <hr />
@@ -87,13 +87,13 @@ np<span style="color:#666">.</span>ones((dim1,dim2)) <span style="color:#408080;
 <h3 id="file-i-o-from-arrays">File I/O from Arrays</h3>
 
 <ul>
-<li><p><code>data = np.genfromtxt('csv-or-tsv-file.dat')</code> → <strong>import data</strong> from file</p></li>
+<li><p><code>data = np.genfromtxt('csv-or-tsv-file.dat')</code> &rarr; <strong>import data</strong> from file</p></li>
 
-<li><p><code>savetxt('file-name.csv', array-name, fmt='%.5f')</code> → <strong>save the array</strong> in a cvs file and specify the format (optional)</p></li>
+<li><p><code>savetxt('file-name.csv', array-name, fmt='%.5f')</code> &rarr; <strong>save the array</strong> in a cvs file and specify the format (optional)</p></li>
 
-<li><p><code>np.save(‘file-name.npy’,array-name)</code> → save array in a <em>proprietary file format</em></p></li>
+<li><p><code>np.save(‘file-name.npy’,array-name)</code> &rarr; save array in a <em>proprietary file format</em></p></li>
 
-<li><p><code>np.load(‘file-name.npy’)</code> → load array from <em>proprietary file format</em></p></li>
+<li><p><code>np.load(‘file-name.npy’)</code> &rarr; load array from <em>proprietary file format</em></p></li>
 </ul>
 
 <hr />
@@ -101,19 +101,19 @@ np<span style="color:#666">.</span>ones((dim1,dim2)) <span style="color:#408080;
 <h3 id="data-analysis">Data Analysis</h3>
 
 <ul>
-<li><p><code>mean(array)</code> → compute the <em>mean</em> of the array</p></li>
+<li><p><code>mean(array)</code> &rarr; compute the <em>mean</em> of the array</p></li>
 
-<li><p><code>std(array)</code> → compute <em>standard deviation</em></p></li>
+<li><p><code>std(array)</code> &rarr; compute <em>standard deviation</em></p></li>
 
-<li><p><code>var(array)</code> → compute <em>variance</em></p></li>
+<li><p><code>var(array)</code> &rarr; compute <em>variance</em></p></li>
 
-<li><p><code>array.min()</code>, <code>array.max()</code> → find <em>min</em> and <em>max</em> values</p></li>
+<li><p><code>array.min()</code>, <code>array.max()</code> &rarr; find <em>min</em> and <em>max</em> values</p></li>
 
-<li><p><code>sum(array)</code>, <code>cumsum(array)</code> → compute <em>sum</em> and <em>cumulative sum</em></p></li>
+<li><p><code>sum(array)</code>, <code>cumsum(array)</code> &rarr; compute <em>sum</em> and <em>cumulative sum</em></p></li>
 
-<li><p><code>prod(array)</code>, <code>cumprod(array)</code> → compute <em>product</em> and <em>cumulative product</em></p></li>
+<li><p><code>prod(array)</code>, <code>cumprod(array)</code> &rarr; compute <em>product</em> and <em>cumulative product</em></p></li>
 
-<li><p><code>np.dot(a,b)</code> → <strong>dot product</strong> of 2 arrays/matrices <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.dot.html#numpy.dot">doc</a></p></li>
+<li><p><code>np.dot(a,b)</code> &rarr; <strong>dot product</strong> of 2 arrays/matrices <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.dot.html#numpy.dot">doc</a></p></li>
 </ul>
 
 

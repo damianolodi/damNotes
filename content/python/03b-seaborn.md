@@ -1,6 +1,7 @@
 ---
 title: "Seaborn"
 draft: false
+arguments: ["Style set"]
 weight: 4
 ---
 

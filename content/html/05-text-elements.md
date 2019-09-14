@@ -7,14 +7,14 @@ weight: 5
 
 ### Common Text
 
--   `<!-- -->` → comments in html5
--   `<h1> <h2> <h3> <h4> <h5> <h6>` → headings
--   `<p>` → paragraph
+-   `<!-- -->` &rarr; comments in html5
+-   `<h1> <h2> <h3> <h4> <h5> <h6>` &rarr; headings
+-   `<p>` &rarr; paragraph
     		_ Spaces and returns don’t affect the appearance of the code.
     		_ To break the line in one paragraph (without changing paragraph) use the tag `<br />`
--   `<em>` → italics
--   `<strong>` → bold
--   `style=“color: blue”` → attribute to change color to apply CSS only to that tag
+-   `<em>` &rarr; italics
+-   `<strong>` &rarr; bold
+-   `style=“color: blue”` &rarr; attribute to change color to apply CSS only to that tag
 
 * * *
 
@@ -41,6 +41,6 @@ weight: 5
 
 **Attributes** provide even more information about an element’s content and they live directly inside of the opening tag of an element.
 
--   `target="_blank"` → link opens in a different tab
--   `<a href=“./index.html”>` → link to other pages of the same site
--   `<a href=“#id_value”>` → link to a tag with attribute `id="id_value"`
+-   `target="_blank"` &rarr; link opens in a different tab
+-   `<a href=“./index.html”>` &rarr; link to other pages of the same site
+-   `<a href=“#id_value”>` &rarr; link to a tag with attribute `id="id_value"`

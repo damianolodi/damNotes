@@ -16,42 +16,42 @@ weight: -1
 
 ```py
 l = [100, 21, 88, 3]
-l = list() #empty list
+l = list() # empty list
 
 # List Comprehension -> quick list creation
 evens_to_50 = [i for i in range(51) if i % 2 == 0]
 other_list = [[i,j] for i in range(x) for j in range(y) if (x+y)!=n]
 
 # Element selection
-l[:2] # first two items (0 and 1)
-l[3:] # ourth through last items
-l[::2] # first through end with a step of 2
+l[:2]   # first two items (0 and 1)
+l[3:]   # third through last items
+l[::2]  # first through end with a step of 2
 ## in general [start(inclusive):end(exclusive):stride]
 ## negative stride progress the list in reverse order
 
 # Multi-index lists
 l = [0, 1, 2, 3;
      4, 5, 6, 7]
-l[1][2] #6
+l[1][2] # 6
 ```
 
--   `l1 + l2` → **concatenate** lists
+-   `l1 + l2` &rarr; **concatenate** lists
 
--   `len(list)` → **length** of the list
+-   `len(list)` &rarr; **length** of the list
 
--   `min(list)`, `max(list)` → return **min** or **max** value of the list
+-   `min(list)`, `max(list)` &rarr; return **min** or **max** value of the list
 
--   `l.append(item)` → **add** _item_ at the end of the list
+-   `l.append(item)` &rarr; **add** _item_ at the end of the list
 
--   `l.insert(i, value)` → **insert** _new value_ in position _i_
+-   `l.insert(i, value)` &rarr; **insert** _new value_ in position _i_
 
--   `l.pop(index)` → **remove** item at _index_
+-   `l.pop(index)` &rarr; **remove** item at _index_
 
--   `list.sort()` → **sort** in ascending order
+-   `list.sort()` &rarr; **sort** in ascending order
 
--   `item in list` → return a boolean if _item_ **is found** in _list_
+-   `item in list` &rarr; return a boolean if _item_ **is found** in _list_
 
--   `l.index(value)` → return **first index** in which _value_ is found
+-   `l.index(value)` &rarr; return **first index** in which _value_ is found
 
 #### Strings
 
@@ -59,23 +59,23 @@ l[1][2] #6
 s = "Ciao!"
 ```
 
--   `len(string)` → **lenght** of the string
+-   `len(string)` &rarr; **lenght** of the string
 
--   `" ".join(["A","B","C","D"])` → **combine list elements** into the string "A B C D"
+-   `" ".join(["A","B","C","D"])` &rarr; **combine list elements** into the string "A B C D"
 
--   `s.find("substring", start, stop)` → **search** substring in string and return the lowest index where it is found. Return -1 instead.
+-   `s.find("substring", start, stop)` &rarr; **search** substring in string and return the lowest index where it is found. Return -1 instead.
 
--   `s.startswith("something")` → check if _string_ **starts** with "something".
+-   `s.startswith("something")` &rarr; check if _string_ **starts** with "something".
 
--   `s.endswith("something")`→ check if _string_ **ends** with "something".
+-   `s.endswith("something")`&rarr; check if _string_ **ends** with "something".
 
--   `s.split('delimiter')` → **split** a string using _delimiter_. Return a list.
+-   `s.split('delimiter')` &rarr; **split** a string using _delimiter_. Return a list.
 
--   `s.replace('e','z')` → **replace** all "e" with "z"
+-   `s.replace('e','z')` &rarr; **replace** all "e" with "z"
 
--   `'string {0} something {1}'.format(34,'something_else')` → **format the string** replacing `{ }` with arguments ([doc](https://docs.python.org/3.1/library/stdtypes.html?highlight=format#str.format))
+-   `'string {0} something {1}'.format(34,'something_else')` &rarr; **format the string** replacing `{ }` with arguments ([doc](https://docs.python.org/3.1/library/stdtypes.html?highlight=format#str.format))
 
--   `zip(a,b,...)` → make an **iterator** that aggregates elements from each of the iterables ([doc](https://docs.python.org/3.3/library/functions.html?highlight=zip#zip))
+-   `zip(a,b,...)` &rarr; make an **iterator** that aggregates elements from each of the iterables ([doc](https://docs.python.org/3.3/library/functions.html?highlight=zip#zip))
 
 #### Dictionaries
 
@@ -86,22 +86,21 @@ d = { "CA":"Canada",
       "key": value}
 ```
 
--   `d["key"]` → return the value associated with the key "key"
+-   `d["key"]` &rarr; return the value associated with the key "key"
 
--   `d.keys()` → return a list of the keys
+-   `d.keys()` &rarr; return a list of the keys
 
--   `d.values()` → return a list of the values
+-   `d.values()` &rarr; return a list of the values
 
--   `d.items()` → return a list of _(key, value)_ pairs
+-   `d.items()` &rarr; return a list of _(key, value)_ pairs
 
--   `d.get("AU", "Sorry")` → return the value from the dictionary d that has the key "AU", or the string "Sorry" if the key "AU" is not found in d
+-   `d.get("AU", "Sorry")` &rarr; return the value from the dictionary d that has the key "AU", or the string "Sorry" if the key "AU" is not found in d
 
--   `"key" in d` → checks if _key_ exists in _d_
+-   `"key" in d` &rarr; checks if _key_ exists in _d_
 
 #### Tuples (sistema)
 
-[doc](https://docs.python.org/3.3/tutorial/datastructures.html#tuples-and-sequences)
-Number of values divided by commas, like
+([doc](https://docs.python.org/3.3/tutorial/datastructures.html#tuples-and-sequences)) Values divided by commas, like
 
 ```py
 t = 12345, 54321, 'hello!'
@@ -110,7 +109,7 @@ empty = () # empty tuple
 single = ('hello',) # 1-element tuple
 ```
 
--   **immutable** → tuples usually contain an heterogeneous sequence of elements that are accessed via _unpacking_ or _indexing_
+-   **immutable** &rarr; tuples usually contain an heterogeneous sequence of elements that are accessed via _unpacking_ or _indexing_
 
 ```py
     x, y, z = t # unpacking tuples
@@ -132,8 +131,8 @@ else:
     <code>
 ```
 
--   `==`, `!=`, `>`, `<`, `>=`, `<=` → comparators
--   **not**, **and**, **or** → boolean operators
+-   `==`, `!=`, `>`, `<`, `>=`, `<=` &rarr; comparators
+-   **not**, **and**, **or** &rarr; boolean operators
 
 #### For Loop
 
@@ -152,7 +151,7 @@ for a, b in zip(list_a , list_b): # loop on multiple lists
 
 -   can loop also on _dictionaries_ and _strings_
 -   dictionaries are **unordered**: the loop wil go through _every key_, but **not necessarily in the same order**
--   `zip()`→ stops at the end of the shorter list
+-   `zip()`&rarr; stops at the end of the shorter list
 
 #### While Loop
 
@@ -163,7 +162,7 @@ else:
     <code>
 ```
 
--   `else` → executed enytime the _condition_ is evaluated as _False_
+-   `else` &rarr; executed enytime the _condition_ is evaluated as _False_
     -   **not executed** if the cycle is interrupted by `break`
 
 * * *
@@ -222,21 +221,21 @@ class Person:
 
 -   class names start with **capital letters** (convention)
 
--   `self.property_name` → **access properties values** inside the class definition
+-   `self.property_name` &rarr; **access properties values** inside the class definition
 
     -   the `self` parameter is a reference to the current instance of the class
 
 #### Class manipulation
 
--   `new_object = My_class(property_name1, property_name2, ...)` → **create** an object
+-   `new_object = My_class(property_name1, property_name2, ...)` &rarr; **create** an object
 
--   `new_object.property_name1` → **access** a property
+-   `new_object.property_name1` &rarr; **access** a property
 
--   `new_object.property_name1 = new_value` → **modify** a property
+-   `new_object.property_name1 = new_value` &rarr; **modify** a property
 
--   `new_object.method()` → **apply** a method
+-   `new_object.method()` &rarr; **apply** a method
 
--   `del new_object.property_name1` → **delete** an object property
+-   `del new_object.property_name1` &rarr; **delete** an object property
 
 #### Inheritance
 
@@ -277,18 +276,18 @@ class Student(Person): # child class definition
 
 -   `cd` into the project folder
 
--   `conda create --name project-name-env dependecy1 dependency2 ...` → **create** the environment
+-   `conda create --name project-name-env dependecy1 dependency2 ...` &rarr; **create** the environment
 
--   `source activate project-name-env` → **activate** the environment
+-   `source activate project-name-env` &rarr; **activate** the environment
 
--   `source deactivate project-name-env` → **deactivate** the environment
+-   `source deactivate project-name-env` &rarr; **deactivate** the environment
 
--   `conda env export > environment.yaml` → **export** the environment
+-   `conda env export > environment.yaml` &rarr; **export** the environment
 
     -   keep track of all the dependencies
 
     -   have the possibility to reproduce the environment if something goes wrong
 
--   `conda env create -f environment.yaml` → create a virtual environment from a _.yaml_ file
+-   `conda env create -f environment.yaml` &rarr; create a virtual environment from a _.yaml_ file
 
--   `conda env list` → list all the environments on the machine with their location
+-   `conda env list` &rarr; list all the environments on the machine with their location

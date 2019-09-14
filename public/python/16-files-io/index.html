@@ -43,56 +43,49 @@
 </div>
 
 
-<h3 id="files-i-o">Files I/O</h3>
-
-<p>Use</p>
 <div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">csv</span></code></pre></div>
-<p>in your program.</p>
-
-<h2 id="simple-read-csv-file">SIMPLE READ .CSV FILE</h2>
-
-<p>Use <code>with</code> to automatically close the file at the end</p>
+<h3 id="read-csv-files">Read CSV files</h3>
 <div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">with</span> <span style="color:#008000">open</span>(<span style="color:#ba2121">&#39;data.csv&#39;</span>,<span style="color:#ba2121">&#39;r&#39;</span>) <span style="color:#008000;font-weight:bold">as</span> csv_file:
     csv_reader <span style="color:#666">=</span> csv<span style="color:#666">.</span>reader(csv_file, delimiter<span style="color:#666">=</span><span style="color:#ba2121">&#39; &#39;</span>)
 
-    <span style="color:#408080;font-style:italic"># to skip over the header line</span>
-    <span style="color:#008000">next</span>(csv_reader)
+    <span style="color:#008000">next</span>(csv_reader)        <span style="color:#408080;font-style:italic"># skip over the header line</span>
 
     <span style="color:#008000;font-weight:bold">for</span> line <span style="color:#a2f;font-weight:bold">in</span> csv_reader:
         <span style="color:#008000;font-weight:bold">print</span>(line)</code></pre></div>
-<h2 id="simple-write-on-a-new-csv-file">SIMPLE WRITE ON A NEW .CSV FILE</h2>
-<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">with</span> <span style="color:#008000">open</span>(<span style="color:#ba2121">&#39;data.csv&#39;</span>,<span style="color:#ba2121">&#39;r&#39;</span>) <span style="color:#008000;font-weight:bold">as</span> csv_file:
-    csv_reader <span style="color:#666">=</span> csv<span style="color:#666">.</span>reader(csv_file, delimiter<span style="color:#666">=</span><span style="color:#ba2121">&#39; &#39;</span>)
-    <span style="color:#408080;font-style:italic"># open a new file</span>
-    <span style="color:#008000;font-weight:bold">with</span> <span style="color:#008000">open</span>(<span style="color:#ba2121">&#39;new_file.csv&#39;</span>,<span style="color:#ba2121">&#39;w&#39;</span>) <span style="color:#008000;font-weight:bold">as</span> new_file:
-        csv_writer <span style="color:#666">=</span> csv<span style="color:#666">.</span>writer(new_file, delimiter<span style="color:#666">=</span><span style="color:#ba2121">&#39;</span><span style="color:#b62;font-weight:bold">\t</span><span style="color:#ba2121">&#39;</span>)
+<ul>
+<li>use <code>with</code> to automatically close the file at the end</li>
+</ul>
 
-        <span style="color:#008000;font-weight:bold">for</span> line <span style="color:#a2f;font-weight:bold">in</span> csv_reader:
-            csv_writer<span style="color:#666">.</span>writerow(line)</code></pre></div>
-<h2 id="reading-with-dictionary-reader">READING WITH DICTIONARY READER</h2>
+<h3 id="write-on-csv-files">Write on CSV files</h3>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">with</span> <span style="color:#008000">open</span>(<span style="color:#ba2121">&#39;new_file.csv&#39;</span>,<span style="color:#ba2121">&#39;w&#39;</span>) <span style="color:#008000;font-weight:bold">as</span> new_file:
+    csv_writer <span style="color:#666">=</span> csv<span style="color:#666">.</span>writer(new_file, delimiter<span style="color:#666">=</span><span style="color:#ba2121">&#39;</span><span style="color:#b62;font-weight:bold">\t</span><span style="color:#ba2121">&#39;</span>)
 
-<p>Use dictionary reader if you want more &ldquo;human readable&rdquo; files</p>
+    <span style="color:#008000;font-weight:bold">for</span> line <span style="color:#a2f;font-weight:bold">in</span> csv_reader:
+        csv_writer<span style="color:#666">.</span>writerow(something)</code></pre></div>
+<ul>
+<li>use <code>w+</code> to create the file if it does not exist</li>
+</ul>
+
+<h3 id="reading-with-dictionary-reader">Reading with Dictionary Reader</h3>
+
+<p>Use if more &ldquo;human readable&rdquo; files are needed</p>
 <div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">with</span> <span style="color:#008000">open</span>(<span style="color:#ba2121">&#39;data.csv&#39;</span>,<span style="color:#ba2121">&#39;r&#39;</span>) <span style="color:#008000;font-weight:bold">as</span> csv_file:
     csv_reader <span style="color:#666">=</span> csv<span style="color:#666">.</span>DictReader(csv_file,delimiter<span style="color:#666">=</span><span style="color:#ba2121">&#39; &#39;</span>)
 
     <span style="color:#008000;font-weight:bold">for</span> line <span style="color:#a2f;font-weight:bold">in</span> csv_reader:
-        <span style="color:#008000;font-weight:bold">print</span>(line)
-        <span style="color:#408080;font-style:italic">#print only the time</span>
-        <span style="color:#408080;font-style:italic">#print(line[&#39;ora&#39;])</span></code></pre></div>
-<h2 id="writing-with-dictionary-writer">WRITING WITH DICTIONARY WRITER</h2>
+        <span style="color:#008000;font-weight:bold">print</span>(line)</code></pre></div>
+<h3 id="writing-with-dictionary-writer">Writing with Dictionary Writer</h3>
 <div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">with</span> <span style="color:#008000">open</span>(<span style="color:#ba2121">&#39;data.csv&#39;</span>,<span style="color:#ba2121">&#39;r&#39;</span>) <span style="color:#008000;font-weight:bold">as</span> csv_file:
     csv_reader <span style="color:#666">=</span> csv<span style="color:#666">.</span>DictReader(csv_file,delimiter<span style="color:#666">=</span><span style="color:#ba2121">&#39; &#39;</span>)
-    <span style="color:#408080;font-style:italic"># open a new file</span>
+    
     <span style="color:#008000;font-weight:bold">with</span> <span style="color:#008000">open</span>(<span style="color:#ba2121">&#39;new_file.csv&#39;</span>,<span style="color:#ba2121">&#39;w&#39;</span>) <span style="color:#008000;font-weight:bold">as</span> new_file:
-        <span style="color:#408080;font-style:italic"># create the list of filednames</span>
-        fieldnames <span style="color:#666">=</span> [<span style="color:#ba2121">&#39;data&#39;</span>,<span style="color:#ba2121">&#39;ora&#39;</span>,<span style="color:#ba2121">&#39;bo1&#39;</span>,<span style="color:#ba2121">&#39;bo2&#39;</span>,<span style="color:#ba2121">&#39;bo3&#39;</span>,<span style="color:#ba2121">&#39;bo4&#39;</span>,<span style="color:#ba2121">&#39;bo5&#39;</span>,<span style="color:#ba2121">&#39;bo6&#39;</span>,<span style="color:#ba2121">&#39;bo7&#39;</span>,<span style="color:#ba2121">&#39;bo8&#39;</span>]
-        csv_writer <span style="color:#666">=</span> csv<span style="color:#666">.</span>DictWriter(new_file, fieldnames<span style="color:#666">=</span>fieldnames, delimiter<span style="color:#666">=</span><span style="color:#ba2121">&#39;</span><span style="color:#b62;font-weight:bold">\t</span><span style="color:#ba2121">&#39;</span>)
-        <span style="color:#408080;font-style:italic">#write the header in the new file</span>
-        csv_writer<span style="color:#666">.</span>writeheader()
+        field_names <span style="color:#666">=</span> [<span style="color:#ba2121">&#39;data&#39;</span>,<span style="color:#ba2121">&#39;ora&#39;</span>,<span style="color:#ba2121">&#39;bo1&#39;</span>,<span style="color:#ba2121">&#39;bo2&#39;</span>,<span style="color:#ba2121">&#39;bo3&#39;</span>,<span style="color:#ba2121">&#39;bo4&#39;</span>,<span style="color:#ba2121">&#39;bo5&#39;</span>,<span style="color:#ba2121">&#39;bo6&#39;</span>,<span style="color:#ba2121">&#39;bo7&#39;</span>,<span style="color:#ba2121">&#39;bo8&#39;</span>]
+        csv_writer <span style="color:#666">=</span> csv<span style="color:#666">.</span>DictWriter(new_file, field_names<span style="color:#666">=</span>field_names, delimiter<span style="color:#666">=</span><span style="color:#ba2121">&#39;</span><span style="color:#b62;font-weight:bold">\t</span><span style="color:#ba2121">&#39;</span>)
+        csv_writer<span style="color:#666">.</span>writeheader()    <span style="color:#408080;font-style:italic"># write the header in the new file</span>
 
         <span style="color:#008000;font-weight:bold">for</span> line <span style="color:#a2f;font-weight:bold">in</span> csv_reader:
             <span style="color:#408080;font-style:italic"># skip writing the &#39;bo1&#39; column</span>
-            <span style="color:#408080;font-style:italic"># del line[&#39;bo1&#39;] #delete the &#39;bo1&#39; in &#39;fieldnames&#39;</span>
+            <span style="color:#408080;font-style:italic"># del line[&#39;bo1&#39;] #delete the &#39;bo1&#39; in &#39;field_names&#39;</span>
             csv_writer<span style="color:#666">.</span>writerow(line)</code></pre></div>
 
 

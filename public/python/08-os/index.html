@@ -43,31 +43,31 @@
 </div>
 
 
-<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">os</span>
-<span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">datetime</span></code></pre></div>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">os</span></code></pre></div>
 <hr />
 
-<h2 id="os">Os</h2>
+<h3 id="os">Os</h3>
 
 <ul>
-<li><code>os.getcwd()</code> obtain the current working directory</li>
-<li><code>os.listdir(path)</code> list all file in the path. Better using <code>scandir()</code> for more performance</li>
-<li><code>os.chdir(path)</code> change the cwd to path</li>
+<li><p><code>os.getcwd()</code> &rarr; return the <strong>current working directory</strong></p></li>
 
-<li><p><code>os.remove(path)</code> remove a file</p></li>
+<li><p><code>os.listdir(path)</code> &rarr; <strong>list all file</strong> in the path. It is better using <code>scandir()</code> for more performance</p></li>
 
-<li><p><code>os.mkdir(path)</code> create a directory. To avoid errors if the directory exist, use</p>
+<li><p><code>os.scandir(path)</code> &rarr; <strong>scan all files in the path</strong> and create an <code>os.DirEntry</code> object containing all files with their information (<a href="https://docs.python.org/3/library/os.html#os.DirEntry">doc</a>)</p></li>
+
+<li><p><code>os.chdir(path)</code> &rarr; <strong>change the cwd</strong> to path</p></li>
+
+<li><p><code>os.remove(path)</code> &rarr; <strong>remove</strong> a file</p></li>
+
+<li><p><code>os.mkdir(path)</code> &rarr; <strong>create a directory</strong>. To avoid errors if the directory exist, use</p>
 <div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">dirName <span style="color:#666">=</span> <span style="color:#ba2121">&#39;tempDir&#39;</span>
 <span style="color:#008000;font-weight:bold">try</span>:
-<span style="color:#408080;font-style:italic"># Create target Directory</span>
-os<span style="color:#666">.</span>mkdir(dirName)
-<span style="color:#008000;font-weight:bold">print</span>(<span style="color:#ba2121">&#34;Directory &#34;</span> , dirName ,  <span style="color:#ba2121">&#34; Created &#34;</span>)
+    os<span style="color:#666">.</span>mkdir(dirName)   <span style="color:#408080;font-style:italic"># Create target Directory</span>
+    <span style="color:#008000;font-weight:bold">print</span>(<span style="color:#ba2121">&#34;Directory &#34;</span> , dirName ,  <span style="color:#ba2121">&#34; Created &#34;</span>)
 <span style="color:#008000;font-weight:bold">except</span> FileExistsError:
-<span style="color:#008000;font-weight:bold">print</span>(<span style="color:#ba2121">&#34;Directory &#34;</span> , dirName ,  <span style="color:#ba2121">&#34; already exists&#34;</span>)</code></pre></div></li>
+    <span style="color:#008000;font-weight:bold">print</span>(<span style="color:#ba2121">&#34;Directory &#34;</span> , dirName ,  <span style="color:#ba2121">&#34; already exists&#34;</span>)</code></pre></div></li>
 
-<li><p><code>os.rename(current-path, destination-path)</code> move or rename a file</p></li>
-
-<li><p><code>os.scandir(path)</code> scan all files in the path and create an <code>os.DirEntry</code> object containing all files with their information. Follow the <a href="https://docs.python.org/3/library/os.html#os.DirEntry">doc</a> for all methods and attributes of the object</p></li>
+<li><p><code>os.rename(current-path, destination-path)</code> &rarr; <strong>move</strong> or rename a file</p></li>
 </ul>
 
 
