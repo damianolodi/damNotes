@@ -68,11 +68,13 @@ df = pd.read_csv(r’relative_path’, 					#can be a web address
 
 -   `df['columnName'] = df['columnName'].astype(type)` &rarr; **change the type** of the column [`str` (printed as object), `int64`, `float64`]
 
+-   `df.index` &rarr; access the indexes
+
+	-   `len(df.index)` &rarr; **number of row** of the df (fastest method)
+
 * * *
 
 ### `df` Manipulation
-
--   `df.index` &rarr; access the indexes
 
 -   `df.reindex([list])` &rarr; reassign indexes manually
 
@@ -103,6 +105,8 @@ df = pd.read_csv(r’relative_path’, 					#can be a web address
 -   `df.iloc[0:n,:]` &rarr; select the first _n_ rows and all the columns
 
 -   `df.loc[44,:]` &rarr; select line 44 [only usable if there is an _index_ in the dataframe]
+
+-   `df.shift(n, axis=0)` &rarr; **shift rows** by _n_ (can be negative)
 
 -   `df[df["Area"] == "Ireland”]` &rarr; select rows where _Area_ is _Ireland_
 

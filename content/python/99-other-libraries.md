@@ -1,14 +1,12 @@
 ---
 title: "Other Libraries"
 draft: false
+arguments: ["IPython",
+            "ScyPy",
+            "SymPy",
+            "Sys"]
 weight: 99
 ---
-
-### Datetime
-
--   `datetime.today()` &rarr; print **current date**
-
-* * *
 
 ### IPython
 
@@ -21,26 +19,6 @@ from IPython import display # display various type of data (audio, images, ...)
 ```
 
 -   `display.display(obj)` &rarr; display a python object in all frontends ([doc](https://ipython.readthedocs.io/en/stable/api/generated/IPython.display.html#module-IPython.display))
-
-* * *
-
-### PySerial
-
-([Docs](https://pyserial.readthedocs.io/en/latest/shortintro.html))
-
-```py
-import serial
-
-ser = serial.Serial(port = '/dev/tty.SLAB_USBtoUART',
-                    baudrate = 9600,
-                    bytesize = serial.EIGHTBITS,
-                    parity = serial.PARITY_NONE,
-                    stopbits = serial.STOPBITS_ONE,
-					timeout = 3 #s
-                    )
-```
-
--   `python -m serial.tools.list_ports` &rarr; prints a list of available ports.
 
 * * *
 

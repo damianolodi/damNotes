@@ -1,6 +1,8 @@
 ---
 title: "Files I/O"
 draft: false
+arguments: ["Read files",
+            "Write files"]
 weight: 16
 ---
 

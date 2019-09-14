@@ -1,8 +1,11 @@
 ---
 title: "Python Installation and Setup"
 draft: false
-arguments: []
-weight: 19
+arguments: ["Installation",
+            "VS Code Setup",
+            "Atom Setup",
+            "Anaconda Settings"]
+weight: 98
 ---
 
 ### Installation
@@ -75,9 +78,9 @@ weight: 19
 
 * * *
 
-# Python in Atom
+### Atom Setup
 
-## Packages List
+#### Packages List
 
 -   `Script` -- to run code in Atom
     		\* `cmd + i` to run the script
@@ -91,7 +94,7 @@ weight: 19
 -   Install `linter-flake8` -- to correct error
     		\* Install `flake8` with `pip`
 
-## Editor Settings
+#### Editor Settings
 
 -   Select `Scroll past the end`
 -   Tab lenght set to `4`
@@ -103,7 +106,9 @@ weight: 19
       font-size: 16px;
     }
 
-## Anaconda distribution
+* * *
+
+### Anaconda distribution
 
 -   To test if the installation added it to our path, write `python` in the terminal
 -   To see where python was installed and where is our actual local environment, use `which python`

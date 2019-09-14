@@ -77,6 +77,10 @@ s = "Ciao!"
 
 -   `zip(a,b,...)` &rarr; make an **iterator** that aggregates elements from each of the iterables ([doc](https://docs.python.org/3.3/library/functions.html?highlight=zip#zip))
 
+-   `'string'.encode('utf-8')` &rarr; return a bytearray **encoded as ASCII** characters
+
+-   `b'bytearray'.decode('utf-8')` &rarr; translate the bytearray interpreting its bytes as ASCII characters. Return a string
+
 #### Dictionaries
 
 ```py
