@@ -65,3 +65,11 @@ It is a Computer Algebra System (CAS). [Documentation](https://www.sympy.org/en/
 ```py
 import sympy as symp
 ```
+
+* * *
+
+### Sys
+
+-   `sys.version` → contain python version installed on the machine
+
+-   `sys.executable` → contain information about the interpreter used
