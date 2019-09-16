@@ -85,7 +85,10 @@ l[<span style="color:#666">1</span>][<span style="color:#666">2</span>] <span st
 </ul>
 
 <h4 id="strings">Strings</h4>
-<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">s <span style="color:#666">=</span> <span style="color:#ba2121">&#34;Ciao!&#34;</span></code></pre></div>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">s <span style="color:#666">=</span> <span style="color:#ba2121">&#34;Ciao!&#34;</span>
+
+<span style="color:#408080;font-style:italic"># Print a variable directly in a string through formatting</span>
+<span style="color:#008000;font-weight:bold">print</span>(f<span style="color:#ba2121">&#39;This {var_name} is formatted&#39;</span>)</code></pre></div>
 <ul>
 <li><p><code>len(string)</code> &rarr; <strong>lenght</strong> of the string</p></li>
 
@@ -114,7 +117,10 @@ l[<span style="color:#666">1</span>][<span style="color:#666">2</span>] <span st
 <div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">d <span style="color:#666">=</span> { <span style="color:#ba2121">&#34;CA&#34;</span>:<span style="color:#ba2121">&#34;Canada&#34;</span>,
       <span style="color:#ba2121">&#34;GB&#34;</span>:<span style="color:#ba2121">&#34;Great Britain&#34;</span>,
       <span style="color:#ba2121">&#34;IN&#34;</span>:<span style="color:#ba2121">&#34;India&#34;</span>,
-      <span style="color:#ba2121">&#34;key&#34;</span>: value}</code></pre></div>
+      <span style="color:#ba2121">&#34;key&#34;</span>: value}
+
+<span style="color:#408080;font-style:italic"># Merge two dicts</span>
+z <span style="color:#666">=</span> {<span style="color:#666">**</span>x, <span style="color:#666">**</span>y}</code></pre></div>
 <ul>
 <li><p><code>d[&quot;key&quot;]</code> &rarr; return the value associated with the key &ldquo;key&rdquo;</p></li>
 
@@ -152,6 +158,9 @@ single <span style="color:#666">=</span> (<span style="color:#ba2121">&#39;hello
 <span style="color:#008000;font-weight:bold">elif</span> condition2:
     <span style="color:#666">&lt;</span>code<span style="color:#666">&gt;</span>
 <span style="color:#008000;font-weight:bold">else</span>:
+    <span style="color:#666">&lt;</span>code<span style="color:#666">&gt;</span>
+
+<span style="color:#008000;font-weight:bold">if</span> <span style="color:#008000">any</span>((x, y, z)): <span style="color:#408080;font-style:italic"># test multiple flags at once</span>
     <span style="color:#666">&lt;</span>code<span style="color:#666">&gt;</span></code></pre></div>
 <ul>
 <li><code>==</code>, <code>!=</code>, <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code> &rarr; comparators</li>
@@ -164,6 +173,9 @@ single <span style="color:#666">=</span> (<span style="color:#ba2121">&#39;hello
 
 <span style="color:#008000;font-weight:bold">for</span> index, item <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">enumerate</span>(listName):
     <span style="color:#008000;font-weight:bold">print</span> index, item
+
+<span style="color:#008000;font-weight:bold">for</span> _ <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">range</span>(<span style="color:#666">10</span>):
+    <span style="color:#666">&lt;</span>code<span style="color:#666">&gt;</span>
 
 list_a <span style="color:#666">=</span> [<span style="color:#666">3</span>, <span style="color:#666">9</span>, <span style="color:#666">17</span>, <span style="color:#666">15</span>, <span style="color:#666">19</span>]
 list_b <span style="color:#666">=</span> [<span style="color:#666">2</span>, <span style="color:#666">4</span>, <span style="color:#666">8</span>, <span style="color:#666">10</span>, <span style="color:#666">30</span>, <span style="color:#666">40</span>, <span style="color:#666">50</span>, <span style="color:#666">60</span>, <span style="color:#666">70</span>, <span style="color:#666">80</span>, <span style="color:#666">90</span>]

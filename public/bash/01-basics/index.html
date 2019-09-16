@@ -116,6 +116,31 @@ which command_name   <span style="color:#408080;font-style:italic"># return the 
 </ul></li>
 </ul>
 
+<hr />
+
+<h3 id="loops-and-conditionals">Loops and Conditionals</h3>
+
+<h4 id="if-statement"><code>if</code> Statement</h4>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#408080;font-style:italic">## Spaces are important ##</span>
+<span style="color:#008000;font-weight:bold">for</span> <span style="color:#666">[[</span> <span style="color:#19177c">$variable</span> <span style="color:#666">==</span> <span style="color:#ba2121">&#34;value&#34;</span> <span style="color:#666">]]</span> 
+<span style="color:#008000;font-weight:bold">then</span>
+    something
+<span style="color:#008000;font-weight:bold">else</span>
+    something
+<span style="color:#008000;font-weight:bold">fi</span></code></pre></div>
+<h4 id="for-loop"><code>for</code> loop</h4>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#008000;font-weight:bold">for</span> i in <span style="color:#666">{</span><span style="color:#666">1</span>..5<span style="color:#666">}</span>
+<span style="color:#008000;font-weight:bold">do</span>
+    <span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;Ciao </span><span style="color:#19177c">$i</span><span style="color:#ba2121">&#34;</span>
+<span style="color:#008000;font-weight:bold">done</span>
+
+<span style="color:#408080;font-style:italic"># Access all files in the provided directory</span>
+<span style="color:#008000;font-weight:bold">for</span> nomefile in <span style="color:#19177c">$1</span>/*
+<span style="color:#008000;font-weight:bold">do</span>
+    mv <span style="color:#ba2121">&#34;</span><span style="color:#19177c">$nomefile</span><span style="color:#ba2121">&#34;</span> <span style="color:#ba2121">&#34;</span><span style="color:#19177c">$nomefile</span><span style="color:#ba2121">&#34;</span>-old
+<span style="color:#008000;font-weight:bold">done</span></code></pre></div>
+<p>Double quotes are used in this case to avoid problems if spaces are present.</p>
+
 
 
         </main>

@@ -159,15 +159,19 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/python/09-datetime/</loc>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/css/09-media-queries/</loc>
   </url>
   
   <url>
+    <loc>https://damnotes.netlify.com/python/09-datetime/</loc>
+  </url>
+  
+  <url>
     <loc>https://damnotes.netlify.com/css/10-pseudo-class/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/python/10-threading/</loc>
   </url>
   
   <url>
@@ -196,6 +200,10 @@
   
   <url>
     <loc>https://damnotes.netlify.com/python/98-python-installation-and-setup/</loc>
+  </url>
+  
+  <url>
+    <loc>https://damnotes.netlify.com/bash/98-scripting/</loc>
   </url>
   
   <url>

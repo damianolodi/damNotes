@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="generator" content="Hugo 0.56.3" />
+    
+    
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/style.css">
+    
+    
+    <title>Scripting | DamNotes</title>
+
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js">
+    </script>
+</head>
+
+<body>
+    
+<div class="container border-bottom border-dark">
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="https://damnotes.netlify.com/">DamNotes</a>
+        
+        <ul class="navbar-nav">
+            
+            
+            
+            <li class=" nav-item active">
+                <a class="nav-link" href="/about/"><i data-feather="user"></i> About<span
+                        class="sr-only">(current)</span></a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+    <div class="container">
+        <main id="main">
+            
+<div class="d-flex flex-column align-items-center">
+    <h2 class="m-1 mb-2 mt-2"><u>Scripting</u></h2>
+</div>
+
+
+<p>First line should always be</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#408080;font-style:italic">#!/bin/bash</span></code></pre></div>
+<p>This is a sort of <em>special comment</em> which tells the program which type of shell it should use to translate what is written in the following lines. (E.g. if <code>#!/bin/python</code> is written, the following code is interpreted as python code)</p>
+
+<ul>
+<li><p><code>var_name=&quot;value&quot;</code> &rarr; declare a variable</p></li>
+
+<li><p><code>$var_name</code> &rarr; access the value of a variable</p></li>
+
+<li><p><code>$1</code>, <code>$2</code>,&hellip; &rarr; placeholders which access the arguments passed to the scprit when run</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#19177c">var_name</span><span style="color:#666">=</span><span style="color:#19177c">$1</span> <span style="color:#408080;font-style:italic"># assign the first argument passed to this variable</span></code></pre></div></li>
+</ul>
+
+<hr />
+
+<p>After the script is complete, type in the terminal</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">chmod +x script_name.sh</code></pre></div>
+<p>to give execution permission to the file. Otherwise, it is just a common text file that cannot be executed.</p>
+
+<ul>
+<li><code>+x</code> add the execution permission to all users</li>
+</ul>
+
+<p>To run it, use <code>./script_name.sh</code>. If <code>script_name.sh</code> is used, it will not work because, in this case, the system will search the command in one of the directoried listed in the <em>PATH</em> variable.</p>
+
+<p>From now on, the <code>ls</code> command will display the script with a different color to accentuate that it has execution permissions.</p>
+
+<hr />
+
+<h3 id="exit-status">Exit Status</h3>
+
+<p>If not specified differently, each script will exit with <em>exit status</em> equal to <em>0</em>. This can be verified by running the script and writing <code>$?</code> in the terminal.</p>
+
+<ul>
+<li><code>$?</code> &rarr; <strong>access the <em>exit status</em></strong> of the last program ran.</li>
+</ul>
+
+<p>To change the <em>exit status</em>, use the command <code>exit n</code> in the script, where <code>n</code> is a number. This will also terminate the script. (Are you sure??) Usually, 0 indicates that everything was successfull, while different integer values are uset to communicate different types of error.</p>
+
+<p>It can also be usefull to verify if an error occured from inside the script itself, or one can even create scripts to correct possible errors:</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&lt;something&gt;
+
+<span style="color:#008000;font-weight:bold">if</span> <span style="color:#666">[[</span> <span style="color:#19177c">$?</span> <span style="color:#666">==</span> <span style="color:#666">0</span> <span style="color:#666">]]</span>
+<span style="color:#008000;font-weight:bold">then</span>
+    <span style="color:#008000">echo</span> <span style="color:#ba2121">&#34;Tutto ok&#34;</span>
+<span style="color:#008000;font-weight:bold">else</span>
+    &lt;code&gt;
+<span style="color:#008000;font-weight:bold">fi</span></code></pre></div>
+
+
+        </main>
+    </div>
+    <div class="container border-top border-dark">
+    <nav class="navbar navbar-light justify-content-center">
+        <div class="navbar-nav d-flex flex-row justify-content-center">
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://github.com/damianolodi"
+                style="margin:10px;"><i data-feather="github"></i> GitHub</a>
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://www.linkedin.com/in/damiano-lodi/"
+                style="margin:10px;"><i data-feather="linkedin"></i> LinkedIn</a>
+            
+        </div>
+    </nav>
+</div>
+    
+
+<script src="https://damnotes.netlify.com/js/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+</body>
+
+</html>

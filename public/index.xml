@@ -458,20 +458,6 @@ body { --var-name: value; }  It becomes available to use inside the element in w
     </item>
     
     <item>
-      <title>Datetime</title>
-      <link>https://damnotes.netlify.com/python/09-datetime/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/09-datetime/</guid>
-      <description>(Docs)
-import datetime as dt  dt.datetime.now() &amp;rarr; return current date and time in standard format
- dt.datetime.now().strftime(&#39;%Y-%m-%d %H:%M:%S.%f&#39;) &amp;rarr; format the returned valued
- dt.datetime.now().time() &amp;rarr; return only the date
-  datetime.today() &amp;rarr; return current date
-  </description>
-    </item>
-    
-    <item>
       <title>Media Queries</title>
       <link>https://damnotes.netlify.com/css/09-media-queries/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -484,6 +470,20 @@ import datetime as dt  dt.datetime.now() &amp;rarr; return current date and time
     </item>
     
     <item>
+      <title>Time and Datetime</title>
+      <link>https://damnotes.netlify.com/python/09-datetime/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/09-datetime/</guid>
+      <description> (Docs)
+import datetime as dt import time Datetime  dt.datetime.now() &amp;rarr; return current date and time in standard format
+ dt.datetime.now().strftime(&#39;%Y-%m-%d %H:%M:%S.%f&#39;) &amp;rarr; format the returned valued
+ dt.datetime.now().time() &amp;rarr; return only the date
+  datetime.today() &amp;rarr; return current date
+  Time  time.perf_counter() &amp;rarr; return value (in seconds) of a performance counter (calcualted from the highest clock). Used to measure performance. The single value is useless, it is required to make difference between consecutive results (doc)  </description>
+    </item>
+    
+    <item>
       <title>Pseudo Class</title>
       <link>https://damnotes.netlify.com/css/10-pseudo-class/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -492,6 +492,15 @@ import datetime as dt  dt.datetime.now() &amp;rarr; return current date and time
       <description>Changing color of a link when hover on it
 a:hover { color: red; } Add something before or after a selected element
 .class::before { content: &amp;#34;Phrase&amp;#34;; /*here you can modify the properties of the added thing/shape*/ }  The content property is used to add an image or a text as the element to be added. If you use it to do a shape, place an empty string.</description>
+    </item>
+    
+    <item>
+      <title>Threading and Multiprocessing</title>
+      <link>https://damnotes.netlify.com/python/10-threading/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/10-threading/</guid>
+      <description>Tasks can be CPU bound (performance related to how fast the CPU is, e.g. crunching numbers) or I/O bound (performance related to how fast are I/O operations, e.g. reading/writing on files, accessing to the network). In the second case, if there are &amp;ldquo;dead periods&amp;rdquo; in which the CPU just has to wait, threading can represent a huge boost in performace: those moments are replaced by other tasks that can be executed concurrently.</description>
     </item>
     
     <item>
@@ -537,7 +546,10 @@ Here find a list of useful notebooks to download and learn from them.
       
       <guid>https://damnotes.netlify.com/python/15-pyserial/</guid>
       <description>(Docs)
-import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#39;, baudrate = 9600, bytesize = serial.EIGHTBITS, parity = serial.PARITY_NONE, stopbits = serial.STOPBITS_ONE, timeout = 3 #s )  python -m serial.tools.list_ports &amp;rarr; prints a list of available ports.  </description>
+import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#39;, baudrate = 9600, bytesize = serial.EIGHTBITS, parity = serial.PARITY_NONE, stopbits = serial.STOPBITS_ONE, timeout = 3 #s )  python -m serial.tools.list_ports &amp;rarr; prints a list of available ports
+ ser.reset_input_buffer() &amp;rarr; flush input buffer (discard all the content)
+ ser.readinto(bytearray) &amp;rarr; read up to len(bytearray) characters and store them into bytearray. Return number of bytes red (doc)
+ ser.close() &amp;rarr; close the serial connection</description>
     </item>
     
     <item>
@@ -574,6 +586,19 @@ import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#3
  in Users/user_name/ type nano ~/.bash_profile
  check that the last line is adding python to the path calling PATH=...
  write alias python=python3 at the bottom of the file</description>
+    </item>
+    
+    <item>
+      <title>Scripting</title>
+      <link>https://damnotes.netlify.com/bash/98-scripting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/bash/98-scripting/</guid>
+      <description>First line should always be
+#!/bin/bash This is a sort of special comment which tells the program which type of shell it should use to translate what is written in the following lines. (E.g. if #!/bin/python is written, the following code is interpreted as python code)
+ var_name=&amp;quot;value&amp;quot; &amp;rarr; declare a variable
+ $var_name &amp;rarr; access the value of a variable
+ $1, $2,&amp;hellip; &amp;rarr; placeholders which access the arguments passed to the scprit when run</description>
     </item>
     
     <item>

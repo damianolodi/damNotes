@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://damnotes.netlify.com/css/style.css">
     
     
-    <title>Datetime | DamNotes</title>
+    <title>Time and Datetime | DamNotes</title>
 
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js">
     </script>
@@ -39,10 +39,15 @@
         <main id="main">
             
 <div class="d-flex flex-column align-items-center">
-    <h2 class="m-1 mb-2 mt-2"><u>Datetime</u></h2>
+    <h2 class="m-1 mb-2 mt-2"><u>Time and Datetime</u></h2>
 </div>
+
+
 <p>(<a href="https://docs.python.org/3/library/datetime.html">Docs</a>)</p>
-<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">datetime</span> <span style="color:#008000;font-weight:bold">as</span> <span style="color:#00f;font-weight:bold">dt</span></code></pre></div>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">datetime</span> <span style="color:#008000;font-weight:bold">as</span> <span style="color:#00f;font-weight:bold">dt</span>
+<span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">time</span></code></pre></div>
+<h3 id="datetime">Datetime</h3>
+
 <ul>
 <li><p><code>dt.datetime.now()</code> &rarr; return <strong>current date and time</strong> in standard format</p>
 
@@ -53,6 +58,14 @@
 </ul></li>
 
 <li><p><code>datetime.today()</code> &rarr; return <strong>current date</strong></p></li>
+</ul>
+
+<hr />
+
+<h3 id="time">Time</h3>
+
+<ul>
+<li><code>time.perf_counter()</code> &rarr; return value (in seconds) of a performance counter (calcualted from the highest clock). Used to measure performance. The single value is useless, it is required to make difference between consecutive results (<a href="https://docs.python.org/3/library/time.html#time.perf_counter">doc</a>)</li>
 </ul>
 
 
