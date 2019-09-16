@@ -1,10 +1,11 @@
 ---
-title: "Python Installation and Setup"
+title: Python Installation and Setup
 draft: false
-arguments: ["Installation",
-            "VS Code Setup",
-            "Atom Setup",
-            "Anaconda Settings"]
+arguments:
+  - Installation
+  - VS Code Setup
+  - Atom Setup
+  - Anaconda Settings
 weight: 98
 ---
 
@@ -42,10 +43,7 @@ weight: 98
 
 #### Extensions
 
--   **Python**
-
--   **vscode-icon**
--   
+Python, vscode-icon
 
 #### Settings
 
@@ -66,11 +64,11 @@ weight: 98
     "editor.formatOnSave": true
 ```
 
-    - then reopen the settings so that _global settings_ and _user settings_ are side by side
+- then re-open the settings so that _global settings_ and _user settings_ are side by side
 
-    - place `"python.pythonPath": "python_path"` where *python_path* is the path returned by the command `which python3` in Termianl. This will change the defaul python interpreter
+- place `"python.pythonPath": "python_path"` where *python_path* is the path returned by the command `which python3` in Termianl. This will change the defaul python interpreter
 
-    - for each project, one can create a virtual env. and select as the interpreter. VS Code will use it as the default env. for the project when run in the integrated termianl
+- for each project, one can create a virtual env. and select as the interpreter. VS Code will use it as the default env. for the project when run in the integrated termianl
 
 #### Resources
 
