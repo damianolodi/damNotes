@@ -1,7 +1,12 @@
 ---
 title: "Basics"
 draft: false
-arguments: ["Documentation", "File Management", "Extracting Information from Files" , "Packages"]
+arguments: ["Documentation",
+            "File Management",
+            "Extracting Information from Files" ,
+            "Packages",
+            "If Statement",
+            "Loops"]
 weight: 01
 ---
 
@@ -59,3 +64,35 @@ which command_name   # return the path in which the executable is found
 
 -   `echo $0` &rarr; return shell type in use (`$0` is a special variable that containt the name of the process in execution)
     -   `$$` &rarr; special variable containing the process id (pid - proper number of the process in execution)
+
+* * *
+
+### Loops and Conditionals
+
+#### `if` Statement
+
+```bash
+## Spaces are important ##
+for [[ $variable == "value" ]] 
+then
+    something
+else
+    something
+fi
+```
+
+#### `for` loop
+
+```bash
+for i in {1..5}
+do
+    echo "Ciao $i"
+done
+
+# Access all files in the provided directory
+for nomefile in $1/*
+do
+    mv "$nomefile" "$nomefile"-old
+done
+```
+Double quotes are used in this case to avoid problems if spaces are present.
