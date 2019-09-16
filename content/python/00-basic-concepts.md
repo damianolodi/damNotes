@@ -57,6 +57,9 @@ l[1][2] # 6
 
 ```py
 s = "Ciao!"
+
+# Print a variable directly in a string through formatting
+print(f'This {var_name} is formatted')
 ```
 
 -   `len(string)` &rarr; **lenght** of the string
@@ -88,6 +91,9 @@ d = { "CA":"Canada",
       "GB":"Great Britain",
       "IN":"India",
       "key": value}
+
+# Merge two dicts
+z = {**x, **y}
 ```
 
 -   `d["key"]` &rarr; return the value associated with the key "key"
@@ -133,6 +139,9 @@ elif condition2:
     <code>
 else:
     <code>
+
+if any((x, y, z)): # test multiple flags at once
+    <code>
 ```
 
 -   `==`, `!=`, `>`, `<`, `>=`, `<=` &rarr; comparators
@@ -146,6 +155,9 @@ for item in listName:
 
 for index, item in enumerate(listName):
     print index, item
+
+for _ in range(10):
+    <code>
 
 list_a = [3, 9, 17, 15, 19]
 list_b = [2, 4, 8, 10, 30, 40, 50, 60, 70, 80, 90]
