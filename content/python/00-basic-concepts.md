@@ -6,7 +6,8 @@ arguments: ["Variable Types",
             "Functions",
             "Lambda Function",
             "Classes",
-            "Virtual Environments"]
+            "Virtual Environments",
+            "Special Variables"]
 weight: -1
 ---
 
@@ -310,3 +311,27 @@ class Student(Person): # child class definition
 -   `conda env create -f environment.yaml` &rarr; create a virtual environment from a _.yaml_ file
 
 -   `conda env list` &rarr; list all the environments on the machine with their location
+
+* * * 
+
+### Special Variables
+
+When a *file_name.py* file is run, Python assign values to some particulare variables. One of this is `__name__` which can have two values:
+
+- `"__main__"` (string) if the file is run directly
+
+- `"file_name"` (string) when it is imported with `import`
+
+This is the reason why one usually structure the file in the following way:
+
+```py
+<code that will always be run (classes definition,...)>
+
+def main():
+    <code run only when the program is called directly>
+
+if __name__ = "__main__":
+    main()
+else:
+    <code run only when imported>
+```

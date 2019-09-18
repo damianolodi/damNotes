@@ -330,6 +330,28 @@ Like nested function definitions, lambda functions can reference variables from 
 <li><p><code>conda env list</code> &rarr; list all the environments on the machine with their location</p></li>
 </ul>
 
+<hr />
+
+<h3 id="special-variables">Special Variables</h3>
+
+<p>When a <em>file_name.py</em> file is run, Python assign values to some particulare variables. One of this is <code>__name__</code> which can have two values:</p>
+
+<ul>
+<li><p><code>&quot;__main__&quot;</code> (string) if the file is run directly</p></li>
+
+<li><p><code>&quot;file_name&quot;</code> (string) when it is imported with <code>import</code></p></li>
+</ul>
+
+<p>This is the reason why one usually structure the file in the following way:</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#666">&lt;</span>code that will always be run (classes definition,<span style="color:#666">...</span>)<span style="color:#666">&gt;</span>
+
+<span style="color:#008000;font-weight:bold">def</span> <span style="color:#00f">main</span>():
+    <span style="color:#666">&lt;</span>code run only when the program <span style="color:#a2f;font-weight:bold">is</span> called directly<span style="color:#666">&gt;</span>
+
+<span style="color:#008000;font-weight:bold">if</span> __name__ <span style="color:#666">=</span> <span style="color:#ba2121">&#34;__main__&#34;</span>:
+    main()
+<span style="color:#008000;font-weight:bold">else</span>:
+    <span style="color:#666">&lt;</span>code run only when imported<span style="color:#666">&gt;</span></code></pre></div>
 
 
         </main>
