@@ -1,10 +1,11 @@
 ---
-title: "Pandas"
+title: Pandas
 draft: false
-arguments: ["Dataframes",
-			"File I/O",
-			"df Manipulation",
-			"df Merging"]
+arguments:
+  - Dataframes
+  - File I/O
+  - df Manipulation
+  - df Merging
 weight: 2
 ---
 
@@ -48,7 +49,7 @@ df = pd.read_csv(r’relative_path’, 					#can be a web address
 
 -   `pd.read_excel(path)` &rarr; **import** .xlsx into a df
 
--   `pd.to_csv(path)`, `pd.to_json(path)` and `pd.to_excel(path)` &rarr; **export** to .csv, .json or .xlsx file
+-   `df.to_csv(path)`, `df.to_json(path)` and `df.to_excel(path)` &rarr; **export** to .csv, .json or .xlsx file
 
 * * *
 
