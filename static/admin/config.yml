@@ -113,7 +113,7 @@ collections:
           name: "weight",
           widget: "number",
           valueType: "int",
-          min: 1,
+          min: -1,
         }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "git"

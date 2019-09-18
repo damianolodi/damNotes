@@ -142,6 +142,9 @@ else:
 
 if any((x, y, z)): # test multiple flags at once
     <code>
+
+# Assign value based on condition
+var = value_1 if  condition else value_2
 ```
 
 -   `==`, `!=`, `>`, `<`, `>=`, `<=` &rarr; comparators
