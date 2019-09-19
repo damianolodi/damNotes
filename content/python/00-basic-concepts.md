@@ -6,6 +6,7 @@ arguments: ["Variable Types",
             "Functions",
             "Lambda Function",
             "Classes",
+            "Errors Handling",
             "Virtual Environments",
             "Special Variables"]
 weight: -1
@@ -290,6 +291,42 @@ class Student(Person): # child class definition
 
 * * *
 
+### Errors Handling
+
+```py
+try:
+    <code>
+except ErrorName1:      # catch specific error
+    <code>
+except ErrorName2 as e:
+    print(e)            # print the error
+except Exception as e:  # catch all the general exception
+    <code>
+else:
+    <code>              # run if no exception is raised
+finally:
+    <code>              # run no matter what happen
+```
+
+- Always start with more specific exceptions and finish with the more general excetpions, otherwise specific ones will never be cought
+
+- `else` is useful to separate commands so that after `try` there is only the code that can raise the exception one wants to catch
+
+- `finally` can be useful for example to free reosurces that were previously used
+
+One can also **raise his own exception** manually
+
+```py
+try:
+    <code>
+    if condition:
+        raise ErrorName
+except ErrorName:
+    <code>
+```
+
+* * *
+
 ### Virtual Environments
 
 -   install `virtualenv`
@@ -335,3 +372,9 @@ if __name__ = "__main__":
 else:
     <code run only when imported>
 ```
+
+* * *
+
+### Resources
+
+- [Errors Handling](https://youtu.be/NIWwJbo-9_8) - Corey Shafer
