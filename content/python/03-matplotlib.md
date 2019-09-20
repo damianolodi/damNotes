@@ -9,80 +9,112 @@ arguments: ["Superimposing Figures",
 weight: 3
 ---
 
-Jupyter Notebook [tutorial](http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb) on matplotlib.
-[Official documentation](https://matplotlib.org/)
-
 ```py
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt # or
+from matplotlib import pyplot as plt
 %matplotlib inline # display figures inside jupyter notebooks
 
-axes.plot(a, b, 'b.-',
-          color = '#FFFFFF',    # color (control)
-          alpha = 0.5,
-          lw = 3,               # linewidth
-          ls = '-',             # linestyle '-' '--' '-.' ':' 'steps'
-          marker ='+',          # markerstyle `+`, `o`, `*`, `s`, `,`, `.`, `1`, `2`, `3`,…
-          ms = 3                # markersize
-          )
+print(plt.style.available)  # acess all available styles
+plt.style.use('style-name') # set the style to be used
+
+plt.plot(x_data, y_data,
+         color='b',             # accept hex colors
+         linestyle='-',         # or ls='-' || '--' '-.' ':' 'steps'
+         marker='.',            # '+', 'o', '*', 's', ',', '.', '1', '2', '3',...
+         linewidth=3,           # or lw=3
+         markersize=2,          # or ms=2
+         alpha=0.5,
+         label='Legend label')
+
+
+plt.xlabel('X label')   # label of x axis
+plt.ylabel('Y label')   # label of y axis
+plt.title('Title')      # title
+
+plt.legend()            # make legend
+plt.grid(True)          # make grid
+
+plt.tight_layout()      # make better padding
+plt.show()              # display the figure
+
+plt.savefig('path.png', dpi=200) # save the plot
 ```
 
-### Basic figure script
+- lines are layered in the order they are added, so plot the bigger first and  the add the smaller ones
 
-#### Create a small figure on top of another one
+- `plt.xkcd()` &rarr; apply style to mimic _xkcd_ comics
+
+- `plt.gcf()` &rarr; stands for _get current figure_
+
+- `plt.gca()` &rarr; stands for _get current axis_
+
+- `plt.legend()` can have location attribute ([doc](https://matplotlib.org/tutorials/intermediate/legend_guide.html))
+
+* * *
+
+### Plotting Time Series Data
 
 ```py
-#request text elements rendering with Latex
-matplotlib.rcParams.update({'font.size': 18, 'text.usetex': True})
+...
+import datetime as dt
+from matplotlib import dates as mpl_dates
 
-# create the figure object
-fig = plt.figure(figsize=(8,4), dpi=100) # figsize in inch
-# create an axes object inside the figure
-axes1 = fig.add_axes([0.1, 0.1, 0.8, 0.8]) # left, bottom, width, height
-axes2 = fig.add_axes([0.2, 0.5, 0.4, 0.3])
+plt.plot_date(dates, y_data,    # dates in datetime format
+              linestyle='solid')
 
-# main figure
-axes1.plot(x, y, 'r', label=r'curve1 \alpha')
-axes1.plot(x, y, 'r', label=r'curve2')
-axes1.set_xlabel(r'x')
-axes1.set_xlim([min,max])
-axes1.set_ylabel(r'y')
-axes1.set_ylim([min,max]) # set only an extreme using `left` - `right` or `top` - `bottom`
-axes1.set_title(r'title')
-axes1.legend(loc=0)
+plt.gcf().autofmt_xdate()       # rotates dates on the x axis to 45°
 
-# insert
-axes2.plot(y, x, 'g')
-axes2.set_xlabel(r'y')
-axes2.set_ylabel(r'x')
-axes2.set_title(r'insert title'); # use raw input in strings to avoid conflicts with LaTex
-axes2.axis('log') # set axis scale
-
-# save the figure
-fig.savefig('file-name.png', dpi=200)
+date_format = mpl_dates.DateFormatter('%b, %d %Y')  # set date format
+plt.gca().xaxis.set_major_formatter(date_format)    # apply date format to datetime on x axis
 ```
 
--   can plot pandas df with `ax.plot('column1', 'column2', 'r--', obj=df)`
--   `axes1.legend()` &rarr; more details [about location](https://matplotlib.org/users/legend_guide.html#legend-location)
+- [doc](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior) for datetime formatting codes (also used for _DateFormatter_)
 
-#### Multiple axis on the same figure
+* * *
+
+### Subplots
 
 ```py
-fig, axes = plt.subplots(nrows = 1, ncols = 2,
-                         figsize = (8,4), dpi = 100,
-                         sharex = True, sharey = False #share axis in subpplots
-                         )
-plt.subplots_adjust(wspace=0,hspace=0) # adjust space between subplots in a figure
+fig, ax = plt.subplots(nrows=2, ncols=1,            # create (nrows * ncols) axis inside the figure
+                       sharex=True, sharey=False,   # subplots can share axis
+                       figsize=(8,4), dpi=100)      # figsize in inch
 
-fig.tight_layout() # apply at the end to correct overlapping content
+plt.subplots_adjust(wspace=0, hspace=0)             # set space between subplots
+
+ax.plot(...)
+ax.plot(...)
+
+ax.set_xlabel('X label')
+ax.set_ylabel('Y label')
+ax.set_title('Title')
+
+ax.set_xlim([min,max])  # set axis limits
+ax.set_ylim([min,max])
+
+ax.axis('log')          # set axis scale
+
+ax.legend()
+
+plt.tight_layout()
+
+plt.show()
+
+fig.savefig('path.png', dpi=200)
 ```
 
--   [Plots gallery](https://matplotlib.org/gallery.html)
+- Each _ax_ (axis) is a plot, which can contain multiple lines. The _fig_ (figure) is the windows that contains all the axis created with subplots
+
+- if `nrows` and `ncols` are not defined in `subplots`, they _default to 1_
+
+- `ax` is a matrix with `nrows` rows and `ncols` columns. It can be unpacked to assign each axis to a single variable, e.g.
+
+```py
+    fig, (ax1, ax2) = plt.subplots(nrows=2, ncols=1)
+```
 
 * * *
 
 ### Plot Annotation and Drawing
-
-Annotate text and arrows
 
 ```py
 # Annotate with text
@@ -183,3 +215,13 @@ import matplotlib.pyplot as plt
 %matplotlib inline #if you are using jupyter
 plt.style.use('style-name')
 ```
+
+* * *
+
+### Resources
+
+- [Official documentation](https://matplotlib.org/)
+
+- [Matplotlib Tutorials](https://www.youtube.com/playlist?list=PL-osiE80TeTvipOqomVEeZ1HRrcEvtZB_) - Corey Shafer
+
+- Jupyter Notebook [tutorial](http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb) on matplotlib

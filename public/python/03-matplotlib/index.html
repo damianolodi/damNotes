@@ -43,72 +43,104 @@
 </div>
 
 
-<p>Jupyter Notebook <a href="http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb">tutorial</a> on matplotlib.
-<a href="https://matplotlib.org/">Official documentation</a></p>
-<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">matplotlib.pyplot</span> <span style="color:#008000;font-weight:bold">as</span> <span style="color:#00f;font-weight:bold">plt</span>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">matplotlib.pyplot</span> <span style="color:#008000;font-weight:bold">as</span> <span style="color:#00f;font-weight:bold">plt</span> <span style="color:#408080;font-style:italic"># or</span>
+<span style="color:#008000;font-weight:bold">from</span> <span style="color:#00f;font-weight:bold">matplotlib</span> <span style="color:#008000;font-weight:bold">import</span> pyplot <span style="color:#008000;font-weight:bold">as</span> plt
 <span style="color:#666">%</span>matplotlib inline <span style="color:#408080;font-style:italic"># display figures inside jupyter notebooks</span>
 
-axes<span style="color:#666">.</span>plot(a, b, <span style="color:#ba2121">&#39;b.-&#39;</span>,
-          color <span style="color:#666">=</span> <span style="color:#ba2121">&#39;#FFFFFF&#39;</span>,    <span style="color:#408080;font-style:italic"># color (control)</span>
-          alpha <span style="color:#666">=</span> <span style="color:#666">0.5</span>,
-          lw <span style="color:#666">=</span> <span style="color:#666">3</span>,               <span style="color:#408080;font-style:italic"># linewidth</span>
-          ls <span style="color:#666">=</span> <span style="color:#ba2121">&#39;-&#39;</span>,             <span style="color:#408080;font-style:italic"># linestyle &#39;-&#39; &#39;--&#39; &#39;-.&#39; &#39;:&#39; &#39;steps&#39;</span>
-          marker <span style="color:#666">=</span><span style="color:#ba2121">&#39;+&#39;</span>,          <span style="color:#408080;font-style:italic"># markerstyle `+`, `o`, `*`, `s`, `,`, `.`, `1`, `2`, `3`,…</span>
-          ms <span style="color:#666">=</span> <span style="color:#666">3</span>                <span style="color:#408080;font-style:italic"># markersize</span>
-          )</code></pre></div>
-<h3 id="basic-figure-script">Basic figure script</h3>
+<span style="color:#008000;font-weight:bold">print</span>(plt<span style="color:#666">.</span>style<span style="color:#666">.</span>available)  <span style="color:#408080;font-style:italic"># acess all available styles</span>
+plt<span style="color:#666">.</span>style<span style="color:#666">.</span>use(<span style="color:#ba2121">&#39;style-name&#39;</span>) <span style="color:#408080;font-style:italic"># set the style to be used</span>
 
-<h4 id="create-a-small-figure-on-top-of-another-one">Create a small figure on top of another one</h4>
-<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#408080;font-style:italic">#request text elements rendering with Latex</span>
-matplotlib<span style="color:#666">.</span>rcParams<span style="color:#666">.</span>update({<span style="color:#ba2121">&#39;font.size&#39;</span>: <span style="color:#666">18</span>, <span style="color:#ba2121">&#39;text.usetex&#39;</span>: True})
+plt<span style="color:#666">.</span>plot(x_data, y_data,
+         color<span style="color:#666">=</span><span style="color:#ba2121">&#39;b&#39;</span>,             <span style="color:#408080;font-style:italic"># accept hex colors</span>
+         linestyle<span style="color:#666">=</span><span style="color:#ba2121">&#39;-&#39;</span>,         <span style="color:#408080;font-style:italic"># or ls=&#39;-&#39; || &#39;--&#39; &#39;-.&#39; &#39;:&#39; &#39;steps&#39;</span>
+         marker<span style="color:#666">=</span><span style="color:#ba2121">&#39;.&#39;</span>,            <span style="color:#408080;font-style:italic"># &#39;+&#39;, &#39;o&#39;, &#39;*&#39;, &#39;s&#39;, &#39;,&#39;, &#39;.&#39;, &#39;1&#39;, &#39;2&#39;, &#39;3&#39;,...</span>
+         linewidth<span style="color:#666">=</span><span style="color:#666">3</span>,           <span style="color:#408080;font-style:italic"># or lw=3</span>
+         markersize<span style="color:#666">=</span><span style="color:#666">2</span>,          <span style="color:#408080;font-style:italic"># or ms=2</span>
+         alpha<span style="color:#666">=</span><span style="color:#666">0.5</span>,
+         label<span style="color:#666">=</span><span style="color:#ba2121">&#39;Legend label&#39;</span>)
 
-<span style="color:#408080;font-style:italic"># create the figure object</span>
-fig <span style="color:#666">=</span> plt<span style="color:#666">.</span>figure(figsize<span style="color:#666">=</span>(<span style="color:#666">8</span>,<span style="color:#666">4</span>), dpi<span style="color:#666">=</span><span style="color:#666">100</span>) <span style="color:#408080;font-style:italic"># figsize in inch</span>
-<span style="color:#408080;font-style:italic"># create an axes object inside the figure</span>
-axes1 <span style="color:#666">=</span> fig<span style="color:#666">.</span>add_axes([<span style="color:#666">0.1</span>, <span style="color:#666">0.1</span>, <span style="color:#666">0.8</span>, <span style="color:#666">0.8</span>]) <span style="color:#408080;font-style:italic"># left, bottom, width, height</span>
-axes2 <span style="color:#666">=</span> fig<span style="color:#666">.</span>add_axes([<span style="color:#666">0.2</span>, <span style="color:#666">0.5</span>, <span style="color:#666">0.4</span>, <span style="color:#666">0.3</span>])
 
-<span style="color:#408080;font-style:italic"># main figure</span>
-axes1<span style="color:#666">.</span>plot(x, y, <span style="color:#ba2121">&#39;r&#39;</span>, label<span style="color:#666">=</span><span style="color:#ba2121">r</span><span style="color:#ba2121">&#39;curve1 \alpha&#39;</span>)
-axes1<span style="color:#666">.</span>plot(x, y, <span style="color:#ba2121">&#39;r&#39;</span>, label<span style="color:#666">=</span><span style="color:#ba2121">r</span><span style="color:#ba2121">&#39;curve2&#39;</span>)
-axes1<span style="color:#666">.</span>set_xlabel(<span style="color:#ba2121">r</span><span style="color:#ba2121">&#39;x&#39;</span>)
-axes1<span style="color:#666">.</span>set_xlim([<span style="color:#008000">min</span>,<span style="color:#008000">max</span>])
-axes1<span style="color:#666">.</span>set_ylabel(<span style="color:#ba2121">r</span><span style="color:#ba2121">&#39;y&#39;</span>)
-axes1<span style="color:#666">.</span>set_ylim([<span style="color:#008000">min</span>,<span style="color:#008000">max</span>]) <span style="color:#408080;font-style:italic"># set only an extreme using `left` - `right` or `top` - `bottom`</span>
-axes1<span style="color:#666">.</span>set_title(<span style="color:#ba2121">r</span><span style="color:#ba2121">&#39;title&#39;</span>)
-axes1<span style="color:#666">.</span>legend(loc<span style="color:#666">=</span><span style="color:#666">0</span>)
+plt<span style="color:#666">.</span>xlabel(<span style="color:#ba2121">&#39;X label&#39;</span>)   <span style="color:#408080;font-style:italic"># label of x axis</span>
+plt<span style="color:#666">.</span>ylabel(<span style="color:#ba2121">&#39;Y label&#39;</span>)   <span style="color:#408080;font-style:italic"># label of y axis</span>
+plt<span style="color:#666">.</span>title(<span style="color:#ba2121">&#39;Title&#39;</span>)      <span style="color:#408080;font-style:italic"># title</span>
 
-<span style="color:#408080;font-style:italic"># insert</span>
-axes2<span style="color:#666">.</span>plot(y, x, <span style="color:#ba2121">&#39;g&#39;</span>)
-axes2<span style="color:#666">.</span>set_xlabel(<span style="color:#ba2121">r</span><span style="color:#ba2121">&#39;y&#39;</span>)
-axes2<span style="color:#666">.</span>set_ylabel(<span style="color:#ba2121">r</span><span style="color:#ba2121">&#39;x&#39;</span>)
-axes2<span style="color:#666">.</span>set_title(<span style="color:#ba2121">r</span><span style="color:#ba2121">&#39;insert title&#39;</span>); <span style="color:#408080;font-style:italic"># use raw input in strings to avoid conflicts with LaTex</span>
-axes2<span style="color:#666">.</span>axis(<span style="color:#ba2121">&#39;log&#39;</span>) <span style="color:#408080;font-style:italic"># set axis scale</span>
+plt<span style="color:#666">.</span>legend()            <span style="color:#408080;font-style:italic"># make legend</span>
+plt<span style="color:#666">.</span>grid(True)          <span style="color:#408080;font-style:italic"># make grid</span>
 
-<span style="color:#408080;font-style:italic"># save the figure</span>
-fig<span style="color:#666">.</span>savefig(<span style="color:#ba2121">&#39;file-name.png&#39;</span>, dpi<span style="color:#666">=</span><span style="color:#666">200</span>)</code></pre></div>
+plt<span style="color:#666">.</span>tight_layout()      <span style="color:#408080;font-style:italic"># make better padding</span>
+plt<span style="color:#666">.</span>show()              <span style="color:#408080;font-style:italic"># display the figure</span>
+
+plt<span style="color:#666">.</span>savefig(<span style="color:#ba2121">&#39;path.png&#39;</span>, dpi<span style="color:#666">=</span><span style="color:#666">200</span>) <span style="color:#408080;font-style:italic"># save the plot</span></code></pre></div>
 <ul>
-<li>can plot pandas df with <code>ax.plot('column1', 'column2', 'r--', obj=df)</code></li>
-<li><code>axes1.legend()</code> &rarr; more details <a href="https://matplotlib.org/users/legend_guide.html#legend-location">about location</a></li>
+<li><p>lines are layered in the order they are added, so plot the bigger first and  the add the smaller ones</p></li>
+
+<li><p><code>plt.xkcd()</code> &rarr; apply style to mimic <em>xkcd</em> comics</p></li>
+
+<li><p><code>plt.gcf()</code> &rarr; stands for <em>get current figure</em></p></li>
+
+<li><p><code>plt.gca()</code> &rarr; stands for <em>get current axis</em></p></li>
+
+<li><p><code>plt.legend()</code> can have location attribute (<a href="https://matplotlib.org/tutorials/intermediate/legend_guide.html">doc</a>)</p></li>
 </ul>
 
-<h4 id="multiple-axis-on-the-same-figure">Multiple axis on the same figure</h4>
-<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">fig, axes <span style="color:#666">=</span> plt<span style="color:#666">.</span>subplots(nrows <span style="color:#666">=</span> <span style="color:#666">1</span>, ncols <span style="color:#666">=</span> <span style="color:#666">2</span>,
-                         figsize <span style="color:#666">=</span> (<span style="color:#666">8</span>,<span style="color:#666">4</span>), dpi <span style="color:#666">=</span> <span style="color:#666">100</span>,
-                         sharex <span style="color:#666">=</span> True, sharey <span style="color:#666">=</span> False <span style="color:#408080;font-style:italic">#share axis in subpplots</span>
-                         )
-plt<span style="color:#666">.</span>subplots_adjust(wspace<span style="color:#666">=</span><span style="color:#666">0</span>,hspace<span style="color:#666">=</span><span style="color:#666">0</span>) <span style="color:#408080;font-style:italic"># adjust space between subplots in a figure</span>
+<hr />
 
-fig<span style="color:#666">.</span>tight_layout() <span style="color:#408080;font-style:italic"># apply at the end to correct overlapping content</span></code></pre></div>
+<h3 id="plotting-time-series-data">Plotting Time Series Data</h3>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#666">...</span>
+<span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">datetime</span> <span style="color:#008000;font-weight:bold">as</span> <span style="color:#00f;font-weight:bold">dt</span>
+<span style="color:#008000;font-weight:bold">from</span> <span style="color:#00f;font-weight:bold">matplotlib</span> <span style="color:#008000;font-weight:bold">import</span> dates <span style="color:#008000;font-weight:bold">as</span> mpl_dates
+
+plt<span style="color:#666">.</span>plot_date(dates, y_data,    <span style="color:#408080;font-style:italic"># dates in datetime format</span>
+              linestyle<span style="color:#666">=</span><span style="color:#ba2121">&#39;solid&#39;</span>)
+
+plt<span style="color:#666">.</span>gcf()<span style="color:#666">.</span>autofmt_xdate()       <span style="color:#408080;font-style:italic"># rotates dates on the x axis to 45°</span>
+
+date_format <span style="color:#666">=</span> mpl_dates<span style="color:#666">.</span>DateFormatter(<span style="color:#ba2121">&#39;%b, </span><span style="color:#b68;font-weight:bold">%d</span><span style="color:#ba2121"> %Y&#39;</span>)  <span style="color:#408080;font-style:italic"># set date format</span>
+plt<span style="color:#666">.</span>gca()<span style="color:#666">.</span>xaxis<span style="color:#666">.</span>set_major_formatter(date_format)    <span style="color:#408080;font-style:italic"># apply date format to datetime on x axis</span></code></pre></div>
 <ul>
-<li><a href="https://matplotlib.org/gallery.html">Plots gallery</a></li>
+<li><a href="https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior">doc</a> for datetime formatting codes (also used for <em>DateFormatter</em>)</li>
+</ul>
+
+<hr />
+
+<h3 id="subplots">Subplots</h3>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">fig, ax <span style="color:#666">=</span> plt<span style="color:#666">.</span>subplots(nrows<span style="color:#666">=</span><span style="color:#666">2</span>, ncols<span style="color:#666">=</span><span style="color:#666">1</span>,            <span style="color:#408080;font-style:italic"># create (nrows * ncols) axis inside the figure</span>
+                       sharex<span style="color:#666">=</span>True, sharey<span style="color:#666">=</span>False,   <span style="color:#408080;font-style:italic"># subplots can share axis</span>
+                       figsize<span style="color:#666">=</span>(<span style="color:#666">8</span>,<span style="color:#666">4</span>), dpi<span style="color:#666">=</span><span style="color:#666">100</span>)      <span style="color:#408080;font-style:italic"># figsize in inch</span>
+
+plt<span style="color:#666">.</span>subplots_adjust(wspace<span style="color:#666">=</span><span style="color:#666">0</span>, hspace<span style="color:#666">=</span><span style="color:#666">0</span>)             <span style="color:#408080;font-style:italic"># set space between subplots</span>
+
+ax<span style="color:#666">.</span>plot(<span style="color:#666">...</span>)
+ax<span style="color:#666">.</span>plot(<span style="color:#666">...</span>)
+
+ax<span style="color:#666">.</span>set_xlabel(<span style="color:#ba2121">&#39;X label&#39;</span>)
+ax<span style="color:#666">.</span>set_ylabel(<span style="color:#ba2121">&#39;Y label&#39;</span>)
+ax<span style="color:#666">.</span>set_title(<span style="color:#ba2121">&#39;Title&#39;</span>)
+
+ax<span style="color:#666">.</span>set_xlim([<span style="color:#008000">min</span>,<span style="color:#008000">max</span>])  <span style="color:#408080;font-style:italic"># set axis limits</span>
+ax<span style="color:#666">.</span>set_ylim([<span style="color:#008000">min</span>,<span style="color:#008000">max</span>])
+
+ax<span style="color:#666">.</span>axis(<span style="color:#ba2121">&#39;log&#39;</span>)          <span style="color:#408080;font-style:italic"># set axis scale</span>
+
+ax<span style="color:#666">.</span>legend()
+
+plt<span style="color:#666">.</span>tight_layout()
+
+plt<span style="color:#666">.</span>show()
+
+fig<span style="color:#666">.</span>savefig(<span style="color:#ba2121">&#39;path.png&#39;</span>, dpi<span style="color:#666">=</span><span style="color:#666">200</span>)</code></pre></div>
+<ul>
+<li><p>Each <em>ax</em> (axis) is a plot, which can contain multiple lines. The <em>fig</em> (figure) is the windows that contains all the axis created with subplots</p></li>
+
+<li><p>if <code>nrows</code> and <code>ncols</code> are not defined in <code>subplots</code>, they <em>default to 1</em></p></li>
+
+<li><p><code>ax</code> is a matrix with <code>nrows</code> rows and <code>ncols</code> columns. It can be unpacked to assign each axis to a single variable, e.g.</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">fig, (ax1, ax2) <span style="color:#666">=</span> plt<span style="color:#666">.</span>subplots(nrows<span style="color:#666">=</span><span style="color:#666">2</span>, ncols<span style="color:#666">=</span><span style="color:#666">1</span>)</code></pre></div></li>
 </ul>
 
 <hr />
 
 <h3 id="plot-annotation-and-drawing">Plot Annotation and Drawing</h3>
-
-<p>Annotate text and arrows</p>
 <div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#408080;font-style:italic"># Annotate with text</span>
 ax<span style="color:#666">.</span>text(x, y,                   <span style="color:#408080;font-style:italic"># coordinates</span>
         <span style="color:#ba2121">&#39;Hello world!&#39;</span>,         <span style="color:#408080;font-style:italic"># text</span>
@@ -199,6 +231,18 @@ writer <span style="color:#666">=</span> Writer(fps <span style="color:#666">=</
 <span style="color:#666">%</span>matplotlib inline <span style="color:#408080;font-style:italic">#if you are using jupyter</span>
 plt<span style="color:#666">.</span>style<span style="color:#666">.</span>use(<span style="color:#ba2121">&#39;style-name&#39;</span>)</code></pre></div></li>
 </ol>
+
+<hr />
+
+<h3 id="resources">Resources</h3>
+
+<ul>
+<li><p><a href="https://matplotlib.org/">Official documentation</a></p></li>
+
+<li><p><a href="https://www.youtube.com/playlist?list=PL-osiE80TeTvipOqomVEeZ1HRrcEvtZB_">Matplotlib Tutorials</a> - Corey Shafer</p></li>
+
+<li><p>Jupyter Notebook <a href="http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb">tutorial</a> on matplotlib</p></li>
+</ul>
 
 
 

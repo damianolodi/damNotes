@@ -254,8 +254,7 @@ width: 150px;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/python/03-matplotlib/</guid>
-      <description>Jupyter Notebook tutorial on matplotlib. Official documentation
-import matplotlib.pyplot as plt %matplotlib inline # display figures inside jupyter notebooks axes.plot(a, b, &amp;#39;b.-&amp;#39;, color = &amp;#39;#FFFFFF&amp;#39;, # color (control) alpha = 0.5, lw = 3, # linewidth ls = &amp;#39;-&amp;#39;, # linestyle &amp;#39;-&amp;#39; &amp;#39;--&amp;#39; &amp;#39;-.&amp;#39; &amp;#39;:&amp;#39; &amp;#39;steps&amp;#39; marker =&amp;#39;+&amp;#39;, # markerstyle `+`, `o`, `*`, `s`, `,`, `.`, `1`, `2`, `3`,… ms = 3 # markersize ) Basic figure script Create a small figure on top of another one #request text elements rendering with Latex matplotlib.</description>
+      <description>import matplotlib.pyplot as plt # or from matplotlib import pyplot as plt %matplotlib inline # display figures inside jupyter notebooks print(plt.style.available) # acess all available styles plt.style.use(&amp;#39;style-name&amp;#39;) # set the style to be used plt.plot(x_data, y_data, color=&amp;#39;b&amp;#39;, # accept hex colors linestyle=&amp;#39;-&amp;#39;, # or ls=&amp;#39;-&amp;#39; || &amp;#39;--&amp;#39; &amp;#39;-.&amp;#39; &amp;#39;:&amp;#39; &amp;#39;steps&amp;#39; marker=&amp;#39;.&amp;#39;, # &amp;#39;+&amp;#39;, &amp;#39;o&amp;#39;, &amp;#39;*&amp;#39;, &amp;#39;s&amp;#39;, &amp;#39;,&amp;#39;, &amp;#39;.&amp;#39;, &amp;#39;1&amp;#39;, &amp;#39;2&amp;#39;, &amp;#39;3&amp;#39;,... linewidth=3, # or lw=3 markersize=2, # or ms=2 alpha=0.</description>
     </item>
     
     <item>
