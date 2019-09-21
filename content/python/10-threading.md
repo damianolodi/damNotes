@@ -3,7 +3,9 @@ title: "Threading and Multiprocessing"
 draft: false
 arguments: ["Concurrency",
             "Threading",
-            "Thread Pool Executor"]
+            "Thread Pool Executor",
+            "Multiprocessing",
+            "Process Thread Executor"]
 weight: 10
 ---
 
@@ -121,3 +123,5 @@ In practice, all things said in the _Thread Pool Executor_ section are applicabl
 ### Sources
 
 - [Python Threading Tutorial](https://youtu.be/IEEhzQoKtQU) - Corey Shafer
+
+- [Python Multiprocessing Tutorial](https://youtu.be/fKl2JW_qrso) - Corey Shafer

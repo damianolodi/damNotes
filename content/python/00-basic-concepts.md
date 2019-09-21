@@ -116,15 +116,17 @@ z = {**x, **y}
 
 ```py
 t = 12345, 54321, 'hello!'
-u = t, (1, 2, 3, 4, 5) # nested tuples
-empty = () # empty tuple
-single = ('hello',) # 1-element tuple
+u = t, (1, 2, 3, 4, 5)      # nested tuples
+empty = ()                  # empty tuple
+single = ('hello',)         # 1-element tuple
 ```
 
 -   **immutable** &rarr; tuples usually contain an heterogeneous sequence of elements that are accessed via _unpacking_ or _indexing_
 
 ```py
-    x, y, z = t # unpacking tuples
+    x, y, z = t                     # unpacking tuples
+    a, b, *c = (1, 2, 3, 4, 5)      # a=1, b=2, c=[3,4,5]
+    a, b, *c, d = (1, 2, 3, 4, 5)   # a=2, b=2, c=[3,4], d=5
 ```
 
 * * *
@@ -158,7 +160,7 @@ var = value_1 if  condition else value_2
 for item in listName:
     <code>
 
-for index, item in enumerate(listName):
+for index, item in enumerate(listName, start=0):
     print index, item
 
 for _ in range(10):
@@ -166,13 +168,15 @@ for _ in range(10):
 
 list_a = [3, 9, 17, 15, 19]
 list_b = [2, 4, 8, 10, 30, 40, 50, 60, 70, 80, 90]
-for a, b in zip(list_a , list_b): # loop on multiple lists
+for a, b, ... in zip(list_a , list_b, ...): # loop on multiple lists
     <code>
 ```
 
--   can loop also on _dictionaries_ and _strings_
--   dictionaries are **unordered**: the loop wil go through _every key_, but **not necessarily in the same order**
--   `zip()`&rarr; stops at the end of the shorter list
+- can loop also on _dictionaries_ and _strings_
+
+- dictionaries are **unordered**: the loop wil go through _every key_, but **not necessarily in the same order**
+
+- `zip()`&rarr; stops at the end of the shorter list
 
 #### While Loop
 
@@ -183,8 +187,9 @@ else:
     <code>
 ```
 
--   `else` &rarr; executed enytime the _condition_ is evaluated as _False_
-    -   **not executed** if the cycle is interrupted by `break`
+- `else` &rarr; executed enytime the _condition_ is evaluated as _False_
+
+    - **not executed** if the cycle is interrupted by `break`
 
 * * *
 
@@ -196,7 +201,7 @@ def func_name(var1, var2, var3=default_value):
     return something1, something2, ...
 ```
 
--   **recursion** is allowed
+- **recursion** is allowed
 
 * * *
 
@@ -211,9 +216,7 @@ lambda a, b: a+b
 lambda val: val > 1000000
 ```
 
--   **Lambda functions can be used wherever function objects are required.**
-    They are syntactically restricted to a single expression. Semantically, they are just syntactic sugar for a normal function definition.
-    Like nested function definitions, lambda functions can reference variables from the containing scope
+- **Lambda functions can be used wherever function objects are required.** They are syntactically restricted to a single expression. Semantically, they are just syntactic sugar for a normal function definition. Like nested function definitions, lambda functions can reference variables from the containing scope
 
 * * *
 
@@ -250,9 +253,13 @@ class Person:
 
 -   `new_object = My_class(property_name1, property_name2, ...)` &rarr; **create** an object
 
--   `new_object.property_name1` &rarr; **access** a property
+-   `new_object.property_name1` &rarr; **access** an attribute
 
--   `new_object.property_name1 = new_value` &rarr; **modify** a property
+-   `new_object.property_name1 = new_value` &rarr; **modify** an attribute
+
+    - if the attribute does not exists, it will be created
+
+    - `setattr(ClassName, attr_name, attr_value)` &rarr; as before, create a new attribute to _ClassName_
 
 -   `new_object.method()` &rarr; **apply** a method
 
@@ -329,6 +336,32 @@ except ErrorName:
 
 ### Virtual Environments
 
+The point of virtual environments is to have containers with packages that are useful for a particular project, so that different projects can use different version of the same package.
+
+#### `venv` Built-in Module
+
+- `python3 -m venv env_name` &rarr; **create** a new environment (it is a directory) in the current path. When run with -m, the `python` command search for a package called as the first argument and run it as _main_
+
+    - one convention is to _create the project folder_ and create inside a new virtual environment called _venv_
+
+    - **don't commit the _virtual environment_ to source control**, so add it to the _.gitignore_ file
+
+- `source env_name/bin/activate` &rarr; **activate** the environment. If now `which pyhton` is called, it points inside the virtual environment directory
+
+    - to activate on Windows, use `env_name/bin/activate.bat`
+
+- once the environment is installed, packages are installed only for that environment
+
+- `pip freeze > requirements.txt` &rarr; redirect the output of `pip freeze` (list of packages and versions) to a _.txt_ file that can be used to recreate the environment from someone else using `pip install -r requirements.txt`
+
+- `deactivate` &rarr; deactivate the virtual environment
+
+-  to delete the environment, remove the directory which contains it
+
+_`venv` create the environments with the version of pyhton used to run it and cannot create one with different versions. Use other packages if necessary_
+
+#### `virtualenv` Module
+
 -   install `virtualenv`
 
 -   `cd` into the project folder
@@ -378,3 +411,5 @@ else:
 ### Resources
 
 - [Errors Handling](https://youtu.be/NIWwJbo-9_8) - Corey Shafer
+
+- [Virtual environments with venv](https://youtu.be/Kg1Yvry_Ydk) - Corey Shafer

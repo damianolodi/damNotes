@@ -139,12 +139,14 @@ z <span style="color:#666">=</span> {<span style="color:#666">**</span>x, <span 
 
 <p>(<a href="https://docs.python.org/3.3/tutorial/datastructures.html#tuples-and-sequences">doc</a>) Values divided by commas, like</p>
 <div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">t <span style="color:#666">=</span> <span style="color:#666">12345</span>, <span style="color:#666">54321</span>, <span style="color:#ba2121">&#39;hello!&#39;</span>
-u <span style="color:#666">=</span> t, (<span style="color:#666">1</span>, <span style="color:#666">2</span>, <span style="color:#666">3</span>, <span style="color:#666">4</span>, <span style="color:#666">5</span>) <span style="color:#408080;font-style:italic"># nested tuples</span>
-empty <span style="color:#666">=</span> () <span style="color:#408080;font-style:italic"># empty tuple</span>
-single <span style="color:#666">=</span> (<span style="color:#ba2121">&#39;hello&#39;</span>,) <span style="color:#408080;font-style:italic"># 1-element tuple</span></code></pre></div>
+u <span style="color:#666">=</span> t, (<span style="color:#666">1</span>, <span style="color:#666">2</span>, <span style="color:#666">3</span>, <span style="color:#666">4</span>, <span style="color:#666">5</span>)      <span style="color:#408080;font-style:italic"># nested tuples</span>
+empty <span style="color:#666">=</span> ()                  <span style="color:#408080;font-style:italic"># empty tuple</span>
+single <span style="color:#666">=</span> (<span style="color:#ba2121">&#39;hello&#39;</span>,)         <span style="color:#408080;font-style:italic"># 1-element tuple</span></code></pre></div>
 <ul>
 <li><p><strong>immutable</strong> &rarr; tuples usually contain an heterogeneous sequence of elements that are accessed via <em>unpacking</em> or <em>indexing</em></p>
-<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">x, y, z <span style="color:#666">=</span> t <span style="color:#408080;font-style:italic"># unpacking tuples</span></code></pre></div></li>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">x, y, z <span style="color:#666">=</span> t                     <span style="color:#408080;font-style:italic"># unpacking tuples</span>
+a, b, <span style="color:#666">*</span>c <span style="color:#666">=</span> (<span style="color:#666">1</span>, <span style="color:#666">2</span>, <span style="color:#666">3</span>, <span style="color:#666">4</span>, <span style="color:#666">5</span>)      <span style="color:#408080;font-style:italic"># a=1, b=2, c=[3,4,5]</span>
+a, b, <span style="color:#666">*</span>c, d <span style="color:#666">=</span> (<span style="color:#666">1</span>, <span style="color:#666">2</span>, <span style="color:#666">3</span>, <span style="color:#666">4</span>, <span style="color:#666">5</span>)   <span style="color:#408080;font-style:italic"># a=2, b=2, c=[3,4], d=5</span></code></pre></div></li>
 </ul>
 
 <hr />
@@ -174,7 +176,7 @@ var <span style="color:#666">=</span> value_1 <span style="color:#008000;font-we
 <div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">for</span> item <span style="color:#a2f;font-weight:bold">in</span> listName:
     <span style="color:#666">&lt;</span>code<span style="color:#666">&gt;</span>
 
-<span style="color:#008000;font-weight:bold">for</span> index, item <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">enumerate</span>(listName):
+<span style="color:#008000;font-weight:bold">for</span> index, item <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">enumerate</span>(listName, start<span style="color:#666">=</span><span style="color:#666">0</span>):
     <span style="color:#008000;font-weight:bold">print</span> index, item
 
 <span style="color:#008000;font-weight:bold">for</span> _ <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">range</span>(<span style="color:#666">10</span>):
@@ -182,12 +184,14 @@ var <span style="color:#666">=</span> value_1 <span style="color:#008000;font-we
 
 list_a <span style="color:#666">=</span> [<span style="color:#666">3</span>, <span style="color:#666">9</span>, <span style="color:#666">17</span>, <span style="color:#666">15</span>, <span style="color:#666">19</span>]
 list_b <span style="color:#666">=</span> [<span style="color:#666">2</span>, <span style="color:#666">4</span>, <span style="color:#666">8</span>, <span style="color:#666">10</span>, <span style="color:#666">30</span>, <span style="color:#666">40</span>, <span style="color:#666">50</span>, <span style="color:#666">60</span>, <span style="color:#666">70</span>, <span style="color:#666">80</span>, <span style="color:#666">90</span>]
-<span style="color:#008000;font-weight:bold">for</span> a, b <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">zip</span>(list_a , list_b): <span style="color:#408080;font-style:italic"># loop on multiple lists</span>
+<span style="color:#008000;font-weight:bold">for</span> a, b, <span style="color:#666">...</span> <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#008000">zip</span>(list_a , list_b, <span style="color:#666">...</span>): <span style="color:#408080;font-style:italic"># loop on multiple lists</span>
     <span style="color:#666">&lt;</span>code<span style="color:#666">&gt;</span></code></pre></div>
 <ul>
-<li>can loop also on <em>dictionaries</em> and <em>strings</em></li>
-<li>dictionaries are <strong>unordered</strong>: the loop wil go through <em>every key</em>, but <strong>not necessarily in the same order</strong></li>
-<li><code>zip()</code>&rarr; stops at the end of the shorter list</li>
+<li><p>can loop also on <em>dictionaries</em> and <em>strings</em></p></li>
+
+<li><p>dictionaries are <strong>unordered</strong>: the loop wil go through <em>every key</em>, but <strong>not necessarily in the same order</strong></p></li>
+
+<li><p><code>zip()</code>&rarr; stops at the end of the shorter list</p></li>
 </ul>
 
 <h4 id="while-loop">While Loop</h4>
@@ -196,7 +200,7 @@ list_b <span style="color:#666">=</span> [<span style="color:#666">2</span>, <sp
 <span style="color:#008000;font-weight:bold">else</span>:
     <span style="color:#666">&lt;</span>code<span style="color:#666">&gt;</span></code></pre></div>
 <ul>
-<li><code>else</code> &rarr; executed enytime the <em>condition</em> is evaluated as <em>False</em>
+<li><p><code>else</code> &rarr; executed enytime the <em>condition</em> is evaluated as <em>False</em></p>
 
 <ul>
 <li><strong>not executed</strong> if the cycle is interrupted by <code>break</code></li>
@@ -223,9 +227,7 @@ This function returns the sum of its two arguments</p>
 
 <span style="color:#008000;font-weight:bold">lambda</span> val: val <span style="color:#666">&gt;</span> <span style="color:#666">1000000</span></code></pre></div>
 <ul>
-<li><strong>Lambda functions can be used wherever function objects are required.</strong>
-They are syntactically restricted to a single expression. Semantically, they are just syntactic sugar for a normal function definition.
-Like nested function definitions, lambda functions can reference variables from the containing scope</li>
+<li><strong>Lambda functions can be used wherever function objects are required.</strong> They are syntactically restricted to a single expression. Semantically, they are just syntactic sugar for a normal function definition. Like nested function definitions, lambda functions can reference variables from the containing scope</li>
 </ul>
 
 <hr />
@@ -266,9 +268,15 @@ Like nested function definitions, lambda functions can reference variables from 
 <ul>
 <li><p><code>new_object = My_class(property_name1, property_name2, ...)</code> &rarr; <strong>create</strong> an object</p></li>
 
-<li><p><code>new_object.property_name1</code> &rarr; <strong>access</strong> a property</p></li>
+<li><p><code>new_object.property_name1</code> &rarr; <strong>access</strong> an attribute</p></li>
 
-<li><p><code>new_object.property_name1 = new_value</code> &rarr; <strong>modify</strong> a property</p></li>
+<li><p><code>new_object.property_name1 = new_value</code> &rarr; <strong>modify</strong> an attribute</p>
+
+<ul>
+<li><p>if the attribute does not exists, it will be created</p></li>
+
+<li><p><code>setattr(ClassName, attr_name, attr_value)</code> &rarr; as before, create a new attribute to <em>ClassName</em></p></li>
+</ul></li>
 
 <li><p><code>new_object.method()</code> &rarr; <strong>apply</strong> a method</p></li>
 
@@ -336,6 +344,38 @@ Like nested function definitions, lambda functions can reference variables from 
 
 <h3 id="virtual-environments">Virtual Environments</h3>
 
+<p>The point of virtual environments is to have containers with packages that are useful for a particular project, so that different projects can use different version of the same package.</p>
+
+<h4 id="venv-built-in-module"><code>venv</code> Built-in Module</h4>
+
+<ul>
+<li><p><code>python3 -m venv env_name</code> &rarr; <strong>create</strong> a new environment (it is a directory) in the current path. When run with -m, the <code>python</code> command search for a package called as the first argument and run it as <em>main</em></p>
+
+<ul>
+<li><p>one convention is to <em>create the project folder</em> and create inside a new virtual environment called <em>venv</em></p></li>
+
+<li><p><strong>don&rsquo;t commit the <em>virtual environment</em> to source control</strong>, so add it to the <em>.gitignore</em> file</p></li>
+</ul></li>
+
+<li><p><code>source env_name/bin/activate</code> &rarr; <strong>activate</strong> the environment. If now <code>which pyhton</code> is called, it points inside the virtual environment directory</p>
+
+<ul>
+<li>to activate on Windows, use <code>env_name/bin/activate.bat</code></li>
+</ul></li>
+
+<li><p>once the environment is installed, packages are installed only for that environment</p></li>
+
+<li><p><code>pip freeze &gt; requirements.txt</code> &rarr; redirect the output of <code>pip freeze</code> (list of packages and versions) to a <em>.txt</em> file that can be used to recreate the environment from someone else using <code>pip install -r requirements.txt</code></p></li>
+
+<li><p><code>deactivate</code> &rarr; deactivate the virtual environment</p></li>
+
+<li><p>to delete the environment, remove the directory which contains it</p></li>
+</ul>
+
+<p><em><code>venv</code> create the environments with the version of pyhton used to run it and cannot create one with different versions. Use other packages if necessary</em></p>
+
+<h4 id="virtualenv-module"><code>virtualenv</code> Module</h4>
+
 <ul>
 <li><p>install <code>virtualenv</code></p></li>
 
@@ -387,7 +427,9 @@ Like nested function definitions, lambda functions can reference variables from 
 <h3 id="resources">Resources</h3>
 
 <ul>
-<li><a href="https://youtu.be/NIWwJbo-9_8">Errors Handling</a> - Corey Shafer</li>
+<li><p><a href="https://youtu.be/NIWwJbo-9_8">Errors Handling</a> - Corey Shafer</p></li>
+
+<li><p><a href="https://youtu.be/Kg1Yvry_Ydk">Virtual environments with venv</a> - Corey Shafer</p></li>
 </ul>
 
 
