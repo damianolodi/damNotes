@@ -85,6 +85,39 @@ with concurrent.futures.ThreadPoolExecutor() as executor:
 
 * * *
 
+### Multiprocessing
+
+```py
+import multiprocessing
+
+# Create the process object
+p1 = multiprocessing.Process(target=my_function, args=[arg1, arg2,...])
+# Start that process
+p1.start()
+```
+
+*my_function* is a function defined previously in the program.
+
+- `p1.join()` &rarr; block the execution of the calling process until _p1_ is completed
+
+#### Process Pool Executor
+
+```py
+import concurrent.futures
+
+def my_function(arg1, arg2,...):
+    <code>
+    return something
+
+with concurrent.futures.ProcessPoolExecutor() as executor:
+    f1 = executor.submit(my_function, arg1, arg2,...)
+    print(f1.result())
+```
+
+In practice, all things said in the _Thread Pool Executor_ section are applicable also here.
+
+* * *
+
 ### Sources
 
 - [Python Threading Tutorial](https://youtu.be/IEEhzQoKtQU) - Corey Shafer
