@@ -30,7 +30,8 @@ pygmentsStyle = "pygments"
 
 [params]
     sections = ["C", "HTML", "CSS", "Hugo", "Python",
-                "Git", "AI", "RPi", "Arduino", "Linux", "Bash", "Electronics"]
+                "Git", "AI", "RPi", "Arduino", "Linux",
+                "Bash", "Electronics", "Homebrew"]
     dateFormat = "Jan 2, 2006"
     homeText = "You just made a Hugo blog from scratch."
 
