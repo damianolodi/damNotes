@@ -30,6 +30,29 @@ import time
 
 * * *
 
+### `dateutil` module
+
+This module expands the `datetime` module.
+
+- To check if a string represent a date use
+
+```py
+    from dateutil.parser import parse
+
+    try:
+        parse(string, fuzzy=False)
+    except ValueError:              # it is not a date
+        pass
+```
+
+* * *
+
 ### Time
 
-- `time.perf_counter()` &rarr; return value (in seconds) of a performance counter (calcualted from the highest clock). Used to measure performance. The single value is useless, it is required to make difference between consecutive results ([doc](https://docs.python.org/3/library/time.html#time.perf_counter)) 
+- `time.perf_counter()` &rarr; return value (in seconds) of a performance counter (calcualted from the highest clock). Used to measure performance. The single value is useless, it is required to make difference between consecutive results ([doc](https://docs.python.org/3/library/time.html#time.perf_counter))
+
+* * *
+
+### Resources
+
+- [`dateutil` docs](https://dateutil.readthedocs.io/en/stable/)
