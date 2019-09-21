@@ -1,8 +1,12 @@
 ---
-title: "Basic Concepts"
+title: Basic Concepts
 draft: false
-arguments: [""]
-weight: 01
+arguments:
+  - Installation
+  - Basic Commands
+  - External Repositories
+  - Cask
+weight: 1
 ---
 
 Homebrew is a package manager for Mac.
@@ -41,7 +45,7 @@ Homebrew can be unsinstalled preatty simply with the command provided in the FAQ
 
 - `brew cleanup` &rarr; delete old versions of installed packages (when packages are updated, homebrew does not replace the version but just install the new one)
 
-#### Adding 3rd parties brew repositories
+#### Adding 3rd Parties Brew Repositories
 
 Sometimes something is not available in the main homebrew repository. Other repositories in which the `brew` command can search can be added. The name of this repositories is provided in documentation of the software one wants to install.
 
