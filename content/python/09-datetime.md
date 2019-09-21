@@ -1,18 +1,22 @@
 ---
-title: "Time and Datetime"
+title: Time and Datetime
 draft: false
-arguments: ["Get Current Date"]
+arguments:
+  - Get Current Date
 weight: 09
 ---
 
 ([Docs](https://docs.python.org/3/library/datetime.html))
 
 ```py
-import datetime as dt
+from datetime import datetime as dt
+from datetime import date
 import time
 ```
 
 ### Datetime
+
+#### `datetime` Submodule
 
 - `dt.datetime.now()` &rarr; return **current date and time** in standard format
     
@@ -20,7 +24,9 @@ import time
 
     - `dt.datetime.now().time()` &rarr; return only the date
 
--   `datetime.today()` &rarr; return **current date**
+#### `date` Submodule
+
+- `date.today()` &rarr; return **current date**
 
 * * *
 
