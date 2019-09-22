@@ -112,6 +112,12 @@ fig.savefig('path.png', dpi=200)
     fig, (ax1, ax2) = plt.subplots(nrows=2, ncols=1)
 ```
 
+- `legend` can have the following parameters
+
+    - `fontsize` &rarr; can be set to an _int_ or equal to _xx-small_, _x-small_, _small_, _medium_, _large_, _x-large_, _xx-large_
+
+    - `frameon` &rarr; activate the frame around the legend and the background color  
+
 * * *
 
 ### Plot Annotation and Drawing
