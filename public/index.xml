@@ -277,7 +277,9 @@ width: 150px;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/linux/03-packages/</guid>
-      <description> tree &amp;rarr; show the recursive directory structure as a tree view (starting from the current directory)  </description>
+      <description> tree &amp;rarr; show the recursive directory structure as a tree view (starting from the current directory)
+ htop &amp;rarr; nice looking software to monitor processes in the terminal
+  </description>
     </item>
     
     <item>
@@ -369,6 +371,19 @@ import seaborn as sns sns.set() tips = sns.load_dataset(&amp;#34;tips&amp;#34;) 
     </item>
     
     <item>
+      <title>Process Monitoring</title>
+      <link>https://damnotes.netlify.com/linux/05-process-monitoring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/linux/05-process-monitoring/</guid>
+      <description>A process is the instance of a program which is ebeing executed by the CPU. It contains the program code and its activity.
+Important parameters are: PID (Process ID), priority, occupied memory, used CPU percentage
+ top &amp;rarr; call the system manager to visualize all the processes
+ top -M &amp;rarr; use the best measurment unit in the column of the allocated memory of each process
+ &amp;gt; P, &amp;gt; M &amp;rarr; order processes for CPU percentage or memory percentage</description>
+    </item>
+    
+    <item>
       <title>Text Elements</title>
       <link>https://damnotes.netlify.com/html/05-text-elements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -420,6 +435,16 @@ import seaborn as sns sns.set() tips = sns.load_dataset(&amp;#34;tips&amp;#34;) 
 px -&amp;gt; pixels are used to set the exact size of an element
 em -&amp;gt; the em represents the size of the base font being used. It is a relative unit of measurement. They change the size of text relative to the parent element’s size of text
 rem -&amp;gt; it means root em. Instead of checking parent elements to size font, it checks the root element.</description>
+    </item>
+    
+    <item>
+      <title>System log</title>
+      <link>https://damnotes.netlify.com/linux/06-system-log/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/linux/06-system-log/</guid>
+      <description>dmesg &amp;rarr; display log of events happening with the peripherals of the OS (USB ports, network cards,&amp;hellip;).
+ dmesg -w &amp;rarr; maintain occupied the bash session and display each new event in real time   Other logs are contained in the /var/log/ directory.</description>
     </item>
     
     <item>
@@ -499,12 +524,12 @@ body { --var-name: value; }  It becomes available to use inside the element in w
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/python/09-datetime/</guid>
-      <description> (Docs)
-import datetime as dt import time Datetime  dt.datetime.now() &amp;rarr; return current date and time in standard format
+      <description>(Docs)
+from datetime import datetime as dt from datetime import date import time Datetime datetime Submodule  dt.datetime.now() &amp;rarr; return current date and time in standard format
  dt.datetime.now().strftime(&#39;%Y-%m-%d %H:%M:%S.%f&#39;) &amp;rarr; format the returned valued
  dt.datetime.now().time() &amp;rarr; return only the date
-  datetime.today() &amp;rarr; return current date
-  Time  time.perf_counter() &amp;rarr; return value (in seconds) of a performance counter (calcualted from the highest clock). Used to measure performance. The single value is useless, it is required to make difference between consecutive results (doc)  </description>
+   date Submodule  date.today() &amp;rarr; return current date  dateutil module This module expands the datetime module.
+ To check if a string represent a date use</description>
     </item>
     
     <item>
@@ -594,6 +619,15 @@ import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#3
       <description>Debian Release Cycle There are mainly 4 versions of the _Debian _operating system:
  unstable (Sid) &amp;rarr; every software update is immediatly released on this version, but it can be full of bugs
  testing (Buster) &amp;rarr; after some time, if no bugs are fonund, software is released in the testing version of the OS. This can be a god compromise on desktop system to have software reasonably update and safe</description>
+    </item>
+    
+    <item>
+      <title>Linux Filesystem</title>
+      <link>https://damnotes.netlify.com/linux/97-filesystem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/linux/97-filesystem/</guid>
+      <description>Complete with linux folder structure</description>
     </item>
     
     <item>

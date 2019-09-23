@@ -44,9 +44,12 @@
 
 
 <p>(<a href="https://docs.python.org/3/library/datetime.html">Docs</a>)</p>
-<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">datetime</span> <span style="color:#008000;font-weight:bold">as</span> <span style="color:#00f;font-weight:bold">dt</span>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">from</span> <span style="color:#00f;font-weight:bold">datetime</span> <span style="color:#008000;font-weight:bold">import</span> datetime <span style="color:#008000;font-weight:bold">as</span> dt
+<span style="color:#008000;font-weight:bold">from</span> <span style="color:#00f;font-weight:bold">datetime</span> <span style="color:#008000;font-weight:bold">import</span> date
 <span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">time</span></code></pre></div>
 <h3 id="datetime">Datetime</h3>
+
+<h4 id="datetime-submodule"><code>datetime</code> Submodule</h4>
 
 <ul>
 <li><p><code>dt.datetime.now()</code> &rarr; return <strong>current date and time</strong> in standard format</p>
@@ -56,8 +59,28 @@
 
 <li><p><code>dt.datetime.now().time()</code> &rarr; return only the date</p></li>
 </ul></li>
+</ul>
 
-<li><p><code>datetime.today()</code> &rarr; return <strong>current date</strong></p></li>
+<h4 id="date-submodule"><code>date</code> Submodule</h4>
+
+<ul>
+<li><code>date.today()</code> &rarr; return <strong>current date</strong></li>
+</ul>
+
+<hr />
+
+<h3 id="dateutil-module"><code>dateutil</code> module</h3>
+
+<p>This module expands the <code>datetime</code> module.</p>
+
+<ul>
+<li><p>To check if a string represent a date use</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">from</span> <span style="color:#00f;font-weight:bold">dateutil.parser</span> <span style="color:#008000;font-weight:bold">import</span> parse
+
+<span style="color:#008000;font-weight:bold">try</span>:
+    parse(string, fuzzy<span style="color:#666">=</span>False)
+<span style="color:#008000;font-weight:bold">except</span> <span style="color:#d2413a;font-weight:bold">ValueError</span>:              <span style="color:#408080;font-style:italic"># it is not a date</span>
+    <span style="color:#008000;font-weight:bold">pass</span></code></pre></div></li>
 </ul>
 
 <hr />
@@ -66,6 +89,14 @@
 
 <ul>
 <li><code>time.perf_counter()</code> &rarr; return value (in seconds) of a performance counter (calcualted from the highest clock). Used to measure performance. The single value is useless, it is required to make difference between consecutive results (<a href="https://docs.python.org/3/library/time.html#time.perf_counter">doc</a>)</li>
+</ul>
+
+<hr />
+
+<h3 id="resources">Resources</h3>
+
+<ul>
+<li><a href="https://dateutil.readthedocs.io/en/stable/"><code>dateutil</code> docs</a></li>
 </ul>
 
 

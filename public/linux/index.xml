@@ -46,7 +46,9 @@ Server  Web Server: Apache HTTPD (more complete), Nginx (lighter), Stack LAMP (L
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://damnotes.netlify.com/linux/03-packages/</guid>
-      <description> tree &amp;rarr; show the recursive directory structure as a tree view (starting from the current directory)  </description>
+      <description> tree &amp;rarr; show the recursive directory structure as a tree view (starting from the current directory)
+ htop &amp;rarr; nice looking software to monitor processes in the terminal
+  </description>
     </item>
     
     <item>
@@ -61,6 +63,29 @@ Server  Web Server: Apache HTTPD (more complete), Nginx (lighter), Stack LAMP (L
     </item>
     
     <item>
+      <title>Process Monitoring</title>
+      <link>https://damnotes.netlify.com/linux/05-process-monitoring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/linux/05-process-monitoring/</guid>
+      <description>A process is the instance of a program which is ebeing executed by the CPU. It contains the program code and its activity.
+Important parameters are: PID (Process ID), priority, occupied memory, used CPU percentage
+ top &amp;rarr; call the system manager to visualize all the processes
+ top -M &amp;rarr; use the best measurment unit in the column of the allocated memory of each process
+ &amp;gt; P, &amp;gt; M &amp;rarr; order processes for CPU percentage or memory percentage</description>
+    </item>
+    
+    <item>
+      <title>System log</title>
+      <link>https://damnotes.netlify.com/linux/06-system-log/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/linux/06-system-log/</guid>
+      <description>dmesg &amp;rarr; display log of events happening with the peripherals of the OS (USB ports, network cards,&amp;hellip;).
+ dmesg -w &amp;rarr; maintain occupied the bash session and display each new event in real time   Other logs are contained in the /var/log/ directory.</description>
+    </item>
+    
+    <item>
       <title>Choosing a Distro</title>
       <link>https://damnotes.netlify.com/linux/98-choosing-a-distro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -69,6 +94,15 @@ Server  Web Server: Apache HTTPD (more complete), Nginx (lighter), Stack LAMP (L
       <description>Debian Release Cycle There are mainly 4 versions of the _Debian _operating system:
  unstable (Sid) &amp;rarr; every software update is immediatly released on this version, but it can be full of bugs
  testing (Buster) &amp;rarr; after some time, if no bugs are fonund, software is released in the testing version of the OS. This can be a god compromise on desktop system to have software reasonably update and safe</description>
+    </item>
+    
+    <item>
+      <title>Linux Filesystem</title>
+      <link>https://damnotes.netlify.com/linux/97-filesystem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/linux/97-filesystem/</guid>
+      <description>Complete with linux folder structure</description>
     </item>
     
     <item>

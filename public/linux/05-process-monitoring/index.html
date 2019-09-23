@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="generator" content="Hugo 0.56.3" />
+    
+    
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://damnotes.netlify.com/css/style.css">
+    
+    
+    <title>Process Monitoring | DamNotes</title>
+
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js">
+    </script>
+</head>
+
+<body>
+    
+<div class="container border-bottom border-dark">
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="https://damnotes.netlify.com/">DamNotes</a>
+        
+        <ul class="navbar-nav">
+            
+            
+            
+            <li class=" nav-item active">
+                <a class="nav-link" href="/about/"><i data-feather="user"></i> About<span
+                        class="sr-only">(current)</span></a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+    <div class="container">
+        <main id="main">
+            
+<div class="d-flex flex-column align-items-center">
+    <h2 class="m-1 mb-2 mt-2"><u>Process Monitoring</u></h2>
+</div>
+<p>A process is the instance of a program which is ebeing executed by the CPU. It contains the program code and its activity.</p>
+
+<p>Important parameters are: <strong>PID</strong> (Process ID), <strong>priority</strong>, occupied <strong>memory</strong>, used <strong>CPU percentage</strong></p>
+
+<ul>
+<li><p><code>top</code> &rarr; call the system manager to visualize all the processes</p>
+
+<ul>
+<li><p><code>top -M</code> &rarr; use the best measurment unit in the column of the allocated memory of each process</p></li>
+
+<li><p>&gt; <code>P</code>, &gt; <code>M</code> &rarr; order processes for CPU percentage or memory percentage</p></li>
+
+<li><p>&gt; <code>k</code> + type <em>PID</em> + signal &rarr; kill the associated process. <em>Signal</em> can be <code>15</code> (sigterm) for close request, or <code>9</code> (sigkill) for forcing the closure</p></li>
+</ul></li>
+
+<li><p><code>free -m</code> &rarr; monitor memory status. <code>-m</code> display in megabytes</p></li>
+
+<li><p><code>ps</code> &rarr; display processes active in the current bash session</p></li>
+
+<li><p><code>htop</code> &rarr; like <code>top</code> but better look. It has to be installed</p></li>
+
+<li><p><code>pgrep</code> + <em>name</em> &rarr; display all the PIDs of the processes containing <em>name</em></p></li>
+
+<li><p><code>ps aux | grep</code> + <em>name</em> &rarr; display all processes (and their specs) containing <em>name</em></p></li>
+
+<li><p><code>kill</code> + PID &rarr; try to close the process with the <em>sigterm</em> signal.</p>
+
+<ul>
+<li><code>kill -9</code> + PID &rarr; use <em>sigkill</em> instead</li>
+</ul></li>
+</ul>
+
+<hr />
+
+<p><strong>In Linux everything is a file.</strong> In the <code>/proc/</code> directory, there is a directory for <em>every</em> process that is in execution (named as the PID of the process). Inside there are various other files and directories used by the OS to monitor the process. For example, in the <code>cmdline</code> file there is the bash command that started the process.</p>
+
+
+
+        </main>
+    </div>
+    <div class="container border-top border-dark">
+    <nav class="navbar navbar-light justify-content-center">
+        <div class="navbar-nav d-flex flex-row justify-content-center">
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://github.com/damianolodi"
+                style="margin:10px;"><i data-feather="github"></i> GitHub</a>
+            
+            
+            
+            <a class="nav-item nav-link active" href="https://www.linkedin.com/in/damiano-lodi/"
+                style="margin:10px;"><i data-feather="linkedin"></i> LinkedIn</a>
+            
+        </div>
+    </nav>
+</div>
+    
+
+<script src="https://damnotes.netlify.com/js/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+</body>
+
+</html>

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://damnotes.netlify.com/css/style.css">
     
     
-    <title>Packages | DamNotes</title>
+    <title>System log | DamNotes</title>
 
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js">
     </script>
@@ -39,13 +39,19 @@
         <main id="main">
             
 <div class="d-flex flex-column align-items-center">
-    <h2 class="m-1 mb-2 mt-2"><u>Packages</u></h2>
+    <h2 class="m-1 mb-2 mt-2"><u>System log</u></h2>
 </div>
 <ul>
-<li><p><code>tree</code> &rarr; show the recursive directory structure as a tree view (starting from the current directory)</p></li>
+<li><p><code>dmesg</code> &rarr; display log of events happening with the peripherals of the OS (USB ports, network cards,&hellip;).</p>
 
-<li><p><code>htop</code> &rarr; nice looking software to monitor processes in the terminal</p></li>
+<ul>
+<li><code>dmesg -w</code> &rarr; maintain occupied the bash session and display each new event in real time</li>
+</ul></li>
 </ul>
+
+<hr />
+
+<p>Other logs are contained in the <code>/var/log/</code> directory.</p>
 
 
 
