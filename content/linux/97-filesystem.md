@@ -2,7 +2,7 @@
 title: "Linux Filesystem"
 draft: false
 arguments: ["Folder Structure"]
-weight: 98
+weight: 97
 ---
 
 Complete with linux folder structure

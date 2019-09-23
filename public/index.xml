@@ -611,6 +611,15 @@ import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#3
     </item>
     
     <item>
+      <title>Linux Filesystem</title>
+      <link>https://damnotes.netlify.com/linux/97-filesystem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/linux/97-filesystem/</guid>
+      <description>Complete with linux folder structure</description>
+    </item>
+    
+    <item>
       <title>Choosing a Distro</title>
       <link>https://damnotes.netlify.com/linux/98-choosing-a-distro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -619,15 +628,6 @@ import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#3
       <description>Debian Release Cycle There are mainly 4 versions of the _Debian _operating system:
  unstable (Sid) &amp;rarr; every software update is immediatly released on this version, but it can be full of bugs
  testing (Buster) &amp;rarr; after some time, if no bugs are fonund, software is released in the testing version of the OS. This can be a god compromise on desktop system to have software reasonably update and safe</description>
-    </item>
-    
-    <item>
-      <title>Linux Filesystem</title>
-      <link>https://damnotes.netlify.com/linux/97-filesystem/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/linux/97-filesystem/</guid>
-      <description>Complete with linux folder structure</description>
     </item>
     
     <item>
