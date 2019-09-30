@@ -41,14 +41,14 @@
 <div class="d-flex flex-column align-items-center">
     <h2 class="m-1 mb-2 mt-2"><u>Accessing Hardware Info</u></h2>
 </div>
+
+
 <ul>
 <li><p><code>lsblk</code> &rarr; access all the information about <em>external drives</em> (it menas &lsquo;list block devices&rsquo;).</p>
 
 <ul>
 <li>in Linux, all external storage devices are stored in <code>/dev/sd*</code>. Usualy, first letter (<em>a</em>,&hellip;) is the name of the disk, followed by a number if more that one partitions are present</li>
 </ul></li>
-
-<li><p><code>ip addr</code> (or <code>ifconfig</code>, but it is deprecated) &rarr; lists all <em>network cards</em></p></li>
 
 <li><p><code>lsusb</code> &rarr; lists all USB peripherals (keyboard, mouse, serial ports,&hellip;)</p></li>
 
@@ -65,6 +65,24 @@
 <ul>
 <li><code>free -m</code> &rarr; display amount of free and occupied memory</li>
 </ul></li>
+</ul>
+
+<hr />
+
+<h3 id="network-cards">Network Cards</h3>
+
+<ul>
+<li><p><code>ip addr</code> (or <code>ifconfig</code>, but it is deprecated) &rarr; lists all <em>network cards</em></p>
+
+<ul>
+<li><p>firts diplayed is <code>lo</code> (loopback). It is a virtual network card used to assign the ip address for localhost</p></li>
+
+<li><p><code>eth0</code> is the cabled network card. <em>inet</em> and <em>inet6</em> are the ip address of the local network</p></li>
+</ul></li>
+
+<li><p><code>ip route</code> &rarr; <em>list the ip address of the router</em> used to connect to external networks</p></li>
+
+<li><p><code>host website_name</code> &rarr; return <em>ip address and hosting informations</em> about the provided website</p></li>
 </ul>
 
 

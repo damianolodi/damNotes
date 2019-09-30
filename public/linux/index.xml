@@ -58,8 +58,8 @@ Server  Web Server: Apache HTTPD (more complete), Nginx (lighter), Stack LAMP (L
       
       <guid>https://damnotes.netlify.com/linux/04-accessing-hw-info/</guid>
       <description>lsblk &amp;rarr; access all the information about external drives (it menas &amp;lsquo;list block devices&amp;rsquo;).
- in Linux, all external storage devices are stored in /dev/sd*. Usualy, first letter (a,&amp;hellip;) is the name of the disk, followed by a number if more that one partitions are present  ip addr (or ifconfig, but it is deprecated) &amp;rarr; lists all network cards
- lsusb &amp;rarr; lists all USB peripherals (keyboard, mouse, serial ports,&amp;hellip;)</description>
+ in Linux, all external storage devices are stored in /dev/sd*. Usualy, first letter (a,&amp;hellip;) is the name of the disk, followed by a number if more that one partitions are present  lsusb &amp;rarr; lists all USB peripherals (keyboard, mouse, serial ports,&amp;hellip;)
+ lspci &amp;rarr; lists all peripherals attached to the PCI bus</description>
     </item>
     
     <item>
