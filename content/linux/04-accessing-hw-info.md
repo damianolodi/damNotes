@@ -31,8 +31,14 @@ weight: 04
 
     - firts diplayed is `lo` (loopback). It is a virtual network card used to assign the ip address for localhost
 
-    - `eth0` is the cabled network card. _inet_ and _inet6_ are the ip address of the local network
+    - `eth0` (on Debian) is the cabled network card. _inet_ and _inet6_ are the ip address of the local network
 
 - `ip route` &rarr; _list the ip address of the router_ used to connect to external networks
 
 - `host website_name` &rarr; return _ip address and hosting informations_ about the provided website
+
+- `ip link set interface_name down` &rarr; turn off the ntetwork card specified in *interface_name* (e.g. `eth0`). Use `up` to reactivate it
+
+- `ip address change new_ip_address dev interface_name` &rarr; _change the ip address_ of the specified interface. This modification is temporary (until next reboot of the machine)
+
+    - the ip address can be modified permanently changing the configuration inside a directory in `/etc/` (the specific file depends on the distro)

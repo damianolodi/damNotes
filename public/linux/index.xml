@@ -86,6 +86,21 @@ Important parameters are: PID (Process ID), priority, occupied memory, used CPU 
     </item>
     
     <item>
+      <title>Security and Permissions</title>
+      <link>https://damnotes.netlify.com/linux/07-security-and-permission/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/linux/07-security-and-permission/</guid>
+      <description>There are 3 types of users:
+ standard user &amp;rarr; can do only some things. User ID start from 1000
+ system user &amp;rarr; particular standard user. User ID under 1000
+ root user &amp;rarr; can do everything
+  The list of all users is found inside /etc/passwd
+ who &amp;rarr; display active users and relative informations. Use w for more detailed informations
+ last &amp;rarr; display the history of user&amp;rsquo;s logins on the system</description>
+    </item>
+    
+    <item>
       <title>Linux Filesystem</title>
       <link>https://damnotes.netlify.com/linux/97-filesystem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

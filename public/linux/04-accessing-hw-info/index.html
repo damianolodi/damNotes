@@ -77,12 +77,20 @@
 <ul>
 <li><p>firts diplayed is <code>lo</code> (loopback). It is a virtual network card used to assign the ip address for localhost</p></li>
 
-<li><p><code>eth0</code> is the cabled network card. <em>inet</em> and <em>inet6</em> are the ip address of the local network</p></li>
+<li><p><code>eth0</code> (on Debian) is the cabled network card. <em>inet</em> and <em>inet6</em> are the ip address of the local network</p></li>
 </ul></li>
 
 <li><p><code>ip route</code> &rarr; <em>list the ip address of the router</em> used to connect to external networks</p></li>
 
 <li><p><code>host website_name</code> &rarr; return <em>ip address and hosting informations</em> about the provided website</p></li>
+
+<li><p><code>ip link set interface_name down</code> &rarr; turn off the ntetwork card specified in <em>interface_name</em> (e.g. <code>eth0</code>). Use <code>up</code> to reactivate it</p></li>
+
+<li><p><code>ip address change new_ip_address dev interface_name</code> &rarr; <em>change the ip address</em> of the specified interface. This modification is temporary (until next reboot of the machine)</p>
+
+<ul>
+<li>the ip address can be modified permanently changing the configuration inside a directory in <code>/etc/</code> (the specific file depends on the distro)</li>
+</ul></li>
 </ul>
 
 
