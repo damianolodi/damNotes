@@ -113,9 +113,11 @@ df = pd.read_csv(r’relative_path’, 					#can be a web address
 
 -   `pd.to_datetime(data, )` &rarr; **convert to datetime** format [doc](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.to_datetime.html)
 
--   `df['columnName'].rolling(int).mean()` &rarr; return a Series with the moving average of the data [`int` is the window size]
+-   `df['columnName'].rolling(int).mean()` &rarr; return a Series with the moving average of the data (`int` is the window size) ([doc](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.rolling.html))
 
-    -   `mean()` can be replaced by whichever needed method
+    - `mean()` can be replaced by whichever needed method
+
+    - `min_periods` minimum number of periods necessary to return a non-NaN value
 
 * * *
 
