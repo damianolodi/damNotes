@@ -52,19 +52,81 @@
 <h4 id="datetime-submodule"><code>datetime</code> Submodule</h4>
 
 <ul>
-<li><p><code>dt.datetime.now()</code> &rarr; return <strong>current date and time</strong> in standard format</p>
+<li><p><code>dt_obj = dt.datetime(yyyy, mm, dd, hh, mm, ss, ususus)</code> &rarr; create datetime object. Don&rsquo;t use leading zeros</p>
 
 <ul>
-<li><p><code>dt.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')</code> &rarr; format the returned valued</p></li>
-
-<li><p><code>dt.datetime.now().time()</code> &rarr; return only the date</p></li>
+<li><code>dt_obj.date()</code>, <code>dt_obj.time()</code>, <code>dt_obj.year</code>, <code>...</code> &rarr; acess onyl part of the object</li>
 </ul></li>
+
+<li><p><code>dt.datetime.today()</code> &rarr; return <strong>current local date and time</strong> with a timezone specified as <em>None</em></p></li>
+
+<li><p><code>dt.datetime.now()</code> &rarr; return <strong>current local date and time</strong> in standard format. <em>It has a parameter to specify the time zone</em></p>
+
+<ul>
+<li><code>dt.datetime.now().time()</code> &rarr; return only the date</li>
+</ul></li>
+
+<li><p><code>dt_obj.strftime('%Y-%m-%d %H:%M:%S.%f')</code> &rarr; format the datetime object and return a string</p></li>
+
+<li><p><code>dt.datetime.strptime('date time', 'format')</code> &rarr; convert a string into a datetime object following the provided format</p></li>
 </ul>
 
 <h4 id="date-submodule"><code>date</code> Submodule</h4>
 
 <ul>
-<li><code>date.today()</code> &rarr; return <strong>current date</strong></li>
+<li><p><code>dt.date(yyyy, mm, dd)</code> &rarr; <strong>create date</strong>. Don&rsquo;t use leading zeros</p></li>
+
+<li><p><code>tday = dt.date.today()</code> &rarr; get <strong>current global date</strong></p>
+
+<ul>
+<li><p><code>tday.year</code>, <code>tday.month</code>, <code>tday.day</code> &rarr; get only part of the date</p></li>
+
+<li><p><code>tday.isoweekday()</code> &rarr; get day of the week (monday is 1, sunday is 7)</p></li>
+
+<li><p><code>tday.weekday()</code> &rarr; get day of the week (monday is 0, sunday is 6)</p></li>
+</ul></li>
+</ul>
+
+<h4 id="time-submodule"><code>time</code> Submodule</h4>
+
+<ul>
+<li><p><code>t = dt.time(hh, mm, ss, ususus)</code> &rarr; create a time object</p>
+
+<ul>
+<li><code>t.hour</code>, <code>t.minutes</code>, <code>t.seconds</code>, <code>...</code> &rarr; acess only part of the object</li>
+</ul></li>
+</ul>
+
+<h4 id="timedelta-submodule"><code>timedelta</code> Submodule</h4>
+
+<p>Timedeltas objects can be added/subtracted to dates, or they can be obtained subtracting two dates/times/datetimes.</p>
+
+<ul>
+<li><p><code>td = dt.timedelta(days=7)</code> &rarr; create a timedelta object long 7 days</p></li>
+
+<li><p><code>td.days</code> &rarr; return only the &ldquo;days&rdquo; of the timedelta object</p></li>
+
+<li><p><code>td.total_seconds()</code> &rarr; convert timedelta object in seconds</p></li>
+</ul>
+
+<hr />
+
+<h3 id="pytz-module"><code>pytz</code> module</h3>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">datetime</span> <span style="color:#008000;font-weight:bold">as</span> <span style="color:#00f;font-weight:bold">dt</span>
+<span style="color:#008000;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">pytz</span></code></pre></div>
+<p>It is recommended to use this when working with timezones</p>
+
+<ul>
+<li><p><code>dt_obj = dt.datetime(yyyy, mm, dd, hh, mm, ss, tzinfo=pytz.UTC)</code> &rarr; create a <em>timezone-aware</em> datetime object</p></li>
+
+<li><p><code>dt_utc = dt.datetime.now(tz=pytz.UTC)</code> &rarr; get current <em>timezone-aware</em> date and time</p></li>
+
+<li><p><code>dt_utc.astimezione(pytz.timezone('timezone/name'))</code> &rarr; convert to a different timezone. To see al timezone names see the doc or print the <em>pytz.all_timezones</em> list</p></li>
+
+<li><p>convert &ldquo;naive&rdquo; datetimes into <em>timezone-aware</em> ones using</p>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">my_dt <span style="color:#666">=</span> dt<span style="color:#666">.</span>datetime<span style="color:#666">.</span>now() <span style="color:#408080;font-style:italic"># &#39;naive&#39; datetime object</span>
+my_timezone <span style="color:#666">=</span> pytz<span style="color:#666">.</span>timezone(<span style="color:#ba2121">&#39;timezone/name&#39;</span>)
+dt_with_timezone <span style="color:#666">=</span> my_timezone<span style="color:#666">.</span>localize(my_dt)</code></pre></div></li>
 </ul>
 
 <hr />

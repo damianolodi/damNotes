@@ -151,10 +151,12 @@ pd<span style="color:#666">.</span>DataFrame(data<span style="color:#666">=</spa
 
 <li><p><code>pd.to_datetime(data, )</code> &rarr; <strong>convert to datetime</strong> format <a href="https://pandas.pydata.org/pandas-docs/stable/generated/pandas.to_datetime.html">doc</a></p></li>
 
-<li><p><code>df['columnName'].rolling(int).mean()</code> &rarr; return a Series with the moving average of the data [<code>int</code> is the window size]</p>
+<li><p><code>df['columnName'].rolling(int).mean()</code> &rarr; return a Series with the moving average of the data (<code>int</code> is the window size) (<a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.rolling.html">doc</a>)</p>
 
 <ul>
-<li><code>mean()</code> can be replaced by whichever needed method</li>
+<li><p><code>mean()</code> can be replaced by whichever needed method</p></li>
+
+<li><p><code>min_periods</code> minimum number of periods necessary to return a non-NaN value</p></li>
 </ul></li>
 </ul>
 

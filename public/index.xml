@@ -540,11 +540,9 @@ body { --var-name: value; }  It becomes available to use inside the element in w
       
       <guid>https://damnotes.netlify.com/python/09-datetime/</guid>
       <description>(Docs)
-from datetime import datetime as dt from datetime import date import time Datetime datetime Submodule  dt.datetime.now() &amp;rarr; return current date and time in standard format
- dt.datetime.now().strftime(&#39;%Y-%m-%d %H:%M:%S.%f&#39;) &amp;rarr; format the returned valued
- dt.datetime.now().time() &amp;rarr; return only the date
-   date Submodule  date.today() &amp;rarr; return current date  dateutil module This module expands the datetime module.
- To check if a string represent a date use</description>
+from datetime import datetime as dt from datetime import date import time Datetime datetime Submodule  dt_obj = dt.datetime(yyyy, mm, dd, hh, mm, ss, ususus) &amp;rarr; create datetime object. Don&amp;rsquo;t use leading zeros
+ dt_obj.date(), dt_obj.time(), dt_obj.year, ... &amp;rarr; acess onyl part of the object  dt.datetime.today() &amp;rarr; return current local date and time with a timezone specified as None
+ dt.datetime.now() &amp;rarr; return current local date and time in standard format.</description>
     </item>
     
     <item>
