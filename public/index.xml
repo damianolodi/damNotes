@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DamNotes</title>
@@ -39,20 +39,6 @@
       <description>Basics int var_name = value; // variable initialization char str_name[n]; // array initialization char str_name[] = &amp;#34;Hello World!&amp;#34;; const int VAR_NAME = value; // constant declaration  int main (void) { // execution start from here  // code  return 0; }  Best practice: variables are named with capital letters when global
  Math operators &amp;rarr; +, -, *, /, % (mod)
  For each string of n charachters, n+1 bytes are allocated in memory: the last is added by C as the null character \0 (all zeros)</description>
-    </item>
-    
-    <item>
-      <title>Basic Concepts</title>
-      <link>https://damnotes.netlify.com/homebrew/01-basics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/homebrew/01-basics/</guid>
-      <description>Homebrew is a package manager for Mac.
- Use xcode-select --install to install command line tools on mac
- Copy/paste the first instruction in the official documentation to install
- Test if the installation was successful using brew help
-  There are two kinds of packages: formulae usually deal with command line softwares, while casks enamble installation of mac application directly from homebrew.
-Homebrew can be unsinstalled preatty simply with the command provided in the FAQ section of the website.</description>
     </item>
     
     <item>
@@ -359,6 +345,17 @@ import seaborn as sns sns.set() tips = sns.load_dataset(&amp;#34;tips&amp;#34;) 
     </item>
     
     <item>
+      <title>ctype.c</title>
+      <link>https://damnotes.netlify.com/c/05-ctype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/c/05-ctype/</guid>
+      <description>#include &amp;lt;ctype.h&amp;gt;  isdigit(int) &amp;rarr; return non-zero if the provided value is a digit
+ isalnum(int) &amp;rarr; retutn non-zero if the provided value is a digit or a letter
+  </description>
+    </item>
+    
+    <item>
       <title>Grid</title>
       <link>https://damnotes.netlify.com/css/05-grid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -402,17 +399,6 @@ Important parameters are: PID (Process ID), priority, occupied memory, used CPU 
     </item>
     
     <item>
-      <title>ctype.c</title>
-      <link>https://damnotes.netlify.com/c/05-ctype/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/c/05-ctype/</guid>
-      <description>#include &amp;lt;ctype.h&amp;gt;  isdigit(int) &amp;rarr; return non-zero if the provided value is a digit
- isalnum(int) &amp;rarr; retutn non-zero if the provided value is a digit or a letter
-  </description>
-    </item>
-    
-    <item>
       <title>Functions</title>
       <link>https://damnotes.netlify.com/hugo/06-functions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -438,16 +424,6 @@ rem -&amp;gt; it means root em. Instead of checking parent elements to size font
     </item>
     
     <item>
-      <title>System log</title>
-      <link>https://damnotes.netlify.com/linux/06-system-log/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/linux/06-system-log/</guid>
-      <description>dmesg &amp;rarr; display log of events happening with the peripherals of the OS (USB ports, network cards,&amp;hellip;).
- dmesg -w &amp;rarr; maintain occupied the bash session and display each new event in real time   Other logs are contained in the /var/log/ directory.</description>
-    </item>
-    
-    <item>
       <title>stdlib.c</title>
       <link>https://damnotes.netlify.com/c/06-stdlib/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -457,6 +433,16 @@ rem -&amp;gt; it means root em. Instead of checking parent elements to size font
 // allocate space for 4 integer numbers int *p = malloc(4 * sizeof(int));  Segmentation fault: error caused by the fact that the program is trying to access memory that it should not use
  When allocating memory, PCs usually allocate a little bit more to avoid problems
   free(pointName) &amp;rarr; deallocate memory previously allocated with malloc.</description>
+    </item>
+    
+    <item>
+      <title>System log</title>
+      <link>https://damnotes.netlify.com/linux/06-system-log/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/linux/06-system-log/</guid>
+      <description>dmesg &amp;rarr; display log of events happening with the peripherals of the OS (USB ports, network cards,&amp;hellip;).
+ dmesg -w &amp;rarr; maintain occupied the bash session and display each new event in real time   Other logs are contained in the /var/log/ directory.</description>
     </item>
     
     <item>
@@ -644,6 +630,19 @@ import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#3
     </item>
     
     <item>
+      <title>Python Installation and Setup</title>
+      <link>https://damnotes.netlify.com/python/98-python-installation-and-setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/98-python-installation-and-setup/</guid>
+      <description>Installation macOS  Download the installer of Python 3 form the official website and install it. An application calle Python will be created in the Applications folder
+ Create an alias so that python command will call python3 instead
+ in Users/user_name/ type nano ~/.bash_profile
+ check that the last line is adding python to the path calling PATH=...
+ write alias python=python3 at the bottom of the file</description>
+    </item>
+    
+    <item>
       <title>PyTorch</title>
       <link>https://damnotes.netlify.com/python/11-pytorch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -655,19 +654,6 @@ import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#3
  torch.randn_like(input) return a random tensor normal distributed with the size of tensor ininput doc
  torch.mm(tensor1, tensor2) -&amp;gt; matrix multiplication of two tensors
   Torch and Numpy  torch.from_numpy(tensor) -&amp;gt; transform an array into a tensor for Torch</description>
-    </item>
-    
-    <item>
-      <title>Python Installation and Setup</title>
-      <link>https://damnotes.netlify.com/python/98-python-installation-and-setup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/98-python-installation-and-setup/</guid>
-      <description>Installation macOS  Download the installer of Python 3 form the official website and install it. An application calle Python will be created in the Applications folder
- Create an alias so that python command will call python3 instead
- in Users/user_name/ type nano ~/.bash_profile
- check that the last line is adding python to the path calling PATH=...
- write alias python=python3 at the bottom of the file</description>
     </item>
     
     <item>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on DamNotes</title>
@@ -127,6 +127,19 @@ import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#3
     </item>
     
     <item>
+      <title>Python Installation and Setup</title>
+      <link>https://damnotes.netlify.com/python/98-python-installation-and-setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://damnotes.netlify.com/python/98-python-installation-and-setup/</guid>
+      <description>Installation macOS  Download the installer of Python 3 form the official website and install it. An application calle Python will be created in the Applications folder
+ Create an alias so that python command will call python3 instead
+ in Users/user_name/ type nano ~/.bash_profile
+ check that the last line is adding python to the path calling PATH=...
+ write alias python=python3 at the bottom of the file</description>
+    </item>
+    
+    <item>
       <title>PyTorch</title>
       <link>https://damnotes.netlify.com/python/11-pytorch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -138,19 +151,6 @@ import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#3
  torch.randn_like(input) return a random tensor normal distributed with the size of tensor ininput doc
  torch.mm(tensor1, tensor2) -&amp;gt; matrix multiplication of two tensors
   Torch and Numpy  torch.from_numpy(tensor) -&amp;gt; transform an array into a tensor for Torch</description>
-    </item>
-    
-    <item>
-      <title>Python Installation and Setup</title>
-      <link>https://damnotes.netlify.com/python/98-python-installation-and-setup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/98-python-installation-and-setup/</guid>
-      <description>Installation macOS  Download the installer of Python 3 form the official website and install it. An application calle Python will be created in the Applications folder
- Create an alias so that python command will call python3 instead
- in Users/user_name/ type nano ~/.bash_profile
- check that the last line is adding python to the path calling PATH=...
- write alias python=python3 at the bottom of the file</description>
     </item>
     
     <item>

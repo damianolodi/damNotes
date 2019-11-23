@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -12,10 +12,6 @@
   
   <url>
     <loc>https://damnotes.netlify.com/c/01-basic-concepts/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/homebrew/01-basics/</loc>
   </url>
   
   <url>
@@ -123,6 +119,10 @@
   </url>
   
   <url>
+    <loc>https://damnotes.netlify.com/c/05-ctype/</loc>
+  </url>
+  
+  <url>
     <loc>https://damnotes.netlify.com/css/05-grid/</loc>
   </url>
   
@@ -139,10 +139,6 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/c/05-ctype/</loc>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/hugo/06-functions/</loc>
   </url>
   
@@ -151,11 +147,11 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/linux/06-system-log/</loc>
+    <loc>https://damnotes.netlify.com/c/06-stdlib/</loc>
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/c/06-stdlib/</loc>
+    <loc>https://damnotes.netlify.com/linux/06-system-log/</loc>
   </url>
   
   <url>
@@ -223,11 +219,11 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/python/11-pytorch/</loc>
+    <loc>https://damnotes.netlify.com/python/98-python-installation-and-setup/</loc>
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/python/98-python-installation-and-setup/</loc>
+    <loc>https://damnotes.netlify.com/python/11-pytorch/</loc>
   </url>
   
   <url>
@@ -251,10 +247,6 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/arduino/</loc>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/ai/</loc>
   </url>
   
@@ -275,10 +267,6 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/css/</loc>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/git/03-config/</loc>
   </url>
   
@@ -287,12 +275,11 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/</loc>
-    <priority>0</priority>
+    <loc>https://damnotes.netlify.com/css/</loc>
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/electronics/</loc>
+    <loc>https://damnotes.netlify.com/</loc>
   </url>
   
   <url>
@@ -305,10 +292,6 @@
   
   <url>
     <loc>https://damnotes.netlify.com/html/00-html-anatomy/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/homebrew/</loc>
   </url>
   
   <url>
@@ -353,7 +336,6 @@
   
   <url>
     <loc>https://damnotes.netlify.com/tags/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
