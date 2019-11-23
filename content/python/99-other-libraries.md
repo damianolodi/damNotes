@@ -1,10 +1,11 @@
 ---
-title: "Other Libraries"
+title: Other Libraries
 draft: false
-arguments: ["IPython",
-            "ScyPy",
-            "SymPy",
-            "Sys"]
+arguments:
+  - IPython
+  - ScyPy
+  - SymPy
+  - Sys
 weight: 99
 ---
 
@@ -48,6 +49,8 @@ import sympy as symp
 
 ### Sys
 
--   `sys.version` &rarr; contain python version installed on the machine
+- `sys.version` &rarr; contains python version installed on the machine
 
--   `sys.executable` &rarr; contain information about the interpreter used
+- `sys.executable` &rarr; contains information about the interpreter used
+
+- `sys.platform` &rarr; contains information about the OS that is executing the code ([doc](https://docs.python.org/3.8/library/sys.html#sys.platform))

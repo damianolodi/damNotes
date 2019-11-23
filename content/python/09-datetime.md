@@ -1,9 +1,10 @@
 ---
 title: Time and Datetime
 draft: false
-arguments: ["Time and Dates Formatting",
-            "Timezone Conversion",
-            "Conters"]
+arguments:
+  - Time and Dates Formatting
+  - Timezone Conversion
+  - Conters
 weight: 09
 ---
 
@@ -53,7 +54,7 @@ import time
 
 #### `timedelta` Submodule
 
-Timedeltas objects can be added/subtracted to dates, or they can be obtained subtracting two dates/times/datetimes.
+Timedeltas objects can be added/subtracted to dates, or they can be obtained subtracting two datetimes.
 
 - `td = dt.timedelta(days=7)` &rarr; create a timedelta object long 7 days
 
