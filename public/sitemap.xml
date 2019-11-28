@@ -255,19 +255,7 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/git/01-basics/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/git/02-branches/</loc>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/c/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/git/03-config/</loc>
   </url>
   
   <url>
@@ -283,10 +271,6 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/git/</loc>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/html/</loc>
   </url>
   
@@ -296,10 +280,6 @@
   
   <url>
     <loc>https://damnotes.netlify.com/hugo/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/git/04-linking-to-github/</loc>
   </url>
   
   <url>
@@ -327,19 +307,7 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/git/05-remote-repositories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/git/06-rewriting-history/</loc>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/tags/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/git/07-undoing-changes/</loc>
   </url>
   
 </urlset>
