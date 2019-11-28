@@ -11,15 +11,7 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/c/01-basic-concepts/</loc>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/bash/01-basics/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/rpi/1-basics/</loc>
   </url>
   
   <url>
@@ -63,10 +55,6 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/c/02-stdio/</loc>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/css/03-content-positioning/</loc>
   </url>
   
@@ -91,10 +79,6 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/c/03-unistd/</loc>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/linux/04-accessing-hw-info/</loc>
   </url>
   
@@ -112,14 +96,6 @@
   
   <url>
     <loc>https://damnotes.netlify.com/python/03b-seaborn/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/c/04-string/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/c/05-ctype/</loc>
   </url>
   
   <url>
@@ -144,10 +120,6 @@
   
   <url>
     <loc>https://damnotes.netlify.com/css/06-measurement-units/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/c/06-stdlib/</loc>
   </url>
   
   <url>
@@ -255,10 +227,6 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/c/</loc>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/ai/00-core-concepts/</loc>
   </url>
   
@@ -300,10 +268,6 @@
   
   <url>
     <loc>https://damnotes.netlify.com/python/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/rpi/</loc>
   </url>
   
   <url>

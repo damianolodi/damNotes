@@ -31,17 +31,6 @@
     </item>
     
     <item>
-      <title>Basic Concepts</title>
-      <link>https://damnotes.netlify.com/c/01-basic-concepts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/c/01-basic-concepts/</guid>
-      <description>Basics int var_name = value; // variable initialization char str_name[n]; // array initialization char str_name[] = &amp;#34;Hello World!&amp;#34;; const int VAR_NAME = value; // constant declaration  int main (void) { // execution start from here  // code  return 0; }  Best practice: variables are named with capital letters when global
- Math operators &amp;rarr; +, -, *, /, % (mod)
- For each string of n charachters, n+1 bytes are allocated in memory: the last is added by C as the null character \0 (all zeros)</description>
-    </item>
-    
-    <item>
       <title>Basics</title>
       <link>https://damnotes.netlify.com/bash/01-basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -50,15 +39,6 @@
       <description>var = &amp;#34;value&amp;#34; # define new variable export var = &amp;#34;value&amp;#34; # define variable also for othe bash sessions echo $var # access the value of a variable which command_name # return the path in which the executable is found  bash &amp;rarr; open a new bash session
  exit &amp;rarr; exit from the current bash session  env &amp;rarr; list all environment variables
  PATH &amp;rarr; variable that contains all the paths (separated by columns) in which to search for executables  alias &amp;rarr; return all defined aliases</description>
-    </item>
-    
-    <item>
-      <title>Basics</title>
-      <link>https://damnotes.netlify.com/rpi/1-basics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/rpi/1-basics/</guid>
-      <description> Pinout </description>
     </item>
     
     <item>
@@ -188,20 +168,6 @@ Server  Web Server: Apache HTTPD (more complete), Nginx (lighter), Stack LAMP (L
     </item>
     
     <item>
-      <title>stdio.c</title>
-      <link>https://damnotes.netlify.com/c/02-stdio/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/c/02-stdio/</guid>
-      <description>#include &amp;lt;stdio.h&amp;gt;  printf( &amp;rarr; Possible placeholders:
- %c (single char), %s (string),
- %i (integer), %f (float), %u (unsigned decimal integer)
- %p (pointer)
-  scanf(&amp;quot;%i&amp;quot;, &amp;amp;varName) &amp;rarr; wait user input. Various placeholders are available (number in different bases, strings,&amp;hellip;). Return the number of characters written, or a negative number if some errors occured. WARNING: the input should be checked for correctness
-  </description>
-    </item>
-    
-    <item>
       <title>Content Positioning</title>
       <link>https://damnotes.netlify.com/css/03-content-positioning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -269,15 +235,6 @@ width: 150px;
     </item>
     
     <item>
-      <title>unistd.c</title>
-      <link>https://damnotes.netlify.com/c/03-unistd/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/c/03-unistd/</guid>
-      <description>#include &amp;lt;unistd.h&amp;gt;  sleep(i) &amp;rarr; suspend code execution for at least i seconds  </description>
-    </item>
-    
-    <item>
       <title>Accessing Hardware Info</title>
       <link>https://damnotes.netlify.com/linux/04-accessing-hw-info/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -329,30 +286,6 @@ flex-wrap: wrap; &amp;ndash;&amp;gt; wrap the flex-items if necessary
       <guid>https://damnotes.netlify.com/python/03b-seaborn/</guid>
       <description>(Docs)
 import seaborn as sns sns.set() tips = sns.load_dataset(&amp;#34;tips&amp;#34;) # or just load a dataframe with pandas sns.relplot(x = &amp;#34;total_bill&amp;#34;, y = &amp;#34;tip&amp;#34;, col = &amp;#34;time&amp;#34;, hue = &amp;#34;smoker&amp;#34;, style = &amp;#34;smoker&amp;#34;, size = &amp;#34;size&amp;#34;, data = tips);  sns.set() set the style of the plot using matplotlib standards (doc)  </description>
-    </item>
-    
-    <item>
-      <title>string.c</title>
-      <link>https://damnotes.netlify.com/c/04-string/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/c/04-string/</guid>
-      <description>#include &amp;lt;string.h&amp;gt; In this context, s usually represent the pointer to the string.
- strlen(s) &amp;rarr; return lenght of the string
- strcmp(s1, s2) &amp;rarr; compare the two strings. Return 0 if the two strings are equal
- strcpy(s1, s2) &amp;rarr; copy s2 into s1
-  </description>
-    </item>
-    
-    <item>
-      <title>ctype.c</title>
-      <link>https://damnotes.netlify.com/c/05-ctype/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/c/05-ctype/</guid>
-      <description>#include &amp;lt;ctype.h&amp;gt;  isdigit(int) &amp;rarr; return non-zero if the provided value is a digit
- isalnum(int) &amp;rarr; retutn non-zero if the provided value is a digit or a letter
-  </description>
     </item>
     
     <item>
@@ -421,18 +354,6 @@ Important parameters are: PID (Process ID), priority, occupied memory, used CPU 
 px -&amp;gt; pixels are used to set the exact size of an element
 em -&amp;gt; the em represents the size of the base font being used. It is a relative unit of measurement. They change the size of text relative to the parent element’s size of text
 rem -&amp;gt; it means root em. Instead of checking parent elements to size font, it checks the root element.</description>
-    </item>
-    
-    <item>
-      <title>stdlib.c</title>
-      <link>https://damnotes.netlify.com/c/06-stdlib/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/c/06-stdlib/</guid>
-      <description>#include &amp;lt;stdlib.h&amp;gt;  malloc(size) &amp;rarr; try to allocate requested memory size (in bytes) and returns a pointer to the first byte
-// allocate space for 4 integer numbers int *p = malloc(4 * sizeof(int));  Segmentation fault: error caused by the fact that the program is trying to access memory that it should not use
- When allocating memory, PCs usually allocate a little bit more to avoid problems
-  free(pointName) &amp;rarr; deallocate memory previously allocated with malloc.</description>
     </item>
     
     <item>
