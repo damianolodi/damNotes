@@ -11,15 +11,6 @@
     
     
     <item>
-      <title>Basic Concepts</title>
-      <link>https://damnotes.netlify.com/python/00-basic-concepts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/00-basic-concepts/</guid>
-      <description>Variable Types Lists l = [100, 21, 88, 3] l = list() # empty list # List Comprehension -&amp;gt; quick list creation evens_to_50 = [i for i in range(51) if i % 2 == 0] other_list = [[i,j] for i in range(x) for j in range(y) if (x+y)!=n] # Element selection l[:2] # first two items (0 and 1) l[3:] # third through last items l[::2] # first through end with a step of 2 ## in general [start(inclusive):end(exclusive):stride] ## negative stride progress the list in reverse order # Multi-index lists l = [0, 1, 2, 3; 4, 5, 6, 7] l[1][2] # 6  l1 + l2 &amp;rarr; concatenate lists</description>
-    </item>
-    
-    <item>
       <title>Animations</title>
       <link>https://damnotes.netlify.com/css/01-animations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -50,15 +41,6 @@
       <description> Document Declaration Boilerplate code &amp;rarr; some code that one has to every page of code.
 &amp;lt;@DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;My Coding Journal&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  &amp;lt;@DOCTYPE hmtl&amp;gt; &amp;rarr; declaration &amp;lt;head&amp;gt; &amp;rarr; it contain metadata of the webpage  Non-Semantic Tags Non-semantic tag &amp;rarr; it does not describe the type of content it has inside.
  &amp;lt;div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;span&amp;gt; &amp;lt;/span&amp;gt;  Semantic Tags  &amp;lt;header&amp;gt; &amp;lt;footer&amp;gt; &amp;lt;aside&amp;gt; &amp;lt;main&amp;gt; &amp;lt;article&amp;gt; &amp;lt;nav&amp;gt; &amp;lt;section&amp;gt; &amp;lt;detail&amp;gt;  </description>
-    </item>
-    
-    <item>
-      <title>NumPy</title>
-      <link>https://damnotes.netlify.com/python/01-numpy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/01-numpy/</guid>
-      <description>import numpy as np array[index1, index2] # access an element. Use : to access the all line array[start:stop:stride] # array slicing np.nditer(array) # create an iterator object to be used in for loops # Array generation np.array(list) # create array from list np.arange(first, size, spacing) # generate array np.linspace(first, last, size) # generate array, both end points are included np.logspace(first, last, size, base=e) # generate log-spaced array np.zeros((dim1,dim2)) # create array full of 0s np.</description>
     </item>
     
     <item>
@@ -159,15 +141,6 @@ Server  Web Server: Apache HTTPD (more complete), Nginx (lighter), Stack LAMP (L
     </item>
     
     <item>
-      <title>Pandas</title>
-      <link>https://damnotes.netlify.com/python/02-pandas/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/02-pandas/</guid>
-      <description>import pandas as pd # df creations pd.Series([list]) # create a Series object pd.DataFrame(dict) # create df from dictionary pd.DataFrame(data=[list], index=None,	# create df from list columns=None, dtype=None, copy=False)  df &amp;rarr; DataFrame s &amp;rarr; Series Jupyter Notebook lessons on pandas  File I/O df = pd.read_csv(r’relative_path’, #can be a web address sep = &amp;#39; &amp;#39;, usecols = [0, 1, 5] # columns to be returned from the file names = [&amp;#39;column1&amp;#39;,&amp;#39;column2&amp;#39;,.</description>
-    </item>
-    
-    <item>
       <title>Content Positioning</title>
       <link>https://damnotes.netlify.com/css/03-content-positioning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -212,15 +185,6 @@ width: 150px;
       
       <guid>https://damnotes.netlify.com/html/03-forms/</guid>
       <description>&amp;lt;form action=&amp;#34;process.php&amp;#34; method=&amp;#34;POST&amp;#34;&amp;gt; &amp;lt;!--action and method attribute are server-side thing--&amp;gt; &amp;lt;div&amp;gt; &amp;lt;!--used to place the elements on different lines--&amp;gt; &amp;lt;label&amp;gt;First Name&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; name=&amp;#34;firstName&amp;#34; placeholder=&amp;#34;Enter first name&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;br&amp;gt; &amp;lt;!--line breaker-don’t use, use CSS--&amp;gt; &amp;lt;div&amp;gt; &amp;lt;label&amp;gt;Last Name&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; name=&amp;#34;lastName&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;br&amp;gt; &amp;lt;div&amp;gt; &amp;lt;label&amp;gt;Email&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;email&amp;#34; name=&amp;#34;email&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;br&amp;gt; &amp;lt;div&amp;gt; &amp;lt;label&amp;gt;Message&amp;lt;/label&amp;gt; &amp;lt;textarea name=&amp;#34;message&amp;#34;&amp;gt;&amp;lt;/textarea&amp;gt; &amp;lt;!--textarea is a bigger input region for longer text--&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;br&amp;gt; &amp;lt;div&amp;gt; &amp;lt;label&amp;gt;Gender&amp;lt;/label&amp;gt; &amp;lt;select name=&amp;#34;gender&amp;#34;&amp;gt; &amp;lt;option value=&amp;#34;male&amp;#34;&amp;gt;Male&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;female&amp;#34;&amp;gt;Female&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;other&amp;#34;&amp;gt;Other&amp;lt;/option&amp;gt; &amp;lt;/select&amp;gt; &amp;lt;!</description>
-    </item>
-    
-    <item>
-      <title>Matplotlib</title>
-      <link>https://damnotes.netlify.com/python/03-matplotlib/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/03-matplotlib/</guid>
-      <description>import matplotlib.pyplot as plt # or from matplotlib import pyplot as plt %matplotlib inline # display figures inside jupyter notebooks print(plt.style.available) # acess all available styles plt.style.use(&amp;#39;style-name&amp;#39;) # set the style to be used plt.plot(x_data, y_data, color=&amp;#39;b&amp;#39;, # accept hex colors linestyle=&amp;#39;-&amp;#39;, # or ls=&amp;#39;-&amp;#39; || &amp;#39;--&amp;#39; &amp;#39;-.&amp;#39; &amp;#39;:&amp;#39; &amp;#39;steps&amp;#39; marker=&amp;#39;.&amp;#39;, # &amp;#39;+&amp;#39;, &amp;#39;o&amp;#39;, &amp;#39;*&amp;#39;, &amp;#39;s&amp;#39;, &amp;#39;,&amp;#39;, &amp;#39;.&amp;#39;, &amp;#39;1&amp;#39;, &amp;#39;2&amp;#39;, &amp;#39;3&amp;#39;,... linewidth=3, # or lw=3 markersize=2, # or ms=2 alpha=0.</description>
     </item>
     
     <item>
@@ -276,16 +240,6 @@ flex-wrap: wrap; &amp;ndash;&amp;gt; wrap the flex-items if necessary
       <guid>https://damnotes.netlify.com/html/04-images/</guid>
       <description>Self-closing tag
 &amp;lt;img src=&amp;#34;https://www.example.com/picture.jpg&amp;#34; alt=&amp;#34;A field of yellow sunflowers&amp;#34;/&amp;gt;  src &amp;rarr; attribute with the url of the image alt &amp;rarr; description of what one can see  if an image fails to load on a web page, a user can mouse over the area originally intended for the image and read a brief description of the image. visually impaired users often browse the web with the aid of of screen reading software.</description>
-    </item>
-    
-    <item>
-      <title>Seaborn</title>
-      <link>https://damnotes.netlify.com/python/03b-seaborn/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/03b-seaborn/</guid>
-      <description>(Docs)
-import seaborn as sns sns.set() tips = sns.load_dataset(&amp;#34;tips&amp;#34;) # or just load a dataframe with pandas sns.relplot(x = &amp;#34;total_bill&amp;#34;, y = &amp;#34;tip&amp;#34;, col = &amp;#34;time&amp;#34;, hue = &amp;#34;smoker&amp;#34;, style = &amp;#34;smoker&amp;#34;, size = &amp;#34;size&amp;#34;, data = tips);  sns.set() set the style of the plot using matplotlib standards (doc)  </description>
     </item>
     
     <item>
@@ -415,20 +369,6 @@ body { --var-name: value; }  It becomes available to use inside the element in w
     </item>
     
     <item>
-      <title>Os</title>
-      <link>https://damnotes.netlify.com/python/08-os/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/08-os/</guid>
-      <description>import os Os  os.getcwd() &amp;rarr; return the current working directory
- os.listdir(path) &amp;rarr; list all file in the path. It is better using scandir() for more performance
- os.scandir(path) &amp;rarr; scan all files in the path and create an os.DirEntry object containing all files with their information (doc)
- os.chdir(path) &amp;rarr; change the cwd to path
- os.remove(path) &amp;rarr; remove a file
- os.mkdir(path) &amp;rarr; create a directory. To avoid errors if the directory exist, use</description>
-    </item>
-    
-    <item>
       <title>Media Queries</title>
       <link>https://damnotes.netlify.com/css/09-media-queries/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -441,18 +381,6 @@ body { --var-name: value; }  It becomes available to use inside the element in w
     </item>
     
     <item>
-      <title>Time and Datetime</title>
-      <link>https://damnotes.netlify.com/python/09-datetime/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/09-datetime/</guid>
-      <description>(Docs)
-from datetime import datetime as dt from datetime import date import time Datetime datetime Submodule  dt_obj = dt.datetime(yyyy, mm, dd, hh, mm, ss, ususus) &amp;rarr; create datetime object. Don&amp;rsquo;t use leading zeros
- dt_obj.date(), dt_obj.time(), dt_obj.year, ... &amp;rarr; acess onyl part of the object  dt.datetime.today() &amp;rarr; return current local date and time with a timezone specified as None
- dt.datetime.now() &amp;rarr; return current local date and time in standard format.</description>
-    </item>
-    
-    <item>
       <title>Pseudo Class</title>
       <link>https://damnotes.netlify.com/css/10-pseudo-class/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -461,15 +389,6 @@ from datetime import datetime as dt from datetime import date import time Dateti
       <description>Changing color of a link when hover on it
 a:hover { color: red; } Add something before or after a selected element
 .class::before { content: &amp;#34;Phrase&amp;#34;; /*here you can modify the properties of the added thing/shape*/ }  The content property is used to add an image or a text as the element to be added. If you use it to do a shape, place an empty string.</description>
-    </item>
-    
-    <item>
-      <title>Threading and Multiprocessing</title>
-      <link>https://damnotes.netlify.com/python/10-threading/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/10-threading/</guid>
-      <description>Tasks can be CPU bound (performance related to how fast the CPU is, e.g. crunching numbers) or I/O bound (performance related to how fast are I/O operations, e.g. reading/writing on files, accessing to the network). In the second case, if there are &amp;ldquo;dead periods&amp;rdquo; in which the CPU just has to wait, threading can represent a huge boost in performace: those moments are replaced by other tasks that can be executed concurrently.</description>
     </item>
     
     <item>
@@ -496,41 +415,6 @@ Font Assets   List of Web safe fonts Google Fonts  Properties Font Properties  f
     </item>
     
     <item>
-      <title>Jupyter notebooks</title>
-      <link>https://damnotes.netlify.com/python/14-jupiter-notebooks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/14-jupiter-notebooks/</guid>
-      <description>Useful tutorial here
-Here find a list of useful notebooks to download and learn from them.
- Run the jupiter server typing jupyter notebook in the command line
- To create a new file click new and the language you want to use in the notebook
- To run a cell use ctrl + enter. To run a cell and select below use shift + enter. Use option + enter to run a cell and insert below.</description>
-    </item>
-    
-    <item>
-      <title>PySerial</title>
-      <link>https://damnotes.netlify.com/python/15-pyserial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/15-pyserial/</guid>
-      <description>(Docs)
-import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#39;, baudrate = 9600, bytesize = serial.EIGHTBITS, parity = serial.PARITY_NONE, stopbits = serial.STOPBITS_ONE, timeout = 3 #s )  python -m serial.tools.list_ports &amp;rarr; prints a list of available ports
- ser.reset_input_buffer() &amp;rarr; flush input buffer (discard all the content)
- ser.readinto(bytearray) &amp;rarr; read up to len(bytearray) characters and store them into bytearray. Return number of bytes red (doc)
- ser.close() &amp;rarr; close the serial connection</description>
-    </item>
-    
-    <item>
-      <title>Files I/O</title>
-      <link>https://damnotes.netlify.com/python/16-files-io/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/16-files-io/</guid>
-      <description>import csv Read CSV files with open(&amp;#39;data.csv&amp;#39;,&amp;#39;r&amp;#39;) as csv_file: csv_reader = csv.reader(csv_file, delimiter=&amp;#39; &amp;#39;) next(csv_reader) # skip over the header line for line in csv_reader: print(line)  use with to automatically close the file at the end  Write on CSV files with open(&amp;#39;new_file.csv&amp;#39;,&amp;#39;w&amp;#39;) as new_file: csv_writer = csv.writer(new_file, delimiter=&amp;#39;\t&amp;#39;) for line in csv_reader: csv_writer.writerow(something)  use w+ to create the file if it does not exist  Reading with Dictionary Reader Use if more &amp;ldquo;human readable&amp;rdquo; files are needed</description>
-    </item>
-    
-    <item>
       <title>Linux Filesystem</title>
       <link>https://damnotes.netlify.com/linux/97-filesystem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -548,33 +432,6 @@ import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#3
       <description>Debian Release Cycle There are mainly 4 versions of the _Debian _operating system:
  unstable (Sid) &amp;rarr; every software update is immediatly released on this version, but it can be full of bugs
  testing (Buster) &amp;rarr; after some time, if no bugs are fonund, software is released in the testing version of the OS. This can be a god compromise on desktop system to have software reasonably update and safe</description>
-    </item>
-    
-    <item>
-      <title>Python Installation and Setup</title>
-      <link>https://damnotes.netlify.com/python/98-python-installation-and-setup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/98-python-installation-and-setup/</guid>
-      <description>Installation macOS  Download the installer of Python 3 form the official website and install it. An application calle Python will be created in the Applications folder
- Create an alias so that python command will call python3 instead
- in Users/user_name/ type nano ~/.bash_profile
- check that the last line is adding python to the path calling PATH=...
- write alias python=python3 at the bottom of the file</description>
-    </item>
-    
-    <item>
-      <title>PyTorch</title>
-      <link>https://damnotes.netlify.com/python/11-pytorch/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/11-pytorch/</guid>
-      <description>PyTorch  Import using import torch
- torch.manual_seed(n) set seeds for random number generation
- torch.randn((n1, n2, n3, ...)) return a random tensor with dimensions n1, n2,…, mean 0 and variance 1 doc
- torch.randn_like(input) return a random tensor normal distributed with the size of tensor ininput doc
- torch.mm(tensor1, tensor2) -&amp;gt; matrix multiplication of two tensors
-  Torch and Numpy  torch.from_numpy(tensor) -&amp;gt; transform an array into a tensor for Torch</description>
     </item>
     
     <item>
@@ -599,17 +456,6 @@ import serial ser = serial.Serial(port = &amp;#39;/dev/tty.SLAB_USBtoUART&amp;#3
       <description>In ~, the file .bash_profile is used for login shells, while .bashrc is used for non-login shells (terminal session opened using the bash command).
 In OSX, all sessions are login sessions so they will not source $HOME/.bashrc, they will source $HOME/.profile or $HOME/.bash_profile (reference)
 Terminal Setup on macOS  Open the .bash_profile file and type the following to automatically load the content of the file contained in .bashrc. This will guarantee that both type of shells will behave the same</description>
-    </item>
-    
-    <item>
-      <title>Other Libraries</title>
-      <link>https://damnotes.netlify.com/python/99-other-libraries/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://damnotes.netlify.com/python/99-other-libraries/</guid>
-      <description>IPython .display module (doc)
-from IPython import display # display various type of data (audio, images, ...)  display.display(obj) &amp;rarr; display a python object in all frontends (doc)  ScyPy The SciPy framework builds on top of the low-level NumPy framework for multidimensional arrays, and provides a large number of higher-level scientific algorithms. See here for a Jupyter notebook tutorial on scypy
-import scipy as sp SymPy It is a Computer Algebra System (CAS).</description>
     </item>
     
     <item>

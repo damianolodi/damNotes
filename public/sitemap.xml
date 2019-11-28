@@ -3,10 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://damnotes.netlify.com/python/00-basic-concepts/</loc>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/css/01-animations/</loc>
   </url>
   
@@ -16,10 +12,6 @@
   
   <url>
     <loc>https://damnotes.netlify.com/html/01-document-structure/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/python/01-numpy/</loc>
   </url>
   
   <url>
@@ -51,10 +43,6 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/python/02-pandas/</loc>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/css/03-content-positioning/</loc>
   </url>
   
@@ -68,10 +56,6 @@
   
   <url>
     <loc>https://damnotes.netlify.com/html/03-forms/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/python/03-matplotlib/</loc>
   </url>
   
   <url>
@@ -92,10 +76,6 @@
   
   <url>
     <loc>https://damnotes.netlify.com/html/04-images/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/python/03b-seaborn/</loc>
   </url>
   
   <url>
@@ -143,23 +123,11 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/python/08-os/</loc>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/css/09-media-queries/</loc>
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/python/09-datetime/</loc>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/css/10-pseudo-class/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/python/10-threading/</loc>
   </url>
   
   <url>
@@ -171,18 +139,6 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/python/14-jupiter-notebooks/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/python/15-pyserial/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/python/16-files-io/</loc>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/linux/97-filesystem/</loc>
   </url>
   
@@ -191,23 +147,11 @@
   </url>
   
   <url>
-    <loc>https://damnotes.netlify.com/python/98-python-installation-and-setup/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/python/11-pytorch/</loc>
-  </url>
-  
-  <url>
     <loc>https://damnotes.netlify.com/bash/98-scripting/</loc>
   </url>
   
   <url>
     <loc>https://damnotes.netlify.com/bash/99-command-line-setup/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/python/99-other-libraries/</loc>
   </url>
   
   <url>
@@ -264,10 +208,6 @@
   
   <url>
     <loc>https://damnotes.netlify.com/ai/03-problem-solving/</loc>
-  </url>
-  
-  <url>
-    <loc>https://damnotes.netlify.com/python/</loc>
   </url>
   
   <url>
